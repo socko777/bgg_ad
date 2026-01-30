@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick's Board Game Collection</title>
+    <style>
+        body {
+            background-color: #0f0f0f; /* Matches your card BG_COLOR */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .grid-container {
+            width: 100%;
+            max-width: 100%; /* Allows full-scale view on wide monitors */
+            display: block;
+        }
+
+        .grid-link {
+            display: block;
+            text-decoration: none;
+            cursor: zoom-in;
+        }
+
+        .collection-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            /* Prevents layout jumping during lazy load for 287 titles */
+            aspect-ratio: auto; 
+            image-rendering: -webkit-optimize-contrast; /* Keeps text crisp */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <a href="https://raw.githubusercontent.com/socko777/bgg_ad/main/Nicks_Grand_Collection_2026.jpg" 
+           target="_blank" 
+           class="grid-link">
+            <img 
+                src="https://raw.githubusercontent.com/socko777/bgg_ad/main/Nicks_Grand_Collection_2026.jpg" 
+                alt="Nick's 2026 Board Game Collection" 
+                class="collection-img"
+                loading="lazy"
+                decoding="async">
+        </a>
+    </div>
+
+</body>
+</html>
