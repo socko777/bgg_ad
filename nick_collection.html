@@ -25,7 +25,6 @@
             width: 100%;
         }
 
-        /* Standard Header (Non-Sticky) */
         .header {
             text-align: center;
             padding: 60px 20px 20px;
@@ -34,11 +33,24 @@
         }
 
         .header h1 { margin: 0; font-size: 2.2rem; letter-spacing: 3px; font-weight: bold; }
-        .stats-bar { color: var(--accent-gold); margin: 10px 0; font-weight: bold; font-size: 1.1rem; text-transform: uppercase; }
+
+        /* BGG Link Styling */
+        .bgg-link {
+            display: block;
+            margin: 15px 0 5px;
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .bgg-link:hover { opacity: 1; text-decoration: underline; }
+
+        .stats-bar { color: var(--accent-gold); margin: 5px 0 10px; font-weight: bold; font-size: 1.1rem; text-transform: uppercase; }
         .date-line { color: #666; font-size: 0.85rem; letter-spacing: 1px; }
         .divider { width: 120px; height: 2px; background-color: var(--accent-gold); margin: 15px auto 0; }
 
-        /* 10-Column Responsive Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(10, 1fr);
@@ -60,9 +72,8 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
 
-        /* --- MODAL STYLES --- */
         .modal {
-            display: none; /* Hidden by default */
+            display: none;
             position: fixed;
             z-index: 1000;
             left: 0;
@@ -92,7 +103,6 @@
 
         .modal.active .modal-content { transform: scale(1); }
 
-        /* Adaptive Grid scaling */
         @media (max-width: 1800px) { .grid { grid-template-columns: repeat(8, 1fr); } }
         @media (max-width: 1400px) { .grid { grid-template-columns: repeat(6, 1fr); } }
         @media (max-width: 900px) { .grid { grid-template-columns: repeat(4, 1fr); } }
@@ -103,6 +113,7 @@
 
     <header class="header">
         <h1>NICK'S BOARD GAME COLLECTION</h1>
+        <a href="https://boardgamegeek.com/collection/user/socko777" target="_blank" class="bgg-link">VIEW ON BOARDGAMEGEEK.COM</a>
         <div class="stats-bar" id="stats-display">TOTAL COLLECTION: -- TITLES</div>
         <div class="date-line" id="date-display">GENERATED ON --</div>
         <div class="divider"></div>
@@ -125,27 +136,28 @@
             stats.innerText = `TOTAL COLLECTION: ${collectionData.total} TITLES`;
             dateLine.innerText = `GENERATED ON ${collectionData.date}`;
 
-            grid.innerHTML = collectionData.games.map(game => `
-                <div class="card" onclick="openModal('${game.img}')" title="${game.name}">
-                    <img src="${game.img}" alt="${game.name}" loading="lazy">
+            grid.innerHTML = collectionData.games.map(game => {
+                // Ensure image path uses the optimized .jpg extension
+                const imgPath = game.img.replace('.png', '.jpg');
+                return `
+                <div class="card" onclick="openModal('${imgPath}')" title="${game.name}">
+                    <img src="${imgPath}" alt="${game.name}" loading="lazy">
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         function openModal(imgSrc) {
             modalImg.src = imgSrc;
             modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
             modal.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
-            // Clear src after transition to prevent flicker on next open
+            document.body.style.overflow = '';
             setTimeout(() => { if(!modal.classList.contains('active')) modalImg.src = ''; }, 300);
         }
 
-        // Close on Escape key
         window.addEventListener('keydown', (e) => { if (e.key === "Escape") closeModal(); });
 
         if (typeof collectionData !== 'undefined') {
