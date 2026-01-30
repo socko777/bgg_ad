@@ -3,54 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick's Board Game Collection</title>
+    <title>Nick's Collection</title>
+    <script src="game_data.js"></script>
     <style>
+        :root {
+            --bg-color: #0f0f0f; /* Obsidian */
+            --accent-gold: #be8546; /* Gold STAT_COLOR */
+        }
+
         body {
-            background-color: #0f0f0f; /* Matches your card BG_COLOR */
+            background-color: var(--bg-color);
+            color: white;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-        }
-
-        .grid-container {
+            flex-direction: column;
+            align-items: center;
+            /* Prevents horizontal scroll from card hover scales */
+            overflow-x: hidden;
             width: 100%;
-            max-width: 100%; /* Allows full-scale view on wide monitors */
-            display: block;
         }
 
-        .grid-link {
-            display: block;
-            text-decoration: none;
-            cursor: zoom-in;
+        /* Standard Header (Non-Sticky) */
+        .header {
+            text-align: center;
+            padding: 60px 20px 20px;
+            width: 100%;
+            background: var(--bg-color);
         }
 
-        .collection-img {
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .stats-bar {
+            color: var(--accent-gold);
+            margin: 10px 0;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .date-line {
+            color: #666;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .divider {
+            width: 120px;
+            height: 2px;
+            background-color: var(--accent-gold);
+            margin: 15px auto 0;
+        }
+
+        /* 10-Column Responsive Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 12px;
+            max-width: 2500px;
+            width: 95%;
+            padding: 40px 20px;
+            box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        }
+
+        .card {
+            transition: transform 0.25s ease;
+            cursor: pointer;
+        }
+
+        /* Scale effect stays within viewport thanks to body overflow-x hidden */
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+
+        .card img {
             width: 100%;
             height: auto;
+            border-radius: 12px; /* Micro-radius polish */
             display: block;
-            /* Prevents layout jumping during lazy load for 287 titles */
-            aspect-ratio: auto; 
-            image-rendering: -webkit-optimize-contrast; /* Keeps text crisp */
+            background-color: #121212;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
+
+        /* Adaptive Grid scaling */
+        @media (max-width: 1800px) { .grid { grid-template-columns: repeat(8, 1fr); } }
+        @media (max-width: 1400px) { .grid { grid-template-columns: repeat(6, 1fr); } }
+        @media (max-width: 900px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 500px) { .grid { grid-template-columns: repeat(2, 1fr); } }
     </style>
 </head>
 <body>
 
-    <div class="grid-container">
-        <a href="https://raw.githubusercontent.com/socko777/bgg_ad/main/Nicks_Grand_Collection_2026.jpg" 
-           target="_blank" 
-           class="grid-link">
-            <img 
-                src="https://raw.githubusercontent.com/socko777/bgg_ad/main/Nicks_Grand_Collection_2026.jpg" 
-                alt="Nick's 2026 Board Game Collection" 
-                class="collection-img"
-                loading="lazy"
-                decoding="async">
-        </a>
-    </div>
+    <header class="header">
+        <h1>NICK'S BOARD GAME COLLECTION</h1>
+        <div class="stats-bar" id="stats-display">TOTAL COLLECTION: -- TITLES</div>
+        <div class="date-line" id="date-display">GENERATED ON --</div>
+        <div class="divider"></div>
+    </header>
 
+    <div class="grid" id="game-grid"></div>
+
+    <script>
+        const grid = document.getElementById('game-grid');
+        const stats = document.getElementById('stats-display');
+        const dateLine = document.getElementById('date-display');
+
+        function render() {
+            // Bind stats from the generated JS file
+            stats.innerText = `TOTAL COLLECTION: ${collectionData.total} TITLES`;
+            dateLine.innerText = `GENERATED ON ${collectionData.date}`;
+
+            // Map individual premium cards
+            grid.innerHTML = collectionData.games.map(game => `
+                <div class="card" title="${game.name}">
+                    <img src="${game.img}" alt="${game.name}" loading="lazy">
+                </div>
+            `).join('');
+        }
+
+        if (typeof collectionData !== 'undefined') {
+            render();
+        }
+    </script>
 </body>
 </html>
