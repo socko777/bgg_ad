@@ -3,170 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NICK'S BG COLLECTION</title>
+    <title>NICK'S BG STASH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="game_data.js"></script>
     <style>
         :root {
-            /* Richer blacks and vibrant gold */
-            --bg-dark: #050505;
-            --bg-light: #1a1a1a;
-            --accent-gold: #d4af37; /* Metallic Gold */
-            --glow: rgba(212, 175, 55, 0.3);
+            --bg-pixel: #121621; /* Slightly darker for better contrast */
+            --pixel-gold: #ffcc00;
+            --pixel-blue: #00ccff;
+            --pixel-pink: #ff00ff;
         }
 
         body {
-            /* Vignette background creates focal depth */
-            background: radial-gradient(circle at center, var(--bg-light) 0%, var(--bg-dark) 100%);
-            background-attachment: fixed;
+            background-color: var(--bg-pixel);
+            background-image:
+                linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
+            background-size: 15px 15px;
             color: white;
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Press Start 2P', cursive;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             overflow-x: hidden;
+            image-rendering: pixelated;
         }
 
-        /* Subtle "Linen" texture overlay for a premium tabletop feel */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
-            opacity: 0.15;
-            pointer-events: none;
-            z-index: 1;
-        }
-
+        /* Streamlined Header */
         .header {
             text-align: center;
-            padding: 50px 20px 20px;
-            width: 100%;
-            z-index: 2;
+            padding: 30px 10px 15px; /* Reduced vertical footprint */
+            z-index: 5;
         }
 
         .header h1 {
+            font-size: 1.4rem; /* Sharper title */
+            letter-spacing: 2px;
+            color: var(--pixel-gold);
             margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 8px;
-            font-weight: 300;
-            text-transform: uppercase;
-            /* Using a classic serif for that "collector" look */
-            font-family: 'Georgia', serif;
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
         }
 
         .bgg-link {
             display: inline-block;
             margin: 15px 0;
-            color: var(--accent-gold);
+            color: black;
             text-decoration: none;
-            font-size: 0.8rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            border: 1px solid var(--accent-gold);
-            padding: 8px 20px;
-            border-radius: 20px;
-            transition: all 0.3s ease;
+            font-size: 0.55rem;
+            background: var(--pixel-blue);
+            padding: 10px 18px;
+            box-shadow: 3px 3px 0 0 #006680;
+            transition: 0.1s;
         }
 
-        .bgg-link:hover {
-            background: var(--accent-gold);
-            color: black;
-            box-shadow: 0 0 15px var(--accent-gold);
-        }
+        .bgg-link:hover { background: #66e0ff; transform: translate(1px, 1px); box-shadow: 2px 2px 0 0 #006680; }
 
         .stats-row {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 15px;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            color: #aaa;
+            margin-top: 10px;
+            font-size: 0.45rem;
+            color: var(--pixel-pink);
+            letter-spacing: 0;
         }
 
-        .stats-bar { color: var(--accent-gold); font-weight: bold; }
-
-        /* The Grid */
+        /* Ultra-Compact High-Density Grid */
         .grid {
             display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            gap: 15px;
-            max-width: 2400px;
-            width: 95%;
-            padding: 40px 20px;
-            z-index: 2;
+            grid-template-columns: repeat(12, 1fr); /* 12 cols for massive density */
+            gap: 8px; /* Tight gap reduces 'border noise' */
+            max-width: 2800px;
+            width: 98%;
+            padding: 10px 10px 60px;
+            z-index: 5;
         }
 
         .card {
-            position: relative;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: zoom-in;
-            opacity: 0; /* Handled by JS for fade-in */
-            transform: translateY(20px);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease;
         }
 
-        .card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .card.visible { opacity: 1; transform: translateY(0); }
 
-        /* Eye-catching Glow on Hover */
-        .card:hover {
-            transform: scale(1.1) translateY(-10px);
-            z-index: 10;
-        }
-
+        /* Simplified card: Single Sharp Border */
         .card img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
             display: block;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.8);
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: border 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.1); /* Subtle default border */
+            transition: border 0.1s;
         }
 
         .card:hover img {
-            border: 1px solid var(--accent-gold);
-            box-shadow: 0 0 25px var(--glow);
+            border: 2px solid var(--pixel-gold); /* Gold highlight only on hover */
+            filter: brightness(1.1);
         }
 
-        /* Modal / Lightbox */
+        /* CRT Filter - Lightened for density */
+        body::after {
+            content: " ";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%);
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        /* Density Breakpoints */
+        @media (max-width: 2200px) { .grid { grid-template-columns: repeat(10, 1fr); } }
+        @media (max-width: 1600px) { .grid { grid-template-columns: repeat(8, 1fr); } }
+        @media (max-width: 1100px) { .grid { grid-template-columns: repeat(6, 1fr); } }
+        @media (max-width: 700px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 400px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+
         .modal {
             display: none; position: fixed; z-index: 1000;
             left: 0; top: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.98);
-            backdrop-filter: blur(15px);
+            background: rgba(0,0,0,0.95);
             justify-content: center; align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
         }
-        .modal.active { display: flex; opacity: 1; }
-        .modal-content {
-            max-width: 85%;
-            max-height: 85%;
-            border-radius: 15px;
-            border: 1px solid var(--accent-gold);
-            box-shadow: 0 0 50px rgba(0,0,0,1);
-        }
-
-        @media (max-width: 1800px) { .grid { grid-template-columns: repeat(8, 1fr); } }
-        @media (max-width: 1400px) { .grid { grid-template-columns: repeat(6, 1fr); } }
-        @media (max-width: 900px) { .grid { grid-template-columns: repeat(4, 1fr); } }
-        @media (max-width: 500px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+        .modal.active { display: flex; }
+        .modal-content { max-width: 90%; max-height: 90%; border: 4px solid white; }
     </style>
 </head>
 <body>
 
     <header class="header">
-        <h1>NICK'S BG COLLECTION</h1>
-        <a href="https://boardgamegeek.com/collection/user/socko777" target="_blank" class="bgg-link">View BGG Profile</a>
+        <h1>NICK'S BG STASH</h1>
+        <a href="https://boardgamegeek.com/collection/user/socko777" target="_blank" class="bgg-link">SEE MY BGG COLLECTION</a>
         <div class="stats-row">
-            <span>TOTAL: <span class="stats-bar" id="stats-display">--</span></span>
-            <span>UPDATED: <span id="date-display">--</span></span>
+            [ ITEMS: <span id="stats-display">--</span> ] [ UPDATED: <span id="date-display">--</span> ]
         </div>
     </header>
 
@@ -190,16 +158,14 @@
             grid.innerHTML = collectionData.games.map((game, index) => {
                 const imgPath = game.img.replace('.png', '.jpg');
                 return `
-                <div class="card" onclick="openModal('${imgPath}')" style="transition-delay: ${index * 0.02}s">
+                <div class="card" onclick="openModal('${imgPath}')" style="transition-delay: ${index * 0.005}s">
                     <img src="${imgPath}" alt="${game.name}" loading="lazy">
                 </div>
             `}).join('');
 
-            // Trigger the fade-in animation
             setTimeout(() => {
-                const cards = document.querySelectorAll('.card');
-                cards.forEach(card => card.classList.add('visible'));
-            }, 100);
+                document.querySelectorAll('.card').forEach(card => card.classList.add('visible'));
+            }, 50);
         }
 
         function openModal(imgSrc) {
@@ -213,6 +179,7 @@
             document.body.style.overflow = '';
         }
 
+        window.addEventListener('keydown', (e) => { if (e.key === "Escape") closeModal(); });
         if (typeof collectionData !== 'undefined') render();
     </script>
 </body>
