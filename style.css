@@ -1,69 +1,77 @@
 /* --- THEME: BOUTIQUE EDITORIAL --- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap');
 
 :root {
-    --bg-silk: #FDF9F3;
-    --matcha-leaf: #7A8D76;
-    --clay-text: #5D544D;
-    --gold-leaf: #D4AF37;
-    --white-pure: #FFFFFF;
+    --bg-silk: #FDF9F3;       /* Silk-paper base color */
+    --matcha-leaf: #7A8D76;   /* Premium botanical green */
+    --clay-text: #5D544D;     /* Warm earth tones for text */
+    --white-pure: #FFFFFF;    /* Card and Modal backgrounds */
+    --gold-leaf: #D4AF37;     /* Elegant accent color */
+    --blush-petal: #F5E6E0;   /* Soft highlight for badges */
 }
 
-/* --- RESET & MOBILE SAFETY --- */
-* { 
-    box-sizing: border-box; 
-    margin: 0; 
-    padding: 0; 
-    -webkit-font-smoothing: antialiased; 
+/* --- 1. GLOBAL RESET & BACKGROUND --- */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* STRICT: Prevents the horizontal "wiggle" and scrollbars on mobile */
+    overflow-x: hidden; 
+    background-color: var(--bg-silk);
+    /* RESTORED: Textured paper background for a boutique feel */
+    background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+    background-attachment: fixed;
+    -webkit-text-size-adjust: 100%;
 }
+
+* { box-sizing: border-box; }
 
 body {
-    background-color: var(--bg-silk);
-    background-image: url("https://www.transparenttextures.com/patterns/paper.png");
     color: var(--clay-text);
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* This stops the "shaking" or side-scrolling on mobile */
-    overflow-x: hidden; 
-    width: 100%;
+    min-height: 100vh;
 }
 
-/* --- ADAPTIVE NAVIGATION --- */
+/* --- 2. RESPONSIVE STICKY NAVIGATION --- */
 nav {
     width: 100%;
-    background: rgba(253, 249, 243, 0.95);
+    background: rgba(253, 249, 243, 0.98);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
-    z-index: 1000;
-    padding: 15px 10px;
+    z-index: 1000; /* Stays above content, but below Modal */
+    padding: 15px 5px;
     border-bottom: 1px solid rgba(122, 141, 118, 0.1);
 }
 
 .nav-links {
     display: flex;
     justify-content: center;
-    /* Space scales: smaller on phone, larger on desktop */
-    gap: clamp(12px, 4vw, 40px); 
-    flex-wrap: wrap; /* Allows links to stack on tiny screens */
+    /* Fluid gap that shrinks for narrow phone screens */
+    gap: clamp(10px, 4vw, 30px);
+    flex-wrap: wrap; 
 }
 
 .nav-item {
     color: var(--clay-text);
     text-decoration: none;
     font-size: clamp(0.7rem, 2.5vw, 0.85rem);
-    letter-spacing: 1px;
     text-transform: uppercase;
+    letter-spacing: 1px;
     font-weight: 500;
-    white-space: nowrap; /* Prevents single links from breaking into two lines */
 }
 
-.nav-item.active { color: var(--matcha-leaf); font-weight: 700; }
+.nav-item.active { 
+    color: var(--matcha-leaf); 
+    font-weight: 700; 
+    border-bottom: 2px solid var(--gold-leaf);
+}
 
-/* --- RESPONSIVE HEADER --- */
-.header {
+/* --- 3. CENTERED EDITORIAL HEADER --- */
+header, .header {
     width: 100%;
     padding: 30px 15px;
     text-align: center;
@@ -73,35 +81,78 @@ nav {
 }
 
 .main-logo-container img {
-    /* Logo shrinks to 140px on small phones */
-    width: clamp(140px, 45vw, 260px); 
+    /* Fluid Logo: Scales from 140px on mobile to 240px on desktop */
+    max-width: 85%; 
+    width: clamp(140px, 45vw, 240px);
     height: auto;
     margin-bottom: 15px;
-    max-width: 90%;
 }
 
-.hero-title, .header h1 {
+h1, .hero-title {
     font-family: 'Playfair Display', serif;
-    /* Font scales: 2rem on mobile to 4.5rem on desktop */
-    font-size: clamp(2rem, 9vw, 4.5rem); 
+    /* Fluid Typography: Prevents text-chopping on mobile */
+    font-size: clamp(2rem, 8vw, 3.5rem); 
     font-style: italic;
     color: var(--matcha-leaf);
     line-height: 1.1;
-    max-width: 95%;
+    width: 95%;
 }
 
-/* --- THE PEBBLE GRID (MEADOW VIEW) --- */
+.stats-container {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    letter-spacing: 0.5px;
+}
+
+/* --- 4. THE MODAL (FIXED LAYER) --- */
+.modal {
+    display: none; /* JS toggles this with .active */
+    position: fixed; 
+    /* HIGHEST PRIORITY: Covers nav bar and all content */
+    z-index: 9999; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%;
+    background: rgba(245, 230, 224, 0.96); 
+    backdrop-filter: blur(12px);
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.active { 
+    display: flex; 
+}
+
+.modal-content {
+    max-width: 95%; 
+    max-height: 85vh;
+    border-radius: 15px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.2);
+    border: 8px solid var(--white-pure);
+    object-fit: contain;
+    animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* --- 5. GRID & PEBBLE CARDS --- */
 .grid {
     display: grid;
-    /* 3-column view for mobile density */
+    justify-content: center;
+    /* 3-column "Meadow View" optimized for mobile browsers */
     grid-template-columns: repeat(3, 1fr); 
     gap: 8px;
     width: 96%;
     padding: 10px 0 60px;
-    justify-content: center;
 }
 
-/* Desktop upgrade for grid */
+/* Desktop Upgrade for Grid */
 @media (min-width: 769px) {
     .grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -115,7 +166,11 @@ nav {
     padding: clamp(4px, 1.5vw, 10px);
     border-radius: 15px 15px 5px 5px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.card:active { transform: scale(0.96); } /* Mobile haptic-feel click */
 
 .card img {
     width: 100%;
@@ -123,23 +178,12 @@ nav {
     display: block;
 }
 
-/* --- BOUTIQUE MODAL --- */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0; top: 0; width: 100%; height: 100%;
-    background: rgba(245, 230, 224, 0.95);
-    backdrop-filter: blur(12px);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal.active { display: flex; }
-
-.modal-content {
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 15px;
-    border: 6px solid white;
+/* --- 6. STANDARD FOOTER --- */
+footer { 
+    padding: 60px 10px; 
+    opacity: 0.6; 
+    font-size: 0.7rem; 
+    text-align: center; 
+    width: 100%; 
+    border-top: 1px solid rgba(0,0,0,0.05); 
 }
