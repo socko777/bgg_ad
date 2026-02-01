@@ -3,174 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE GARDEN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
-    <script src="game_data.js?v=1.4"></script>
-    <style>
-        :root {
-            --soft-cream: #FDFBF7;
-            --sage-green: #8DAA91;
-            --moss-green: #5B7553;
-            --blossom-pink: #F2D5D5;
-            --wood-brown: #6D4C41;
-            --leaf-accent: #A3C585;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            background-color: var(--soft-cream);
-            background-image: radial-gradient(var(--sage-green) 0.5px, transparent 0.5px);
-            background-size: 40px 40px;
-            color: var(--wood-brown);
-            font-family: 'Quicksand', sans-serif;
-            margin: 0; padding: 0;
-            display: flex; flex-direction: column; align-items: center;
-            overflow-x: hidden;
-        }
-
-        /* --- NAVIGATION --- */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            background: rgba(255, 255, 255, 0.95);
-            border-bottom: 4px solid var(--sage-green);
-            width: 100%;
-            position: sticky; top: 0; z-index: 100;
-        }
-
-        .nav-logo { height: 45px; width: auto; }
-
-        .nav-links { display: flex; gap: 15px; }
-
-        .nav-item {
-            color: var(--moss-green);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.85rem;
-            padding: 8px 15px;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-        }
-
-        .nav-item:hover, .nav-item.active {
-            background: var(--blossom-pink);
-            color: var(--wood-brown);
-        }
-
-        /* --- HEADER --- */
-        .header {
-            text-align: center;
-            padding: 50px 20px 30px;
-        }
-
-        .header h1 {
-            font-family: 'Gaegu', cursive;
-            font-size: 3.2rem;
-            color: var(--moss-green);
-            margin: 0;
-        }
-
-        .stats-container {
-            margin-top: 15px;
-            background: white;
-            padding: 15px 25px;
-            border-radius: 30px;
-            display: inline-block;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            border: 2px solid var(--blossom-pink);
-        }
-
-        .stats-row {
-            font-size: 0.9rem;
-            color: var(--wood-brown);
-            font-weight: 700;
-            margin: 5px 0;
-        }
-
-        .last-updated {
-            font-size: 0.75rem;
-            color: var(--sage-green);
-            font-style: italic;
-        }
-
-        /* --- COZY GRID --- */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 25px;
-            width: 92%;
-            max-width: 1400px;
-            padding: 40px 20px 80px;
-        }
-
-        .card {
-            background: white;
-            padding: 12px;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.04);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            cursor: zoom-in;
-            border: 1px solid rgba(0,0,0,0.02);
-        }
-
-        .card:hover {
-            transform: scale(1.08) rotate(1.5deg);
-            box-shadow: 0 15px 30px rgba(107, 142, 35, 0.1);
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 12px;
-            display: block;
-        }
-
-        /* --- MODAL --- */
-        .modal {
-            display: none; position: fixed; z-index: 1000;
-            left: 0; top: 0; width: 100%; height: 100%;
-            background: rgba(91, 117, 83, 0.85); /* Moss green overlay */
-            justify-content: center; align-items: center;
-            backdrop-filter: blur(5px);
-        }
-        .modal.active { display: flex; }
-        .modal-content { 
-            max-width: 85%; 
-            max-height: 85%; 
-            border-radius: 25px; 
-            border: 10px solid white;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-        }
-
-        footer {
-            padding: 60px 40px;
-            font-family: 'Gaegu', cursive;
-            font-size: 1.6rem;
-            color: var(--moss-green);
-            text-align: center;
-            width: 100%;
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 600px) {
-            .header h1 { font-size: 2.2rem; }
-            .grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
-            .nav-item { font-size: 0.75rem; padding: 6px 10px; }
-            .stats-container { padding: 10px 20px; }
-        }
-    </style>
+    <title>THE GARDEN | ARA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game_data.js?v=1.6"></script>
 </head>
 <body>
 
     <nav>
-        <a href="index.html">
-            <img src="logo.png" alt="ARA Logo" class="nav-logo">
-        </a>
         <div class="nav-links">
-            <a href="index.html" class="nav-item">Lobby</a>
-            <a href="events.html" class="nav-item">Events</a>
+            <a href="index.html" class="nav-item">The Lobby</a>
+            <a href="events.html" class="nav-item">Gatherings</a>
             <a href="nick_collection.html" class="nav-item active">The Garden</a>
         </div>
     </nav>
@@ -178,12 +20,10 @@
     <header class="header">
         <h1>The Garden</h1>
         <div class="stats-container">
-            <div class="stats-row">
-                🌱 <span id="stats-display">--</span> games growing in our garden
-            </div>
-            <div class="last-updated">
-                🌿 Last updated: <span id="date-display">--</span>
-            </div>
+            Currently nurturing <span id="stats-display">--</span> games in our garden. <br>
+            <span style="font-size: 0.7rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2px;">
+                Tend Date: <span id="date-display">--</span>
+            </span>
         </div>
     </header>
 
@@ -194,44 +34,33 @@
     </div>
 
     <footer>
-        &copy; 2026 Crafted with 🌿 in Ara Damansara
+        Bloom where you are planted. &copy; 2026
     </footer>
 
     <script>
         const grid = document.getElementById('game-grid');
-        const stats = document.getElementById('stats-display');
-        const dateDisplay = document.getElementById('date-display');
-
         function render() {
-            if (typeof collectionData === 'undefined') {
-                console.error("Data script not loaded correctly.");
-                return;
-            }
-            
-            stats.innerText = collectionData.total;
-            dateDisplay.innerText = collectionData.date;
+            if (typeof collectionData === 'undefined') return;
+            document.getElementById('stats-display').innerText = collectionData.total;
+            document.getElementById('date-display').innerText = collectionData.date;
 
             grid.innerHTML = collectionData.games.map((game) => {
                 const imgPath = game.img.replace('.png', '.jpg');
                 return `
                 <div class="card" onclick="openModal('${imgPath}')">
                     <img src="${imgPath}" alt="${game.name}" loading="lazy">
-                </div>
-            `}).join('');
+                </div>`
+            }).join('');
         }
-
         function openModal(imgSrc) {
             document.getElementById('modal-img').src = imgSrc;
             document.getElementById('zoom-modal').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
-
         function closeModal() {
             document.getElementById('zoom-modal').classList.remove('active');
             document.body.style.overflow = '';
         }
-
-        window.addEventListener('keydown', (e) => { if (e.key === "Escape") closeModal(); });
         if (typeof collectionData !== 'undefined') render();
     </script>
 </body>

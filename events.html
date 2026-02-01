@@ -3,183 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVENTS</title>
+    <title>GATHERINGS | ARA COMMUNITY</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&family=Gaegu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="event_data.js"></script>
     <style>
-        :root {
-            --soft-cream: #FDFBF7;
-            --sage-green: #8DAA91;
-            --moss-green: #5B7553;
-            --blossom-pink: #F2D5D5;
-            --wood-brown: #6D4C41;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            background-color: var(--soft-cream);
-            background-image: radial-gradient(var(--sage-green) 0.5px, transparent 0.5px);
-            background-size: 40px 40px;
-            color: var(--wood-brown);
-            font-family: 'Quicksand', sans-serif;
-            margin: 0; padding: 0;
-            display: flex; flex-direction: column; align-items: center;
-            overflow-x: hidden;
-        }
-
-        /* --- BOTANICAL NAV --- */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            background: rgba(255, 255, 255, 0.95);
-            border-bottom: 4px solid var(--sage-green);
-            width: 100%;
-            position: sticky; top: 0; z-index: 100;
-        }
-
-        .nav-logo { height: 45px; width: auto; }
-        .nav-links { display: flex; gap: 15px; }
-
-        .nav-item {
-            color: var(--moss-green);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.85rem;
-            padding: 8px 15px;
-            border-radius: 25px;
-            transition: 0.3s;
-        }
-
-        .nav-item:hover, .nav-item.active {
-            background: var(--blossom-pink);
-            color: var(--wood-brown);
-        }
-
-        /* --- CONTAINER --- */
-        .container { max-width: 700px; width: 90%; padding: 40px 0; }
-        
-        h2 { 
-            font-family: 'Gaegu', cursive;
-            color: var(--moss-green); 
-            font-size: 2.5rem; 
-            margin-bottom: 30px; 
-            text-align: center;
-        }
-
-        /* --- EVENT CARD --- */
+        /* Editorial specific tweaks for Events */
         .event-card {
-            background: white;
-            border-radius: 30px;
-            padding: 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border: 2px solid transparent;
-            transition: transform 0.3s ease;
+            background: var(--white-pure);
+            border-radius: 40px 40px 10px 10px;
+            padding: 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 20px 40px rgba(122, 141, 118, 0.08);
+            border: 1px solid rgba(122, 141, 118, 0.1);
+            text-align: left;
+            transition: all 0.5s ease;
         }
-        
-        .event-card:hover { transform: translateY(-5px); }
 
-        .event-card.past { 
-            opacity: 0.7; 
-            filter: grayscale(0.5); 
-            background: #f4f4f4;
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(122, 141, 118, 0.15);
         }
-        
+
         .date-badge {
-            display: inline-block;
-            background: var(--blossom-pink);
-            color: var(--wood-brown);
-            padding: 8px 20px; 
-            font-size: 0.9rem; 
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--matcha-leaf);
+            margin-bottom: 15px;
+            display: block;
             font-weight: 700;
-            border-radius: 20px;
-            margin-bottom: 20px;
         }
 
-        .event-title { 
-            font-family: 'Gaegu', cursive;
-            font-size: 2rem; 
-            color: var(--moss-green); 
-            margin-bottom: 15px; 
-            line-height: 1.2; 
-        }
-        
-        .event-details { 
-            font-size: 0.95rem; 
-            color: #666; 
-            line-height: 1.8; 
+        .event-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-style: italic;
+            color: var(--earth-brown);
             margin-bottom: 20px;
         }
 
         .location-box {
-            background: var(--soft-cream);
-            border-radius: 20px;
-            padding: 20px; 
-            font-size: 0.85rem; 
-            line-height: 2;
-            border: 2px dashed var(--sage-green);
+            margin-top: 30px;
+            padding: 25px;
+            background: var(--bg-silk);
+            border-radius: 15px;
+            font-size: 0.9rem;
+            border-left: 3px solid var(--blush-petal);
         }
-        
-        .btn-map { 
-            color: var(--moss-green); 
-            font-weight: 700;
-            text-decoration: none; 
-            margin-top: 10px; 
+
+        .btn-map {
             display: inline-block;
-            border-bottom: 2px solid var(--blossom-pink);
+            margin-top: 15px;
+            color: var(--matcha-leaf);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 1px solid var(--blush-petal);
+            transition: 0.3s;
         }
 
-        footer {
-            padding: 60px 40px;
-            font-family: 'Gaegu', cursive;
-            font-size: 1.5rem;
-            color: var(--moss-green);
-            text-align: center;
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 600px) {
-            h2 { font-size: 2rem; }
-            .event-title { font-size: 1.6rem; }
-            .date-badge { font-size: 0.8rem; }
-        }
+        .btn-map:hover { color: var(--earth-brown); border-color: var(--matcha-leaf); }
+        
+        .event-card.past { opacity: 0.5; filter: grayscale(0.8); }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html">
-            <img src="logo.png" alt="ARA Logo" class="nav-logo">
-        </a>
         <div class="nav-links">
-            <a href="index.html" class="nav-item">Lobby</a>
-            <a href="events.html" class="nav-item active">Events</a>
+            <a href="index.html" class="nav-item">The Lobby</a>
+            <a href="events.html" class="nav-item active">Gatherings</a>
             <a href="nick_collection.html" class="nav-item">The Garden</a>
         </div>
     </nav>
 
-    <div class="container">
-        <h2>Events</h2>
+    <header class="header">
+        <h1>Gatherings</h1>
+        <div class="stats-container">
+            Join us for a quiet afternoon of strategy and connection.
+        </div>
+    </header>
+
+    <div class="container" style="max-width: 800px; width: 90%; padding-bottom: 100px;">
         <div id="active-list"></div>
 
-        <h2 style="margin-top: 80px; opacity: 0.6;">Past Seasons</h2>
+        <h1 style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: var(--matcha-leaf); margin: 100px 0 40px; text-align: center; opacity: 0.6;">Past Seasons</h1>
         <div id="past-list"></div>
     </div>
 
     <footer>
-        &copy; 2026 Crafted with 🌿 in Ara Damansara
+        Bloom where you are planted. &copy; 2026
     </footer>
 
     <script>
         function renderEvents() {
-            if (typeof eventData === 'undefined') {
-                console.error("event_data.js not found!");
-                return;
-            }
+            if (typeof eventData === 'undefined') return;
 
             const activeContainer = document.getElementById('active-list');
             const pastContainer = document.getElementById('past-list');
@@ -190,13 +109,13 @@
             eventData.activeQuests.forEach(event => {
                 activeContainer.innerHTML += `
                     <div class="event-card">
-                        <div class="date-badge">🗓️ ${event.date}</div>
+                        <span class="date-badge">🗓️ ${event.date}</span>
                         <div class="event-title">${event.title}</div>
-                        <div class="event-details">${event.details}</div>
+                        <div style="font-size: 1.05rem; color: #777;">${event.details}</div>
                         <div class="location-box">
-                            🌱 <b>WHERE:</b> ${event.location}<br>
-                            ⏰ <b>TIME:</b> ${event.time}<br>
-                            <a href="${event.mapUrl}" target="_blank" class="btn-map">View on Map →</a>
+                            <div style="margin-bottom: 8px;">🌿 <b>GARDEN:</b> ${event.location}</div>
+                            <div>⏰ <b>MOMENT:</b> ${event.time}</div>
+                            <a href="${event.mapUrl}" target="_blank" class="btn-map">Directions to the Garden →</a>
                         </div>
                     </div>
                 `;
@@ -205,9 +124,9 @@
             eventData.completedQuests.forEach(event => {
                 pastContainer.innerHTML += `
                     <div class="event-card past">
-                        <div class="date-badge">${event.date}</div>
-                        <div class="event-title">${event.title}</div>
-                        <div class="event-details">${event.details}</div>
+                        <span class="date-badge">${event.date}</span>
+                        <div class="event-title" style="font-size: 1.5rem;">${event.title}</div>
+                        <div style="font-size: 0.9rem;">${event.details}</div>
                     </div>
                 `;
             });
