@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE GARDEN</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&family=Gaegu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="game_data.js?v=1.6"></script>
 </head>
@@ -21,47 +23,71 @@
         <h1>The Garden</h1>
         <div class="stats-container">
             Currently nurturing <span id="stats-display">--</span> games in our garden. <br>
-            <span style="font-size: 0.7rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2px;">
+            <span style="font-size: 0.7rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2px; font-weight: 700;">
                 Tend Date: <span id="date-display">--</span>
             </span>
         </div>
     </header>
 
-    <div class="grid" id="game-grid"></div>
+    <main class="grid" id="game-grid">
+        </main>
 
     <div class="modal" id="zoom-modal" onclick="closeModal()">
-        <img class="modal-content" id="modal-img">
+        <img class="modal-content" id="modal-img" alt="Zoomed Game Cover">
     </div>
 
-     <footer>
-    &copy; 2026 ARA BOARD GAME COMMUNITY
-</footer>
+    <footer>
+        &copy; 2026 ARA BOARD GAME COMMUNITY
+    </footer>
 
     <script>
         const grid = document.getElementById('game-grid');
+        
         function render() {
-            if (typeof collectionData === 'undefined') return;
+            // Safety check for data loading
+            if (typeof collectionData === 'undefined') {
+                console.warn("Collection data not found. Retrying...");
+                return;
+            }
+            
+            // Update stats from JSON
             document.getElementById('stats-display').innerText = collectionData.total;
             document.getElementById('date-display').innerText = collectionData.date;
 
+            // Generate the pebble-shaped grid
             grid.innerHTML = collectionData.games.map((game) => {
                 const imgPath = game.img.replace('.png', '.jpg');
                 return `
-                <div class="card" onclick="openModal('${imgPath}')">
+                <article class="card" onclick="openModal('${imgPath}')">
                     <img src="${imgPath}" alt="${game.name}" loading="lazy">
-                </div>`
+                </article>`
             }).join('');
         }
+
         function openModal(imgSrc) {
-            document.getElementById('modal-img').src = imgSrc;
-            document.getElementById('zoom-modal').classList.add('active');
-            document.body.style.overflow = 'hidden';
+            const modal = document.getElementById('zoom-modal');
+            const modalImg = document.getElementById('modal-img');
+            modalImg.src = imgSrc;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
         }
+
         function closeModal() {
             document.getElementById('zoom-modal').classList.remove('active');
             document.body.style.overflow = '';
         }
-        if (typeof collectionData !== 'undefined') render();
+
+        // Close on Escape key for better UX
+        window.addEventListener('keydown', (e) => { 
+            if (e.key === "Escape") closeModal(); 
+        });
+
+        // Initial Render
+        if (typeof collectionData !== 'undefined') {
+            render();
+        } else {
+            window.addEventListener('load', render);
+        }
     </script>
 </body>
 </html>
