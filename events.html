@@ -106,20 +106,27 @@
             activeContainer.innerHTML = '';
             pastContainer.innerHTML = '';
 
-            eventData.activeQuests.forEach(event => {
-                activeContainer.innerHTML += `
-                    <div class="event-card">
-                        <span class="date-badge">🗓️ ${event.date}</span>
-                        <div class="event-title">${event.title}</div>
-                        <div style="font-size: 1.05rem; color: #777;">${event.details}</div>
-                        <div class="location-box">
-                            <div style="margin-bottom: 8px;">🌿 <b>GARDEN:</b> ${event.location}</div>
-                            <div>⏰ <b>MOMENT:</b> ${event.time}</div>
-                            <a href="${event.mapUrl}" target="_blank" class="btn-map">Directions to the Garden →</a>
-                        </div>
-                    </div>
-                `;
-            });
+          eventData.activeQuests.forEach(event => {
+    activeContainer.innerHTML += `
+        <div class="event-card">
+            <span class="date-badge">🌿 ${event.date}</span>
+            <div class="event-title">${event.title}</div>
+            <div style="font-size: 1.05rem; color: var(--clay-text); font-weight: 300;">${event.details}</div>
+            
+            <div class="location-box">
+                <div style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">📍</span>
+                    <span><b>The Venue:</b> ${event.location}</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">⏳</span>
+                    <span><b>The Moment:</b> ${event.time}</span>
+                </div>
+                <a href="${event.mapUrl}" target="_blank" class="btn-map">Directions to the Venue →</a>
+            </div>
+        </div>
+    `;
+});
 
             eventData.completedQuests.forEach(event => {
                 pastContainer.innerHTML += `
