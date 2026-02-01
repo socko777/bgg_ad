@@ -3,168 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARA BOARD GAME COMMUNITY - STASH</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="game_data.js?v=1.3"></script>
+    <title>THE GARDEN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="game_data.js?v=1.4"></script>
     <style>
         :root {
-            --bg-pixel: #121621;
-            --pixel-gold: #ffcc00;
-            --pixel-blue: #00ccff;
-            --pixel-pink: #ff00ff;
+            --soft-cream: #FDFBF7;
+            --sage-green: #8DAA91;
+            --moss-green: #5B7553;
+            --blossom-pink: #F2D5D5;
+            --wood-brown: #6D4C41;
+            --leaf-accent: #A3C585;
         }
 
-        /* RESET: Essential for removing horizontal scrollbars */
         * { box-sizing: border-box; }
 
         body {
-            background-color: var(--bg-pixel);
-            background-image: linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
-            background-size: 15px 15px;
-            color: white;
-            font-family: 'Press Start 2P', cursive;
+            background-color: var(--soft-cream);
+            background-image: radial-gradient(var(--sage-green) 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+            color: var(--wood-brown);
+            font-family: 'Quicksand', sans-serif;
             margin: 0; padding: 0;
             display: flex; flex-direction: column; align-items: center;
-            image-rendering: pixelated;
             overflow-x: hidden;
-            position: relative;
         }
 
-        /* --- CRT OVERLAY FIX: Pushed to the back --- */
-        body::after {
-            content: " ";
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%);
-            background-size: 100% 4px;
-            pointer-events: none; 
-            z-index: 1; 
-        }
-
-        /* --- HYBRID NAVIGATION --- */
+        /* --- NAVIGATION --- */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
-            background: rgba(0,0,0,0.95);
-            border-bottom: 3px solid var(--pixel-gold);
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 4px solid var(--sage-green);
             width: 100%;
-            position: sticky; top: 0; 
-            z-index: 100;
+            position: sticky; top: 0; z-index: 100;
         }
 
-        .nav-logo {
-            height: 35px; width: auto;
-            image-rendering: pixelated;
-        }
+        .nav-logo { height: 45px; width: auto; }
 
-        .nav-links { display: flex; gap: 10px; }
+        .nav-links { display: flex; gap: 15px; }
 
         .nav-item {
-            color: var(--pixel-blue);
+            color: var(--moss-green);
             text-decoration: none;
-            font-size: 0.5rem;
-            padding: 8px 10px;
-            border: 2px solid transparent;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 8px 15px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
         }
 
         .nav-item:hover, .nav-item.active {
-            border: 2px solid var(--pixel-gold);
-            color: var(--pixel-gold);
-            background: rgba(255, 204, 0, 0.1);
+            background: var(--blossom-pink);
+            color: var(--wood-brown);
         }
 
-        /* --- HEADER & GRID --- */
-        .header, .grid, footer {
-            position: relative; 
-            z-index: 10;
-        }
-
+        /* --- HEADER --- */
         .header {
             text-align: center;
-            padding: 30px 10px 15px;
+            padding: 50px 20px 30px;
         }
 
         .header h1 {
-            font-size: 1.1rem;
-            color: var(--pixel-gold);
-            text-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+            font-family: 'Gaegu', cursive;
+            font-size: 3.2rem;
+            color: var(--moss-green);
             margin: 0;
         }
 
-        .stats-row {
+        .stats-container {
             margin-top: 15px;
-            font-size: 0.45rem;
-            color: var(--pixel-pink);
-            line-height: 1.8;
-        }
-
-        .bgg-link {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 30px;
             display: inline-block;
-            margin: 15px 0;
-            color: black;
-            text-decoration: none;
-            font-size: 0.5rem;
-            background: var(--pixel-blue);
-            padding: 10px 15px;
-            box-shadow: 3px 3px 0 0 #006680;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border: 2px solid var(--blossom-pink);
         }
 
-        /* --- ULTRA-COMPACT GRID --- */
+        .stats-row {
+            font-size: 0.9rem;
+            color: var(--wood-brown);
+            font-weight: 700;
+            margin: 5px 0;
+        }
+
+        .last-updated {
+            font-size: 0.75rem;
+            color: var(--sage-green);
+            font-style: italic;
+        }
+
+        /* --- COZY GRID --- */
         .grid {
             display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 8px;
-            max-width: 2800px;
-            width: 98%;
-            padding: 10px 10px 30px; /* Reduced bottom padding since footer is now here */
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 25px;
+            width: 92%;
+            max-width: 1400px;
+            padding: 40px 20px 80px;
         }
 
         .card {
+            background: white;
+            padding: 12px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: zoom-in;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.02);
         }
 
-        .card.visible { opacity: 1; transform: translateY(0); }
+        .card:hover {
+            transform: scale(1.08) rotate(1.5deg);
+            box-shadow: 0 15px 30px rgba(107, 142, 35, 0.1);
+        }
 
         .card img {
             width: 100%;
-            height: auto;
+            border-radius: 12px;
             display: block;
-            border: 2px solid rgba(255,255,255,0.1);
-            background-color: #000;
-        }
-
-        .card:hover { z-index: 20; }
-        .card:hover img {
-            border: 2px solid var(--pixel-gold);
-            filter: brightness(1.1);
         }
 
         /* --- MODAL --- */
         .modal {
             display: none; position: fixed; z-index: 1000;
             left: 0; top: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.95);
+            background: rgba(91, 117, 83, 0.85); /* Moss green overlay */
             justify-content: center; align-items: center;
+            backdrop-filter: blur(5px);
         }
         .modal.active { display: flex; }
-        .modal-content { max-width: 90%; max-height: 90%; border: 4px solid white; }
+        .modal-content { 
+            max-width: 85%; 
+            max-height: 85%; 
+            border-radius: 25px; 
+            border: 10px solid white;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
 
-        /* Responsive Breakpoints */
-        @media (max-width: 2200px) { .grid { grid-template-columns: repeat(10, 1fr); } }
-        @media (max-width: 1600px) { .grid { grid-template-columns: repeat(8, 1fr); } }
-        @media (max-width: 1100px) { .grid { grid-template-columns: repeat(6, 1fr); } }
-        @media (max-width: 700px) { .grid { grid-template-columns: repeat(4, 1fr); } }
-        @media (max-width: 480px) { 
-            .grid { grid-template-columns: repeat(2, 1fr); }
-            .nav-logo { height: 25px; }
-            .header h1 { font-size: 0.85rem; }
-            .nav-item { font-size: 0.4rem; padding: 6px 8px; }
+        footer {
+            padding: 60px 40px;
+            font-family: 'Gaegu', cursive;
+            font-size: 1.6rem;
+            color: var(--moss-green);
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2.2rem; }
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+            .nav-item { font-size: 0.75rem; padding: 6px 10px; }
+            .stats-container { padding: 10px 20px; }
         }
     </style>
 </head>
@@ -175,19 +169,22 @@
             <img src="logo.png" alt="ARA Logo" class="nav-logo">
         </a>
         <div class="nav-links">
-            <a href="index.html" class="nav-item">LOBBY</a>
-            <a href="events.html" class="nav-item">EVENTS</a>
-            <a href="nick_collection.html" class="nav-item active">STASH</a>
+            <a href="index.html" class="nav-item">Lobby</a>
+            <a href="events.html" class="nav-item">Events</a>
+            <a href="nick_collection.html" class="nav-item active">The Garden</a>
         </div>
     </nav>
 
     <header class="header">
-        <h1>ARA BOARD GAME STASH</h1>
-        <div class="stats-row">
-            [ ITEMS: <span id="stats-display">--</span> ]<br>
-            [ UPDATED: <span id="date-display">--</span> ]
+        <h1>The Garden</h1>
+        <div class="stats-container">
+            <div class="stats-row">
+                🌱 <span id="stats-display">--</span> games growing in our garden
+            </div>
+            <div class="last-updated">
+                🌿 Last updated: <span id="date-display">--</span>
+            </div>
         </div>
-        <a href="https://boardgamegeek.com/collection/user/socko777" target="_blank" class="bgg-link">OFFICIAL BGG</a>
     </header>
 
     <div class="grid" id="game-grid"></div>
@@ -196,47 +193,41 @@
         <img class="modal-content" id="modal-img">
     </div>
 
-    <footer style="padding: 60px 40px 40px; font-size: 0.4rem; color: #555; text-align: center; width: 100%;">
-        &copy; 2026 ARA BOARD GAME COMMUNITY
+    <footer>
+        &copy; 2026 Crafted with 🌿 in Ara Damansara
     </footer>
 
     <script>
         const grid = document.getElementById('game-grid');
         const stats = document.getElementById('stats-display');
-        const dateLine = document.getElementById('date-display');
-        const modal = document.getElementById('zoom-modal');
-        const modalImg = document.getElementById('modal-img');
+        const dateDisplay = document.getElementById('date-display');
 
         function render() {
             if (typeof collectionData === 'undefined') {
-                console.error("game_data.js not found!");
+                console.error("Data script not loaded correctly.");
                 return;
             }
             
             stats.innerText = collectionData.total;
-            dateLine.innerText = collectionData.date;
+            dateDisplay.innerText = collectionData.date;
 
-            grid.innerHTML = collectionData.games.map((game, index) => {
+            grid.innerHTML = collectionData.games.map((game) => {
                 const imgPath = game.img.replace('.png', '.jpg');
                 return `
-                <div class="card" onclick="openModal('${imgPath}')" style="transition-delay: ${index * 0.005}s">
+                <div class="card" onclick="openModal('${imgPath}')">
                     <img src="${imgPath}" alt="${game.name}" loading="lazy">
                 </div>
             `}).join('');
-
-            setTimeout(() => {
-                document.querySelectorAll('.card').forEach(card => card.classList.add('visible'));
-            }, 50);
         }
 
         function openModal(imgSrc) {
-            modalImg.src = imgSrc;
-            modal.classList.add('active');
+            document.getElementById('modal-img').src = imgSrc;
+            document.getElementById('zoom-modal').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
-            modal.classList.remove('active');
+            document.getElementById('zoom-modal').classList.remove('active');
             document.body.style.overflow = '';
         }
 

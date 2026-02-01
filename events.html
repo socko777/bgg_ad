@@ -3,148 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARA BOARD GAME COMMUNITY - EVENTS</title>
+    <title>EVENTS</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
     <script src="event_data.js"></script>
     <style>
         :root {
-            --bg-pixel: #121621;
-            --pixel-gold: #ffcc00;
-            --pixel-blue: #00ccff;
-            --pixel-pink: #ff00ff;
+            --soft-cream: #FDFBF7;
+            --sage-green: #8DAA91;
+            --moss-green: #5B7553;
+            --blossom-pink: #F2D5D5;
+            --wood-brown: #6D4C41;
         }
 
-        /* Border-box fix for consistent sizing */
         * { box-sizing: border-box; }
 
         body {
-            background-color: var(--bg-pixel);
-            background-image: linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
-            background-size: 15px 15px;
-            color: white;
-            font-family: 'Press Start 2P', cursive;
+            background-color: var(--soft-cream);
+            background-image: radial-gradient(var(--sage-green) 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+            color: var(--wood-brown);
+            font-family: 'Quicksand', sans-serif;
             margin: 0; padding: 0;
             display: flex; flex-direction: column; align-items: center;
-            image-rendering: pixelated;
             overflow-x: hidden;
         }
 
-        /* --- HYBRID NAVIGATION --- */
+        /* --- BOTANICAL NAV --- */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
-            background: rgba(0,0,0,0.9);
-            border-bottom: 3px solid var(--pixel-gold);
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 4px solid var(--sage-green);
             width: 100%;
             position: sticky; top: 0; z-index: 100;
         }
 
-        .nav-logo {
-            height: 35px;
-            width: auto;
-            image-rendering: pixelated;
-        }
-
-        .nav-links { display: flex; gap: 10px; }
+        .nav-logo { height: 45px; width: auto; }
+        .nav-links { display: flex; gap: 15px; }
 
         .nav-item {
-            color: var(--pixel-blue);
+            color: var(--moss-green);
             text-decoration: none;
-            font-size: 0.5rem;
-            padding: 8px 10px;
-            border: 2px solid transparent;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 8px 15px;
+            border-radius: 25px;
+            transition: 0.3s;
         }
 
         .nav-item:hover, .nav-item.active {
-            border: 2px solid var(--pixel-gold);
-            color: var(--pixel-gold);
-            background: rgba(255, 204, 0, 0.1);
+            background: var(--blossom-pink);
+            color: var(--wood-brown);
         }
 
-        /* --- CONTENT CONTAINER --- */
-        .container { max-width: 800px; width: 90%; padding: 40px 0; }
+        /* --- CONTAINER --- */
+        .container { max-width: 700px; width: 90%; padding: 40px 0; }
         
         h2 { 
-            color: var(--pixel-gold); 
-            font-size: 1rem; 
+            font-family: 'Gaegu', cursive;
+            color: var(--moss-green); 
+            font-size: 2.5rem; 
             margin-bottom: 30px; 
             text-align: center;
-            text-shadow: 3px 3px 0px rgba(0,0,0,0.5);
         }
 
         /* --- EVENT CARD --- */
         .event-card {
-            background: #1a2030;
-            border: 4px solid white;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 8px 8px 0px var(--pixel-blue);
+            background: white;
+            border-radius: 30px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 2px solid transparent;
+            transition: transform 0.3s ease;
         }
         
+        .event-card:hover { transform: translateY(-5px); }
+
         .event-card.past { 
-            opacity: 0.6; 
-            filter: grayscale(1); 
-            box-shadow: 8px 8px 0px #444; 
+            opacity: 0.7; 
+            filter: grayscale(0.5); 
+            background: #f4f4f4;
         }
         
         .date-badge {
             display: inline-block;
-            background: var(--pixel-pink);
-            padding: 8px; 
-            font-size: 0.45rem; 
-            margin-bottom: 15px;
-            box-shadow: 3px 3px 0px #800080;
+            background: var(--blossom-pink);
+            color: var(--wood-brown);
+            padding: 8px 20px; 
+            font-size: 0.9rem; 
+            font-weight: 700;
+            border-radius: 20px;
+            margin-bottom: 20px;
         }
 
         .event-title { 
-            font-size: 0.75rem; 
-            color: var(--pixel-gold); 
+            font-family: 'Gaegu', cursive;
+            font-size: 2rem; 
+            color: var(--moss-green); 
             margin-bottom: 15px; 
-            line-height: 1.6; 
+            line-height: 1.2; 
         }
         
         .event-details { 
-            font-size: 0.6rem; 
-            color: #ccc; 
+            font-size: 0.95rem; 
+            color: #666; 
             line-height: 1.8; 
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .location-box {
-            border: 2px dashed var(--pixel-blue);
-            padding: 15px; 
-            font-size: 0.45rem; 
+            background: var(--soft-cream);
+            border-radius: 20px;
+            padding: 20px; 
+            font-size: 0.85rem; 
             line-height: 2;
-            background: rgba(0, 204, 255, 0.05);
+            border: 2px dashed var(--sage-green);
         }
         
         .btn-map { 
-            color: var(--pixel-blue); 
-            text-decoration: underline; 
+            color: var(--moss-green); 
+            font-weight: 700;
+            text-decoration: none; 
             margin-top: 10px; 
-            display: block; 
+            display: inline-block;
+            border-bottom: 2px solid var(--blossom-pink);
         }
 
-        /* --- CRT OVERLAY --- */
-        body::after {
-            content: " ";
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%);
-            background-size: 100% 4px;
-            pointer-events: none; z-index: 200;
+        footer {
+            padding: 60px 40px;
+            font-family: 'Gaegu', cursive;
+            font-size: 1.5rem;
+            color: var(--moss-green);
+            text-align: center;
         }
 
-        /* Mobile Breakpoints */
+        /* Mobile Adjustments */
         @media (max-width: 600px) {
-            nav { padding: 10px; }
-            .nav-logo { height: 25px; }
-            .nav-item { font-size: 0.4rem; padding: 6px 8px; }
-            .event-title { font-size: 0.65rem; }
-            .container { padding: 20px 0; }
+            h2 { font-size: 2rem; }
+            .event-title { font-size: 1.6rem; }
+            .date-badge { font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -155,22 +156,22 @@
             <img src="logo.png" alt="ARA Logo" class="nav-logo">
         </a>
         <div class="nav-links">
-            <a href="index.html" class="nav-item">LOBBY</a>
-            <a href="events.html" class="nav-item active">EVENTS</a>
-            <a href="nick_collection.html" class="nav-item">STASH</a>
+            <a href="index.html" class="nav-item">Lobby</a>
+            <a href="events.html" class="nav-item active">Events</a>
+            <a href="nick_collection.html" class="nav-item">The Garden</a>
         </div>
     </nav>
 
     <div class="container">
-        <h2>ACTIVE QUESTS</h2>
+        <h2>Events</h2>
         <div id="active-list"></div>
 
-        <h2 style="margin-top: 60px; opacity: 0.7;">COMPLETED QUESTS</h2>
+        <h2 style="margin-top: 80px; opacity: 0.6;">Past Seasons</h2>
         <div id="past-list"></div>
     </div>
 
-    <footer style="padding: 40px; font-size: 0.4rem; color: #555; text-align: center;">
-        © 2026 ARA BOARD GAME COMMUNITY
+    <footer>
+        &copy; 2026 Crafted with 🌿 in Ara Damansara
     </footer>
 
     <script>
@@ -183,20 +184,19 @@
             const activeContainer = document.getElementById('active-list');
             const pastContainer = document.getElementById('past-list');
 
-            // Clear containers
             activeContainer.innerHTML = '';
             pastContainer.innerHTML = '';
 
             eventData.activeQuests.forEach(event => {
                 activeContainer.innerHTML += `
                     <div class="event-card">
-                        <div class="date-badge">${event.date}</div>
+                        <div class="date-badge">🗓️ ${event.date}</div>
                         <div class="event-title">${event.title}</div>
                         <div class="event-details">${event.details}</div>
                         <div class="location-box">
-                            📍 LOCATION: ${event.location}<br>
-                            ⏰ TIME: ${event.time}<br>
-                            <a href="${event.mapUrl}" target="_blank" class="btn-map">[ OPEN MAP ]</a>
+                            🌱 <b>WHERE:</b> ${event.location}<br>
+                            ⏰ <b>TIME:</b> ${event.time}<br>
+                            <a href="${event.mapUrl}" target="_blank" class="btn-map">View on Map →</a>
                         </div>
                     </div>
                 `;

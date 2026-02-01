@@ -3,130 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARA BOARD GAME COMMUNITY - THE LOBBY</title>
+    <title>LOBBY</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-pixel: #121621;
-            --pixel-gold: #ffcc00;
-            --pixel-blue: #00ccff;
-            --pixel-pink: #ff00ff;
-            --pixel-fb: #1877F2; /* Facebook Brand Color */
+            --soft-cream: #FDFBF7;
+            --sage-green: #8DAA91;
+            --moss-green: #5B7553;
+            --blossom-pink: #F2D5D5;
+            --wood-brown: #6D4C41;
+            --wa-green: #25D366;
+            --fb-blue: #1877F2;
+            --ig-pink: #E1306C;
         }
 
         * { box-sizing: border-box; }
 
         body {
-            background-color: var(--bg-pixel);
-            background-image: linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
-            background-size: 15px 15px;
-            color: white;
-            font-family: 'Press Start 2P', cursive;
+            background-color: var(--soft-cream);
+            /* Soft leaf-style grid pattern */
+            background-image: radial-gradient(var(--sage-green) 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+            color: var(--wood-brown);
+            font-family: 'Quicksand', sans-serif;
             margin: 0; padding: 0;
             display: flex; flex-direction: column; align-items: center;
-            image-rendering: pixelated;
             overflow-x: hidden;
         }
 
-        /* --- GLOBAL NAVIGATION --- */
+        /* --- BOTANICAL NAVIGATION --- */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
-            background: rgba(0,0,0,0.9);
-            border-bottom: 3px solid var(--pixel-gold);
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 4px solid var(--sage-green);
             width: 100%;
             position: sticky; top: 0; z-index: 100;
         }
 
         .nav-logo {
-            height: 35px;
+            height: 45px;
             width: auto;
-            image-rendering: pixelated;
+            transition: transform 0.3s ease;
         }
 
-        .nav-links { display: flex; gap: 10px; }
+        .nav-logo:hover { transform: scale(1.1) rotate(-5deg); }
+
+        .nav-links { display: flex; gap: 15px; }
 
         .nav-item {
-            color: var(--pixel-blue);
+            color: var(--moss-green);
             text-decoration: none;
-            font-size: 0.5rem;
-            padding: 8px 10px;
-            border: 2px solid transparent;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 8px 18px;
+            border-radius: 25px;
+            transition: 0.3s;
         }
 
         .nav-item:hover, .nav-item.active {
-            border: 2px solid var(--pixel-gold);
-            color: var(--pixel-gold);
-            background: rgba(255, 204, 0, 0.1);
+            background: var(--blossom-pink);
+            color: var(--wood-brown);
         }
 
-        /* --- HEADER & LOGO --- */
-        .hero { text-align: center; padding: 50px 20px; }
+        /* --- HERO SECTION --- */
+        .hero { 
+            text-align: center; 
+            padding: 60px 20px; 
+        }
+
         .main-logo {
-            width: 160px; height: auto; margin-bottom: 25px;
-            image-rendering: pixelated; 
-            filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.5));
+            width: 180px; 
+            height: auto; 
+            margin-bottom: 30px;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
         }
 
         .hero h1 {
-            font-size: 1.4rem; color: var(--pixel-gold);
-            text-shadow: 4px 4px 0px #806600; margin: 0;
-            line-height: 1.6;
+            font-family: 'Gaegu', cursive;
+            font-size: 3.5rem; 
+            color: var(--moss-green);
+            margin: 0;
+            line-height: 1.2;
         }
 
-        /* --- ANNOUNCEMENTS --- */
+        /* --- ANNOUNCEMENT BOX --- */
         .announcement-box {
-            max-width: 700px; width: 90%; background: #1a2030;
-            border: 4px solid white; padding: 30px;
-            box-shadow: 10px 10px 0px var(--pixel-pink);
-            margin-bottom: 50px;
+            max-width: 750px; 
+            width: 90%; 
+            background: white;
+            border-radius: 40px; 
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            border: 2px solid var(--blossom-pink);
+            text-align: center;
         }
 
         .announcement-box h2 {
-            color: var(--pixel-pink); font-size: 0.8rem;
-            margin-top: 0; text-decoration: underline;
-            margin-bottom: 20px;
+            font-family: 'Gaegu', cursive;
+            color: var(--moss-green); 
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 25px;
         }
 
-        .announcement-box p { font-size: 0.65rem; line-height: 2; color: #eee; }
+        .announcement-box p { 
+            font-size: 1.1rem; 
+            line-height: 1.8; 
+            color: var(--wood-brown); 
+        }
+
+        .objective-text {
+            margin-top: 20px;
+            font-weight: 700;
+            color: var(--moss-green);
+            display: inline-block;
+            background: var(--soft-cream);
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
 
         /* --- SOCIAL LINKS --- */
         .social-grid {
-            display: flex; gap: 15px; margin-top: 30px;
-            flex-wrap: wrap; justify-content: center;
+            display: flex; 
+            gap: 15px; 
+            margin-top: 40px;
+            flex-wrap: wrap; 
+            justify-content: center;
         }
 
         .social-btn {
-            padding: 12px 20px; text-decoration: none;
-            font-size: 0.5rem; color: black;
-            background: var(--pixel-blue);
-            box-shadow: 4px 4px 0px #006680;
+            padding: 14px 25px; 
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem; 
+            color: white;
+            border-radius: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        /* Brand Colors for Buttons */
-        .social-btn.wa { background: #25D366; box-shadow: 4px 4px 0px #128C7E; }
-        .social-btn.ig { background: #E1306C; box-shadow: 4px 4px 0px #833AB4; }
-        .social-btn.fb { background: var(--pixel-fb); box-shadow: 4px 4px 0px #0D47A1; color: white; }
+        .social-btn.wa { background: var(--wa-green); box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
+        .social-btn.ig { background: var(--ig-pink); box-shadow: 0 4px 10px rgba(225, 48, 108, 0.3); }
+        .social-btn.fb { background: var(--fb-blue); box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }
 
-        .social-btn:active { transform: translate(2px, 2px); box-shadow: none; }
-
-        /* --- CRT OVERLAY --- */
-        body::after {
-            content: " ";
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%);
-            background-size: 100% 4px;
-            pointer-events: none; z-index: 200;
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
         }
 
+        footer {
+            padding: 60px 40px; 
+            font-family: 'Gaegu', cursive;
+            font-size: 1.8rem; 
+            color: var(--moss-green); 
+            text-align: center;
+        }
+
+        /* Mobile Breakpoints */
         @media (max-width: 600px) {
-            .nav-logo { height: 25px; }
-            .hero h1 { font-size: 1.1rem; }
-            .social-btn { width: 100%; text-align: center; } /* Stack on mobile */
+            .hero h1 { font-size: 2.5rem; }
+            .nav-logo { height: 35px; }
+            .social-btn { width: 100%; justify-content: center; }
+            .announcement-box { padding: 30px 20px; }
         }
     </style>
 </head>
@@ -134,12 +179,12 @@
 
     <nav>
         <a href="index.html">
-            <img src="logo.png" alt="ARA" class="nav-logo">
+            <img src="logo.png" alt="ARA Logo" class="nav-logo">
         </a>
         <div class="nav-links">
-            <a href="index.html" class="nav-item active">LOBBY</a>
-            <a href="events.html" class="nav-item">EVENTS</a>
-            <a href="nick_collection.html" class="nav-item">STASH</a>
+            <a href="index.html" class="nav-item active">Lobby</a>
+            <a href="events.html" class="nav-item">Events</a>
+            <a href="nick_collection.html" class="nav-item">The Garden</a>
         </div>
     </nav>
 
@@ -149,14 +194,14 @@
     </header>
 
     <div class="announcement-box">
-       <h2>MISSION BRIEFING</h2>
-    <p>
-        Ara Board Game Community is a collective of tabletop enthusiasts based in Petaling Jaya and Ara Damansara. 
-        Whether you're a veteran strategist or a first-time player, our table is open to you.
-    </p>
-    <p style="margin-top: 10px; color: var(--pixel-gold);">
-        CURRENT OBJECTIVE: Check the [EVENTS] log for our next sessions!
-    </p>
+        <h2>MISSION BRIEFING</h2>
+        <p>
+            Ara Board Game Community is a collective of tabletop enthusiasts based in Petaling Jaya and Ara Damansara. 
+            Whether you're a veteran strategist or a first-time player, our table is open to you.
+        </p>
+        <div class="objective-text">
+            🌿 CURRENT OBJECTIVE: Check the [EVENTS] log for our next sessions!
+        </div>
 
         <div class="social-grid">
             <a href="https://chat.whatsapp.com/BsecSwgLlg44miZgbyW61b" target="_blank" class="social-btn wa">WHATSAPP</a>
@@ -165,8 +210,8 @@
         </div>
     </div>
 
-    <footer style="padding: 40px; font-size: 0.4rem; color: #555; text-align: center;">
-        &copy; 2026 ARA BOARD GAME COMMUNITY
+    <footer>
+        &copy; 2026 Crafted with 🌿 in Ara Damansara
     </footer>
 
 </body>
