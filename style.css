@@ -146,18 +146,6 @@ nav {
     display: block;
 }
 
-/* --- FOOTER --- */
-footer {
-    padding: 100px 20px; 
-    width: 100%; 
-    text-align: center;
-    background: var(--matcha-leaf); 
-    color: var(--bg-silk);
-    font-family: 'Gaegu', cursive; 
-    font-size: 1.8rem;
-    letter-spacing: 2px;
-}
-
 /* --- MODAL --- */
 .modal {
     display: none; 
@@ -178,6 +166,21 @@ footer {
     border-radius: 20px;
     box-shadow: 0 40px 100px rgba(93, 84, 77, 0.2);
     border: 10px solid var(--white-pure);
+}
+
+/* --- CLEAN STANDARD FOOTER --- */
+footer {
+    padding: 80px 20px;
+    width: 100%;
+    text-align: center;
+    color: var(--clay-text);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    border-top: 1px solid rgba(122, 141, 118, 0.1);
+    margin-top: 40px;
 }
 
 /* --- MOBILE OPTIMIZATION (COMPACT 3-COLUMN) --- */

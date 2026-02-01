@@ -3,17 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE LOBBY | ARA COMMUNITY</title>
+    <title>THE LOBBY</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&family=Gaegu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Lobby Specific Polishing */
-        .hero h1 {
-            letter-spacing: -1px;
-            max-width: 800px;
+        /* --- Lobby Hero & Logo Scaling --- */
+        .header {
+            text-align: center;
+            padding: 60px 20px 40px;
         }
 
+        .main-logo-container {
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            animation: bloomIn 1.2s ease-out;
+        }
+
+        .main-logo-container img {
+            width: 280px; /* Large, high-end centerpiece */
+            height: auto;
+            filter: drop-shadow(0 15px 30px rgba(122, 141, 118, 0.15));
+        }
+
+        .main-logo-container:hover {
+            transform: scale(1.05) rotate(1deg);
+        }
+
+        @keyframes bloomIn {
+            from { opacity: 0; transform: scale(0.9) translateY(10px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
+            font-style: italic;
+            color: var(--matcha-leaf);
+            margin: 10px auto 0;
+            letter-spacing: -1px;
+            max-width: 850px;
+            line-height: 1.1;
+        }
+
+        /* --- Announcement Pebble --- */
         .announcement-box {
             background: var(--white-pure);
             border-radius: 40px 40px 10px 10px;
@@ -22,7 +56,8 @@
             border: 1px solid rgba(122, 141, 118, 0.1);
             max-width: 800px;
             width: 90%;
-            margin-top: -20px;
+            margin: 40px auto;
+            text-align: center;
         }
 
         .objective-badge {
@@ -37,51 +72,72 @@
             border: 1px solid var(--blush-petal);
         }
 
-        /* Values Section */
+        /* --- Values Section --- */
         .values-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
             width: 90%;
-            max-width: 1000px;
-            margin: 60px 0 100px;
+            max-width: 1100px;
+            margin: 60px auto 120px;
         }
 
         .value-card {
             text-align: center;
-            padding: 30px;
+            padding: 20px;
         }
 
         .value-card h3 {
             font-family: 'Playfair Display', serif;
             font-style: italic;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: var(--matcha-leaf);
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .value-card p {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: var(--clay-text);
             font-weight: 300;
+            line-height: 1.8;
         }
 
-        /* Branding Socials */
+        /* --- Refined Boutique Socials --- */
+        .social-grid {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
         .social-btn {
             border-radius: 40px;
-            padding: 15px 30px;
+            padding: 15px 35px;
             font-size: 0.8rem;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             color: white;
             text-decoration: none;
             font-weight: 700;
             transition: all 0.4s ease;
+            text-transform: uppercase;
         }
-        .social-btn.wa { background: #7A8D76; } /* Matching Matcha theme instead of bright green */
-        .social-btn.ig { background: #D4AF37; } /* Soft Gold */
-        .social-btn.fb { background: #5D544D; } /* Clay Brown */
 
-        .social-btn:hover { transform: translateY(-3px); opacity: 0.9; }
+        /* Custom Palette Socials */
+        .social-btn.wa { background: var(--matcha-leaf); }
+        .social-btn.ig { background: var(--gold-leaf); }
+        .social-btn.fb { background: var(--clay-text); }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            .main-logo-container img { width: 220px; }
+            .announcement-box { padding: 40px 20px; }
+        }
     </style>
 </head>
 <body>
@@ -95,26 +151,28 @@
     </nav>
 
     <header class="header">
-        <img src="logo.png" alt="ARA Logo" style="width: 120px; margin-bottom: 20px; opacity: 0.8;">
-        <h1>A BG Community for Connection</h1>
+        <div class="main-logo-container">
+            <img src="logo3.png" alt="ARA Logo">
+        </div>
+        <h1 class="hero-title">A BG Table Set for Connection</h1>
         <div class="stats-container">
-            Based in Petaling Jaya & Ara Damansara.
+            Gathering in the heart of Petaling Jaya
         </div>
     </header>
 
     <div class="announcement-box">
-        <h2 style="font-family: 'Playfair Display', serif; font-style: italic; color: var(--matcha-leaf); font-size: 2.5rem; margin-bottom: 20px;">Mission Briefing</h2>
-        <p>
+        <h2 style="font-family: 'Playfair Display', serif; font-style: italic; color: var(--matcha-leaf); font-size: 2.8rem; margin-bottom: 25px;">Mission Briefing</h2>
+        <p style="font-size: 1.1rem; font-weight: 300;">
             Ara Board Game Community is more than just a place to play—it's a sanctuary for enthusiasts. 
             Whether you're a seasoned strategist or holding your first deck, we've kept a seat warm for you. 
             We believe the best games are the ones played in good company.
         </p>
         
         <div class="objective-badge">
-            🌿 CURRENT OBJECTIVE: Visit the Gatherings page for our next session.
+            🌿 CURRENT OBJECTIVE: Join us at our next gathering.
         </div>
 
-        <div class="social-grid" style="display: flex; gap: 15px; justify-content: center; margin-top: 40px; flex-wrap: wrap;">
+        <div class="social-grid">
             <a href="https://chat.whatsapp.com/BsecSwgLlg44miZgbyW61b" target="_blank" class="social-btn wa">WHATSAPP</a>
             <a href="https://www.instagram.com/bgg_ad" target="_blank" class="social-btn ig">INSTAGRAM</a>
             <a href="https://www.facebook.com/aradamansarabgc" target="_blank" class="social-btn fb">FACEBOOK</a>
@@ -124,21 +182,21 @@
     <div class="values-grid">
         <div class="value-card">
             <h3>Inclusive Spirits</h3>
-            <p>Our community is intentionally designed to be a safe, welcoming space for all players and newcomers alike.</p>
+            <p>A thoughtfully curated, welcoming space designed for all players, with a special focus on making newcomers feel at home.</p>
         </div>
         <div class="value-card">
             <h3>Mindful Play</h3>
-            <p>From heavy euros to cozy nature games, we focus on the joy of learning and the art of the table.</p>
+            <p>From deep strategy to cozy nature games, we value the joy of discovery over the heat of competition.</p>
         </div>
         <div class="value-card">
             <h3>Local Roots</h3>
-            <p>We're proud to grow the tabletop culture right here in the heart of Petaling Jaya.</p>
+            <p>Growing the tabletop garden and fostering friendships right here in our local Petaling Jaya neighborhood.</p>
         </div>
     </div>
 
-    <footer>
-        Bloom where you are planted. &copy; 2026
-    </footer>
+   <footer>
+    &copy; 2026 ARA BOARD GAME COMMUNITY
+</footer>
 
 </body>
 </html>
