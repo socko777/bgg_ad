@@ -2,15 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&family=Gaegu&display=swap');
 
 :root {
-    --bg-silk: #FDF9F3;       /* Silk-paper background */
-    --matcha-leaf: #7A8D76;   /* Premium botanical green */
-    --blush-petal: #F5E6E0;   /* Softest rose accent */
-    --clay-text: #5D544D;     /* Warm earth tones for text */
-    --gold-leaf: #D4AF37;     /* Elegant highlight */
+    --bg-silk: #FDF9F3;
+    --matcha-leaf: #7A8D76;
+    --clay-text: #5D544D;
+    --gold-leaf: #D4AF37;
     --white-pure: #FFFFFF;
 }
 
-/* --- BASE STYLES & GLOBAL CENTERING --- */
+/* --- RESET & MOBILE SAFETY --- */
 * { 
     box-sizing: border-box; 
     margin: 0; 
@@ -23,173 +22,124 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/paper.png");
     color: var(--clay-text);
     font-family: 'Quicksand', sans-serif;
-    line-height: 1.6;
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Essential for horizontal centering */
-    overflow-x: hidden;
-    min-height: 100vh;
-    animation: fadeIn 1.2s ease-in;
+    align-items: center;
+    /* This stops the "shaking" or side-scrolling on mobile */
+    overflow-x: hidden; 
+    width: 100%;
 }
 
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-/* --- CENTERED STICKY NAVIGATION --- */
+/* --- ADAPTIVE NAVIGATION --- */
 nav {
-    display: flex; 
-    justify-content: center; /* Centers the menu links */
-    align-items: center;
-    padding: 20px 50px; 
-    background: rgba(253, 249, 243, 0.95);
-    backdrop-filter: blur(15px); 
     width: 100%;
-    position: sticky; 
-    top: 0; 
+    background: rgba(253, 249, 243, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
     z-index: 1000;
+    padding: 15px 10px;
     border-bottom: 1px solid rgba(122, 141, 118, 0.1);
 }
 
-.nav-links { display: flex; gap: 40px; }
+.nav-links {
+    display: flex;
+    justify-content: center;
+    /* Space scales: smaller on phone, larger on desktop */
+    gap: clamp(12px, 4vw, 40px); 
+    flex-wrap: wrap; /* Allows links to stack on tiny screens */
+}
 
 .nav-item {
-    color: var(--clay-text); 
+    color: var(--clay-text);
     text-decoration: none;
-    font-size: 0.85rem; 
-    font-weight: 500; 
-    letter-spacing: 2px;
-    text-transform: uppercase; 
-    transition: 0.4s ease;
-    position: relative;
+    font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    white-space: nowrap; /* Prevents single links from breaking into two lines */
 }
 
-.nav-item::after {
-    content: '';
-    position: absolute;
-    width: 0; height: 1px;
-    bottom: -5px; left: 0;
-    background-color: var(--gold-leaf);
-    transition: width 0.3s;
-}
+.nav-item.active { color: var(--matcha-leaf); font-weight: 700; }
 
-.nav-item:hover, .nav-item.active { color: var(--matcha-leaf); }
-.nav-item:hover::after, .nav-item.active::after { width: 100%; }
-
-/* --- CENTERED EDITORIAL HEADER --- */
-.header { 
+/* --- RESPONSIVE HEADER --- */
+.header {
     width: 100%;
+    padding: 30px 15px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Centers logo and text blocks */
-    text-align: center; 
-    padding: 40px 20px 20px; 
+    align-items: center;
 }
 
-.header h1 {
+.main-logo-container img {
+    /* Logo shrinks to 140px on small phones */
+    width: clamp(140px, 45vw, 260px); 
+    height: auto;
+    margin-bottom: 15px;
+    max-width: 90%;
+}
+
+.hero-title, .header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 8vw, 4.8rem); 
+    /* Font scales: 2rem on mobile to 4.5rem on desktop */
+    font-size: clamp(2rem, 9vw, 4.5rem); 
     font-style: italic;
-    color: var(--matcha-leaf); 
-    margin: 0; 
-    font-weight: 400;
+    color: var(--matcha-leaf);
     line-height: 1.1;
+    max-width: 95%;
 }
 
-.stats-container {
-    margin-top: 10px; 
-    font-weight: 300; 
-    font-size: 1.1rem; 
-    letter-spacing: 0.5px;
-}
-
-/* --- CENTERED PEBBLE GRID --- */
+/* --- THE PEBBLE GRID (MEADOW VIEW) --- */
 .grid {
-    display: grid; 
-    /* Ensures that if a row isn't full, items are centered */
-    justify-content: center; 
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 35px; 
-    width: 90%; 
-    max-width: 1300px; 
-    padding: 20px 0 80px;
-    margin: 0 auto;
+    display: grid;
+    /* 3-column view for mobile density */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 8px;
+    width: 96%;
+    padding: 10px 0 60px;
+    justify-content: center;
+}
+
+/* Desktop upgrade for grid */
+@media (min-width: 769px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 30px;
+        width: 90%;
+    }
 }
 
 .card {
-    background: var(--white-pure); 
-    padding: 10px;
-    border-radius: 40px 40px 10px 10px; 
-    box-shadow: 0 15px 35px rgba(122, 141, 118, 0.08);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-    cursor: zoom-in;
-}
-
-.card:hover {
-    transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 25px 50px rgba(122, 141, 118, 0.12);
+    background: var(--white-pure);
+    padding: clamp(4px, 1.5vw, 10px);
+    border-radius: 15px 15px 5px 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
 .card img {
-    width: 100%; 
-    border-radius: 30px 30px 5px 5px;
+    width: 100%;
+    border-radius: 12px 12px 2px 2px;
     display: block;
 }
 
-/* --- BOUTIQUE MODAL (CENTERED ZOOM) --- */
+/* --- BOUTIQUE MODAL --- */
 .modal {
-    display: none; 
-    position: fixed; 
+    display: none;
+    position: fixed;
     z-index: 2000;
     left: 0; top: 0; width: 100%; height: 100%;
-    background: rgba(245, 230, 224, 0.95); 
+    background: rgba(245, 230, 224, 0.95);
     backdrop-filter: blur(12px);
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    cursor: zoom-out;
 }
 
 .modal.active { display: flex; }
 
 .modal-content {
-    max-width: 90%; 
-    max-height: 85vh;
-    border-radius: 20px;
-    box-shadow: 0 40px 100px rgba(93, 84, 77, 0.25);
-    border: 8px solid var(--white-pure); 
-    object-fit: contain;
-    animation: scaleUp 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-@keyframes scaleUp {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-/* --- CENTERED FOOTER --- */
-footer {
-    padding: 60px 20px;
-    width: 100%;
-    text-align: center;
-    color: var(--clay-text);
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.6;
-    border-top: 1px solid rgba(122, 141, 118, 0.1);
-}
-
-/* --- MOBILE COMPACT OPTIMIZATION --- */
-@media (max-width: 768px) {
-    nav { padding: 12px 20px; }
-    .nav-links { gap: 20px; }
-    
-    .header { padding: 25px 15px 15px; }
-
-    .grid {
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 10px;
-        width: 96%;
-    }
-
-    .card { padding: 5px; border-radius: 15px 15px 5px 5px; }
-    .card img { border-radius: 10px 10px 3px 3px; }
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 15px;
+    border: 6px solid white;
 }

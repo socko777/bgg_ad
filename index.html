@@ -5,113 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE LOBBY | ARA COMMUNITY</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    
     <style>
-        /* --- Component Styling --- */
-        .main-logo-container {
-            display: inline-block;
-            margin-bottom: 10px;
-            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-            animation: bloomIn 1.2s ease-out;
+        :root {
+            --bg-silk: #FDF9F3;
+            --matcha-leaf: #7A8D76;
+            --clay-text: #5D544D;
+            --white-pure: #FFFFFF;
+            --gold-leaf: #D4AF37;
+        }
+
+        /* RESET: Prevents hidden horizontal scrolling */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-silk);
+            color: var(--clay-text);
+            font-family: 'Quicksand', sans-serif;
+            overflow-x: hidden; /* Prevent horizontal wiggle */
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* MOBILE-FRIENDLY NAVIGATION */
+        nav {
+            width: 100%;
+            background: rgba(253, 249, 243, 0.98);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 10px;
+            border-bottom: 1px solid rgba(122, 141, 118, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: clamp(10px, 4vw, 30px);
+            flex-wrap: wrap; /* Essential for small screens */
+        }
+
+        .nav-item {
+            color: var(--clay-text);
+            text-decoration: none;
+            font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .nav-item.active { color: var(--matcha-leaf); font-weight: 700; }
+
+        /* HEADER & LOGO SCALING */
+        header {
+            width: 100%;
+            padding: 30px 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .main-logo-container img {
-            width: clamp(180px, 40vw, 280px); /* Responsive logo sizing */
+            width: clamp(140px, 45vw, 240px); /* Prevents logo from being too wide */
             height: auto;
-            filter: drop-shadow(0 15px 30px rgba(122, 141, 118, 0.15));
+            margin-bottom: 15px;
         }
 
-        .hero-title {
+        h1 {
             font-family: 'Playfair Display', serif;
-            /* Fluid Typography: Scales between 2rem and 3.8rem based on screen size */
-            font-size: clamp(2rem, 7vw, 3.8rem); 
+            font-size: clamp(1.8rem, 8vw, 3.5rem); 
             font-style: italic;
             color: var(--matcha-leaf);
-            margin: 10px auto;
-            letter-spacing: -0.5px;
-            max-width: 90%;
-            line-height: 1.2;
+            line-height: 1.1;
+            max-width: 95%;
         }
 
+        /* ANNOUNCEMENT BOX */
         .announcement-box {
             background: var(--white-pure);
-            border-radius: 40px 40px 10px 10px;
-            padding: clamp(30px, 8vw, 60px); /* Fluid padding */
-            box-shadow: 0 20px 40px rgba(122, 141, 118, 0.08);
-            border: 1px solid rgba(122, 141, 118, 0.1);
-            max-width: 800px;
+            border-radius: 30px;
+            padding: 30px 20px;
             width: 92%;
-            margin: 30px auto;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 15px 35px rgba(122, 141, 118, 0.1);
             text-align: center;
         }
 
-        .objective-badge {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 10px 20px;
-            background: var(--bg-silk);
-            border-radius: 30px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--matcha-leaf);
-            border: 1px solid var(--blush-petal);
-            line-height: 1.4;
-        }
-
+        /* SOCIAL BUTTONS */
         .social-grid {
             display: flex;
-            gap: 12px;
+            flex-wrap: wrap; /* Allows stacking */
+            gap: 10px;
             justify-content: center;
-            margin-top: 35px;
-            flex-wrap: wrap; /* Wraps buttons on small screens */
+            margin-top: 25px;
         }
 
         .social-btn {
+            flex: 1 1 140px; /* Stack side-by-side if space, otherwise single column */
+            max-width: 200px;
+            padding: 14px 10px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
-            border-radius: 40px;
-            padding: 12px 24px;
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.4s ease;
-            text-transform: uppercase;
-            flex: 1 1 140px; /* Allows buttons to grow and stack evenly */
-            max-width: 200px;
         }
 
         .social-btn.wa { background: var(--matcha-leaf); }
         .social-btn.ig { background: var(--gold-leaf); }
         .social-btn.fb { background: var(--clay-text); }
 
+        /* VALUES GRID */
         .values-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             width: 92%;
             max-width: 1100px;
-            margin: 40px auto 100px;
+            margin: 40px auto;
         }
 
-        /* --- Mobile Specific Fixes --- */
-        @media (max-width: 600px) {
-            .social-grid {
-                flex-direction: column; /* Stack buttons vertically on very small phones */
-                align-items: center;
-            }
-            .social-btn {
-                width: 100%;
-                max-width: 280px;
-            }
-            .value-card h3 {
-                font-size: 1.5rem;
-            }
+        .value-card { text-align: center; padding: 15px; }
+        .value-card h3 { font-family: 'Playfair Display', serif; font-style: italic; color: var(--matcha-leaf); margin-bottom: 10px; }
+
+        footer { padding: 40px 10px; opacity: 0.6; font-size: 0.7rem; text-align: center; width: 100%; border-top: 1px solid rgba(0,0,0,0.05); }
+
+        /* FINAL MOBILE POLISH */
+        @media (max-width: 400px) {
+            .social-btn { flex: 1 1 100%; } /* Force single column on tiny phones */
         }
     </style>
 </head>
@@ -125,60 +156,41 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header>
         <div class="main-logo-container">
             <img src="logo3.png" alt="ARA Logo">
         </div>
-        <h1 class="hero-title">A Table Set for Connection</h1>
-        <div class="stats-container">
-            📍 Petaling Jaya, Selangor
-        </div>
+        <h1>A Table Set for Connection</h1>
+        <p style="margin-top:10px; font-weight:300;">📍 Petaling Jaya, Selangor</p>
     </header>
 
     <main>
         <div class="announcement-box">
-            <h2 style="font-family: 'Playfair Display', serif; font-style: italic; color: var(--matcha-leaf); font-size: clamp(1.8rem, 5vw, 2.8rem); margin-bottom: 20px;">Mission Briefing</h2>
-            <p style="font-size: 1rem; font-weight: 300; line-height: 1.6;">
-                ARA Board Game Community is more than just a place to play—it's a sanctuary for enthusiasts. 
-                Whether you're a seasoned strategist or holding your first deck, we've kept a seat warm for you. 
+            <h2 style="font-family: 'Playfair Display', serif; font-style: italic; color: var(--matcha-leaf); font-size: 1.8rem; margin-bottom: 15px;">Mission Briefing</h2>
+            <p style="font-size: 1rem; line-height: 1.5; font-weight: 300;">
+                Ara Board Game Community is a sanctuary for enthusiasts. Whether you're a seasoned strategist or holding your first deck, we've kept a seat warm for you. 
             </p>
             
-            <div class="objective-badge">
-                🌿 OBJECTIVE: Join our next gathering.
-            </div>
-
             <div class="social-grid">
-                <a href="https://chat.whatsapp.com/BsecSwgLlg44miZgbyW61b" target="_blank" class="social-btn wa">
-                    <i class="fab fa-whatsapp"></i> WHATSAPP
-                </a>
-                <a href="https://www.instagram.com/bgg_ad" target="_blank" class="social-btn ig">
-                    <i class="fab fa-instagram"></i> INSTAGRAM
-                </a>
-                <a href="https://www.facebook.com/aradamansarabgc" target="_blank" class="social-btn fb">
-                    <i class="fab fa-facebook-f"></i> FACEBOOK
-                </a>
+                <a href="https://chat.whatsapp.com/BsecSwgLlg44miZgbyW61b" class="social-btn wa"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
+                <a href="https://www.instagram.com/bgg_ad" class="social-btn ig"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+                <a href="https://www.facebook.com/aradamansarabgc" class="social-btn fb"><i class="fab fa-facebook"></i> FACEBOOK</a>
             </div>
         </div>
 
         <div class="values-grid">
             <div class="value-card">
                 <h3>Inclusive Spirits</h3>
-                <p>A thoughtfully curated space designed for all players, making newcomers feel at home.</p>
+                <p>A curated space designed to make newcomers feel at home.</p>
             </div>
             <div class="value-card">
                 <h3>Mindful Play</h3>
-                <p>From deep strategy to cozy nature games, we value discovery over competition.</p>
-            </div>
-            <div class="value-card">
-                <h3>Local Roots</h3>
-                <p>Fostering tabletop friendships right here in our Petaling Jaya neighborhood.</p>
+                <p>We value discovery and cozy strategy over fierce competition.</p>
             </div>
         </div>
     </main>
 
-    <footer>
-        &copy; 2026 ARA BOARD GAME COMMUNITY
-    </footer>
+    <footer>&copy; 2026 ARA BOARD GAME COMMUNITY</footer>
 
 </body>
 </html>
