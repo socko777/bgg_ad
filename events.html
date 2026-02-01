@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARA BOARD GAME COMMUNITY - EVENTS</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="event_data.js"></script>
+    <style>
+        :root {
+            --bg-pixel: #121621;
+            --pixel-gold: #ffcc00;
+            --pixel-blue: #00ccff;
+            --pixel-pink: #ff00ff;
+        }
+
+        /* Border-box fix for consistent sizing */
+        * { box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-pixel);
+            background-image: linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
+            background-size: 15px 15px;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0; padding: 0;
+            display: flex; flex-direction: column; align-items: center;
+            image-rendering: pixelated;
+            overflow-x: hidden;
+        }
+
+        /* --- HYBRID NAVIGATION --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.9);
+            border-bottom: 3px solid var(--pixel-gold);
+            width: 100%;
+            position: sticky; top: 0; z-index: 100;
+        }
+
+        .nav-logo {
+            height: 35px;
+            width: auto;
+            image-rendering: pixelated;
+        }
+
+        .nav-links { display: flex; gap: 10px; }
+
+        .nav-item {
+            color: var(--pixel-blue);
+            text-decoration: none;
+            font-size: 0.5rem;
+            padding: 8px 10px;
+            border: 2px solid transparent;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            border: 2px solid var(--pixel-gold);
+            color: var(--pixel-gold);
+            background: rgba(255, 204, 0, 0.1);
+        }
+
+        /* --- CONTENT CONTAINER --- */
+        .container { max-width: 800px; width: 90%; padding: 40px 0; }
+        
+        h2 { 
+            color: var(--pixel-gold); 
+            font-size: 1rem; 
+            margin-bottom: 30px; 
+            text-align: center;
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+        }
+
+        /* --- EVENT CARD --- */
+        .event-card {
+            background: #1a2030;
+            border: 4px solid white;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 8px 8px 0px var(--pixel-blue);
+        }
+        
+        .event-card.past { 
+            opacity: 0.6; 
+            filter: grayscale(1); 
+            box-shadow: 8px 8px 0px #444; 
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: var(--pixel-pink);
+            padding: 8px; 
+            font-size: 0.45rem; 
+            margin-bottom: 15px;
+            box-shadow: 3px 3px 0px #800080;
+        }
+
+        .event-title { 
+            font-size: 0.75rem; 
+            color: var(--pixel-gold); 
+            margin-bottom: 15px; 
+            line-height: 1.6; 
+        }
+        
+        .event-details { 
+            font-size: 0.6rem; 
+            color: #ccc; 
+            line-height: 1.8; 
+            margin-bottom: 15px;
+        }
+
+        .location-box {
+            border: 2px dashed var(--pixel-blue);
+            padding: 15px; 
+            font-size: 0.45rem; 
+            line-height: 2;
+            background: rgba(0, 204, 255, 0.05);
+        }
+        
+        .btn-map { 
+            color: var(--pixel-blue); 
+            text-decoration: underline; 
+            margin-top: 10px; 
+            display: block; 
+        }
+
+        /* --- CRT OVERLAY --- */
+        body::after {
+            content: " ";
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%);
+            background-size: 100% 4px;
+            pointer-events: none; z-index: 200;
+        }
+
+        /* Mobile Breakpoints */
+        @media (max-width: 600px) {
+            nav { padding: 10px; }
+            .nav-logo { height: 25px; }
+            .nav-item { font-size: 0.4rem; padding: 6px 8px; }
+            .event-title { font-size: 0.65rem; }
+            .container { padding: 20px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">
+            <img src="logo.png" alt="ARA Logo" class="nav-logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">LOBBY</a>
+            <a href="events.html" class="nav-item active">EVENTS</a>
+            <a href="nick_collection.html" class="nav-item">STASH</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>ACTIVE QUESTS</h2>
+        <div id="active-list"></div>
+
+        <h2 style="margin-top: 60px; opacity: 0.7;">COMPLETED QUESTS</h2>
+        <div id="past-list"></div>
+    </div>
+
+    <footer style="padding: 40px; font-size: 0.4rem; color: #555; text-align: center;">
+        © 2026 ARA BOARD GAME COMMUNITY
+    </footer>
+
+    <script>
+        function renderEvents() {
+            if (typeof eventData === 'undefined') {
+                console.error("event_data.js not found!");
+                return;
+            }
+
+            const activeContainer = document.getElementById('active-list');
+            const pastContainer = document.getElementById('past-list');
+
+            // Clear containers
+            activeContainer.innerHTML = '';
+            pastContainer.innerHTML = '';
+
+            eventData.activeQuests.forEach(event => {
+                activeContainer.innerHTML += `
+                    <div class="event-card">
+                        <div class="date-badge">${event.date}</div>
+                        <div class="event-title">${event.title}</div>
+                        <div class="event-details">${event.details}</div>
+                        <div class="location-box">
+                            📍 LOCATION: ${event.location}<br>
+                            ⏰ TIME: ${event.time}<br>
+                            <a href="${event.mapUrl}" target="_blank" class="btn-map">[ OPEN MAP ]</a>
+                        </div>
+                    </div>
+                `;
+            });
+
+            eventData.completedQuests.forEach(event => {
+                pastContainer.innerHTML += `
+                    <div class="event-card past">
+                        <div class="date-badge">${event.date}</div>
+                        <div class="event-title">${event.title}</div>
+                        <div class="event-details">${event.details}</div>
+                    </div>
+                `;
+            });
+        }
+
+        renderEvents();
+    </script>
+</body>
+</html>

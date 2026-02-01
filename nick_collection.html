@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NICK'S BG STASH</title>
+    <title>ARA BOARD GAME COMMUNITY - STASH</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="game_data.js?v=1.2"></script>
+    <script src="game_data.js?v=1.3"></script>
     <style>
         :root {
             --bg-pixel: #121621;
@@ -15,47 +15,90 @@
             --pixel-pink: #ff00ff;
         }
 
+        /* RESET: Essential for removing horizontal scrollbars */
+        * { box-sizing: border-box; }
+
         body {
             background-color: var(--bg-pixel);
-            background-image:
-                linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
+            background-image: linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
             background-size: 15px 15px;
             color: white;
             font-family: 'Press Start 2P', cursive;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden;
+            margin: 0; padding: 0;
+            display: flex; flex-direction: column; align-items: center;
             image-rendering: pixelated;
-            position: relative; /* Added to establish layering context */
+            overflow-x: hidden;
+            position: relative;
         }
 
-        /* CRT Filter - Moved to z-index: 1 so it stays behind the content */
+        /* --- CRT OVERLAY FIX: Pushed to the back --- */
         body::after {
             content: " ";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%);
             background-size: 100% 4px;
-            pointer-events: none;
-            z-index: 1; /* Lowered so it doesn't overlap images */
+            pointer-events: none; 
+            z-index: 1; /* Lowest layer, above background but behind content */
+        }
+
+        /* --- HYBRID NAVIGATION: Absolute top --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.95);
+            border-bottom: 3px solid var(--pixel-gold);
+            width: 100%;
+            position: sticky; top: 0; 
+            z-index: 100; /* Stays above everything */
+        }
+
+        .nav-logo {
+            height: 35px; width: auto;
+            image-rendering: pixelated;
+        }
+
+        .nav-links { display: flex; gap: 10px; }
+
+        .nav-item {
+            color: var(--pixel-blue);
+            text-decoration: none;
+            font-size: 0.5rem;
+            padding: 8px 10px;
+            border: 2px solid transparent;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            border: 2px solid var(--pixel-gold);
+            color: var(--pixel-gold);
+            background: rgba(255, 204, 0, 0.1);
+        }
+
+        /* --- HEADER & GRID: Elevated above scanlines --- */
+        .header, .grid {
+            position: relative; 
+            z-index: 10; /* Middle layer, covers the scanlines */
         }
 
         .header {
             text-align: center;
             padding: 30px 10px 15px;
-            position: relative;
-            z-index: 5; /* Keeps text above background */
         }
 
         .header h1 {
-            font-size: 1.4rem;
-            letter-spacing: 2px;
+            font-size: 1.1rem;
             color: var(--pixel-gold);
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.5);
             margin: 0;
+        }
+
+        .stats-row {
+            margin-top: 15px;
+            font-size: 0.45rem;
+            color: var(--pixel-pink);
+            line-height: 1.8;
         }
 
         .bgg-link {
@@ -63,22 +106,13 @@
             margin: 15px 0;
             color: black;
             text-decoration: none;
-            font-size: 0.55rem;
+            font-size: 0.5rem;
             background: var(--pixel-blue);
-            padding: 10px 18px;
+            padding: 10px 15px;
             box-shadow: 3px 3px 0 0 #006680;
-            transition: 0.1s;
         }
 
-        .bgg-link:hover { background: #66e0ff; transform: translate(1px, 1px); box-shadow: 2px 2px 0 0 #006680; }
-
-        .stats-row {
-            margin-top: 10px;
-            font-size: 0.45rem;
-            color: var(--pixel-pink);
-        }
-
-        /* Ultra-Compact High-Density Grid */
+        /* --- ULTRA-COMPACT GRID --- */
         .grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -86,15 +120,13 @@
             max-width: 2800px;
             width: 98%;
             padding: 10px 10px 60px;
-            position: relative;
-            z-index: 10; /* Higher than background and CRT filter */
         }
 
         .card {
             cursor: zoom-in;
             opacity: 0;
             transform: translateY(10px);
-            transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
         .card.visible { opacity: 1; transform: translateY(0); }
@@ -104,26 +136,16 @@
             height: auto;
             display: block;
             border: 2px solid rgba(255,255,255,0.1);
-            transition: border 0.1s;
+            background-color: #000; /* Solid back prevents lines if image fails */
         }
 
-        .card:hover {
-            z-index: 20; /* Ensures hovered card stays above neighbors */
-        }
-
+        .card:hover { z-index: 20; }
         .card:hover img {
             border: 2px solid var(--pixel-gold);
             filter: brightness(1.1);
         }
 
-        /* Responsive Breakpoints */
-        @media (max-width: 2200px) { .grid { grid-template-columns: repeat(10, 1fr); } }
-        @media (max-width: 1600px) { .grid { grid-template-columns: repeat(8, 1fr); } }
-        @media (max-width: 1100px) { .grid { grid-template-columns: repeat(6, 1fr); } }
-        @media (max-width: 700px) { .grid { grid-template-columns: repeat(4, 1fr); } }
-        @media (max-width: 400px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-
-        /* Modal always on the very top */
+        /* --- MODAL --- */
         .modal {
             display: none; position: fixed; z-index: 1000;
             left: 0; top: 0; width: 100%; height: 100%;
@@ -132,16 +154,40 @@
         }
         .modal.active { display: flex; }
         .modal-content { max-width: 90%; max-height: 90%; border: 4px solid white; }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 2200px) { .grid { grid-template-columns: repeat(10, 1fr); } }
+        @media (max-width: 1600px) { .grid { grid-template-columns: repeat(8, 1fr); } }
+        @media (max-width: 1100px) { .grid { grid-template-columns: repeat(6, 1fr); } }
+        @media (max-width: 700px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 480px) { 
+            .grid { grid-template-columns: repeat(2, 1fr); }
+            .nav-logo { height: 25px; }
+            .header h1 { font-size: 0.85rem; }
+            .nav-item { font-size: 0.4rem; padding: 6px 8px; }
+        }
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <h1>NICK'S BG STASH</h1>
-        <a href="https://boardgamegeek.com/collection/user/socko777" target="_blank" class="bgg-link">SEE MY BGG COLLECTION</a>
-        <div class="stats-row">
-            [ ITEMS: <span id="stats-display">--</span> • UPDATED: <span id="date-display">--</span> ]
+    <nav>
+        <a href="index.html">
+            <img src="logo.png" alt="ARA Logo" class="nav-logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">LOBBY</a>
+            <a href="events.html" class="nav-item">EVENTS</a>
+            <a href="nick_collection.html" class="nav-item active">STASH</a>
         </div>
+    </nav>
+
+    <header class="header">
+        <h1>ARA BOARD GAME STASH</h1>
+        <div class="stats-row">
+            [ ITEMS: <span id="stats-display">--</span> ]<br>
+            [ UPDATED: <span id="date-display">--</span> ]
+        </div>
+        <a href="https://boardgamegeek.com/collection/user/socko777" target="_blank" class="bgg-link">OFFICIAL BGG</a>
     </header>
 
     <div class="grid" id="game-grid"></div>
@@ -158,6 +204,11 @@
         const modalImg = document.getElementById('modal-img');
 
         function render() {
+            if (typeof collectionData === 'undefined') {
+                console.error("game_data.js not found!");
+                return;
+            }
+            
             stats.innerText = collectionData.total;
             dateLine.innerText = collectionData.date;
 

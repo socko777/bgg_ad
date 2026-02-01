@@ -1,10 +1,173 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url='nick_collection.html'" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>Please wait, redirecting to <a href="nick_collection.html">Nick's Collection</a>.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARA BOARD GAME COMMUNITY - THE LOBBY</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-pixel: #121621;
+            --pixel-gold: #ffcc00;
+            --pixel-blue: #00ccff;
+            --pixel-pink: #ff00ff;
+            --pixel-fb: #1877F2; /* Facebook Brand Color */
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-pixel);
+            background-image: linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
+            background-size: 15px 15px;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0; padding: 0;
+            display: flex; flex-direction: column; align-items: center;
+            image-rendering: pixelated;
+            overflow-x: hidden;
+        }
+
+        /* --- GLOBAL NAVIGATION --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.9);
+            border-bottom: 3px solid var(--pixel-gold);
+            width: 100%;
+            position: sticky; top: 0; z-index: 100;
+        }
+
+        .nav-logo {
+            height: 35px;
+            width: auto;
+            image-rendering: pixelated;
+        }
+
+        .nav-links { display: flex; gap: 10px; }
+
+        .nav-item {
+            color: var(--pixel-blue);
+            text-decoration: none;
+            font-size: 0.5rem;
+            padding: 8px 10px;
+            border: 2px solid transparent;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            border: 2px solid var(--pixel-gold);
+            color: var(--pixel-gold);
+            background: rgba(255, 204, 0, 0.1);
+        }
+
+        /* --- HEADER & LOGO --- */
+        .hero { text-align: center; padding: 50px 20px; }
+        .main-logo {
+            width: 160px; height: auto; margin-bottom: 25px;
+            image-rendering: pixelated; 
+            filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.5));
+        }
+
+        .hero h1 {
+            font-size: 1.4rem; color: var(--pixel-gold);
+            text-shadow: 4px 4px 0px #806600; margin: 0;
+            line-height: 1.6;
+        }
+
+        /* --- ANNOUNCEMENTS --- */
+        .announcement-box {
+            max-width: 700px; width: 90%; background: #1a2030;
+            border: 4px solid white; padding: 30px;
+            box-shadow: 10px 10px 0px var(--pixel-pink);
+            margin-bottom: 50px;
+        }
+
+        .announcement-box h2 {
+            color: var(--pixel-pink); font-size: 0.8rem;
+            margin-top: 0; text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        .announcement-box p { font-size: 0.65rem; line-height: 2; color: #eee; }
+
+        /* --- SOCIAL LINKS --- */
+        .social-grid {
+            display: flex; gap: 15px; margin-top: 30px;
+            flex-wrap: wrap; justify-content: center;
+        }
+
+        .social-btn {
+            padding: 12px 20px; text-decoration: none;
+            font-size: 0.5rem; color: black;
+            background: var(--pixel-blue);
+            box-shadow: 4px 4px 0px #006680;
+        }
+
+        /* Brand Colors for Buttons */
+        .social-btn.wa { background: #25D366; box-shadow: 4px 4px 0px #128C7E; }
+        .social-btn.ig { background: #E1306C; box-shadow: 4px 4px 0px #833AB4; }
+        .social-btn.fb { background: var(--pixel-fb); box-shadow: 4px 4px 0px #0D47A1; color: white; }
+
+        .social-btn:active { transform: translate(2px, 2px); box-shadow: none; }
+
+        /* --- CRT OVERLAY --- */
+        body::after {
+            content: " ";
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%);
+            background-size: 100% 4px;
+            pointer-events: none; z-index: 200;
+        }
+
+        @media (max-width: 600px) {
+            .nav-logo { height: 25px; }
+            .hero h1 { font-size: 1.1rem; }
+            .social-btn { width: 100%; text-align: center; } /* Stack on mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">
+            <img src="logo.png" alt="ARA" class="nav-logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item active">LOBBY</a>
+            <a href="events.html" class="nav-item">EVENTS</a>
+            <a href="nick_collection.html" class="nav-item">STASH</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <img src="logo.png" alt="ARA Logo" class="main-logo">
+        <h1>ARA BOARD GAME COMMUNITY</h1>
+    </header>
+
+    <div class="announcement-box">
+       <h2>MISSION BRIEFING</h2>
+    <p>
+        Ara Board Game Community is a collective of tabletop enthusiasts based in Petaling Jaya and Ara Damansara. 
+        Whether you're a veteran strategist or a first-time player, our table is open to you.
+    </p>
+    <p style="margin-top: 10px; color: var(--pixel-gold);">
+        CURRENT OBJECTIVE: Check the [EVENTS] log for our next sessions!
+    </p>
+
+        <div class="social-grid">
+            <a href="https://chat.whatsapp.com/BsecSwgLlg44miZgbyW61b" target="_blank" class="social-btn wa">WHATSAPP</a>
+            <a href="https://www.instagram.com/bgg_ad" target="_blank" class="social-btn ig">INSTAGRAM</a>
+            <a href="https://www.facebook.com/aradamansarabgc" target="_blank" class="social-btn fb">FACEBOOK</a>
+        </div>
+    </div>
+
+    <footer style="padding: 40px; font-size: 0.4rem; color: #555; text-align: center;">
+        &copy; 2026 ARA BOARD GAME COMMUNITY
+    </footer>
+
+</body>
 </html>
