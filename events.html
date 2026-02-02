@@ -97,38 +97,48 @@
 </footer>
 
     <script>
-        function renderEvents() {
-            if (typeof eventData === 'undefined') return;
+    function renderEvents() {
+        if (typeof eventData === 'undefined') return;
 
-            const activeContainer = document.getElementById('active-list');
-            const pastContainer = document.getElementById('past-list');
+        const activeContainer = document.getElementById('active-list');
+        const pastContainer = document.getElementById('past-list');
 
-            activeContainer.innerHTML = '';
-            pastContainer.innerHTML = '';
+        activeContainer.innerHTML = '';
+        pastContainer.innerHTML = '';
 
-          eventData.activeQuests.forEach(event => {
-    activeContainer.innerHTML += `
-        <div class="event-card">
-            <span class="date-badge">🌿 ${event.date}</span>
-            <div class="event-title">${event.title}</div>
-            <div style="font-size: 1.05rem; color: var(--clay-text); font-weight: 300;">${event.details}</div>
+        // Get current date at midnight for an accurate day-by-day comparison
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        eventData.forEach(event => {
+            const eventDate = new Date(event.date);
             
-            <div class="location-box">
-                <div style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-                    <span style="font-size: 1.1rem;">📍</span>
-                    <span><b>The Venue:</b> ${event.location}</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                    <span style="font-size: 1.1rem;">⏳</span>
-                    <span><b>The Moment:</b> ${event.time}</span>
-                </div>
-                <a href="${event.mapUrl}" target="_blank" class="btn-map">Directions to the Venue →</a>
-            </div>
-        </div>
-    `;
-});
+            // Check if date is valid before rendering
+            if (isNaN(eventDate)) return;
 
-            eventData.completedQuests.forEach(event => {
+            if (eventDate >= today) {
+                // RENDER ACTIVE EVENT
+                activeContainer.innerHTML += `
+                    <div class="event-card">
+                        <span class="date-badge">🌿 ${event.date}</span>
+                        <div class="event-title">${event.title}</div>
+                        <div style="font-size: 1.05rem; color: var(--clay-text); font-weight: 300;">${event.details}</div>
+                        
+                        <div class="location-box">
+                            <div style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.1rem;">📍</span>
+                                <span><b>The Venue:</b> ${event.location}</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.1rem;">⏳</span>
+                                <span><b>The Moment:</b> ${event.time}</span>
+                            </div>
+                            <a href="${event.mapUrl}" target="_blank" class="btn-map">Directions to the Venue →</a>
+                        </div>
+                    </div>
+                `;
+            } else {
+                // RENDER PAST EVENT
                 pastContainer.innerHTML += `
                     <div class="event-card past">
                         <span class="date-badge">${event.date}</span>
@@ -136,10 +146,11 @@
                         <div style="font-size: 0.9rem;">${event.details}</div>
                     </div>
                 `;
-            });
-        }
+            }
+        });
+    }
 
-        renderEvents();
-    </script>
+    renderEvents();
+</script>
 </body>
 </html>
