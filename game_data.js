@@ -4,6 +4,9 @@ const collectionData = {
     "games": [
         {
             "name": "7 Wonders (Second Edition)",
+            "designers": [
+                "Antoine Bauza"
+            ],
             "img": "cache_images/316377.jpg",
             "players": "3-7P",
             "weight": 2.3,
@@ -16,6 +19,10 @@ const collectionData = {
         },
         {
             "name": "7 Wonders Duel",
+            "designers": [
+                "Antoine Bauza",
+                "Bruno Cathala"
+            ],
             "img": "cache_images/173346.jpg",
             "players": "2P",
             "weight": 2.2,
@@ -28,6 +35,10 @@ const collectionData = {
         },
         {
             "name": "Afternova",
+            "designers": [
+                "Jeff Chin",
+                "Andrew Nerger"
+            ],
             "img": "cache_images/279900.jpg",
             "players": "3-6P",
             "weight": 1.7,
@@ -40,6 +51,9 @@ const collectionData = {
         },
         {
             "name": "Age of War",
+            "designers": [
+                "Reiner Knizia"
+            ],
             "img": "cache_images/28086.jpg",
             "players": "2-6P",
             "weight": 1.2,
@@ -52,6 +66,10 @@ const collectionData = {
         },
         {
             "name": "Agent Avenue",
+            "designers": [
+                "Christian Kudahl",
+                "Laura Kudahl"
+            ],
             "img": "cache_images/422732.jpg",
             "players": "2-4P",
             "weight": 1.2,
@@ -64,6 +82,9 @@ const collectionData = {
         },
         {
             "name": "Amun-Re: The Card Game",
+            "designers": [
+                "Reiner Knizia"
+            ],
             "img": "cache_images/232303.jpg",
             "players": "2-5P",
             "weight": 2.4,
@@ -76,6 +97,9 @@ const collectionData = {
         },
         {
             "name": "Anomia",
+            "designers": [
+                "Andrew Innes"
+            ],
             "img": "cache_images/67877.jpg",
             "players": "3-6P",
             "weight": 1.0,
@@ -88,6 +112,10 @@ const collectionData = {
         },
         {
             "name": "AQUA: Biodiversity in the Oceans",
+            "designers": [
+                "Dan Halstad",
+                "Tristan Halstad"
+            ],
             "img": "cache_images/403468.jpg",
             "players": "1-4P",
             "weight": 2.1,
@@ -99,6 +127,9 @@ const collectionData = {
         },
         {
             "name": "Arboretum",
+            "designers": [
+                "Dan Cassar"
+            ],
             "img": "cache_images/140934.jpg",
             "players": "2-4P",
             "weight": 2.1,
@@ -110,6 +141,7 @@ const collectionData = {
         },
         {
             "name": "Arcaven's Duel",
+            "designers": [],
             "img": "cache_images/368724.jpg",
             "players": "2P",
             "weight": 2.0,
@@ -121,6 +153,9 @@ const collectionData = {
         },
         {
             "name": "Archduke",
+            "designers": [
+                "Ryan Tibbitts"
+            ],
             "img": "cache_images/332943.jpg",
             "players": "2-6P",
             "weight": 1.3,
@@ -133,6 +168,10 @@ const collectionData = {
         },
         {
             "name": "Attack on Titan: The Last Stand",
+            "designers": [
+                "Antoine Bauza",
+                "Ludovic Maublanc"
+            ],
             "img": "cache_images/181254.jpg",
             "players": "2-5P",
             "weight": 2.2,
@@ -144,6 +183,9 @@ const collectionData = {
         },
         {
             "name": "Aurum",
+            "designers": [
+                "Shreesh Bhat"
+            ],
             "img": "cache_images/383459.jpg",
             "players": "3-4P",
             "weight": 2.0,
@@ -154,6 +196,10 @@ const collectionData = {
         },
         {
             "name": "Avatar: The Last Airbender – Fire Nation Rising",
+            "designers": [
+                "Patrick Marino",
+                "Andrew Wolf"
+            ],
             "img": "cache_images/358588.jpg",
             "players": "1-5P",
             "weight": 2.3,
@@ -166,6 +212,9 @@ const collectionData = {
         },
         {
             "name": "Azul",
+            "designers": [
+                "Michael Kiesling"
+            ],
             "img": "cache_images/230802.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -177,6 +226,9 @@ const collectionData = {
         },
         {
             "name": "Barbarossa",
+            "designers": [
+                "Atsuo Yoshizawa"
+            ],
             "img": "cache_images/72809.jpg",
             "players": "2-5P",
             "weight": 2.6,
@@ -189,6 +241,9 @@ const collectionData = {
         },
         {
             "name": "Barcelona",
+            "designers": [
+                "Dani Garcia"
+            ],
             "img": "cache_images/383607.jpg",
             "players": "1-4P",
             "weight": 3.4,
@@ -199,6 +254,9 @@ const collectionData = {
         },
         {
             "name": "Bärenpark",
+            "designers": [
+                "Phil Walker-Harding"
+            ],
             "img": "cache_images/219513.jpg",
             "players": "2-4P",
             "weight": 1.7,
@@ -210,6 +268,10 @@ const collectionData = {
         },
         {
             "name": "Bears vs Babies",
+            "designers": [
+                "Matthew Inman",
+                "Elan Lee"
+            ],
             "img": "cache_images/211534.jpg",
             "players": "2-5P",
             "weight": 1.2,
@@ -222,6 +284,9 @@ const collectionData = {
         },
         {
             "name": "Beasty Bar",
+            "designers": [
+                "Stefan Kloß"
+            ],
             "img": "cache_images/165950.jpg",
             "players": "2-4P",
             "weight": 1.4,
@@ -234,6 +299,9 @@ const collectionData = {
         },
         {
             "name": "Belratti",
+            "designers": [
+                "Michael Loth"
+            ],
             "img": "cache_images/259374.jpg",
             "players": "3-7P",
             "weight": 1.1,
@@ -245,6 +313,15 @@ const collectionData = {
         },
         {
             "name": "Betrayal at House on the Hill: 3rd Edition",
+            "designers": [
+                "Dave Chalker",
+                "Banana Chan",
+                "Noah Cohen",
+                "Bruce Glassco",
+                "Brian Neff",
+                "Will Sobel",
+                "Jabari Weathers"
+            ],
             "img": "cache_images/358504.jpg",
             "players": "3-6P",
             "weight": 2.4,
@@ -257,6 +334,10 @@ const collectionData = {
         },
         {
             "name": "Biss 20",
+            "designers": [
+                "Lena Burkhardt",
+                "Günter Burkhardt"
+            ],
             "img": "cache_images/318195.jpg",
             "players": "2-8P",
             "weight": 1.2,
@@ -267,6 +348,9 @@ const collectionData = {
         },
         {
             "name": "Bitoku",
+            "designers": [
+                "Germán P. Millán"
+            ],
             "img": "cache_images/323612.jpg",
             "players": "1-4P",
             "weight": 3.8,
@@ -278,6 +362,9 @@ const collectionData = {
         },
         {
             "name": "Blazon",
+            "designers": [
+                "David Conklin"
+            ],
             "img": "cache_images/311610.jpg",
             "players": "1-4P",
             "weight": 2.2,
@@ -289,6 +376,11 @@ const collectionData = {
         },
         {
             "name": "Block Block Burrito",
+            "designers": [
+                "Matthew Inman",
+                "Elan Lee",
+                "Brian S. Spence"
+            ],
             "img": "cache_images/383009.jpg",
             "players": "2-6P",
             "weight": 1.0,
@@ -301,6 +393,9 @@ const collectionData = {
         },
         {
             "name": "The Bloody Inn",
+            "designers": [
+                "Nicolas Robert"
+            ],
             "img": "cache_images/180593.jpg",
             "players": "1-4P",
             "weight": 2.3,
@@ -313,6 +408,9 @@ const collectionData = {
         },
         {
             "name": "Board Game Cafe Frenzy",
+            "designers": [
+                "Citie Lo"
+            ],
             "img": "cache_images/274688.jpg",
             "players": "2-5P",
             "weight": 1.7,
@@ -323,6 +421,9 @@ const collectionData = {
         },
         {
             "name": "Bohnanza",
+            "designers": [
+                "Uwe Rosenberg"
+            ],
             "img": "cache_images/11.jpg",
             "players": "2-7P",
             "weight": 1.7,
@@ -335,6 +436,9 @@ const collectionData = {
         },
         {
             "name": "Bottle Imp",
+            "designers": [
+                "Günter Cornett"
+            ],
             "img": "cache_images/413364.jpg",
             "players": "2-6P",
             "weight": 2.2,
@@ -346,6 +450,10 @@ const collectionData = {
         },
         {
             "name": "Breaking Demon's Contract",
+            "designers": [
+                "Chia Pek Fann",
+                "Poon Jon"
+            ],
             "img": "cache_images/449836.jpg",
             "players": "2-4P",
             "weight": 0.0,
@@ -357,6 +465,9 @@ const collectionData = {
         },
         {
             "name": "Bunker",
+            "designers": [
+                "Oksana Soldatova"
+            ],
             "img": "cache_images/364760.jpg",
             "players": "2-16P",
             "weight": 1.1,
@@ -369,6 +480,9 @@ const collectionData = {
         },
         {
             "name": "Burgle Bros.",
+            "designers": [
+                "Tim Fowers"
+            ],
             "img": "cache_images/172081.jpg",
             "players": "1-4P",
             "weight": 2.3,
@@ -381,6 +495,10 @@ const collectionData = {
         },
         {
             "name": "Captain Flip",
+            "designers": [
+                "Remo Conzadori",
+                "Paolo Mori"
+            ],
             "img": "cache_images/393325.jpg",
             "players": "2-5P",
             "weight": 1.2,
@@ -392,6 +510,10 @@ const collectionData = {
         },
         {
             "name": "Captain Sonar",
+            "designers": [
+                "Roberto Fraga",
+                "Yohan Lemonnier"
+            ],
             "img": "cache_images/171131.jpg",
             "players": "2-8P",
             "weight": 2.2,
@@ -404,6 +526,9 @@ const collectionData = {
         },
         {
             "name": "Carcassonne",
+            "designers": [
+                "Klaus-Jürgen Wrede"
+            ],
             "img": "cache_images/822.jpg",
             "players": "2-5P",
             "weight": 1.9,
@@ -415,6 +540,16 @@ const collectionData = {
         },
         {
             "name": "Cards Against Humanity",
+            "designers": [
+                "Josh Dillon",
+                "Daniel Dranove",
+                "Eli Halpern",
+                "Ben Hantoot",
+                "David Munk",
+                "David Pinsof",
+                "Max Temkin",
+                "Eliot Weinstein"
+            ],
             "img": "cache_images/50381.jpg",
             "players": "4-30P",
             "weight": 1.2,
@@ -427,6 +562,10 @@ const collectionData = {
         },
         {
             "name": "Castle Combo",
+            "designers": [
+                "Grégory Grard",
+                "Mathieu Roussel"
+            ],
             "img": "cache_images/416851.jpg",
             "players": "2-5P",
             "weight": 1.7,
@@ -438,6 +577,9 @@ const collectionData = {
         },
         {
             "name": "The Castles of Burgundy",
+            "designers": [
+                "Stefan Feld"
+            ],
             "img": "cache_images/84876.jpg",
             "players": "2-4P",
             "weight": 3.0,
@@ -450,6 +592,9 @@ const collectionData = {
         },
         {
             "name": "CATAN",
+            "designers": [
+                "Klaus Teuber"
+            ],
             "img": "cache_images/13.jpg",
             "players": "3-4P",
             "weight": 2.3,
@@ -461,6 +606,10 @@ const collectionData = {
         },
         {
             "name": "Challengers!",
+            "designers": [
+                "Johannes Krenner",
+                "Markus Slawitscheck"
+            ],
             "img": "cache_images/359970.jpg",
             "players": "1-8P",
             "weight": 1.8,
@@ -473,6 +622,9 @@ const collectionData = {
         },
         {
             "name": "The Chameleon",
+            "designers": [
+                "Rikki Tahta"
+            ],
             "img": "cache_images/227072.jpg",
             "players": "3-8P",
             "weight": 1.1,
@@ -485,6 +637,11 @@ const collectionData = {
         },
         {
             "name": "Champions!",
+            "designers": [
+                "Frank Crittin",
+                "Grégoire Largey",
+                "Sébastien Pauchon"
+            ],
             "img": "cache_images/391565.jpg",
             "players": "3-8P",
             "weight": 1.0,
@@ -495,6 +652,10 @@ const collectionData = {
         },
         {
             "name": "Cheating Moth",
+            "designers": [
+                "Emely Brand",
+                "Lukas Brand"
+            ],
             "img": "cache_images/105593.jpg",
             "players": "3-5P",
             "weight": 1.2,
@@ -506,6 +667,9 @@ const collectionData = {
         },
         {
             "name": "Cheese Thief",
+            "designers": [
+                "Dongxu Li"
+            ],
             "img": "cache_images/294175.jpg",
             "players": "4-8P",
             "weight": 1.1,
@@ -518,6 +682,9 @@ const collectionData = {
         },
         {
             "name": "The Cikgu Life",
+            "designers": [
+                "James Choong"
+            ],
             "img": "cache_images/323379.jpg",
             "players": "3-5P",
             "weight": 0.0,
@@ -528,6 +695,10 @@ const collectionData = {
         },
         {
             "name": "Cities",
+            "designers": [
+                "Steve Finn",
+                "Phil Walker-Harding"
+            ],
             "img": "cache_images/402676.jpg",
             "players": "2-4P",
             "weight": 1.9,
@@ -539,6 +710,9 @@ const collectionData = {
         },
         {
             "name": "Clank!: A Deck-Building Adventure",
+            "designers": [
+                "Paul Dennen"
+            ],
             "img": "cache_images/201808.jpg",
             "players": "2-4P",
             "weight": 2.2,
@@ -550,6 +724,9 @@ const collectionData = {
         },
         {
             "name": "Clever 4Ever",
+            "designers": [
+                "Wolfgang Warsch"
+            ],
             "img": "cache_images/366162.jpg",
             "players": "1-4P",
             "weight": 2.4,
@@ -561,6 +738,9 @@ const collectionData = {
         },
         {
             "name": "Cockroach Poker",
+            "designers": [
+                "Jacques Zeimet"
+            ],
             "img": "cache_images/11971.jpg",
             "players": "2-6P",
             "weight": 1.1,
@@ -573,6 +753,9 @@ const collectionData = {
         },
         {
             "name": "Cockroach Salad",
+            "designers": [
+                "Jacques Zeimet"
+            ],
             "img": "cache_images/32341.jpg",
             "players": "2-6P",
             "weight": 1.1,
@@ -585,6 +768,9 @@ const collectionData = {
         },
         {
             "name": "Codenames: Deep Undercover",
+            "designers": [
+                "Vlaada Chvátil"
+            ],
             "img": "cache_images/205158.jpg",
             "players": "4-8P",
             "weight": 1.3,
@@ -597,6 +783,9 @@ const collectionData = {
         },
         {
             "name": "Coffee Rush",
+            "designers": [
+                "Euijin Han"
+            ],
             "img": "cache_images/377061.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -607,6 +796,9 @@ const collectionData = {
         },
         {
             "name": "Command of Nature",
+            "designers": [
+                "Ramy Badie"
+            ],
             "img": "cache_images/390422.jpg",
             "players": "2-4P",
             "weight": 2.4,
@@ -619,6 +811,10 @@ const collectionData = {
         },
         {
             "name": "Concept",
+            "designers": [
+                "Gaëtan Beaujannot",
+                "Alain Rivollet"
+            ],
             "img": "cache_images/147151.jpg",
             "players": "4-12P",
             "weight": 1.4,
@@ -631,6 +827,9 @@ const collectionData = {
         },
         {
             "name": "Cosmolancer",
+            "designers": [
+                "Reiner Knizia"
+            ],
             "img": "cache_images/119.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -643,6 +842,9 @@ const collectionData = {
         },
         {
             "name": "Cottage Garden",
+            "designers": [
+                "Uwe Rosenberg"
+            ],
             "img": "cache_images/204027.jpg",
             "players": "1-4P",
             "weight": 1.9,
@@ -655,6 +857,9 @@ const collectionData = {
         },
         {
             "name": "Coup",
+            "designers": [
+                "Rikki Tahta"
+            ],
             "img": "cache_images/131357.jpg",
             "players": "2-6P",
             "weight": 1.4,
@@ -667,6 +872,9 @@ const collectionData = {
         },
         {
             "name": "Coup: Reformation",
+            "designers": [
+                "Rikki Tahta"
+            ],
             "img": "cache_images/148931.jpg",
             "players": "2-10P",
             "weight": 1.6,
@@ -679,6 +887,10 @@ const collectionData = {
         },
         {
             "name": "Cover Your Assets",
+            "designers": [
+                "Brent Beck",
+                "Jeffrey Beck"
+            ],
             "img": "cache_images/121193.jpg",
             "players": "2-6P",
             "weight": 1.2,
@@ -690,6 +902,9 @@ const collectionData = {
         },
         {
             "name": "The Crew: The Quest for Planet Nine",
+            "designers": [
+                "Thomas Sing"
+            ],
             "img": "cache_images/284083.jpg",
             "players": "2-5P",
             "weight": 2.0,
@@ -702,6 +917,9 @@ const collectionData = {
         },
         {
             "name": "Cryptid Cafe",
+            "designers": [
+                "Chip Cole"
+            ],
             "img": "cache_images/326358.jpg",
             "players": "1-5P",
             "weight": 1.9,
@@ -713,6 +931,9 @@ const collectionData = {
         },
         {
             "name": "CuBirds",
+            "designers": [
+                "Stefan Alexander"
+            ],
             "img": "cache_images/245476.jpg",
             "players": "2-5P",
             "weight": 1.3,
@@ -724,6 +945,9 @@ const collectionData = {
         },
         {
             "name": "Cubitos",
+            "designers": [
+                "John D. Clair"
+            ],
             "img": "cache_images/298069.jpg",
             "players": "2-4P",
             "weight": 2.2,
@@ -735,6 +959,10 @@ const collectionData = {
         },
         {
             "name": "Cuzco",
+            "designers": [
+                "Michael Kiesling",
+                "Wolfgang Kramer"
+            ],
             "img": "cache_images/249411.jpg",
             "players": "2-4P",
             "weight": 2.6,
@@ -745,6 +973,9 @@ const collectionData = {
         },
         {
             "name": "DCeased: Gotham City Outbreak",
+            "designers": [
+                "Michael Shinall"
+            ],
             "img": "cache_images/422898.jpg",
             "players": "1-4P",
             "weight": 2.4,
@@ -757,6 +988,9 @@ const collectionData = {
         },
         {
             "name": "Deadly Concoctions",
+            "designers": [
+                "Joshua Mason"
+            ],
             "img": "cache_images/246004.jpg",
             "players": "2-4P",
             "weight": 0.0,
@@ -767,6 +1001,9 @@ const collectionData = {
         },
         {
             "name": "Deadwood 1876",
+            "designers": [
+                "Travis Hancock"
+            ],
             "img": "cache_images/245197.jpg",
             "players": "2-9P",
             "weight": 1.9,
@@ -779,6 +1016,9 @@ const collectionData = {
         },
         {
             "name": "Deception: Murder in Hong Kong",
+            "designers": [
+                "Tobey Ho"
+            ],
             "img": "cache_images/156129.jpg",
             "players": "4-12P",
             "weight": 1.6,
@@ -791,6 +1031,9 @@ const collectionData = {
         },
         {
             "name": "Decrypto",
+            "designers": [
+                "Thomas Dagenais-Lespérance"
+            ],
             "img": "cache_images/225694.jpg",
             "players": "3-8P",
             "weight": 1.8,
@@ -803,6 +1046,9 @@ const collectionData = {
         },
         {
             "name": "Deduckto",
+            "designers": [
+                "Robert Kerr"
+            ],
             "img": "cache_images/380887.jpg",
             "players": "2-4P",
             "weight": 1.2,
@@ -815,6 +1061,10 @@ const collectionData = {
         },
         {
             "name": "Deep Sea Adventure",
+            "designers": [
+                "Jun Sasaki",
+                "Goro Sasaki"
+            ],
             "img": "cache_images/169654.jpg",
             "players": "2-6P",
             "weight": 1.2,
@@ -827,6 +1077,12 @@ const collectionData = {
         },
         {
             "name": "Disney Animated",
+            "designers": [
+                "Matt Christianson",
+                "Prospero Hall",
+                "Ashwin Kamath",
+                "Chris Rowlands"
+            ],
             "img": "cache_images/382229.jpg",
             "players": "2-4P",
             "weight": 2.4,
@@ -837,6 +1093,11 @@ const collectionData = {
         },
         {
             "name": "Disney Villainous: The Worst Takes it All",
+            "designers": [
+                "Aaron Donogh",
+                "Prospero Hall",
+                "Brian Kirk"
+            ],
             "img": "cache_images/256382.jpg",
             "players": "2-6P",
             "weight": 2.5,
@@ -849,6 +1110,9 @@ const collectionData = {
         },
         {
             "name": "Disney: The Haunted Mansion – Call of the Spirits Game",
+            "designers": [
+                "Prospero Hall"
+            ],
             "img": "cache_images/309129.jpg",
             "players": "2-6P",
             "weight": 1.9,
@@ -860,6 +1124,9 @@ const collectionData = {
         },
         {
             "name": "Dixit",
+            "designers": [
+                "Jean-Louis Roubira"
+            ],
             "img": "cache_images/39856.jpg",
             "players": "3-6P",
             "weight": 1.2,
@@ -872,6 +1139,9 @@ const collectionData = {
         },
         {
             "name": "Do De Li Do",
+            "designers": [
+                "Jacques Zeimet"
+            ],
             "img": "cache_images/206939.jpg",
             "players": "2-6P",
             "weight": 1.1,
@@ -884,6 +1154,10 @@ const collectionData = {
         },
         {
             "name": "Dog Park",
+            "designers": [
+                "Lottie Hazell",
+                "Jack Hazell"
+            ],
             "img": "cache_images/331401.jpg",
             "players": "1-4P",
             "weight": 2.2,
@@ -895,6 +1169,10 @@ const collectionData = {
         },
         {
             "name": "Dokojong",
+            "designers": [
+                "Jun Sasaki",
+                "Hayashi Shiina (椎名隼也)"
+            ],
             "img": "cache_images/330401.jpg",
             "players": "2-5P",
             "weight": 1.5,
@@ -905,6 +1183,10 @@ const collectionData = {
         },
         {
             "name": "Donner Dinner Party",
+            "designers": [
+                "David Fooden",
+                "Forrest-Pruzan Creative"
+            ],
             "img": "cache_images/219638.jpg",
             "players": "4-10P",
             "weight": 1.2,
@@ -917,6 +1199,10 @@ const collectionData = {
         },
         {
             "name": "Dracula's Feast: New Blood",
+            "designers": [
+                "Peter C. Hayward",
+                "Tom Lang"
+            ],
             "img": "cache_images/269847.jpg",
             "players": "4-8P",
             "weight": 1.2,
@@ -929,6 +1215,11 @@ const collectionData = {
         },
         {
             "name": "Dragon Castle",
+            "designers": [
+                "Hjalmar Hach",
+                "Luca Ricci",
+                "Lorenzo Silva"
+            ],
             "img": "cache_images/232219.jpg",
             "players": "1-4P",
             "weight": 2.0,
@@ -939,6 +1230,9 @@ const collectionData = {
         },
         {
             "name": "Dragonrealm",
+            "designers": [
+                "Darren Kisgen"
+            ],
             "img": "cache_images/272993.jpg",
             "players": "2-4P",
             "weight": 1.6,
@@ -951,6 +1245,10 @@ const collectionData = {
         },
         {
             "name": "Drama Pukul 7",
+            "designers": [
+                "Haireey Hashnan",
+                "Zamri Mustapha"
+            ],
             "img": "cache_images/284094.jpg",
             "players": "3-6P",
             "weight": 1.8,
@@ -961,6 +1259,9 @@ const collectionData = {
         },
         {
             "name": "DroPolter",
+            "designers": [
+                "Paul Schulz"
+            ],
             "img": "cache_images/405537.jpg",
             "players": "2-5P",
             "weight": 1.0,
@@ -971,6 +1272,10 @@ const collectionData = {
         },
         {
             "name": "Dumb Ways to Die",
+            "designers": [
+                "Erica Bouyouris",
+                "Kyle Hussa-Lietz"
+            ],
             "img": "cache_images/392173.jpg",
             "players": "2-5P",
             "weight": 1.1,
@@ -983,6 +1288,10 @@ const collectionData = {
         },
         {
             "name": "Dungeon Mayhem",
+            "designers": [
+                "Jordan Comar",
+                "Roscoe Wetlaufer"
+            ],
             "img": "cache_images/260300.jpg",
             "players": "2-4P",
             "weight": 1.2,
@@ -995,6 +1304,10 @@ const collectionData = {
         },
         {
             "name": "Dungeon Mayhem: Battle for Baldur's Gate",
+            "designers": [
+                "Jordan Comar",
+                "Roscoe Wetlaufer"
+            ],
             "img": "cache_images/280809.jpg",
             "players": "2-4P",
             "weight": 1.3,
@@ -1007,6 +1320,10 @@ const collectionData = {
         },
         {
             "name": "Dungeon of Mandom VIII",
+            "designers": [
+                "Antoine Bauza",
+                "Masato Uesugi"
+            ],
             "img": "cache_images/227110.jpg",
             "players": "2-4P",
             "weight": 1.4,
@@ -1019,6 +1336,9 @@ const collectionData = {
         },
         {
             "name": "Durian",
+            "designers": [
+                "Masato Uesugi"
+            ],
             "img": "cache_images/307963.jpg",
             "players": "2-7P",
             "weight": 1.1,
@@ -1031,6 +1351,9 @@ const collectionData = {
         },
         {
             "name": "Dying Message",
+            "designers": [
+                "Fumiko Shimizu"
+            ],
             "img": "cache_images/418855.jpg",
             "players": "2-8P",
             "weight": 1.5,
@@ -1042,6 +1365,9 @@ const collectionData = {
         },
         {
             "name": "Earth",
+            "designers": [
+                "Maxime Tardif"
+            ],
             "img": "cache_images/350184.jpg",
             "players": "1-5P",
             "weight": 2.9,
@@ -1054,6 +1380,9 @@ const collectionData = {
         },
         {
             "name": "Element: Silver",
+            "designers": [
+                "Mike Richie"
+            ],
             "img": "cache_images/280475.jpg",
             "players": "2-4P",
             "weight": 2.0,
@@ -1064,6 +1393,9 @@ const collectionData = {
         },
         {
             "name": "Everdell",
+            "designers": [
+                "James A. Wilson"
+            ],
             "img": "cache_images/199792.jpg",
             "players": "1-4P",
             "weight": 2.8,
@@ -1076,6 +1408,11 @@ const collectionData = {
         },
         {
             "name": "Exploding Kittens: NSFW Edition",
+            "designers": [
+                "Matthew Inman",
+                "Elan Lee",
+                "Shane Small"
+            ],
             "img": "cache_images/172242.jpg",
             "players": "2-5P",
             "weight": 1.1,
@@ -1088,6 +1425,11 @@ const collectionData = {
         },
         {
             "name": "Exploding Kittens: Party Pack",
+            "designers": [
+                "Matthew Inman",
+                "Elan Lee",
+                "Shane Small"
+            ],
             "img": "cache_images/256804.jpg",
             "players": "2-10P",
             "weight": 1.1,
@@ -1100,6 +1442,9 @@ const collectionData = {
         },
         {
             "name": "Fafnir",
+            "designers": [
+                "Jun Sasaki"
+            ],
             "img": "cache_images/294233.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -1108,6 +1453,9 @@ const collectionData = {
         },
         {
             "name": "Fairy Perfume",
+            "designers": [
+                "Shirota Chika"
+            ],
             "img": "cache_images/393193.jpg",
             "players": "2-4P",
             "weight": 0.0,
@@ -1118,6 +1466,9 @@ const collectionData = {
         },
         {
             "name": "A Fake Artist Goes to New York",
+            "designers": [
+                "Jun Sasaki"
+            ],
             "img": "cache_images/135779.jpg",
             "players": "5-10P",
             "weight": 1.1,
@@ -1130,6 +1481,9 @@ const collectionData = {
         },
         {
             "name": "Fantasy Realms",
+            "designers": [
+                "Bruce Glassco"
+            ],
             "img": "cache_images/223040.jpg",
             "players": "2-6P",
             "weight": 1.8,
@@ -1141,6 +1495,10 @@ const collectionData = {
         },
         {
             "name": "Faraway",
+            "designers": [
+                "Johannes Goupy",
+                "Corentin Lebrat"
+            ],
             "img": "cache_images/385761.jpg",
             "players": "2-6P",
             "weight": 1.9,
@@ -1153,6 +1511,11 @@ const collectionData = {
         },
         {
             "name": "Feed the Kraken",
+            "designers": [
+                "Maikel Cheney",
+                "Dr. Hans Joachim Höh",
+                "Tobias Immich"
+            ],
             "img": "cache_images/271601.jpg",
             "players": "5-11P",
             "weight": 2.2,
@@ -1165,6 +1528,9 @@ const collectionData = {
         },
         {
             "name": "Fishing",
+            "designers": [
+                "Friedemann Friese"
+            ],
             "img": "cache_images/419195.jpg",
             "players": "3-5P",
             "weight": 1.9,
@@ -1177,6 +1543,9 @@ const collectionData = {
         },
         {
             "name": "Fit to Print",
+            "designers": [
+                "Peter McPherson"
+            ],
             "img": "cache_images/352574.jpg",
             "players": "1-6P",
             "weight": 2.1,
@@ -1189,6 +1558,9 @@ const collectionData = {
         },
         {
             "name": "Flip 7",
+            "designers": [
+                "Eric Olsen"
+            ],
             "img": "cache_images/420087.jpg",
             "players": "3-18P",
             "weight": 1.0,
@@ -1201,6 +1573,10 @@ const collectionData = {
         },
         {
             "name": "Flower Fields",
+            "designers": [
+                "Luca Bellini",
+                "Luca Borsa"
+            ],
             "img": "cache_images/424577.jpg",
             "players": "1-4P",
             "weight": 2.1,
@@ -1212,6 +1588,9 @@ const collectionData = {
         },
         {
             "name": "Fog of Love",
+            "designers": [
+                "Jacob Jaskov"
+            ],
             "img": "cache_images/175324.jpg",
             "players": "2P",
             "weight": 2.2,
@@ -1224,6 +1603,9 @@ const collectionData = {
         },
         {
             "name": "For the King (and Me)",
+            "designers": [
+                "Steve Finn"
+            ],
             "img": "cache_images/333553.jpg",
             "players": "2-5P",
             "weight": 1.4,
@@ -1234,6 +1616,10 @@ const collectionData = {
         },
         {
             "name": "Forever Home",
+            "designers": [
+                "Lottie Hazell",
+                "Jack Hazell"
+            ],
             "img": "cache_images/385999.jpg",
             "players": "1-5P",
             "weight": 1.8,
@@ -1246,6 +1632,9 @@ const collectionData = {
         },
         {
             "name": "Four Gardens",
+            "designers": [
+                "Martin Doležal"
+            ],
             "img": "cache_images/296043.jpg",
             "players": "2-4P",
             "weight": 2.3,
@@ -1257,6 +1646,9 @@ const collectionData = {
         },
         {
             "name": "The Fox in the Forest",
+            "designers": [
+                "Joshua Buergel"
+            ],
             "img": "cache_images/221965.jpg",
             "players": "2P",
             "weight": 1.6,
@@ -1269,6 +1661,9 @@ const collectionData = {
         },
         {
             "name": "Freaky Rumors",
+            "designers": [
+                "Mary Magkou"
+            ],
             "img": "cache_images/395293.jpg",
             "players": "3-6P",
             "weight": 0.0,
@@ -1279,6 +1674,11 @@ const collectionData = {
         },
         {
             "name": "French Quarter",
+            "designers": [
+                "Adam Hill",
+                "Ben Pinchback",
+                "Matt Riddle"
+            ],
             "img": "cache_images/367442.jpg",
             "players": "1-4P",
             "weight": 2.4,
@@ -1289,6 +1689,10 @@ const collectionData = {
         },
         {
             "name": "The Gang",
+            "designers": [
+                "John Cooper",
+                "Kory Heath"
+            ],
             "img": "cache_images/411567.jpg",
             "players": "3-6P",
             "weight": 1.6,
@@ -1300,6 +1704,9 @@ const collectionData = {
         },
         {
             "name": "Ghosts Love Candy Too",
+            "designers": [
+                "Danny Devine"
+            ],
             "img": "cache_images/349242.jpg",
             "players": "2-6P",
             "weight": 2.0,
@@ -1311,6 +1718,12 @@ const collectionData = {
         },
         {
             "name": "The Gig",
+            "designers": [
+                "Jamie Gray",
+                "Dann May",
+                "Lewis Shaw",
+                "Robb Smigielski"
+            ],
             "img": "cache_images/253575.jpg",
             "players": "1-4P",
             "weight": 2.0,
@@ -1323,6 +1736,9 @@ const collectionData = {
         },
         {
             "name": "The Gig: Encore! Expansion",
+            "designers": [
+                "Lewis Shaw"
+            ],
             "img": "cache_images/367983.jpg",
             "players": "1-4P",
             "weight": 0.0,
@@ -1335,6 +1751,9 @@ const collectionData = {
         },
         {
             "name": "GoodCritters",
+            "designers": [
+                "Fabian Zimmermann"
+            ],
             "img": "cache_images/255615.jpg",
             "players": "4-8P",
             "weight": 1.4,
@@ -1347,6 +1766,10 @@ const collectionData = {
         },
         {
             "name": "Grand Austria Hotel",
+            "designers": [
+                "Virginio Gigli",
+                "Simone Luciani"
+            ],
             "img": "cache_images/182874.jpg",
             "players": "2-4P",
             "weight": 3.2,
@@ -1357,6 +1780,10 @@ const collectionData = {
         },
         {
             "name": "The Grizzled",
+            "designers": [
+                "Fabien Riffaud",
+                "Juan Rodriguez"
+            ],
             "img": "cache_images/171668.jpg",
             "players": "2-5P",
             "weight": 2.0,
@@ -1368,6 +1795,9 @@ const collectionData = {
         },
         {
             "name": "Hail Hydra",
+            "designers": [
+                "Nick Metzler"
+            ],
             "img": "cache_images/256877.jpg",
             "players": "5-8P",
             "weight": 1.9,
@@ -1380,6 +1810,9 @@ const collectionData = {
         },
         {
             "name": "Hako Onna",
+            "designers": [
+                "江神 号 (Go Ejin)"
+            ],
             "img": "cache_images/233848.jpg",
             "players": "3-5P",
             "weight": 2.7,
@@ -1392,6 +1825,9 @@ const collectionData = {
         },
         {
             "name": "Hanabi",
+            "designers": [
+                "Antoine Bauza"
+            ],
             "img": "cache_images/98778.jpg",
             "players": "2-5P",
             "weight": 1.7,
@@ -1404,6 +1840,9 @@ const collectionData = {
         },
         {
             "name": "Hanamikoji",
+            "designers": [
+                "Kota Nakayama (中山 宏太)"
+            ],
             "img": "cache_images/158600.jpg",
             "players": "2P",
             "weight": 1.7,
@@ -1415,6 +1854,11 @@ const collectionData = {
         },
         {
             "name": "Hand-to-Hand Wombat",
+            "designers": [
+                "Matthew Inman",
+                "Elan Lee",
+                "Cory O'Brien"
+            ],
             "img": "cache_images/356909.jpg",
             "players": "3-6P",
             "weight": 1.1,
@@ -1426,6 +1870,12 @@ const collectionData = {
         },
         {
             "name": "Happy Salmon",
+            "designers": [
+                "Ken Gruhl",
+                "Quentin Weir",
+                "Matthew Inman",
+                "Elan Lee"
+            ],
             "img": "cache_images/194626.jpg",
             "players": "3-8P",
             "weight": 1.1,
@@ -1438,6 +1888,9 @@ const collectionData = {
         },
         {
             "name": "Harmonies",
+            "designers": [
+                "Johan Benvenuto"
+            ],
             "img": "cache_images/414317.jpg",
             "players": "1-4P",
             "weight": 2.0,
@@ -1450,6 +1903,10 @@ const collectionData = {
         },
         {
             "name": "Herd Mentality",
+            "designers": [
+                "Rich Coombes",
+                "Dan Penn"
+            ],
             "img": "cache_images/311322.jpg",
             "players": "4-20P",
             "weight": 1.0,
@@ -1461,6 +1918,9 @@ const collectionData = {
         },
         {
             "name": "Heroes of Tenefyr",
+            "designers": [
+                "Pepijn van Loon"
+            ],
             "img": "cache_images/237706.jpg",
             "players": "1-4P",
             "weight": 2.2,
@@ -1472,6 +1932,9 @@ const collectionData = {
         },
         {
             "name": "High Society",
+            "designers": [
+                "Reiner Knizia"
+            ],
             "img": "cache_images/220.jpg",
             "players": "3-5P",
             "weight": 1.5,
@@ -1482,6 +1945,9 @@ const collectionData = {
         },
         {
             "name": "Hollywood 1947",
+            "designers": [
+                "Travis Hancock"
+            ],
             "img": "cache_images/370621.jpg",
             "players": "1-9P",
             "weight": 1.9,
@@ -1494,6 +1960,9 @@ const collectionData = {
         },
         {
             "name": "Horrified: Dungeons & Dragons",
+            "designers": [
+                "Peter Lee"
+            ],
             "img": "cache_images/437705.jpg",
             "players": "1-5P",
             "weight": 2.2,
@@ -1505,6 +1974,9 @@ const collectionData = {
         },
         {
             "name": "HR: The Toxic Workplace Game",
+            "designers": [
+                "Yee I-Van"
+            ],
             "img": "cache_images/353255.jpg",
             "players": "2-4P",
             "weight": 1.0,
@@ -1515,6 +1987,9 @@ const collectionData = {
         },
         {
             "name": "In a Grove",
+            "designers": [
+                "Jun Sasaki"
+            ],
             "img": "cache_images/102181.jpg",
             "players": "2-5P",
             "weight": 1.4,
@@ -1527,6 +2002,11 @@ const collectionData = {
         },
         {
             "name": "Invincible: Escape from Mars",
+            "designers": [
+                "Josh Camden",
+                "Patrick Logan",
+                "Whitney Loraine"
+            ],
             "img": "cache_images/396882.jpg",
             "players": "4-10P",
             "weight": 2.0,
@@ -1539,6 +2019,9 @@ const collectionData = {
         },
         {
             "name": "IT Startup",
+            "designers": [
+                "Mateusz Kupilas"
+            ],
             "img": "cache_images/248385.jpg",
             "players": "2-4P",
             "weight": 2.0,
@@ -1549,6 +2032,9 @@ const collectionData = {
         },
         {
             "name": "IT Startup: Office Lockdown",
+            "designers": [
+                "Mateusz Kupilas"
+            ],
             "img": "cache_images/357915.jpg",
             "players": "1-6P",
             "weight": 0.0,
@@ -1559,6 +2045,9 @@ const collectionData = {
         },
         {
             "name": "Jaipur",
+            "designers": [
+                "Sébastien Pauchon"
+            ],
             "img": "cache_images/54043.jpg",
             "players": "2P",
             "weight": 1.5,
@@ -1571,6 +2060,10 @@ const collectionData = {
         },
         {
             "name": "Joan of Arc: Orléans Draw & Write",
+            "designers": [
+                "Ryan Hendrickson",
+                "Reiner Stockhausen"
+            ],
             "img": "cache_images/364641.jpg",
             "players": "1-5P",
             "weight": 2.4,
@@ -1581,6 +2074,10 @@ const collectionData = {
         },
         {
             "name": "Just One",
+            "designers": [
+                "Ludovic Roudy",
+                "Bruno Sautter"
+            ],
             "img": "cache_images/254640.jpg",
             "players": "3-7P",
             "weight": 1.0,
@@ -1593,6 +2090,9 @@ const collectionData = {
         },
         {
             "name": "Kakerlakensuppe",
+            "designers": [
+                "Jacques Zeimet"
+            ],
             "img": "cache_images/38391.jpg",
             "players": "2-6P",
             "weight": 1.2,
@@ -1605,6 +2105,9 @@ const collectionData = {
         },
         {
             "name": "Kaki Lima",
+            "designers": [
+                "Goh Choon Ean"
+            ],
             "img": "cache_images/278886.jpg",
             "players": "1-8P",
             "weight": 1.7,
@@ -1617,6 +2120,9 @@ const collectionData = {
         },
         {
             "name": "Ketupat Rendang",
+            "designers": [
+                "Araduan Rasis"
+            ],
             "img": "cache_images/433121.jpg",
             "players": "2-4P",
             "weight": 0.0,
@@ -1629,6 +2135,11 @@ const collectionData = {
         },
         {
             "name": "Kick-Ass: The Board Game",
+            "designers": [
+                "Hjalmar Hach",
+                "Roberto Pestrin",
+                "Maurizio Vergendo"
+            ],
             "img": "cache_images/250561.jpg",
             "players": "1-4P",
             "weight": 3.0,
@@ -1641,6 +2152,9 @@ const collectionData = {
         },
         {
             "name": "Kingdomino",
+            "designers": [
+                "Bruno Cathala"
+            ],
             "img": "cache_images/204583.jpg",
             "players": "2-4P",
             "weight": 1.2,
@@ -1653,6 +2167,9 @@ const collectionData = {
         },
         {
             "name": "Kobayakawa",
+            "designers": [
+                "Jun Sasaki"
+            ],
             "img": "cache_images/142325.jpg",
             "players": "3-6P",
             "weight": 1.2,
@@ -1665,6 +2182,9 @@ const collectionData = {
         },
         {
             "name": "Kuih Muih",
+            "designers": [
+                "Mike Ooi"
+            ],
             "img": "cache_images/323294.jpg",
             "players": "2-6P",
             "weight": 0.0,
@@ -1675,6 +2195,11 @@ const collectionData = {
         },
         {
             "name": "Let's Hit Each Other with Fake Swords",
+            "designers": [
+                "Ian Clayman",
+                "Mary Georgescu",
+                "Eric M. Lang"
+            ],
             "img": "cache_images/423729.jpg",
             "players": "3-6P",
             "weight": 1.0,
@@ -1686,6 +2211,9 @@ const collectionData = {
         },
         {
             "name": "Living Forest",
+            "designers": [
+                "Aske Christiansen"
+            ],
             "img": "cache_images/328479.jpg",
             "players": "1-4P",
             "weight": 2.2,
@@ -1698,6 +2226,10 @@ const collectionData = {
         },
         {
             "name": "The Lord of the Rings: Duel for Middle-earth",
+            "designers": [
+                "Antoine Bauza",
+                "Bruno Cathala"
+            ],
             "img": "cache_images/421006.jpg",
             "players": "2P",
             "weight": 2.1,
@@ -1710,6 +2242,9 @@ const collectionData = {
         },
         {
             "name": "The Lord of the Rings: The Fellowship of the Ring – Trick-Taking Game",
+            "designers": [
+                "Bryan Bornmueller"
+            ],
             "img": "cache_images/429293.jpg",
             "players": "1-4P",
             "weight": 2.0,
@@ -1722,6 +2257,9 @@ const collectionData = {
         },
         {
             "name": "Lost Cities",
+            "designers": [
+                "Reiner Knizia"
+            ],
             "img": "cache_images/50.jpg",
             "players": "2P",
             "weight": 1.5,
@@ -1734,6 +2272,9 @@ const collectionData = {
         },
         {
             "name": "Love Letter",
+            "designers": [
+                "Seiji Kanai"
+            ],
             "img": "cache_images/129622.jpg",
             "players": "2-4P",
             "weight": 1.2,
@@ -1746,6 +2287,9 @@ const collectionData = {
         },
         {
             "name": "Machi Koro 2",
+            "designers": [
+                "Masao Suganuma"
+            ],
             "img": "cache_images/340364.jpg",
             "players": "2-5P",
             "weight": 1.6,
@@ -1757,6 +2301,9 @@ const collectionData = {
         },
         {
             "name": "Magic Number Eleven",
+            "designers": [
+                "Bonghwan Ju"
+            ],
             "img": "cache_images/411865.jpg",
             "players": "2P",
             "weight": 2.2,
@@ -1768,6 +2315,9 @@ const collectionData = {
         },
         {
             "name": "Magic: The Gathering – Heroes of Dominaria Board Game",
+            "designers": [
+                "Peter Lee"
+            ],
             "img": "cache_images/248763.jpg",
             "players": "2-4P",
             "weight": 2.2,
@@ -1778,6 +2328,9 @@ const collectionData = {
         },
         {
             "name": "Maglev Metro",
+            "designers": [
+                "Ted Alspach"
+            ],
             "img": "cache_images/301257.jpg",
             "players": "1-4P",
             "weight": 2.8,
@@ -1789,6 +2342,9 @@ const collectionData = {
         },
         {
             "name": "Make the Difference",
+            "designers": [
+                "Shintaro Ono (大野 森太郎)"
+            ],
             "img": "cache_images/365727.jpg",
             "players": "2-4P",
             "weight": 1.0,
@@ -1797,6 +2353,9 @@ const collectionData = {
         },
         {
             "name": "The Malaysian Dream",
+            "designers": [
+                "MGAG"
+            ],
             "img": "cache_images/286745.jpg",
             "players": "2-6P",
             "weight": 1.0,
@@ -1808,6 +2367,10 @@ const collectionData = {
         },
         {
             "name": "MANTIS",
+            "designers": [
+                "Ken Gruhl",
+                "Jeremy Posner"
+            ],
             "img": "cache_images/358690.jpg",
             "players": "2-6P",
             "weight": 1.0,
@@ -1818,6 +2381,10 @@ const collectionData = {
         },
         {
             "name": "Maskmen",
+            "designers": [
+                "Jun Sasaki",
+                "新澤 大樹 (Taiki Shinzawa)"
+            ],
             "img": "cache_images/159581.jpg",
             "players": "2-6P",
             "weight": 1.8,
@@ -1829,6 +2396,9 @@ const collectionData = {
         },
         {
             "name": "MeowMeow Mia",
+            "designers": [
+                "Andrew Nien"
+            ],
             "img": "cache_images/262447.jpg",
             "players": "5-10P",
             "weight": 1.5,
@@ -1841,6 +2411,9 @@ const collectionData = {
         },
         {
             "name": "A Message From the Stars",
+            "designers": [
+                "Clarence Simpson"
+            ],
             "img": "cache_images/399987.jpg",
             "players": "2-8P",
             "weight": 2.7,
@@ -1853,6 +2426,9 @@ const collectionData = {
         },
         {
             "name": "Mille Fiori",
+            "designers": [
+                "Reiner Knizia"
+            ],
             "img": "cache_images/346501.jpg",
             "players": "2-4P",
             "weight": 2.2,
@@ -1864,6 +2440,9 @@ const collectionData = {
         },
         {
             "name": "The Mind",
+            "designers": [
+                "Wolfgang Warsch"
+            ],
             "img": "cache_images/244992.jpg",
             "players": "2-4P",
             "weight": 1.1,
@@ -1875,6 +2454,9 @@ const collectionData = {
         },
         {
             "name": "MLEM: Space Agency",
+            "designers": [
+                "Reiner Knizia"
+            ],
             "img": "cache_images/387378.jpg",
             "players": "2-5P",
             "weight": 1.7,
@@ -1887,6 +2469,10 @@ const collectionData = {
         },
         {
             "name": "Monikers",
+            "designers": [
+                "Alex Hague",
+                "Justin Vickers"
+            ],
             "img": "cache_images/156546.jpg",
             "players": "4-16P",
             "weight": 1.1,
@@ -1899,6 +2485,10 @@ const collectionData = {
         },
         {
             "name": "Monkey Palace",
+            "designers": [
+                "David Gordon (I)",
+                "TAM"
+            ],
             "img": "cache_images/412911.jpg",
             "players": "2-4P",
             "weight": 2.0,
@@ -1911,6 +2501,9 @@ const collectionData = {
         },
         {
             "name": "Monopoly Deal Card Game",
+            "designers": [
+                "Katharine Chapman"
+            ],
             "img": "cache_images/40398.jpg",
             "players": "2-5P",
             "weight": 1.3,
@@ -1922,6 +2515,9 @@ const collectionData = {
         },
         {
             "name": "Moody Bear Kingdom",
+            "designers": [
+                "Songsit Phraephet"
+            ],
             "img": "cache_images/377651.jpg",
             "players": "3-5P",
             "weight": 2.0,
@@ -1934,6 +2530,9 @@ const collectionData = {
         },
         {
             "name": "Moon Adventure",
+            "designers": [
+                "Jun Sasaki"
+            ],
             "img": "cache_images/330403.jpg",
             "players": "2-5P",
             "weight": 2.2,
@@ -1945,6 +2544,9 @@ const collectionData = {
         },
         {
             "name": "Moving Wild",
+            "designers": [
+                "Chris Priscott"
+            ],
             "img": "cache_images/423270.jpg",
             "players": "1-6P",
             "weight": 2.0,
@@ -1956,6 +2558,10 @@ const collectionData = {
         },
         {
             "name": "Mr. Jack Pocket",
+            "designers": [
+                "Bruno Cathala",
+                "Ludovic Maublanc"
+            ],
             "img": "cache_images/72287.jpg",
             "players": "2P",
             "weight": 1.8,
@@ -1968,6 +2574,9 @@ const collectionData = {
         },
         {
             "name": "Munchkin Rick and Morty",
+            "designers": [
+                "Casey Sershon"
+            ],
             "img": "cache_images/224134.jpg",
             "players": "3-6P",
             "weight": 1.6,
@@ -1979,6 +2588,9 @@ const collectionData = {
         },
         {
             "name": "Muse",
+            "designers": [
+                "Jordan Sorenson"
+            ],
             "img": "cache_images/234396.jpg",
             "players": "2-12P",
             "weight": 1.1,
@@ -1991,6 +2603,9 @@ const collectionData = {
         },
         {
             "name": "Mystery of the Temples",
+            "designers": [
+                "Wei-Min Ling"
+            ],
             "img": "cache_images/234691.jpg",
             "players": "2-4P",
             "weight": 2.3,
@@ -2002,6 +2617,9 @@ const collectionData = {
         },
         {
             "name": "Nasi Lemak: The Game",
+            "designers": [
+                "Logan Ghanesh"
+            ],
             "img": "cache_images/425636.jpg",
             "players": "2-5P",
             "weight": 1.0,
@@ -2012,6 +2630,9 @@ const collectionData = {
         },
         {
             "name": "Nasi Lemak: The Rendang Expansion",
+            "designers": [
+                "Logan Ghanesh"
+            ],
             "img": "cache_images/425637.jpg",
             "players": "3-7P",
             "weight": 0.0,
@@ -2023,6 +2644,9 @@ const collectionData = {
         },
         {
             "name": "Next Station: Paris",
+            "designers": [
+                "Matthew Dunstan"
+            ],
             "img": "cache_images/403116.jpg",
             "players": "1-4P",
             "weight": 1.7,
@@ -2034,6 +2658,9 @@ const collectionData = {
         },
         {
             "name": "Night of the Ninja",
+            "designers": [
+                "Justin Gary"
+            ],
             "img": "cache_images/306321.jpg",
             "players": "4-11P",
             "weight": 1.9,
@@ -2046,6 +2673,7 @@ const collectionData = {
         },
         {
             "name": "Nilsum",
+            "designers": [],
             "img": "cache_images/423501.jpg",
             "players": "2-5P",
             "weight": 0.0,
@@ -2058,6 +2686,10 @@ const collectionData = {
         },
         {
             "name": "Nine Tiles Extreme",
+            "designers": [
+                "Jens Merkl",
+                "Jean-Claude Pellin"
+            ],
             "img": "cache_images/391084.jpg",
             "players": "2-4P",
             "weight": 1.0,
@@ -2069,6 +2701,10 @@ const collectionData = {
         },
         {
             "name": "Nine Tiles Panic",
+            "designers": [
+                "Jens Merkl",
+                "Jean-Claude Pellin"
+            ],
             "img": "cache_images/279869.jpg",
             "players": "2-5P",
             "weight": 1.3,
@@ -2079,6 +2715,9 @@ const collectionData = {
         },
         {
             "name": "No Thanks!",
+            "designers": [
+                "Thorsten Gimmler"
+            ],
             "img": "cache_images/12942.jpg",
             "players": "3-7P",
             "weight": 1.1,
@@ -2089,6 +2728,9 @@ const collectionData = {
         },
         {
             "name": "Noctiluca",
+            "designers": [
+                "Shem Phillips"
+            ],
             "img": "cache_images/269752.jpg",
             "players": "1-4P",
             "weight": 1.3,
@@ -2101,6 +2743,9 @@ const collectionData = {
         },
         {
             "name": "Nyet!",
+            "designers": [
+                "Stefan Dorra"
+            ],
             "img": "cache_images/1107.jpg",
             "players": "2-5P",
             "weight": 1.9,
@@ -2112,6 +2757,9 @@ const collectionData = {
         },
         {
             "name": "Obscurio",
+            "designers": [
+                "L'Atelier"
+            ],
             "img": "cache_images/273477.jpg",
             "players": "2-8P",
             "weight": 1.9,
@@ -2124,6 +2772,10 @@ const collectionData = {
         },
         {
             "name": "One Night Ultimate Alien",
+            "designers": [
+                "Ted Alspach",
+                "Akihisa Okui"
+            ],
             "img": "cache_images/204431.jpg",
             "players": "4-10P",
             "weight": 1.9,
@@ -2136,6 +2788,10 @@ const collectionData = {
         },
         {
             "name": "One Night Ultimate Werewolf",
+            "designers": [
+                "Ted Alspach",
+                "Akihisa Okui"
+            ],
             "img": "cache_images/147949.jpg",
             "players": "3-10P",
             "weight": 1.4,
@@ -2148,6 +2804,11 @@ const collectionData = {
         },
         {
             "name": "Only Murders in the Building: The Game",
+            "designers": [
+                "Aaron Donogh",
+                "Prospero Hall",
+                "David Iezzi"
+            ],
             "img": "cache_images/426102.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -2160,6 +2821,9 @@ const collectionData = {
         },
         {
             "name": "Onstage",
+            "designers": [
+                "Michael Orion"
+            ],
             "img": "cache_images/417224.jpg",
             "players": "3-5P",
             "weight": 1.8,
@@ -2170,6 +2834,9 @@ const collectionData = {
         },
         {
             "name": "OrganATTACK!",
+            "designers": [
+                "Nick Seluk"
+            ],
             "img": "cache_images/201406.jpg",
             "players": "2-6P",
             "weight": 1.5,
@@ -2182,6 +2849,9 @@ const collectionData = {
         },
         {
             "name": "Overseers",
+            "designers": [
+                "Guan Chih Huang"
+            ],
             "img": "cache_images/176803.jpg",
             "players": "3-6P",
             "weight": 2.0,
@@ -2193,6 +2863,9 @@ const collectionData = {
         },
         {
             "name": "Pasaraya: Supermarket Manager",
+            "designers": [
+                "Seh Hui Leong"
+            ],
             "img": "cache_images/193240.jpg",
             "players": "1-4P",
             "weight": 2.5,
@@ -2204,6 +2877,9 @@ const collectionData = {
         },
         {
             "name": "Patchwork",
+            "designers": [
+                "Uwe Rosenberg"
+            ],
             "img": "cache_images/163412.jpg",
             "players": "2P",
             "weight": 1.6,
@@ -2216,6 +2892,9 @@ const collectionData = {
         },
         {
             "name": "Petal Plotters",
+            "designers": [
+                "Evan Cheah"
+            ],
             "img": "cache_images/423706.jpg",
             "players": "2-5P",
             "weight": 2.0,
@@ -2228,6 +2907,9 @@ const collectionData = {
         },
         {
             "name": "Petrichor",
+            "designers": [
+                "David Chircop"
+            ],
             "img": "cache_images/210274.jpg",
             "players": "1-4P",
             "weight": 3.0,
@@ -2239,6 +2921,9 @@ const collectionData = {
         },
         {
             "name": "Photosynthesis",
+            "designers": [
+                "Hjalmar Hach"
+            ],
             "img": "cache_images/218603.jpg",
             "players": "2-4P",
             "weight": 2.3,
@@ -2250,6 +2935,9 @@ const collectionData = {
         },
         {
             "name": "Piles! A Fast-Paced Free-For-All",
+            "designers": [
+                "KC Schrimpl"
+            ],
             "img": "cache_images/400752.jpg",
             "players": "2-8P",
             "weight": 1.0,
@@ -2261,6 +2949,9 @@ const collectionData = {
         },
         {
             "name": "Pixies",
+            "designers": [
+                "Johannes Goupy"
+            ],
             "img": "cache_images/411875.jpg",
             "players": "2-5P",
             "weight": 1.2,
@@ -2273,6 +2964,9 @@ const collectionData = {
         },
         {
             "name": "Poetry for Neanderthals",
+            "designers": [
+                "Elan Lee"
+            ],
             "img": "cache_images/312786.jpg",
             "players": "2-12P",
             "weight": 1.1,
@@ -2285,6 +2979,9 @@ const collectionData = {
         },
         {
             "name": "Poetry for Neanderthals: NSFW Edition",
+            "designers": [
+                "Elan Lee"
+            ],
             "img": "cache_images/363550.jpg",
             "players": "2-8P",
             "weight": 1.0,
@@ -2297,6 +2994,11 @@ const collectionData = {
         },
         {
             "name": "Point City",
+            "designers": [
+                "Molly Johnson",
+                "Robert Melvin",
+                "Shawn Stankewich"
+            ],
             "img": "cache_images/368017.jpg",
             "players": "1-4P",
             "weight": 1.7,
@@ -2308,6 +3010,11 @@ const collectionData = {
         },
         {
             "name": "Point Salad",
+            "designers": [
+                "Molly Johnson",
+                "Robert Melvin",
+                "Shawn Stankewich"
+            ],
             "img": "cache_images/274960.jpg",
             "players": "2-6P",
             "weight": 1.2,
@@ -2318,6 +3025,9 @@ const collectionData = {
         },
         {
             "name": "Ponzi Scheme",
+            "designers": [
+                "Jesse Li"
+            ],
             "img": "cache_images/180899.jpg",
             "players": "3-5P",
             "weight": 2.4,
@@ -2328,6 +3038,10 @@ const collectionData = {
         },
         {
             "name": "Pot de Vin",
+            "designers": [
+                "Fel Barros",
+                "Warny Marçano"
+            ],
             "img": "cache_images/232078.jpg",
             "players": "3-6P",
             "weight": 1.9,
@@ -2340,6 +3054,9 @@ const collectionData = {
         },
         {
             "name": "Power Hungry Pets",
+            "designers": [
+                "Seiji Kanai"
+            ],
             "img": "cache_images/411404.jpg",
             "players": "2-6P",
             "weight": 1.1,
@@ -2350,6 +3067,10 @@ const collectionData = {
         },
         {
             "name": "Prêt-à-Porter",
+            "designers": [
+                "Piotr Haraszczak",
+                "Ignacy Trzewiczek"
+            ],
             "img": "cache_images/87890.jpg",
             "players": "2-4P",
             "weight": 3.6,
@@ -2361,6 +3082,9 @@ const collectionData = {
         },
         {
             "name": "Primordial Secrets",
+            "designers": [
+                "Garth Avery"
+            ],
             "img": "cache_images/329648.jpg",
             "players": "2-4P",
             "weight": 2.7,
@@ -2372,6 +3096,9 @@ const collectionData = {
         },
         {
             "name": "Quickity Pickity",
+            "designers": [
+                "ましう (Mashiu)"
+            ],
             "img": "cache_images/372433.jpg",
             "players": "2-5P",
             "weight": 1.0,
@@ -2382,6 +3109,10 @@ const collectionData = {
         },
         {
             "name": "Rafter Five",
+            "designers": [
+                "ましう (Mashiu)",
+                "Jun Sasaki"
+            ],
             "img": "cache_images/405538.jpg",
             "players": "1-6P",
             "weight": 1.1,
@@ -2392,6 +3123,9 @@ const collectionData = {
         },
         {
             "name": "Rallyman: DIRT",
+            "designers": [
+                "Jean-Christophe Bouvier"
+            ],
             "img": "cache_images/312959.jpg",
             "players": "1-6P",
             "weight": 2.3,
@@ -2403,6 +3137,9 @@ const collectionData = {
         },
         {
             "name": "Ramen! Ramen!",
+            "designers": [
+                "Brendan Hansen"
+            ],
             "img": "cache_images/314971.jpg",
             "players": "1-4P",
             "weight": 1.5,
@@ -2414,6 +3151,9 @@ const collectionData = {
         },
         {
             "name": "Ready Set Bet",
+            "designers": [
+                "John D. Clair"
+            ],
             "img": "cache_images/351040.jpg",
             "players": "2-9P",
             "weight": 1.3,
@@ -2426,6 +3166,11 @@ const collectionData = {
         },
         {
             "name": "Really Loud Librarians",
+            "designers": [
+                "Ian Clayman",
+                "Ken Gruhl",
+                "Quentin Weir"
+            ],
             "img": "cache_images/378367.jpg",
             "players": "2-12P",
             "weight": 1.2,
@@ -2437,6 +3182,10 @@ const collectionData = {
         },
         {
             "name": "Red Rising",
+            "designers": [
+                "Alexander Schmidt (II)",
+                "Jamey Stegmaier"
+            ],
             "img": "cache_images/329465.jpg",
             "players": "1-6P",
             "weight": 2.3,
@@ -2449,6 +3198,9 @@ const collectionData = {
         },
         {
             "name": "Redwood",
+            "designers": [
+                "Christophe Raimbault"
+            ],
             "img": "cache_images/359962.jpg",
             "players": "1-4P",
             "weight": 2.1,
@@ -2461,6 +3213,9 @@ const collectionData = {
         },
         {
             "name": "Reef",
+            "designers": [
+                "Emerson Matsuuchi"
+            ],
             "img": "cache_images/244228.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -2472,6 +3227,11 @@ const collectionData = {
         },
         {
             "name": "Regicide",
+            "designers": [
+                "Paul Abrahams",
+                "Luke Badger",
+                "Andy Richdale"
+            ],
             "img": "cache_images/307002.jpg",
             "players": "1-4P",
             "weight": 2.0,
@@ -2484,6 +3244,9 @@ const collectionData = {
         },
         {
             "name": "The Resistance: Avalon",
+            "designers": [
+                "Don Eskridge"
+            ],
             "img": "cache_images/128882.jpg",
             "players": "5-10P",
             "weight": 1.7,
@@ -2496,6 +3259,12 @@ const collectionData = {
         },
         {
             "name": "Risk Strike",
+            "designers": [
+                "George Feledichuk",
+                "Sophie Horton-Jones",
+                "David \"Duvey\" Rudow",
+                "Leo Taylor"
+            ],
             "img": "cache_images/394144.jpg",
             "players": "2-5P",
             "weight": 1.6,
@@ -2507,6 +3276,9 @@ const collectionData = {
         },
         {
             "name": "Rummikub",
+            "designers": [
+                "Ephraim Hertzano"
+            ],
             "img": "cache_images/811.jpg",
             "players": "2-4P",
             "weight": 1.7,
@@ -2519,6 +3291,9 @@ const collectionData = {
         },
         {
             "name": "Runemasters",
+            "designers": [
+                "Antoine Prono"
+            ],
             "img": "cache_images/391766.jpg",
             "players": "1-4P",
             "weight": 1.9,
@@ -2530,6 +3305,11 @@ const collectionData = {
         },
         {
             "name": "Rush M.D.",
+            "designers": [
+                "Anthony Howgego",
+                "Konstantinos Kokkinis",
+                "Dávid Turczi"
+            ],
             "img": "cache_images/284217.jpg",
             "players": "1-4P",
             "weight": 2.4,
@@ -2542,6 +3322,9 @@ const collectionData = {
         },
         {
             "name": "Saboteur",
+            "designers": [
+                "Fréderic Moyersoen"
+            ],
             "img": "cache_images/9220.jpg",
             "players": "3-10P",
             "weight": 1.3,
@@ -2554,6 +3337,9 @@ const collectionData = {
         },
         {
             "name": "Saint Petersburg",
+            "designers": [
+                "Bernd Brunnhofer"
+            ],
             "img": "cache_images/9217.jpg",
             "players": "2-4P",
             "weight": 2.4,
@@ -2566,6 +3352,11 @@ const collectionData = {
         },
         {
             "name": "Scream: The Game",
+            "designers": [
+                "Aaron Donogh",
+                "Funko Games",
+                "Prospero Hall"
+            ],
             "img": "cache_images/386135.jpg",
             "players": "3-8P",
             "weight": 1.0,
@@ -2578,6 +3369,10 @@ const collectionData = {
         },
         {
             "name": "Sea Salt & Paper",
+            "designers": [
+                "Bruno Cathala",
+                "Théo Rivière"
+            ],
             "img": "cache_images/367220.jpg",
             "players": "2-4P",
             "weight": 1.5,
@@ -2589,6 +3384,10 @@ const collectionData = {
         },
         {
             "name": "Sea Salt & Paper: Extra Salt",
+            "designers": [
+                "Bruno Cathala",
+                "Théo Rivière"
+            ],
             "img": "cache_images/396545.jpg",
             "players": "2-4P",
             "weight": 1.4,
@@ -2601,6 +3400,11 @@ const collectionData = {
         },
         {
             "name": "Secret Hitler",
+            "designers": [
+                "Mike Boxleiter",
+                "Tommy Maranges",
+                "Max Temkin"
+            ],
             "img": "cache_images/188834.jpg",
             "players": "5-10P",
             "weight": 1.7,
@@ -2613,6 +3417,10 @@ const collectionData = {
         },
         {
             "name": "Shake That City",
+            "designers": [
+                "Mads Fløe",
+                "Kåre Torndahl Kjær"
+            ],
             "img": "cache_images/359764.jpg",
             "players": "1-4P",
             "weight": 1.9,
@@ -2624,6 +3432,9 @@ const collectionData = {
         },
         {
             "name": "Shake Up",
+            "designers": [
+                "Dominic Michael Huang"
+            ],
             "img": "cache_images/260170.jpg",
             "players": "1-2P",
             "weight": 2.2,
@@ -2635,6 +3446,9 @@ const collectionData = {
         },
         {
             "name": "Shardhunters",
+            "designers": [
+                "Balázs Bodnár"
+            ],
             "img": "cache_images/252163.jpg",
             "players": "1-4P",
             "weight": 1.4,
@@ -2647,6 +3461,10 @@ const collectionData = {
         },
         {
             "name": "Sheriff of Nottingham: 2nd Edition",
+            "designers": [
+                "Sérgio Halaban",
+                "André Zatz"
+            ],
             "img": "cache_images/298638.jpg",
             "players": "3-6P",
             "weight": 1.7,
@@ -2659,6 +3477,9 @@ const collectionData = {
         },
         {
             "name": "Shop Until You Drop",
+            "designers": [
+                "Daryl Chow"
+            ],
             "img": "cache_images/410275.jpg",
             "players": "2-5P",
             "weight": 2.0,
@@ -2670,6 +3491,9 @@ const collectionData = {
         },
         {
             "name": "Silver Fang",
+            "designers": [
+                "Ted Alspach"
+            ],
             "img": "cache_images/407716.jpg",
             "players": "2-4P",
             "weight": 0.0,
@@ -2680,6 +3504,9 @@ const collectionData = {
         },
         {
             "name": "Skull",
+            "designers": [
+                "Hervé Marly"
+            ],
             "img": "cache_images/92415.jpg",
             "players": "3-6P",
             "weight": 1.1,
@@ -2692,6 +3519,10 @@ const collectionData = {
         },
         {
             "name": "Skull King",
+            "designers": [
+                "Brent Beck",
+                "Jeffrey Beck"
+            ],
             "img": "cache_images/150145.jpg",
             "players": "2-8P",
             "weight": 1.7,
@@ -2704,6 +3535,9 @@ const collectionData = {
         },
         {
             "name": "Sky Team",
+            "designers": [
+                "Luc Rémond"
+            ],
             "img": "cache_images/373106.jpg",
             "players": "2P",
             "weight": 2.0,
@@ -2715,6 +3549,9 @@ const collectionData = {
         },
         {
             "name": "Skyrockets: Festivals of Fire",
+            "designers": [
+                "Charlie McCarron"
+            ],
             "img": "cache_images/398684.jpg",
             "players": "2-5P",
             "weight": 1.5,
@@ -2725,6 +3562,9 @@ const collectionData = {
         },
         {
             "name": "Slingz: The Darker Side",
+            "designers": [
+                "Rémy Wannerbroucq"
+            ],
             "img": "cache_images/428771.jpg",
             "players": "2-7P",
             "weight": 0.0,
@@ -2737,6 +3577,9 @@ const collectionData = {
         },
         {
             "name": "Snake Oil",
+            "designers": [
+                "Jeff Ochs"
+            ],
             "img": "cache_images/113289.jpg",
             "players": "3-10P",
             "weight": 1.1,
@@ -2749,6 +3592,9 @@ const collectionData = {
         },
         {
             "name": "So Clover!",
+            "designers": [
+                "François Romain"
+            ],
             "img": "cache_images/329839.jpg",
             "players": "3-6P",
             "weight": 1.1,
@@ -2760,6 +3606,9 @@ const collectionData = {
         },
         {
             "name": "Solenia",
+            "designers": [
+                "Sébastien Dujardin"
+            ],
             "img": "cache_images/254018.jpg",
             "players": "1-4P",
             "weight": 2.2,
@@ -2772,6 +3621,9 @@ const collectionData = {
         },
         {
             "name": "Sonic Roll",
+            "designers": [
+                "Anthony Thorp"
+            ],
             "img": "cache_images/406684.jpg",
             "players": "1-4P",
             "weight": 2.4,
@@ -2784,6 +3636,10 @@ const collectionData = {
         },
         {
             "name": "Souvenirs from Venice",
+            "designers": [
+                "Jun Sasaki",
+                "Goro Sasaki"
+            ],
             "img": "cache_images/427865.jpg",
             "players": "2-5P",
             "weight": 1.1,
@@ -2792,6 +3648,7 @@ const collectionData = {
         },
         {
             "name": "Spell Wars",
+            "designers": [],
             "img": "cache_images/378403.jpg",
             "players": "2-4P",
             "weight": 0.0,
@@ -2804,6 +3661,9 @@ const collectionData = {
         },
         {
             "name": "Spire's End",
+            "designers": [
+                "Greg Favro"
+            ],
             "img": "cache_images/271754.jpg",
             "players": "1-2P",
             "weight": 2.0,
@@ -2816,6 +3676,9 @@ const collectionData = {
         },
         {
             "name": "Spire's End: Hildegard",
+            "designers": [
+                "Greg Favro"
+            ],
             "img": "cache_images/338069.jpg",
             "players": "1-2P",
             "weight": 1.7,
@@ -2828,6 +3691,9 @@ const collectionData = {
         },
         {
             "name": "Splendor",
+            "designers": [
+                "Marc André"
+            ],
             "img": "cache_images/148228.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -2840,6 +3706,9 @@ const collectionData = {
         },
         {
             "name": "Spyfall: Time Travel",
+            "designers": [
+                "Alexandr Ushan"
+            ],
             "img": "cache_images/256085.jpg",
             "players": "2-8P",
             "weight": 1.5,
@@ -2852,6 +3721,9 @@ const collectionData = {
         },
         {
             "name": "Starry Night Sky",
+            "designers": [
+                "Emma Larkins"
+            ],
             "img": "cache_images/368519.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -2864,6 +3736,9 @@ const collectionData = {
         },
         {
             "name": "Startups",
+            "designers": [
+                "Jun Sasaki"
+            ],
             "img": "cache_images/223770.jpg",
             "players": "3-7P",
             "weight": 1.6,
@@ -2875,6 +3750,10 @@ const collectionData = {
         },
         {
             "name": "Stereo Mind",
+            "designers": [
+                "Silvergun",
+                "Sunhyuk Chae"
+            ],
             "img": "cache_images/369257.jpg",
             "players": "2-5P",
             "weight": 1.0,
@@ -2885,6 +3764,9 @@ const collectionData = {
         },
         {
             "name": "Stranger Things: Upside Down",
+            "designers": [
+                "Rob Daviau"
+            ],
             "img": "cache_images/374502.jpg",
             "players": "2-4P",
             "weight": 2.3,
@@ -2897,6 +3779,9 @@ const collectionData = {
         },
         {
             "name": "Summer Camp",
+            "designers": [
+                "Phil Walker-Harding"
+            ],
             "img": "cache_images/337787.jpg",
             "players": "2-4P",
             "weight": 1.8,
@@ -2907,6 +3792,11 @@ const collectionData = {
         },
         {
             "name": "Survivor: The Tribe Has Spoken",
+            "designers": [
+                "Ian Clayman",
+                "Elan Lee",
+                "Jeff Probst"
+            ],
             "img": "cache_images/435367.jpg",
             "players": "3-6P",
             "weight": 1.7,
@@ -2919,6 +3809,9 @@ const collectionData = {
         },
         {
             "name": "Sushi Go Party!",
+            "designers": [
+                "Phil Walker-Harding"
+            ],
             "img": "cache_images/192291.jpg",
             "players": "2-8P",
             "weight": 1.3,
@@ -2930,6 +3823,9 @@ const collectionData = {
         },
         {
             "name": "Taco Cat Goat Cheese Pizza",
+            "designers": [
+                "Dave Campbell (II)"
+            ],
             "img": "cache_images/253664.jpg",
             "players": "2-8P",
             "weight": 1.0,
@@ -2942,6 +3838,9 @@ const collectionData = {
         },
         {
             "name": "¡TACO FIGHT!",
+            "designers": [
+                "Daniel Aronson"
+            ],
             "img": "cache_images/249364.jpg",
             "players": "1-4P",
             "weight": 1.0,
@@ -2954,6 +3853,9 @@ const collectionData = {
         },
         {
             "name": "Taco vs Burrito",
+            "designers": [
+                "Alex Butler"
+            ],
             "img": "cache_images/249816.jpg",
             "players": "2-4P",
             "weight": 1.0,
@@ -2964,6 +3866,9 @@ const collectionData = {
         },
         {
             "name": "Take 5",
+            "designers": [
+                "Wolfgang Kramer"
+            ],
             "img": "cache_images/432.jpg",
             "players": "2-10P",
             "weight": 1.2,
@@ -2976,6 +3881,10 @@ const collectionData = {
         },
         {
             "name": "Take Time",
+            "designers": [
+                "Alexi Piovesan",
+                "Julien Prothière"
+            ],
             "img": "cache_images/440540.jpg",
             "players": "2-4P",
             "weight": 1.7,
@@ -2987,6 +3896,9 @@ const collectionData = {
         },
         {
             "name": "Tanto Cuore: Romantic Vacation",
+            "designers": [
+                "Masayuki Kudou"
+            ],
             "img": "cache_images/75448.jpg",
             "players": "2-4P",
             "weight": 2.5,
@@ -2997,6 +3909,9 @@ const collectionData = {
         },
         {
             "name": "Tapestry",
+            "designers": [
+                "Jamey Stegmaier"
+            ],
             "img": "cache_images/286096.jpg",
             "players": "1-5P",
             "weight": 3.0,
@@ -3008,6 +3923,9 @@ const collectionData = {
         },
         {
             "name": "Telestrations",
+            "designers": [
+                "(Uncredited)"
+            ],
             "img": "cache_images/46213.jpg",
             "players": "4-8P",
             "weight": 1.1,
@@ -3020,6 +3938,9 @@ const collectionData = {
         },
         {
             "name": "Terra Nova",
+            "designers": [
+                "Andreas Faul"
+            ],
             "img": "cache_images/364186.jpg",
             "players": "2-4P",
             "weight": 2.8,
@@ -3031,6 +3952,11 @@ const collectionData = {
         },
         {
             "name": "That Escalated Quickly",
+            "designers": [
+                "Ian Clayman",
+                "Carol Mertz",
+                "Aurélien Picolet"
+            ],
             "img": "cache_images/410382.jpg",
             "players": "2-8P",
             "weight": 1.1,
@@ -3043,6 +3969,9 @@ const collectionData = {
         },
         {
             "name": "That's Not a Hat: Pop Culture",
+            "designers": [
+                "Kasper Lapp"
+            ],
             "img": "cache_images/406663.jpg",
             "players": "3-8P",
             "weight": 1.3,
@@ -3055,6 +3984,9 @@ const collectionData = {
         },
         {
             "name": "Things in Rings",
+            "designers": [
+                "Peter C. Hayward"
+            ],
             "img": "cache_images/408547.jpg",
             "players": "2-6P",
             "weight": 1.4,
@@ -3067,6 +3999,11 @@ const collectionData = {
         },
         {
             "name": "Throw Throw Burrito",
+            "designers": [
+                "Matthew Inman",
+                "Elan Lee",
+                "Brian S. Spence"
+            ],
             "img": "cache_images/274533.jpg",
             "players": "2-6P",
             "weight": 1.1,
@@ -3079,6 +4016,9 @@ const collectionData = {
         },
         {
             "name": "Ticket to Ride: Europe",
+            "designers": [
+                "Alan R. Moon"
+            ],
             "img": "cache_images/14996.jpg",
             "players": "2-5P",
             "weight": 1.9,
@@ -3089,6 +4029,9 @@ const collectionData = {
         },
         {
             "name": "Toil & Troublez",
+            "designers": [
+                "Petr Vojtěch"
+            ],
             "img": "cache_images/402744.jpg",
             "players": "2-6P",
             "weight": 1.9,
@@ -3100,6 +4043,9 @@ const collectionData = {
         },
         {
             "name": "Tokaido",
+            "designers": [
+                "Antoine Bauza"
+            ],
             "img": "cache_images/123540.jpg",
             "players": "1-5P",
             "weight": 1.7,
@@ -3110,6 +4056,9 @@ const collectionData = {
         },
         {
             "name": "Tortuga 1667",
+            "designers": [
+                "Travis Hancock"
+            ],
             "img": "cache_images/218530.jpg",
             "players": "2-9P",
             "weight": 2.0,
@@ -3122,6 +4071,10 @@ const collectionData = {
         },
         {
             "name": "Town 77",
+            "designers": [
+                "Christoph Cantzler",
+                "Anja Wrede"
+            ],
             "img": "cache_images/402310.jpg",
             "players": "1-5P",
             "weight": 1.8,
@@ -3132,6 +4085,9 @@ const collectionData = {
         },
         {
             "name": "Traitors Aboard",
+            "designers": [
+                "Jean-Xia Chou"
+            ],
             "img": "cache_images/403000.jpg",
             "players": "3-8P",
             "weight": 1.1,
@@ -3144,6 +4100,9 @@ const collectionData = {
         },
         {
             "name": "Trekking the National Parks: Second Edition",
+            "designers": [
+                "Charlie Bink"
+            ],
             "img": "cache_images/255708.jpg",
             "players": "2-5P",
             "weight": 1.8,
@@ -3156,6 +4115,9 @@ const collectionData = {
         },
         {
             "name": "Trishaw Frenzy",
+            "designers": [
+                "Ewe Boon How"
+            ],
             "img": "cache_images/423704.jpg",
             "players": "1-4P",
             "weight": 1.0,
@@ -3168,6 +4130,10 @@ const collectionData = {
         },
         {
             "name": "TROLL",
+            "designers": [
+                "Kouji Kimura",
+                "Jun Sasaki"
+            ],
             "img": "cache_images/174893.jpg",
             "players": "3-5P",
             "weight": 1.3,
@@ -3178,6 +4144,9 @@ const collectionData = {
         },
         {
             "name": "Tsukiji",
+            "designers": [
+                "Leandro Pires"
+            ],
             "img": "cache_images/142124.jpg",
             "players": "2-4P",
             "weight": 1.9,
@@ -3189,6 +4158,10 @@ const collectionData = {
         },
         {
             "name": "Two Rooms and a Boom",
+            "designers": [
+                "Alan Gerding",
+                "Sean McCoy"
+            ],
             "img": "cache_images/134352.jpg",
             "players": "6-30P",
             "weight": 1.5,
@@ -3201,6 +4174,9 @@ const collectionData = {
         },
         {
             "name": "Ultimate Werewolf: Deluxe Edition",
+            "designers": [
+                "Ted Alspach"
+            ],
             "img": "cache_images/152242.jpg",
             "players": "5-75P",
             "weight": 1.5,
@@ -3213,6 +4189,9 @@ const collectionData = {
         },
         {
             "name": "Unstable Unicorns: NSFW Base Game",
+            "designers": [
+                "Ramy Badie"
+            ],
             "img": "cache_images/287952.jpg",
             "players": "2-8P",
             "weight": 1.5,
@@ -3225,6 +4204,9 @@ const collectionData = {
         },
         {
             "name": "The Valley of Alchemists",
+            "designers": [
+                "Kamil Langie"
+            ],
             "img": "cache_images/234104.jpg",
             "players": "2-4P",
             "weight": 2.0,
@@ -3235,6 +4217,10 @@ const collectionData = {
         },
         {
             "name": "Viticulture Essential Edition",
+            "designers": [
+                "Jamey Stegmaier",
+                "Alan Stone"
+            ],
             "img": "cache_images/183394.jpg",
             "players": "1-6P",
             "weight": 2.9,
@@ -3246,6 +4232,9 @@ const collectionData = {
         },
         {
             "name": "Wakanda Forever",
+            "designers": [
+                "Nick Metzler"
+            ],
             "img": "cache_images/280282.jpg",
             "players": "3-5P",
             "weight": 1.5,
@@ -3258,6 +4247,9 @@ const collectionData = {
         },
         {
             "name": "Walking in Provence",
+            "designers": [
+                "Wei-Min Ling"
+            ],
             "img": "cache_images/286145.jpg",
             "players": "2-5P",
             "weight": 1.8,
@@ -3269,6 +4261,9 @@ const collectionData = {
         },
         {
             "name": "War of the Three Kingdoms: Kingdom Wars",
+            "designers": [
+                "KayaK"
+            ],
             "img": "cache_images/283492.jpg",
             "players": "2-12P",
             "weight": 2.2,
@@ -3281,6 +4276,11 @@ const collectionData = {
         },
         {
             "name": "Wavelength",
+            "designers": [
+                "Alex Hague",
+                "Justin Vickers",
+                "Wolfgang Warsch"
+            ],
             "img": "cache_images/262543.jpg",
             "players": "2-12P",
             "weight": 1.1,
@@ -3291,6 +4291,9 @@ const collectionData = {
         },
         {
             "name": "Werewords Deluxe Edition",
+            "designers": [
+                "Ted Alspach"
+            ],
             "img": "cache_images/245422.jpg",
             "players": "2-20P",
             "weight": 1.3,
@@ -3303,6 +4306,9 @@ const collectionData = {
         },
         {
             "name": "Whale Riders",
+            "designers": [
+                "Reiner Knizia"
+            ],
             "img": "cache_images/305761.jpg",
             "players": "2-6P",
             "weight": 1.9,
@@ -3314,6 +4320,10 @@ const collectionData = {
         },
         {
             "name": "Whale to Look",
+            "designers": [
+                "Bruno Faidutti",
+                "Jun Sasaki"
+            ],
             "img": "cache_images/388413.jpg",
             "players": "2-5P",
             "weight": 1.8,
@@ -3324,6 +4334,9 @@ const collectionData = {
         },
         {
             "name": "When I Dream",
+            "designers": [
+                "Chris Darsaklis"
+            ],
             "img": "cache_images/198454.jpg",
             "players": "4-10P",
             "weight": 1.2,
@@ -3336,6 +4349,9 @@ const collectionData = {
         },
         {
             "name": "Wine Cellar",
+            "designers": [
+                "Andrew Stiles"
+            ],
             "img": "cache_images/411033.jpg",
             "players": "1-8P",
             "weight": 1.7,
@@ -3346,6 +4362,11 @@ const collectionData = {
         },
         {
             "name": "Without Fail",
+            "designers": [
+                "Elan Lee",
+                "Ian Clayman",
+                "Carol Mertz"
+            ],
             "img": "cache_images/394134.jpg",
             "players": "2-99P",
             "weight": 1.0,
@@ -3356,6 +4377,9 @@ const collectionData = {
         },
         {
             "name": "Wizard",
+            "designers": [
+                "Ken Fisher"
+            ],
             "img": "cache_images/1465.jpg",
             "players": "3-6P",
             "weight": 1.7,
@@ -3367,6 +4391,12 @@ const collectionData = {
         },
         {
             "name": "World of Warcraft: Wrath of the Lich King",
+            "designers": [
+                "Justin Kemppainen",
+                "Todd Michlitsch",
+                "Alexandar Ortloff-Tang",
+                "Michael Sanfilippo"
+            ],
             "img": "cache_images/342848.jpg",
             "players": "1-5P",
             "weight": 2.3,
@@ -3378,6 +4408,10 @@ const collectionData = {
         },
         {
             "name": "Wriggle Roulette",
+            "designers": [
+                "Bruno Faidutti",
+                "Jun Sasaki"
+            ],
             "img": "cache_images/443829.jpg",
             "players": "2-8P",
             "weight": 1.0,
@@ -3388,6 +4422,11 @@ const collectionData = {
         },
         {
             "name": "WWE Superstar Showdown",
+            "designers": [
+                "Aaron Dill",
+                "John Kovaleski",
+                "Sean Sweigart"
+            ],
             "img": "cache_images/177499.jpg",
             "players": "2-6P",
             "weight": 2.3,

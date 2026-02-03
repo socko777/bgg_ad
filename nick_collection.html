@@ -123,6 +123,15 @@
             transform: scale(1.04);
             box-shadow: 0 20px 45px var(--pebble-shadow);
         }
+		.modal-designers {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--matcha-leaf);
+            opacity: 0.7;
+            margin-bottom: 20px;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -160,8 +169,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-text">
+              <div class="modal-text">
                     <h2 id="modal-title"></h2>
+                    <div id="modal-designers" class="modal-designers"></div> 
                     <div id="modal-description" class="description-text"></div>
                 </div>
             </div>
@@ -194,12 +204,21 @@
             }).join('');
         }
 
-        function openModal(index) {
+      function openModal(index) {
             const game = collectionData.games[index];
             const modal = document.getElementById('game-modal');
             
             document.getElementById('modal-img').src = game.img;
             document.getElementById('modal-title').innerText = game.name;
+            
+            // Logic to handle designer display
+            const designerElem = document.getElementById('modal-designers');
+            if (game.designers && game.designers.length > 0) {
+                designerElem.innerText = `Designed by ${game.designers.join(', ')}`;
+            } else {
+                designerElem.innerText = "";
+            }
+
             document.getElementById('modal-description').innerHTML = game.description;
             document.getElementById('modal-cats').innerText = game.categories.join(' • ');
             document.getElementById('modal-players').innerText = game.players;
