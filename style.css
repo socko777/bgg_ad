@@ -1,30 +1,24 @@
 /* --- THEME: BOUTIQUE EDITORIAL --- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap');
-
 :root {
-    --bg-silk: #FDF9F3;       /* Silk-paper base color */
-    --matcha-leaf: #7A8D76;   /* Premium botanical green */
-    --clay-text: #5D544D;     /* Warm earth tones for text */
-    --white-pure: #FFFFFF;    /* Card and Modal backgrounds */
-    --gold-leaf: #D4AF37;     /* Elegant accent color */
-    --blush-petal: #F5E6E0;   /* Soft highlight for badges */
+    --bg-silk: #FDF9F3;         /* Silk-paper base */
+    --matcha-leaf: #6B7A68;     /* Refined, expensive sage */
+    --clay-text: #4A443F;       /* Deeper earth tone for readability */
+    --white-pure: #FFFFFF;
+    --gold-leaf: #D4AF37;
+    --blush-petal: #EADED7;     /* Muted taupe/blush */
+    --pebble-shadow: rgba(74, 68, 63, 0.08); /* Natural Clay-based shadow */
 }
 
-/* --- 1. GLOBAL RESET & BACKGROUND --- */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    /* STRICT: Prevents the horizontal "wiggle" and scrollbars on mobile */
     overflow-x: hidden; 
     background-color: var(--bg-silk);
-    /* RESTORED: Textured paper background for a boutique feel */
     background-image: url("https://www.transparenttextures.com/patterns/paper.png");
     background-attachment: fixed;
     -webkit-text-size-adjust: 100%;
 }
-
-* { box-sizing: border-box; }
 
 body {
     color: var(--clay-text);
@@ -35,155 +29,185 @@ body {
     min-height: 100vh;
 }
 
-/* --- 2. RESPONSIVE STICKY NAVIGATION --- */
+/* --- STICKY NAVIGATION --- */
 nav {
     width: 100%;
     background: rgba(253, 249, 243, 0.98);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
-    z-index: 1000; /* Stays above content, but below Modal */
-    padding: 15px 5px;
-    border-bottom: 1px solid rgba(122, 141, 118, 0.1);
+    z-index: 1000;
+    padding: 20px 5px;
+    border-bottom: 1px solid rgba(107, 122, 104, 0.08);
 }
 
 .nav-links {
     display: flex;
     justify-content: center;
-    /* Fluid gap that shrinks for narrow phone screens */
-    gap: clamp(10px, 4vw, 30px);
-    flex-wrap: wrap; 
+    gap: clamp(15px, 5vw, 40px);
 }
 
 .nav-item {
     color: var(--clay-text);
     text-decoration: none;
-    font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: 500;
+    opacity: 0.7;
+    transition: opacity 0.3s;
 }
 
 .nav-item.active { 
     color: var(--matcha-leaf); 
+    opacity: 1;
     font-weight: 700; 
-    border-bottom: 2px solid var(--gold-leaf);
 }
 
-/* --- 3. CENTERED EDITORIAL HEADER --- */
-header, .header {
-    width: 100%;
-    padding: 30px 15px;
+/* --- EDITORIAL HEADER --- */
+header {
+    padding: 60px 15px 40px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.main-logo-container img {
-    /* Fluid Logo: Scales from 140px on mobile to 240px on desktop */
-    max-width: 85%; 
-    width: clamp(140px, 45vw, 240px);
-    height: auto;
-    margin-bottom: 15px;
-}
-
-h1, .hero-title {
+h1 {
     font-family: 'Playfair Display', serif;
-    /* Fluid Typography: Prevents text-chopping on mobile */
-    font-size: clamp(2rem, 8vw, 3.5rem); 
+    font-size: clamp(2.5rem, 10vw, 4.5rem); 
     font-style: italic;
+    font-weight: 400; 
     color: var(--matcha-leaf);
-    line-height: 1.1;
-    width: 95%;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: -1px;
 }
 
 .stats-container {
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: 300;
-    font-size: clamp(0.8rem, 3vw, 1rem);
-    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
-/* --- 4. THE MODAL (FIXED LAYER) --- */
-.modal {
-    display: none; /* JS toggles this with .active */
-    position: fixed; 
-    /* HIGHEST PRIORITY: Covers nav bar and all content */
-    z-index: 9999; 
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    height: 100%;
-    background: rgba(245, 230, 224, 0.96); 
-    backdrop-filter: blur(12px);
-    justify-content: center; 
-    align-items: center;
-    padding: 20px;
-}
-
-.modal.active { 
-    display: flex; 
-}
-
-.modal-content {
-    max-width: 95%; 
-    max-height: 85vh;
-    border-radius: 15px;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.2);
-    border: 8px solid var(--white-pure);
-    object-fit: contain;
-    animation: zoomIn 0.3s ease-out;
-}
-
-@keyframes zoomIn {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-/* --- 5. GRID & PEBBLE CARDS --- */
-.grid {
+/* --- THE EDITORIAL GRID --- */
+.editorial-grid {
     display: grid;
-    justify-content: center;
-    /* 3-column "Meadow View" optimized for mobile browsers */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 8px;
-    width: 96%;
-    padding: 10px 0 60px;
+    /* 2 columns on mobile */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    width: 94%;
+    max-width: 1200px;
+    margin: 0 auto 100px;
 }
 
-/* Desktop Upgrade for Grid */
-@media (min-width: 769px) {
-    .grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 30px;
-        width: 90%;
+@media (min-width: 768px) {
+    .editorial-grid {
+        /* 3 columns on tablet */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 40px;
     }
 }
 
-.card {
-    background: var(--white-pure);
-    padding: clamp(4px, 1.5vw, 10px);
-    border-radius: 15px 15px 5px 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    cursor: pointer;
-    transition: transform 0.3s ease;
+@media (min-width: 1024px) {
+    .editorial-grid {
+        /* Flexible density for large monitors */
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 60px;
+    }
 }
 
-.card:active { transform: scale(0.96); } /* Mobile haptic-feel click */
+/* --- CARDS & PEBBLES --- */
+.editorial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    opacity: 0;
+    animation: bloomIn 0.8s ease-out forwards;
+}
 
-.card img {
+@keyframes bloomIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.game-title {
+    font-size: clamp(0.75rem, 3vw, 1rem); /* Fluid text for 2-column fit */
+    color: var(--clay-text);
+    font-weight: 700;
+    min-height: 3.5em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    padding: 0 5px;
+}
+
+.pebble-container {
     width: 100%;
-    border-radius: 12px 12px 2px 2px;
-    display: block;
+    aspect-ratio: 1 / 1.1;
+    background: var(--white-pure);
+    border-radius: 40px; /* Reduced for mobile clarity */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px var(--pebble-shadow);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
 }
 
-/* --- 6. STANDARD FOOTER --- */
-footer { 
-    padding: 60px 10px; 
-    opacity: 0.6; 
-    font-size: 0.7rem; 
-    text-align: center; 
-    width: 100%; 
-    border-top: 1px solid rgba(0,0,0,0.05); 
+@media (min-width: 768px) {
+    .pebble-container { border-radius: 80px; } /* Return to deep curve on desktop */
 }
+
+.pebble-container:hover { transform: scale(1.04); }
+
+.pebble-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    padding: 10px;
+}
+
+.category-string {
+    border: 1px solid var(--blush-petal);
+    color: var(--clay-text);
+    font-size: 0.55rem; /* Tiny editorial subtext */
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.stats-footer {
+    color: var(--matcha-leaf);
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* --- MODAL --- */
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 9999; 
+    left: 0; top: 0; 
+    width: 100%; height: 100%;
+    background: rgba(234, 222, 215, 0.97); 
+    backdrop-filter: blur(15px);
+    justify-content: center; align-items: center;
+}
+
+.modal.active { display: flex; }
+
+.modal-content {
+    max-width: 90%; max-height: 80vh;
+    border-radius: 40px;
+    box-shadow: 0 50px 100px rgba(0,0,0,0.15);
+    border: 12px solid var(--white-pure);
+}
+
+footer { padding: 80px 10px; opacity: 0.4; font-size: 0.65rem; text-align: center; }
