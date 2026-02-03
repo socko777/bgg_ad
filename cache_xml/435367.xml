@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="435367">
+         <thumbnail>https://cf.geekdo-images.com/XWH3r3U9MCrLSvZdDXB-xQ__small/img/tFFe9zJ-FyHsJnKjjph9UNth0l4=/fit-in/200x150/filters:strip_icc()/pic8598872.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/XWH3r3U9MCrLSvZdDXB-xQ__original/img/WL61eRh9jYDVKumtJwajw3tpcBc=/0x0/filters:format(jpeg)/pic8598872.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Survivor: The Tribe Has Spoken" />
+			
+						                           
+						               													<description>Survivor: The Tribe Has Spoken is meant to replicate the fun, drama, and excitement of the long-lived television reality show without you needing to sleep in the jungle or eat bugs.
+
+To survive, players must collect advantages, find hidden immunity idols, form secret alliances, and face devastating blindsides, while surviving Tribal Council eliminations, in which players decide who should be voted out by using the game box as a "voting urn" in which players secretly cast votes. Cards let you look at opponents' hands, steal cards, manipulate votes, declare yourself tribal council leader, protect you from elimination, and more.
+
+The last two players standing must make a case to all eliminated players as to why they deserve the title of "Sole Survivor".
+
+The game includes player cards featuring memorable contestants from the 47 seasons of Survivor that have aired as of 2024.
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="4">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 6 players" />
+  <result name="recommmendedwith" value="Recommended with 4–6 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="60" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="1">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="0">
+			
+		<results>		
+					<result level="11" value="No necessary in-game text" numvotes="0" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1023" value="Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1064" value="Movies / TV / Radio theme" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2916" value="Alliances" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3002" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2885" value="Finale Ending" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2915" value="Negotiation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2685" value="Player Elimination" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2865" value="Player Judge" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2017" value="Voting" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11346" value="TV Shows: Survivor" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="154908" value="Ian Clayman" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="80158" value="Elan Lee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="165992" value="Jeff Probst" />
+		
+									
+			
+
+			      			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32307" value="Exploding Kittens" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="161" />
+			<average value="6.84317" />
+			<bayesaverage value="5.56934" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="11223" bayesaverage="5.56934" />
+												</ranks>
+
+			<stddev value="1.63654" />
+			<median value="0" />
+			<owned value="637" />
+			<trading value="6" />
+			<wanting value="3" />
+			<wishing value="75" />
+			<numcomments value="34" />
+			<numweights value="3" />
+			<averageweight value="1.6667" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

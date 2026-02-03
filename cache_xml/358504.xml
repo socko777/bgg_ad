@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="358504">
+         <thumbnail>https://cf.geekdo-images.com/nLDGtbwdSC0eYKffjYzrnQ__small/img/8F46R57i735WAI6ZjCppWb73bT0=/fit-in/200x150/filters:strip_icc()/pic6917219.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/nLDGtbwdSC0eYKffjYzrnQ__original/img/KlTmf1wl3PsFlPtQek6BfjUOC4A=/0x0/filters:format(jpeg)/pic6917219.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Betrayal at House on the Hill: 3rd Edition" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Betrayal at House on the Hill: 3ª Edición" />
+			    				
+				<name type="alternate" sortindex="1" value="Betrayal at House on the Hill: 3a Edizione" />
+			    				
+				<name type="alternate" sortindex="1" value="Betrayal: La Casa de la Colina – 3ª edición" />
+			
+						               													<description>The House on the Hill still sits abandoned, and a fearless group of explorers has been drawn to the house to discover its dark secrets. Immerse yourself in the narrative gameplay as you take on the role of one of those explorers.
+
+The co-operative board game Betrayal at House on the Hill: 3rd Edition includes fifty haunts and dozens of danger-filled rooms that will terrify even the strongest among you. At first you'll work together, but beware...one explorer will betray the others, and then the haunt begins.
+
+This edition of the popular haunted house traitor game features content and gaming elements that help new players jump right in. So, gather friends for a game night of monsters, miniatures, and modular board pieces in this immersive, story-driven hidden traitor game.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="62">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="48" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="48" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="24" />
+					<result value="Not Recommended" numvotes="24" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="23" />
+					<result value="Recommended" numvotes="30" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="40" />
+					<result value="Recommended" numvotes="14" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="16" />
+					<result value="Recommended" numvotes="29" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="36" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5 players" />
+  <result name="recommmendedwith" value="Recommended with 4–6 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="60" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="11">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="6" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="1" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="4">
+			
+		<results>		
+					<result level="6" value="No necessary in-game text" numvotes="0" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="10" value="Unplayable in another language" numvotes="2" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1022" value="Adventure" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1024" value="Horror" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2959" value="Map Addition" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2011" value="Modular Board" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2685" value="Player Elimination" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2028" value="Role Playing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2027" value="Storytelling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2814" value="Traitor Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59218" value="Category: Dungeon Crawler" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="49383" value="Players: One versus Many" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="54060" value="Series: Betrayal (Avalon Hill)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61993" value="Theme: Spooky Old Houses" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="428530" value="Betrayal at House on the Hill: 3rd Edition – Deck of Lost Souls Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="428532" value="Betrayal at House on the Hill: 3rd Edition – Twitching Doll Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="446964" value="Betrayal at the Neibolt House: The Evil of Pennywise" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="368348" value="Betrayal: The Werewolf&#039;s Journey – Blood on the Moon" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="397390" value="Betrayal: The Yuletide Tale – Evil Reigns in the Wynter&#039;s Pale" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="10547" value="Betrayal at House on the Hill" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="8276" value="Dave Chalker" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="91661" value="Banana Chan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="75911" value="Noah Cohen" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="3440" value="Bruce Glassco" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="80920" value="Brian Neff" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="119254" value="Will Sobel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="81098" value="Jabari Weathers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="24858" value="Henning Ludvigsen" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4871" value="Avalon Hill" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="51" value="Hasbro" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="3828" />
+			<average value="7.2994" />
+			<bayesaverage value="6.49397" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1333" bayesaverage="6.49397" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="363" bayesaverage="6.58954" />
+												</ranks>
+
+			<stddev value="1.41265" />
+			<median value="0" />
+			<owned value="11928" />
+			<trading value="99" />
+			<wanting value="79" />
+			<wishing value="1576" />
+			<numcomments value="648" />
+			<numweights value="105" />
+			<averageweight value="2.3905" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="273477">
+         <thumbnail>https://cf.geekdo-images.com/gSBn3vnTQ6Hh6JmxA38N7g__small/img/oYWbj-zNavmDg7fS22uOp6NKnnY=/fit-in/200x150/filters:strip_icc()/pic4611791.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/gSBn3vnTQ6Hh6JmxA38N7g__original/img/hZUqpAVXnuStIYiL7Poqy-7JLXw=/0x0/filters:format(jpeg)/pic4611791.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Obscurio" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="オブスクリオ" />
+			
+						               													<description>The Sorcerer is out to get you! Find your way among the illusions, but beware of the traitor in your ranks!
+
+The Grimoire guides their team towards the exit using images, upon which they point at certain details. Working together, the other players have to find the exit as quickly as possible while avoiding picking the wrong cards. However, a member of the team is a traitor looking to lead the other players astray. A wide variety of traps are on your way to the exit of the library, making player communication harder!
+
+Obscurio is a family game, an original mix between an image-based communication game and a secret role game in which the players have to be careful when sharing ideas with their team. Supported by rich contents, Obscurio proposes a fresh new experience in its genre by putting the emphasis on the details of the images and the constant doubt created by the presence of the traitor.
+
+Communicate efficiently and avoid the illusions on your way to escape the Sorcerer's library!
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2019" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="8" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="63">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="37" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="36" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="31" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="28" />
+					<result value="Not Recommended" numvotes="12" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="31" />
+					<result value="Recommended" numvotes="18" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="36" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="30" />
+					<result value="Recommended" numvotes="8" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="22" />
+					<result value="Recommended" numvotes="16" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="8+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="29" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5–8 players" />
+  <result name="recommmendedwith" value="Recommended with 4–8 players" />
+</poll-summary> 			               				<playingtime value="40" />
+						               				<minplaytime value="40" />
+						               				<maxplaytime value="40" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="11">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="6" />
+					<result value="10" numvotes="4" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="6">
+			
+		<results>		
+					<result level="16" value="No necessary in-game text" numvotes="6" />
+					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="20" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1023" value="Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2893" value="Communication Limits" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2891" value="Hidden Roles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2814" value="Traitor Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2017" value="Voting" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66334" value="Mechanism: Give a Clue / Get a Clue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="60651" value="Mechanism: Image Interpretation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="295441" value="Obscurio: Promo Trap Tokens" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="113058" value="L&#039;Atelier" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="41323" value="Xavier Collette" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="124355" value="M81 Studio" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9051" value="Libellud" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9634" value="KADABRA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6214" value="Kaissa Chess &amp; Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9325" value="Lifestyle Boardgames Ltd" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="4535" />
+			<average value="7.06757" />
+			<bayesaverage value="6.50671" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1295" bayesaverage="6.50671" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="370" bayesaverage="6.61191" />
+												</ranks>
+
+			<stddev value="1.32219" />
+			<median value="0" />
+			<owned value="10420" />
+			<trading value="175" />
+			<wanting value="196" />
+			<wishing value="2637" />
+			<numcomments value="825" />
+			<numweights value="78" />
+			<averageweight value="1.9103" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

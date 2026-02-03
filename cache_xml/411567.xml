@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="411567">
+         <thumbnail>https://cf.geekdo-images.com/ydwU0FMlRVa6wt8tOu1tgg__small/img/9hYAUB4S9PHAVvUoPEcaRm7jHIg=/fit-in/200x150/filters:strip_icc()/pic7962719.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/ydwU0FMlRVa6wt8tOu1tgg__original/img/RT9ajRhK-eHlBJgsksL9rJQHIuk=/0x0/filters:format(jpeg)/pic7962719.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="5" value="The Gang" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Gang" />
+			    				
+				<name type="alternate" sortindex="1" value="GANG POKER ギャングポーカー" />
+			    				
+				<name type="alternate" sortindex="1" value="Kultakopla" />
+			    				
+				<name type="alternate" sortindex="1" value="纸牌帮" />
+			
+						               													<description>Round up your gang and get ready to pull off a series of bank heists using the power of poker!
+
+In The Gang, a co-operative version of Texas Hold'em, players bet on how good they think their hand of cards will be relative to the other players, then try to make their predictions a reality.
+
+Early in a round, without talking to each other, each player chooses a chip indicating how good they think their hand is. Then they begin dealing cards into the middle of the table and have a chance to reassess their hands as more cards are revealed. At the end of the round, players see whether they correctly evaluated their hand. If all players did, you get to open one of the bank vaults! If not, you trip the alarm! If you manage to open three vaults before you trip the alarm three times, your gang wins!
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="158">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="103" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="101" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="43" />
+					<result value="Not Recommended" numvotes="80" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="53" />
+					<result value="Recommended" numvotes="76" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="102" />
+					<result value="Recommended" numvotes="36" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="59" />
+					<result value="Recommended" numvotes="60" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="18" />
+					<result value="Not Recommended" numvotes="56" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5 players" />
+  <result name="recommmendedwith" value="Recommended with 4–6 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="21">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="6" />
+					<result value="12" numvotes="11" />
+					<result value="14" numvotes="3" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="17">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="2" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="12" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="3" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2893" value="Communication Limits" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3006" value="Predictive Bid" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="98" value="Components: Traditional Playing Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="75435" value="Theme: Burglary and Heists" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="9313" value="Traditional Card Games: Poker" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="462190" value="The Gang: More Players" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="427544" value="The Gang: The Jokers &amp; More" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="451125" value="The Gang: Tools of the Trade" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="462191" value="The Gang: Deluxe Edition" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="123" value="John Cooper" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="2201" value="Kory Heath" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="61842" value="Fiore GmbH" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37" value="KOSMOS" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4304" value="Albi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46980" value="Brädspel.se" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4617" value="Galakta" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4785" value="Ghenos Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21640" value="GP Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8923" value="IELLO" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3218" value="Lautapelit.fi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="60627" value="Thames &amp; Kosmos" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="7401" />
+			<average value="7.57355" />
+			<bayesaverage value="7.04649" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="443" bayesaverage="7.04649" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="82" bayesaverage="7.16298" />
+												</ranks>
+
+			<stddev value="1.32724" />
+			<median value="0" />
+			<owned value="14032" />
+			<trading value="109" />
+			<wanting value="206" />
+			<wishing value="2328" />
+			<numcomments value="1082" />
+			<numweights value="123" />
+			<averageweight value="1.6098" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

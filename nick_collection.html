@@ -2,15 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE GARDEN</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&family=Gaegu&display=swap" rel="stylesheet">
-    
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    
-    <script src="game_data.js?v=1.6"></script>
+
+    <script src="game_data.js"></script>
+
+    <style>
+        /* --- LIVE EDITORIAL CARD SYSTEM --- */
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+            gap: 20px;
+            width: 92%;
+            max-width: 1200px;
+            margin: 0 auto 80px;
+        }
+
+        @media (min-width: 768px) {
+            .editorial-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 40px;
+            }
+        }
+
+        .editorial-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: transparent; /* Blends into site background */
+        }
+
+        .game-title {
+            font-family: 'Quicksand', sans-serif;
+            font-size: clamp(0.85rem, 3.5vw, 1.05rem);
+            color: var(--clay-text);
+            font-weight: 700;
+            min-height: 3em; /* Ensures title blocks stay aligned */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            line-height: 1.2;
+            width: 100%;
+        }
+
+        .pebble-container {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: var(--white-pure);
+            border-radius: 65px; /* Signature organic curve */
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.06); /* Soft sanctuary shadow */
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .pebble-container:hover { transform: scale(1.03); }
+
+        .pebble-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Shows full box without cropping */
+            padding: 10px; /* Internal breathing room */
+        }
+
+        .category-string {
+            background: var(--blush-petal);
+            color: var(--clay-text);
+            font-size: 0.65rem;
+            padding: 4px 12px;
+            border-radius: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .stats-footer {
+            color: var(--matcha-leaf);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Tighten Header Spacing */
+        .header {
+            padding: clamp(20px, 6vw, 40px) 15px 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,14 +114,14 @@
     <header class="header">
         <h1>The Garden</h1>
         <div class="stats-container">
-            Currently nurturing <span id="stats-display">--</span> games in our garden. <br>
-            <span class="tend-date">
-                Tend Date: <span id="date-display">--</span>
-            </span>
+            Currently nurturing <span id="stats-display" style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: var(--matcha-leaf);">--</span> curated titles.
+            <div style="font-size: 0.65rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2px; margin-top: 5px;">
+                Last Tended: <span id="date-display">--</span>
+            </div>
         </div>
     </header>
 
-    <main class="grid" id="game-grid"></main>
+    <main class="editorial-grid" id="game-grid"></main>
 
     <div class="modal" id="zoom-modal" onclick="closeModal()">
         <img class="modal-content" id="modal-img" alt="Zoomed Game Cover">
@@ -44,23 +133,29 @@
 
     <script>
         const grid = document.getElementById('game-grid');
-        
+
         function render() {
-            if (typeof collectionData === 'undefined') {
-                console.warn("Collection data not found. Retrying...");
-                return;
-            }
-            
-            // Update counts and date from collectionData
+            if (typeof collectionData === 'undefined') return;
+
+            // Populate Header Stats
             document.getElementById('stats-display').innerText = collectionData.total;
             document.getElementById('date-display').innerText = collectionData.date;
 
-            // Render game cards: .png replaced with .jpg for mobile loading efficiency
+            // Generate Live Cards
             grid.innerHTML = collectionData.games.map((game) => {
-                const imgPath = game.img.replace('.png', '.jpg');
+                // Join categories with the botanical dot
+                const cats = game.categories ? game.categories.join(' • ') : 'BOARD GAME';
+
                 return `
-                <article class="card" onclick="openModal('${imgPath}')">
-                    <img src="${imgPath}" alt="${game.name}" loading="lazy">
+                <article class="editorial-card">
+                    <div class="game-title">${game.name}</div>
+                    <div class="pebble-container" onclick="openModal('${game.img}')">
+                        <img src="${game.img}" alt="${game.name}" loading="lazy">
+                    </div>
+                    <div><span class="category-string">${cats}</span></div>
+                    <div class="stats-footer">
+                        ${game.players}  •  COMPLEXITY ${game.weight}
+                    </div>
                 </article>`
             }).join('');
         }
@@ -70,28 +165,15 @@
             const modalImg = document.getElementById('modal-img');
             modalImg.src = imgSrc;
             modal.classList.add('active');
-            
-            // Critical for mobile: prevents the background from scrolling while modal is open
-            document.body.style.overflow = 'hidden'; 
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
-            const modal = document.getElementById('zoom-modal');
-            modal.classList.remove('active');
+            document.getElementById('zoom-modal').classList.remove('active');
             document.body.style.overflow = '';
         }
 
-        // Accessibility: allow Escape key to close the modal
-        window.addEventListener('keydown', (e) => { 
-            if (e.key === "Escape") closeModal(); 
-        });
-
-        // Ensure rendering happens regardless of load order
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', render);
-        } else {
-            render();
-        }
+        window.onload = render;
     </script>
 </body>
 </html>

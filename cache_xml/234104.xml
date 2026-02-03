@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="234104">
+         <thumbnail>https://cf.geekdo-images.com/7LQBVsSZjBdPR8I6HVyidQ__small/img/5yOX77W-qzHZDuhjSo8yCaHY7Ww=/fit-in/200x150/filters:strip_icc()/pic3761227.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/7LQBVsSZjBdPR8I6HVyidQ__original/img/UBmlebJwEnXFL7A3hj2yz1VTl6g=/0x0/filters:format(jpeg)/pic3761227.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="5" value="The Valley of Alchemists" />
+			
+						                           
+						               													<description>Welcome to the Valley of Alchemists, a land in the heart of mountains, carved by a glacier thousands of years ago. Legends say that during its descent it gathered the most marvelous specimens of ancient life. When its descent had come to an end and the Sun finally thawed the formidable permafrost, a Valley full of wonders and mystic powers was revealed to the World. With time, Alchemists started to settle in this region, studying the marvelous properties of local wildlife. Years of experience and failed experiments brought them to the mastery of preparation of exquisite mixtures. Their skills grow with each newfound ingredient and acquired knowledge bear fruit in new mixtures. For the Valley hides much more undiscovered secrets. Each year, when Winter leaves the Valley and Mother Spring wakes the World to life anew, Alchemists arrange a slight contest of mixture preparation. There&amp;rsquo;s no lack of mixture recipients and enthusiasts, and domesticated mystical beings ceaselessly spread the fruit of the hard alchemic work to the whole World. It is you, my dear Player, who will have the honor to take the role of one of the greatest Alchemists known to this World. Learn and strive for greatness, and maybe it will be you who wins the Spring contest and with it, the title of the best Alchemist in the Valley for the whole upcoming year.
+
+The game is made up of a series of player turns, that are played one by one, starting with the First Player and continuing clockwise.
+
+On their turn, a player can perform any 2 actions out of the 5 available ones; the chosen actions can be carried out in any order and combination. The same action type can be performed twice.
+
+1. Collecting the Ingredients
+2. Brewing the Decoctions
+3. Making Elixirs
+4. Rearranging the Elixirs
+5. Selling a Line of Elixirs
+
+During the game, the players collect ingredients, brew decoctions, and turn them into magic elixirs. Points are gained over the course of the game and also once the game has finished. The player with the most Experience Points (EP) at the end of the game becomes the winner.
+
+</description>
+										      	               				<yearpublished value="2019" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="4">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4+ players" />
+</poll-summary> 			               				<playingtime value="75" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="75" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="3">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="2" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="71" value="No necessary in-game text" numvotes="0" />
+					<result level="72" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="73" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="74" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="75" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64970" value="Theme: Alchemy" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="241387" value="The Valley of Alchemists: Ghost Expansion" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="341408" value="The Valley of Alchemists: Fabric Storage Bags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="341411" value="The Valley of Alchemists: Game Mat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="341451" value="The Valley of Alchemists: Kickstarter Edition" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="103027" value="Kamil Langie" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="100630" value="Barbara Wiszyńska" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28221" value="CreativeMaker LLC" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="201" />
+			<average value="7.11597" />
+			<bayesaverage value="5.58841" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="9897" bayesaverage="5.58841" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="2403" bayesaverage="5.61561" />
+												</ranks>
+
+			<stddev value="1.72161" />
+			<median value="0" />
+			<owned value="511" />
+			<trading value="16" />
+			<wanting value="10" />
+			<wishing value="185" />
+			<numcomments value="84" />
+			<numweights value="12" />
+			<averageweight value="2" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="233848">
+         <thumbnail>https://cf.geekdo-images.com/wTFZIBDGvlmKXwZ0zuz9Fg__small/img/iV4PNbyFIHS88m_TXrMgxRA4HSM=/fit-in/200x150/filters:strip_icc()/pic4611249.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/wTFZIBDGvlmKXwZ0zuz9Fg__original/img/h-8hdR0UFdHvw-CQ0jjDGAcgCSE=/0x0/filters:format(jpeg)/pic4611249.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Hako Onna" />
+			
+						                               				
+				<name type="alternate" sortindex="8" value="ハコオンナ (Hako Onna)" />
+			    				
+				<name type="alternate" sortindex="1" value="箱女" />
+			    				
+				<name type="alternate" sortindex="1" value="상자 아이" />
+			
+						               													<description>Hako Onna is a game of horror hide-and-seek. One player plays the &amp;ldquo;Hako Onna&amp;rdquo; (the Woman in the Box), and the rest are &amp;ldquo;Visitors&amp;rdquo;, who are trying to escape from the mansion. As Visitors, you&amp;rsquo;ll try not to make noise as you search the shadowy rooms of the mansion for items to protect yourself, for information, and for a way to escape what you do not see, but know is there. But if you stumble upon the Hako Onna, you&amp;rsquo;re dead. Players who discover the Hako Onna become a Hakobito, one of her servants, and wake up with her to move throughout the house.
+
+During most of Hako Onna's turn, the human players must keep their eyes closed so they cannot see where she moves to or what action she has done. The game also features a unique optional dexterity element that adds to the game's overall tension and dread. Before a visitor can take their turn, they need to avoid making noise by stacking a small disc on top the previous ones; if the tower collapses, they've made noise and it instantly becomes Hako Onna's turn.
+
+Hako Onna can win the game in two ways:
+
+    If all visitors are turned into Hakobito, or
+    If she has made it impossible for the visitors to win.
+
+
+The human players can win in one of three ways:
+
+    If they manage to kill Hako Onna after finding her only weakness,
+    If they find the secret exit, while in posession of the key ring hidden inside the safe, or
+    If they can bring peace to Hako Onna by bringing the remains of her body to her precious doll, Mary.
+
+
+Since its original publication in Japanese, Hako Onna has reached its fourth edition, and has been republished in English by WizKids. The English edition features all-new cards for players to use as they experience the thrilling horror of this thematically-rich game.
+
+&amp;bull;&amp;bull;&amp;bull;
+
+ジャパニーズ・ホラーをテーマとした非対称対戦＆協力型脱出ゲーム。
+館に潜む怨霊「箱女」と、館を訪れた訪問者に分かれてゲームを行います。
+箱女を見つけてしまうと訪問者は死亡し、ハコオンナの眷属、箱人となってしまいます。訪問者全員が箱人になってしまえば箱女プレイヤーの勝ち、訪問者全員が箱人になる前に３つの勝利条件のいずれかを達成できれば訪問者プレイヤーの勝利となります。
+
+</description>
+										      	               				<yearpublished value="2016" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="5">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5 players" />
+  <result name="recommmendedwith" value="Recommended with 3–5 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="120" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="1">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="66" value="No necessary in-game text" numvotes="0" />
+					<result level="67" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="68" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="69" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="70" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1032" value="Action / Dexterity" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1024" value="Horror" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2016" value="Secret Unit Deployment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="49383" value="Players: One versus Many" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61993" value="Theme: Spooky Old Houses" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="80081" value="江神 号 (Go Ejin)" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="102933" value="GEN k" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="74781" value="Nakarin Sukontakorn" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29063" value="Ejin 研究所 (Ejin Kenkyuujyo)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34963" value="Mysterious Island Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46428" value="Underdog Games (II)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="221" value="WizKids (I)" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="356" />
+			<average value="6.55531" />
+			<bayesaverage value="5.61027" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="8795" bayesaverage="5.61027" />
+												</ranks>
+
+			<stddev value="1.5634" />
+			<median value="0" />
+			<owned value="1070" />
+			<trading value="24" />
+			<wanting value="31" />
+			<wishing value="273" />
+			<numcomments value="89" />
+			<numweights value="10" />
+			<averageweight value="2.7" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="223770">
+         <thumbnail>https://cf.geekdo-images.com/Y23LsS9HxPgO0XT5RvtwTA__small/img/JQ6I0tZDYByNKmMSW0gsTiNulEQ=/fit-in/200x150/filters:strip_icc()/pic3678411.png</thumbnail>
+      <image>https://cf.geekdo-images.com/Y23LsS9HxPgO0XT5RvtwTA__original/img/IJW2fhjS4x88hu8Aap8XHrMfcyg=/0x0/filters:format(png)/pic3678411.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Startups" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="新创公司" />
+			    				
+				<name type="alternate" sortindex="1" value="스타트업스" />
+			
+						               													<description>Description from the publisher:
+
+There are six companies that will change the world as we know it! You can be part of their success and be an investor. Try to become rich by making the right decisions!
+
+Only the biggest investor can get money out of each company. You must try to read the next steps of your rivals and use your capital and your three hidden cards to win against them and become the biggest shareholder!
+
+You have to be lucky in this game but you must also think about your moves and analyze your rivals! You can play this card game with only a few players but also with many!
+
+</description>
+										      	               				<yearpublished value="2017" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="7" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="135">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="80" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="75" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="78" />
+					<result value="Not Recommended" numvotes="11" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="86" />
+					<result value="Recommended" numvotes="30" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="34" />
+					<result value="Recommended" numvotes="66" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="33" />
+					<result value="Not Recommended" numvotes="62" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="11" />
+					<result value="Not Recommended" numvotes="83" />
+				</results>					
+			
+		<results numplayers="7+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="64" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 3–5 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="13">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="2" />
+					<result value="8" numvotes="4" />
+					<result value="10" numvotes="6" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="7">
+			
+		<results>		
+					<result level="31" value="No necessary in-game text" numvotes="7" />
+					<result level="32" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="33" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="34" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="35" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3000" value="Hot Potato" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2914" value="Increase Value of Unchosen Resources" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2910" value="Investment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2823" value="Score-and-Reset Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2005" value="Stock Holding" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="24439" value="Card Games: Draw and Discard" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77349" value="Digital Implementations: Steam" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="312763" value="Rights a.k.a. Startups" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="176458" value="Rights" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="50009" value="Jun Sasaki" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="99612" value="Hiroko Izumida" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="50009" value="Jun Sasaki" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="52588" value="4 Kavky" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22649" value="Oink Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41167" value="Popcorn Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="6272" />
+			<average value="7.18195" />
+			<bayesaverage value="6.7098" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="880" bayesaverage="6.7098" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="220" bayesaverage="6.80764" />
+												</ranks>
+
+			<stddev value="1.20808" />
+			<median value="0" />
+			<owned value="12212" />
+			<trading value="155" />
+			<wanting value="247" />
+			<wishing value="2058" />
+			<numcomments value="1029" />
+			<numweights value="124" />
+			<averageweight value="1.5726" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

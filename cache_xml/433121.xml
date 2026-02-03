@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="433121">
+         <thumbnail>https://cf.geekdo-images.com/fHeUn3p-UdhgwquaK-fQKg__small/img/y5fypMsEXAimRiXpdGJXcwDvfsc=/fit-in/200x150/filters:strip_icc()/pic9300229.png</thumbnail>
+      <image>https://cf.geekdo-images.com/fHeUn3p-UdhgwquaK-fQKg__original/img/HXF5nBYgxXExL8Hq1X7Kywrdsmc=/0x0/filters:format(png)/pic9300229.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Ketupat Rendang" />
+			
+						                           
+						               													<description>Ketupat Rendang is a casual and fun-filled board game that celebrates cultural aspects of the Eid celebration in Southeast Asia. Players play the Dishes card and cook their favorite dishes. The game combines elements of strategy, luck, and cultural education, making it a perfect addition to any Hari Raya celebration.
+
+Player draw a Role card where they have their personal objective. Player then draw 2 Dish card where it contains fire and dishes that they have to cook. Each turn, player will draw a Dish card and play one Dish card on the table to cook their dish.
+
+To cook dish, they need to place it next to a fire. Player can sabotage other player(s) by placing other dish on top of another player's Dish card.
+
+The game end when all Dish card has run out from the deck. Player that cooked the most of their own dishes will be the winner.
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="0">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="" />
+  <result name="recommmendedwith" value="(no votes)" />
+</poll-summary> 			               				<playingtime value="30" />
+						               				<minplaytime value="5" />
+						               				<maxplaytime value="30" />
+						               				<minage value="5" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="0">
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="0">
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1041" value="Children&#039;s Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2984" value="Closed Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2820" value="Semi-Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="166109" value="Araduan Rasis" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="166110" value="Seburba" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42815" value="Meja Belakang" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="8" />
+			<average value="7.955" />
+			<bayesaverage value="0" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="Not Ranked" />
+												</ranks>
+
+			<stddev value="0.96134" />
+			<median value="0" />
+			<owned value="18" />
+			<trading value="0" />
+			<wanting value="0" />
+			<wishing value="0" />
+			<numcomments value="1" />
+			<numweights value="0" />
+			<averageweight value="0" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

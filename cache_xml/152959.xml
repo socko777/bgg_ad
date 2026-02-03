@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="152959">
+         <thumbnail>https://cf.geekdo-images.com/_1_jHYKYe93u3sCG-2gonA__small/img/Z_tnIgHi13kzToOM1qsFooSn4U4=/fit-in/200x150/filters:strip_icc()/pic747314.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/_1_jHYKYe93u3sCG-2gonA__original/img/Dr6DM43iigyG9uUI_XHqmfmOeX4=/0x0/filters:format(jpeg)/pic747314.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="5" value="The Settlers of Catan" />
+			
+						                               				
+				<name type="alternate" sortindex="5" value="Los Colonos de Catán" />
+			    				
+				<name type="alternate" sortindex="4" value="De Kolonisten van Catan: 10 jaar" />
+			    				
+				<name type="alternate" sortindex="4" value="De Kolonisten van Catan: 15 jaar Deluxe Editie" />
+			    				
+				<name type="alternate" sortindex="5" value="The Settlers of Catan: 15th Anniversary Wood Edition" />
+			    				
+				<name type="alternate" sortindex="5" value="Die Siedler von Catan: Jubiläumsausgabe in Holz" />
+			
+						               													<description>This entry is for editions of CATAN that include the CATAN: 5-6 Player Expansion.
+
+
+Publisher's description of the 15th Anniversary Edition:
+
+Embark on a quest to settle the fair isle of Catan! Guide your brave settlers to victory by using clever trading and development. Use resources (grain, wool, ore, brick, and lumber) to build roads, settlements, and cities, and buy development cards. Acquire your resources through trades or the role of the dice. But beware! You never know when someone might cut off your road or if the robber will appear and steal your precious gains. Are you the best trader, builder, or settler? Will you master Catan?
+
+Designed for 3-6 players, this special, limited 15th Anniversary Wood Edition of The Settlers of Catan features a strong, compartmentalized box that contains: 52 thick, beautifully illustrated map hexagons, 144 specially designed playing pieces, six hexagonal building costs summaries, two special victory point markers, one vile robber, two dice, and 28 random number chits, all crafted from sturdy wood. The 154 cards, like the hexes, bear fine artwork from Michael Menzel.
+
+</description>
+										      	               				<yearpublished value="2008" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="7">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3–4 players" />
+  <result name="recommmendedwith" value="Recommended with 3–6 players" />
+</poll-summary> 			               				<playingtime value="75" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="75" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="4">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="2">
+			
+		<results>		
+					<result level="41" value="No necessary in-game text" numvotes="0" />
+					<result level="42" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="43" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="44" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="45" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1026" value="Negotiation" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="3" value="Game: Catan" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="86669" value="Catan Scenarios: Helpers of Catan" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="13" value="CATAN" inbound="true"/>
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="2807" value="CATAN: 5-6 Player Expansion" inbound="true"/>
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="11" value="Klaus Teuber" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12382" value="Tanja Donner" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11825" value="Michael Menzel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11883" value="Franz Vohwinkel" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37" value="KOSMOS" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10" value="Mayfair Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="1426" />
+			<average value="7.06235" />
+			<bayesaverage value="5.98843" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.98843" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.01887" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="6.06831" />
+												</ranks>
+
+			<stddev value="1.55484" />
+			<median value="0" />
+			<owned value="5451" />
+			<trading value="43" />
+			<wanting value="22" />
+			<wishing value="118" />
+			<numcomments value="273" />
+			<numweights value="27" />
+			<averageweight value="2.4444" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

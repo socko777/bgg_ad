@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="271601">
+         <thumbnail>https://cf.geekdo-images.com/1I9spdDMuRzgM4EVV6BRiQ__small/img/aaiaeMGAajKyBKFGlYuPY-WjPrY=/fit-in/200x150/filters:strip_icc()/pic8775698.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/1I9spdDMuRzgM4EVV6BRiQ__original/img/ad-NSXRHuJQSGxMN03ib4EaRYe0=/0x0/filters:format(jpeg)/pic8775698.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Feed the Kraken" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Kraken" />
+			    				
+				<name type="alternate" sortindex="3" value="A Kraken haragja" />
+			    				
+				<name type="alternate" sortindex="1" value="L&#039;Ombre du Kraken" />
+			    				
+				<name type="alternate" sortindex="1" value="Nakrmte Krakena" />
+			    				
+				<name type="alternate" sortindex="1" value="Кто накормит Кракена?" />
+			    				
+				<name type="alternate" sortindex="1" value="险恶疑航" />
+			    				
+				<name type="alternate" sortindex="1" value="险恶疑航（豪华版）" />
+			    				
+				<name type="alternate" sortindex="1" value="피드 더 크라켄" />
+			
+						               													<description>Feed the Kraken is a hidden role deduction game, with three asymmetric factions. All players may be sitting in the same boat, but they want to navigate in different directions! The loyal sailors must bring the ship safely to mainland, whereas the pirates crave to secretly maneuver the ship into the Bermuda Triangle. Meanwhile a crazy cultist is busy convincing parts of the crew to help him summon their dark lord &amp;mdash;the Kraken&amp;mdash; from the depth of the sea to save them all.
+
+The goal of the game is to navigate the ship towards your final destination, which would be easy if only players weren&amp;rsquo;t divided into three different factions. Each secret faction wants to reach a different area of the board. Every turn the ship will sail in one of the three possible directions &amp;mdash;but which one will it be? The current captain and their chosen lieutenant will study ancient sea maps and pass their often conflicting orders onto the chosen navigator, who has to make the final decision. Meanwhile the rest of the crew is busy drinking rum, gambling and telling each other tales of ancient sea monsters.
+
+After each navigation, the lieutenant and navigator go off duty, and the captain has to find somebody sober enough to take their spot instead. Everyone can discuss, how well that last navigation went, who is to blame for the current course, and who should be in charge in the future instead. Convince your enemies that it is in their best interest to make you the next lieutenant, or navigator! You can even draw your guns and become the new captain in open mutiny! But for how long will you be able to keep the trust of your crew? The next mutiny might already be waiting for you if your decisions don&amp;rsquo;t please your fellow sailors.
+
+&amp;mdash;description from designer
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="5" />
+						               				<maxplayers value="11" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="135">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="74" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="72" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="72" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="71" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="37" />
+					<result value="Not Recommended" numvotes="51" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="15" />
+					<result value="Recommended" numvotes="65" />
+					<result value="Not Recommended" numvotes="18" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="36" />
+					<result value="Recommended" numvotes="64" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="79" />
+					<result value="Recommended" numvotes="28" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="9">		
+					<result value="Best" numvotes="66" />
+					<result value="Recommended" numvotes="30" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="10">		
+					<result value="Best" numvotes="58" />
+					<result value="Recommended" numvotes="28" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="11">		
+					<result value="Best" numvotes="59" />
+					<result value="Recommended" numvotes="27" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="11+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="52" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 8–11 players" />
+  <result name="recommmendedwith" value="Recommended with 6–11 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="90" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="21">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="12" />
+					<result value="12" numvotes="8" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="8">
+			
+		<results>		
+					<result level="11" value="No necessary in-game text" numvotes="0" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="6" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1023" value="Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1008" value="Nautical" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1090" value="Pirates" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2073" value="Acting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2014" value="Betting and Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2676" value="Grid Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2891" value="Hidden Roles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2685" value="Player Elimination" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2028" value="Role Playing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2892" value="Roles with Asymmetric Information" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2814" value="Traitor Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2017" value="Voting" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="25158" value="Components: Miniatures" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="112335" value="Creatures: Kraken" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="2989" value="Game: Werewolf / Mafia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="74823" value="Theme: Pirates" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="363682" value="Feed the Kraken: Bonus Character Cards" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="340231" value="Feed the Kraken: Neoprene Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="115228" value="Maikel Cheney" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="111158" value="Dr. Hans Joachim Höh" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="115229" value="Tobias Immich" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="126974" value="James Churchill" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="128409" value="Hendrik Noack" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="40576" value="Funtails" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48072" value="Bumble3ee Interactive" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30155" value="GateOnGames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8923" value="IELLO" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="27470" value="Lucrum Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="50506" value="Niza Gams" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55187" value="Old Dawg" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1902" value="Outset Media" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41167" value="Popcorn Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3242" value="Raven Distribution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="53490" value="Rozum" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46992" value="SEVENSEAS GAMES(七海桌游)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41437" value="SPIEL INSTABIL" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="5899" />
+			<average value="7.79352" />
+			<bayesaverage value="7.06001" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="431" bayesaverage="7.06001" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="103" bayesaverage="7.18421" />
+											<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="12" bayesaverage="7.32276" />
+												</ranks>
+
+			<stddev value="1.46999" />
+			<median value="0" />
+			<owned value="9316" />
+			<trading value="59" />
+			<wanting value="417" />
+			<wishing value="4532" />
+			<numcomments value="955" />
+			<numweights value="147" />
+			<averageweight value="2.1633" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

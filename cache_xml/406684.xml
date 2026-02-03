@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="406684">
+         <thumbnail>https://cf.geekdo-images.com/Th_T4H6L-SjY7NI_3kUhEQ__small/img/xuYtx9ViCszrZxAni52hUNVtd1A=/fit-in/200x150/filters:strip_icc()/pic7882796.png</thumbnail>
+      <image>https://cf.geekdo-images.com/Th_T4H6L-SjY7NI_3kUhEQ__original/img/oMqIR6szYTkdrz_ee7oQDdiMR_4=/0x0/filters:format(png)/pic7882796.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Sonic Roll" />
+			
+						                           
+						               													<description>Sonic Roll is a multiplayer game for 1-4 players in the style of 16-bit classic Sonic. It has cooperative, semi-cooperative, and competitive game modes.  Each player chooses Sonic, Tails, Knuckles, or Amy to play as they make their way through four classic Sonic Zones. You can challenge a single Zone or adventure through all of them in campaign mode.
+
+As you traverse these iconic Zones, you can save the woodland creatures the evil Dr. Eggman has captured, using character-unique abilities to roll dice and take out obstacles in your path. Place dice to run through Zones; collect rings, power-ups, and Chaos Emeralds; and defeat the Badniks that stand in your way. A Zone isn't complete until the players face off against one of the bosses from across the Sonic franchise, where they must try to score enough hits to defeat Dr. Eggman and his army before time runs out!
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="10">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="60" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="4">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="16" value="No necessary in-game text" numvotes="0" />
+					<result level="17" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="18" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="19" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="20" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1022" value="Adventure" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1101" value="Video Game Theme" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2661" value="Push Your Luck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2870" value="Re-rolling and Locking" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2820" value="Semi-Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19279" value="Video Game Theme: Sonic the Hedgehog" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="456275" value="Sonic Roll: OC Dashboard Expansion" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="134110" value="Anthony Thorp" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="20884" value="Tracy Yardley" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37839" value="Kess Co." />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="197" />
+			<average value="7.66777" />
+			<bayesaverage value="5.61691" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="8484" bayesaverage="5.61691" />
+												</ranks>
+
+			<stddev value="1.61265" />
+			<median value="0" />
+			<owned value="668" />
+			<trading value="11" />
+			<wanting value="21" />
+			<wishing value="190" />
+			<numcomments value="53" />
+			<numweights value="13" />
+			<averageweight value="2.3846" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

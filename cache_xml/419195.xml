@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="419195">
+         <thumbnail>https://cf.geekdo-images.com/LjqYcVKq6YrQ0rJ4H4Lusg__small/img/mzUGdFOVFxq6kJfm41QTRvnxQSw=/fit-in/200x150/filters:strip_icc()/pic8149442.png</thumbnail>
+      <image>https://cf.geekdo-images.com/LjqYcVKq6YrQ0rJ4H4Lusg__original/img/REAXkcbA-CtHuDU0BVNYsHUdyJM=/0x0/filters:format(png)/pic8149442.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Fishing" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Filets &amp; Fish" />
+			    				
+				<name type="alternate" sortindex="1" value="Filets au Fish" />
+			    				
+				<name type="alternate" sortindex="1" value="Fischen" />
+			    				
+				<name type="alternate" sortindex="1" value="Hengelen" />
+			    				
+				<name type="alternate" sortindex="1" value="Pesca-Cartas" />
+			    				
+				<name type="alternate" sortindex="1" value="Štycholov" />
+			    				
+				<name type="alternate" sortindex="1" value="На живця" />
+			    				
+				<name type="alternate" sortindex="1" value="フィッシェン" />
+			    				
+				<name type="alternate" sortindex="1" value="피쉬 앤 트릭" />
+			
+						               													<description>In Fishing, you try to catch as many tricks as possible over eight rounds, with each card you catch being worth 1 point. You then use your caught cards for the next round &amp;mdash; and if you didn't catch enough tricks to fill your hand, you'll draw fresh cards from the ocean stack, which will introduce new cards for you fishers to fight over.
+
+In more detail, at the start of each round, you have 8-13 cards in hand, depending on the player count and the round. In the first round, the cards go from 1-10 in four colors. Standard trick-taking rules apply, with players needing to follow the color led and the highest card of the led suit winning the trick.
+
+New cards come into play from the ocean stack in waves, with higher-value cards in the four colors, a green trump suit from 1-16, 0 cards that let you snag a card from the trick, and special-powered buoy cards that can always be played into a trick regardless of what you have in hand. With buoys, you can steal the lead or determine which color must lead the next trick, force players to pass cards or lose points; you can even steal all other cards in a trick, ideally netting yourself huge fish for use next round.
+
+At the end of each round, score 1 point for each card you caught. Whoever lands the most points after eight rounds wins.
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="51">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="28" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="27" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="31" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="31" />
+					<result value="Recommended" numvotes="14" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="19" />
+					<result value="Recommended" numvotes="20" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="25" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 3–5 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="40" />
+						               				<maxplaytime value="60" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="11">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="9" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="6">
+			
+		<results>		
+					<result level="11" value="No necessary in-game text" numvotes="6" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1008" value="Nautical" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2009" value="Trick-taking" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17635" value="Animals: Crabs" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7975" value="Animals: Fish / Fishes" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17527" value="Animals: Octopuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5834" value="Theme: Fishing / Angling" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="141" value="Friedemann Friese" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="39777" value="Maren Rache" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="58" value="2F-Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30571" value="2Tomatoes Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="157" value="asmodee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48438" value="Games7Days" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5530" value="Giochi Uniti" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3218" value="Lautapelit.fi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="50478" value="Ludofun" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5400" value="Matagot" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3" value="Rio Grande Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46508" value="SUNNY BIRD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41423" value="TLAMA games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="3178" />
+			<average value="7.24698" />
+			<bayesaverage value="6.51013" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1283" bayesaverage="6.51013" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="332" bayesaverage="6.6606" />
+												</ranks>
+
+			<stddev value="1.26129" />
+			<median value="0" />
+			<owned value="6754" />
+			<trading value="81" />
+			<wanting value="189" />
+			<wishing value="1212" />
+			<numcomments value="573" />
+			<numweights value="57" />
+			<averageweight value="1.8772" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

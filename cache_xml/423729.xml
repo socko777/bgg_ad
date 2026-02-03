@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="423729">
+         <thumbnail>https://cf.geekdo-images.com/R_-dtikNNObPHSujJCUhbA__small/img/-VwXA86VX-RBeuK0330RHFvBvxQ=/fit-in/200x150/filters:strip_icc()/pic8320118.png</thumbnail>
+      <image>https://cf.geekdo-images.com/R_-dtikNNObPHSujJCUhbA__original/img/r-eOICoPSxe-AtH6s8oeNumUsOo=/0x0/filters:format(png)/pic8320118.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Let&#039;s Hit Each Other with Fake Swords" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Colpiamoci a Vicenda con Spade Finte" />
+			    				
+				<name type="alternate" sortindex="1" value="Csapkodjuk egymást szivacskardokkal" />
+			    				
+				<name type="alternate" sortindex="1" value="Herzlich Willkommen zum Hieb- und Stichfest" />
+			    				
+				<name type="alternate" sortindex="1" value="Vamos a pegarnos con espadas de mentira" />
+			    				
+				<name type="alternate" sortindex="1" value="Влаштуймо бутафорними мечами ДВОБІЙ ЗА КАРТИ" />
+			
+						               													<description>The hook of the party game Let's Hit Each Other with Fake Swords is that...you get to hit each other with fake swords. Why you're doing that is to claim action cards. Collect three cards of a color, and you have a set; collect three sets before anyone else, and you win.
+
+Each round, the fight boss divides cards into piles, then after a countdown of 3-2-1, everyone points to the pile they want. If no one else has pointed at your pile, take that pile and place those cards (or card) in front of you. If no one points at a pile, discard that pile. If multiple people point at a pile (or multiple piles have multiple people pointing at them), the fight boss chooses which two people pointing at the same pile will fight, and those players then try to hit one another with fake swords &amp;mdash; but they must follow all of the rules on the cards over which they are fighting. Maybe you have to stand on one leg or wield the sword without bending your elbow or keep a running count of the things the fighters hit...or maybe you have to do all three of those things!
+
+If the fight boss sees a fighter violate a rule &amp;mdash; such as disobeying a card or hitting an opponent on the head or arm &amp;mdash; the other fighter wins. If a fighter hits their opponent on the chest or back (or meets the victory condition on a card), they claim all of the cards in that pile. Everyone else who was pointing at the same pile as someone else gets nothing.
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="2">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 3–6 players" />
+</poll-summary> 			               				<playingtime value="15" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="15" />
+						               				<minage value="7" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="1">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="0">
+			
+		<results>		
+					<result level="11" value="No necessary in-game text" numvotes="0" />
+					<result level="12" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="13" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="14" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="15" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1032" value="Action / Dexterity" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="154908" value="Ian Clayman" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="115957" value="Mary Georgescu" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="1533" value="Eric M. Lang" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="71478" value="Matthew Inman" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="80158" value="Elan Lee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="3980" value="Brian S. Spence" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32307" value="Exploding Kittens" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gém Klub Kft." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="53490" value="Rozum" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="174" />
+			<average value="5.87117" />
+			<bayesaverage value="5.52161" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="18577" bayesaverage="5.52161" />
+												</ranks>
+
+			<stddev value="1.71882" />
+			<median value="0" />
+			<owned value="872" />
+			<trading value="15" />
+			<wanting value="6" />
+			<wishing value="51" />
+			<numcomments value="42" />
+			<numweights value="2" />
+			<averageweight value="1" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

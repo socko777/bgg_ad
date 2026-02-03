@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="411865">
+         <thumbnail>https://cf.geekdo-images.com/J6V5mbUZCEgQQCMIKJP3Og__small/img/KNAcxh5apytwLYVLQ-fyGafs_s4=/fit-in/200x150/filters:strip_icc()/pic8002932.png</thumbnail>
+      <image>https://cf.geekdo-images.com/J6V5mbUZCEgQQCMIKJP3Og__original/img/rSaDlp6K35tW94-abxfjhkJMRas=/0x0/filters:format(png)/pic8002932.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Magic Number Eleven" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Sztárcsapat" />
+			    				
+				<name type="alternate" sortindex="1" value="Twoja Magiczna Jedenastka" />
+			    				
+				<name type="alternate" sortindex="1" value="夢幻十一人" />
+			
+						               													<description>Magic Number Eleven is an innovative sports game depicting the tactical confrontation of football games with simple rules. Each player becomes a coach of a football team, confronting each other. The game consists of two Rounds; 1st half and 2nd half. Each round consists of several turns.
+
+In your turn, you basically place a Player Card on the Field Board. The meaning of Player Card placement is an expression of where the team is currently focused on and which player is the center of the tactics. Each Player Card has semicircular tactical icons which can be combined with the icons on other Player Cards. Therefore, each team will have more tactical icons according to the combination of the Player Cards, as the turns go on.
+
+There are 4 different type of tactical icons- Attack, Defence, Pass, and Press- and the action and the effect you may take in your turn vary according to the type and amount of the icons you have been made. Based on the tactical icons you have, you may 1) attempt a shot, 2) draw Synergy Cards, and 3) push the Control Maker on the Control Track.
+
+When you attempt a shot, compare your attack power and the opponent's defence power. Both of attack/defence power can be strengthened with the Synergy Cards that each player has. The Synergy Cards represent the teamwork and the passing play of the team. And if your Control is high enough, you may add more Synergy Cards to the attack power. If the total of the attack power is higher than the defence power, as a result, it's a goal!
+
+In case you made the total attack power exactly 11, it called a Magic Number, or Wonder Goal, so the opponent can't defend the shot even with the higher defence power. On the other hand, if it exceeds 11, it's always no goal bacause the shot was too strong to be on target. Since there is always at least ONE unknown Synergy Card which has to be played from deck, so you can't guarantee the outcome of the shot!
+
+A round ends when all the Synergy Cards run out. When the 2nd round ends, a team with higher score wins!
+
+&amp;mdash;description from the designer
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="9">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="8" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2 players" />
+</poll-summary> 			               				<playingtime value="30" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="30" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="5">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="3" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="5">
+			
+		<results>		
+					<result level="6" value="No necessary in-game text" numvotes="5" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1028" value="Puzzle" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1038" value="Sports" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2883" value="Connections" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2661" value="Push Your Luck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2888" value="Tug of War" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="112196" value="Game: Magic Number Eleven" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5551" value="Sports: Football / Soccer" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="445419" value="Magic Number Eleven: Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="432045" value="Magic Number Eleven: GK Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="450082" value="Twoja Magiczna Jedenastka: Kadra" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="111774" value="Bonghwan Ju" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="117763" value="Olin Jeong" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55755" value="Pluto Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gém Klub Kft." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29487" value="Ogry Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54777" value="盒拍工作室 Hepa Studio" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="322" />
+			<average value="7.4764" />
+			<bayesaverage value="5.72719" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5723" bayesaverage="5.72719" />
+												</ranks>
+
+			<stddev value="1.14191" />
+			<median value="0" />
+			<owned value="683" />
+			<trading value="13" />
+			<wanting value="57" />
+			<wishing value="317" />
+			<numcomments value="68" />
+			<numweights value="18" />
+			<averageweight value="2.2222" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

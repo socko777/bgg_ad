@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="385999">
+         <thumbnail>https://cf.geekdo-images.com/IGiDskrRTDb1iaqhKunFMw__small/img/RREKXLETmQaoQaFLqQF1zE4H9ck=/fit-in/200x150/filters:strip_icc()/pic7465204.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/IGiDskrRTDb1iaqhKunFMw__original/img/Ymt3a10rzS21ezfJ2jpa0eKhldM=/0x0/filters:format(jpeg)/pic7465204.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Forever Home" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Szerető Otthon" />
+			
+						               													<description>Welcome to Forever Home, the puzzly pattern-building game about second chances for shelter dogs.
+
+Using a combination of tile placement, set collection, and drafting, you and your friends take on the role of shelter workers. Take it in turns to bring dogs into your shelter, complete training cards, and match pups up with new families. You'll be competing for valuable shelter commendations, as well as gaining reputation for training and rehoming the dogs in your care. At the end of the game, the shelter worker with the most reputation wins!
+
+Featuring quick and simple turns; a unique solo mode; and a second advanced side to the player board, Forever Home is a replayable, easy-to-love abstract game.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2023" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="21">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="11" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 1–5 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="45" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="5">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="3" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="4">
+			
+		<results>		
+					<result level="41" value="No necessary in-game text" numvotes="3" />
+					<result level="42" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="43" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="44" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="45" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1009" value="Abstract Strategy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1028" value="Puzzle" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7349" value="Animals: Dogs" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="39749" value="Components: 5 x 5 Grids" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="134282" value="Lottie Hazell" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="134283" value="Jack Hazell" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="23943" value="Dann May" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="152715" value="Dominique Vassie" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48073" value="Birdwood Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54949" value="DSV Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gém Klub Kft." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34778" value="Last Level" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="929" />
+			<average value="6.67858" />
+			<bayesaverage value="5.83208" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4413" bayesaverage="5.83208" />
+												</ranks>
+
+			<stddev value="1.28809" />
+			<median value="0" />
+			<owned value="1893" />
+			<trading value="37" />
+			<wanting value="28" />
+			<wishing value="401" />
+			<numcomments value="174" />
+			<numweights value="29" />
+			<averageweight value="1.8276" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

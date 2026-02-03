@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="147151">
+         <thumbnail>https://cf.geekdo-images.com/hHFs0_KRoW_FJ0cMIVgZcw__small/img/1MmGQvJVNw8TA7eWAJ8oIK-ZENc=/fit-in/200x150/filters:strip_icc()/pic4991925.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/hHFs0_KRoW_FJ0cMIVgZcw__original/img/vbR7Wrdlq4fPcwUE1Ck9CowlJHY=/0x0/filters:format(jpeg)/pic4991925.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Concept" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Concept Χωρίς λόγια" />
+			    				
+				<name type="alternate" sortindex="1" value="Koncept" />
+			    				
+				<name type="alternate" sortindex="1" value="Концепт" />
+			    				
+				<name type="alternate" sortindex="1" value="Концепт" />
+			    				
+				<name type="alternate" sortindex="1" value="コンセプト" />
+			    				
+				<name type="alternate" sortindex="1" value="語破天機" />
+			    				
+				<name type="alternate" sortindex="1" value="콘셉트" />
+			
+						               													<description>In Concept, your goal is to guess words through the association of icons. A team of two players &amp;ndash; neighbors at the table &amp;ndash; choose a word or phrase that the other players need to guess. Acting together, this team places pieces judiciously on the available icons on the game board.
+
+To get others to guess "milk", for example, the team might place the question mark icon (which signifies the main concept) on the liquid icon, then cubes of this color on the icons for "food/drink" and "white". For a more complicated concept, such as "Leonardo DiCaprio", the team can use the main concept and its matching cubes to clue players into the hidden phrase being an actor or director, while then using sub-concept icons and their matching cubes to gives clues to particular movies in which DiCaprio starred, such as Titanic or Inception.
+
+The first player to discover the word or phrase receives 2 victory points, the team receives points as well, and the player who ends up with the most points wins.
+
+</description>
+										      	               				<yearpublished value="2013" />
+						               				<minplayers value="4" />
+						               				<maxplayers value="12" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="173">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="124" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="51" />
+					<result value="Not Recommended" numvotes="87" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="75" />
+					<result value="Not Recommended" numvotes="52" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="58" />
+					<result value="Recommended" numvotes="89" />
+					<result value="Not Recommended" numvotes="11" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="58" />
+					<result value="Recommended" numvotes="80" />
+					<result value="Not Recommended" numvotes="12" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="106" />
+					<result value="Recommended" numvotes="43" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="40" />
+					<result value="Recommended" numvotes="91" />
+					<result value="Not Recommended" numvotes="11" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="69" />
+					<result value="Recommended" numvotes="67" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="9">		
+					<result value="Best" numvotes="17" />
+					<result value="Recommended" numvotes="76" />
+					<result value="Not Recommended" numvotes="37" />
+				</results>					
+			
+		<results numplayers="10">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="68" />
+					<result value="Not Recommended" numvotes="41" />
+				</results>					
+			
+		<results numplayers="11">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="60" />
+					<result value="Not Recommended" numvotes="56" />
+				</results>					
+			
+		<results numplayers="12">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="56" />
+					<result value="Not Recommended" numvotes="56" />
+				</results>					
+			
+		<results numplayers="12+">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="38" />
+					<result value="Not Recommended" numvotes="74" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 6 players" />
+  <result name="recommmendedwith" value="Recommended with 3–12 players" />
+</poll-summary> 			               				<playingtime value="40" />
+						               				<minplaytime value="40" />
+						               				<maxplaytime value="40" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="66">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="5" />
+					<result value="8" numvotes="19" />
+					<result value="10" numvotes="26" />
+					<result value="12" numvotes="10" />
+					<result value="14" numvotes="4" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="1" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="44">
+			
+		<results>		
+					<result level="51" value="No necessary in-game text" numvotes="3" />
+					<result level="52" value="Some necessary text - easily memorized or small crib sheet" numvotes="4" />
+					<result level="53" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="10" />
+					<result level="54" value="Extensive use of text - massive conversion needed to be playable" numvotes="21" />
+					<result level="55" value="Unplayable in another language" numvotes="6" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1025" value="Word Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2893" value="Communication Limits" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2876" value="Race" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66334" value="Mechanism: Give a Clue / Get a Clue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19528" value="Organizations: Forgenext" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="273468" value="Concept: La Recharge" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="174202" value="Concept: XL Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="247314" value="Concept Kids: Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="343307" value="Concept: Demo Mini Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="307230" value="Concept: Print &amp; Play" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="65537" value="Gaëtan Beaujannot" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="8132" value="Alain Rivollet" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="70260" value="Éric Azagury" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="70259" value="Cédric Chevalier" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4384" value="Repos Production" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23043" value="ADC Blackfire Entertainment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="157" value="asmodee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15889" value="Asterion Press" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gém Klub Kft." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6214" value="Kaissa Chess &amp; Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3218" value="Lautapelit.fi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9325" value="Lifestyle Boardgames Ltd" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="53490" value="Rozum" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32645" value="Sombreros Production" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="21942" />
+			<average value="6.74383" />
+			<bayesaverage value="6.5866" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1120" bayesaverage="6.5866" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="89" bayesaverage="6.63306" />
+												</ranks>
+
+			<stddev value="1.39445" />
+			<median value="0" />
+			<owned value="36912" />
+			<trading value="702" />
+			<wanting value="211" />
+			<wishing value="2821" />
+			<numcomments value="3409" />
+			<numweights value="573" />
+			<averageweight value="1.377" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="410382">
+         <thumbnail>https://cf.geekdo-images.com/Q48cCZ5WDkxbOh2_Ee3zJQ__small/img/im4sjdG5MZRKdO4mXgHlm2Yikiw=/fit-in/200x150/filters:strip_icc()/pic9046728.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/Q48cCZ5WDkxbOh2_Ee3zJQ__original/img/Ry4ASWsBoLOMAu8EPU6xy8HOmDc=/0x0/filters:format(jpeg)/pic9046728.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="That Escalated Quickly" />
+			
+						                           
+						               													<description>To play That Escalated Quickly, read out a simple question (ex. I&amp;rsquo;m locked in a tiny room. What else is locked in here with me from cutest to scariest). Then everyone is assigned a secret number from one to ten. Next, each player answers the question, and the intensity of that answer is based on their secret number (ex. 1= a bunny, 10= a grizzly bear with chainsaw arms.) Finally, the person who read the question has to try and sort those answers into the correct order. If they get it right, everyone wins! This game is hilarious, energetic, and a great way to get to know your friends and family a little bit better.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="8" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="11">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="8+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5–7 players" />
+  <result name="recommmendedwith" value="Recommended with 4–8 players" />
+</poll-summary> 			               				<playingtime value="15" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="15" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="4">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="3" />
+					<result value="10" numvotes="1" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="2">
+			
+		<results>		
+					<result level="46" value="No necessary in-game text" numvotes="0" />
+					<result level="47" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="48" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="49" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="50" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1079" value="Humor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3101" value="Ordering" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2865" value="Player Judge" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2866" value="Targeted Clues" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="424974" value="That Escalated Quickly Mini" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="300905" value="Top Ten" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="154908" value="Ian Clayman" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="84386" value="Carol Mertz" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="124205" value="Aurélien Picolet" />
+		
+									
+			
+
+			      			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32307" value="Exploding Kittens" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="443" />
+			<average value="6.95755" />
+			<bayesaverage value="5.73205" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5654" bayesaverage="5.73205" />
+												</ranks>
+
+			<stddev value="1.48864" />
+			<median value="0" />
+			<owned value="1183" />
+			<trading value="9" />
+			<wanting value="22" />
+			<wishing value="239" />
+			<numcomments value="91" />
+			<numweights value="10" />
+			<averageweight value="1.1" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

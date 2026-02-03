@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="28086">
+         <thumbnail>https://cf.geekdo-images.com/ckMBSPJ-KFsvS_jTXmfcmQ__small/img/0JFF-fSihFY4mld7Vj409oUWB1Y=/fit-in/200x150/filters:strip_icc()/pic1977202.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/ckMBSPJ-KFsvS_jTXmfcmQ__original/img/KfVmlW3EliwTP4cUE5iggb-eUBw=/0x0/filters:format(jpeg)/pic1977202.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Age of War" />
+			
+						                               				
+				<name type="alternate" sortindex="7" value="天下归秦" />
+			    				
+				<name type="alternate" sortindex="1" value="Camarades" />
+			    				
+				<name type="alternate" sortindex="1" value="Háborúk kora" />
+			    				
+				<name type="alternate" sortindex="1" value="Risiko Express" />
+			    				
+				<name type="alternate" sortindex="1" value="Risk Express" />
+			    				
+				<name type="alternate" sortindex="1" value="Zeitalter des Krieges" />
+			    				
+				<name type="alternate" sortindex="1" value="Епоха війни" />
+			    				
+				<name type="alternate" sortindex="1" value="ライナー・クニツィアの戦国時代" />
+			    				
+				<name type="alternate" sortindex="1" value="戦国時代" />
+			
+						               													<description>Age of War, also known as Risk Express or Camarades, is a quick-playing game of conquest. Fourteen cards are laid out at the start of the game, each showing the symbols required to claim this card, with the symbols separated into battle lines. The cards are grouped into sets, with sets varying in size from one to four cards.
+
+A player starts their turn by rolling seven dice, the six sides of which show different symbols. They then select a card and uses the symbols rolled to conquer exactly one of the battle lines on this card (by placing the appropriate dice on that line). If they can do this, they then roll the remaining dice, ideally conquering another line; if they cannot conquer a line, they remove one die from play, the rolls again. Their turn ends when either they conquer every line on the card (in which case they claims it) or they no longer have dice available to roll.
+
+Each card is worth a number of victory points. You can conquer cards owned by other players, but you need to conquer an additional line to do so. If a player has claimed all the cards from one set, however, those castles are secure and can no longer be stolen. What's more, these cards are now also worth more points.
+
+When the last card is claimed, players tally the points from the cards they have claimed, and whoever has the highest score wins.
+
+</description>
+										      	               				<yearpublished value="2006" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="32">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="18" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="19" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="24" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="8" />
+					<result value="Recommended" numvotes="17" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="13" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–5 players" />
+</poll-summary> 			               				<playingtime value="30" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="30" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="9">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="3" />
+					<result value="6" numvotes="4" />
+					<result value="8" numvotes="2" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="16">
+			
+		<results>		
+					<result level="36" value="No necessary in-game text" numvotes="16" />
+					<result level="37" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="38" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="39" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="40" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1050" value="Ancient" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1035" value="Medieval" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1001" value="Political" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1086" value="Territory Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1019" value="Wargame" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2856" value="Die Icon Resolution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2661" value="Push Your Luck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2870" value="Re-rolling and Locking" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2686" value="Take That" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="100426" value="Components: Dice Cup / Dice Tower / Dice Tray" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65328" value="Components: Dice with Icons" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="67586" value="Containers: Round Boxes" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11518" value="Country: China" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10634" value="Country: Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="56924" value="Game: Risk (Official)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="58463" value="History: Early Imperial China" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="74" value="Series: Express Line (Hasbro)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="28732" value="Theme: Samurai" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62201" value="Versions &amp; Editions: Dice Versions of Non-Dice Games" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="446605" value="Camarades: L&#039;extension" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="328142" value="The Lost Clans (fan expansion for Age of War)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="168057" value="Rise of the Daimyo (fan expansion for Age of War)" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="2" value="Reiner Knizia" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="49276" value="Simon Eckert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="43532" value="Tony Foti" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="166965" value="Victorien Del Tatto" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="158240" value="李小娜 (LI Xiaona)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="158239" value="杨静雯 (Yang Jingwen)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="158242" value="谢有鑫 (Xie Youxin)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="158244" value="陈杰 (Chen Jie)" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17" value="Fantasy Flight Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="51" value="Hasbro" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3475" value="Arclight Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24631" value="cutia.ro" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6194" value="Delta Vision Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2973" value="Edge Entertainment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38209" value="Gameland 游戏大陆" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48438" value="Games7Days" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5530" value="Giochi Uniti" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="264" value="Heidelberger Spieleverlag" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="45603" value="Offline Editions" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28" value="Parker Brothers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4653" value="Parker Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="59422" value="Le Passe Temps" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42294" value="Precisamente" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54519" value="Yaofish Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="9412" />
+			<average value="6.4384" />
+			<bayesaverage value="6.20792" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2178" bayesaverage="6.20792" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="786" bayesaverage="6.23527" />
+												</ranks>
+
+			<stddev value="1.349" />
+			<median value="0" />
+			<owned value="14275" />
+			<trading value="275" />
+			<wanting value="240" />
+			<wishing value="1297" />
+			<numcomments value="2326" />
+			<numweights value="127" />
+			<averageweight value="1.1575" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

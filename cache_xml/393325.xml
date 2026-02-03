@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="393325">
+         <thumbnail>https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__small/img/SzzzJKDO1wvj9YWfCg-mOnjC_lQ=/fit-in/200x150/filters:strip_icc()/pic7784394.png</thumbnail>
+      <image>https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__original/img/CEF2zr_yUhqZrc0NP6NnBoXGGPc=/0x0/filters:format(png)/pic7784394.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Captain Flip" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Kapetan Flip" />
+			    				
+				<name type="alternate" sortindex="1" value="Kapitán Flip" />
+			    				
+				<name type="alternate" sortindex="1" value="Kapitan Flip" />
+			    				
+				<name type="alternate" sortindex="1" value="キャプテン・フリップ" />
+			    				
+				<name type="alternate" sortindex="1" value="揚翻奪寶" />
+			
+						               													<description>Ahoy, Captain! 
+Hoist your flag, recruit a crew, and fill your coffers with shiny, gold coins.
+
+Captain Flip is a game of obvious simplicity explained in less time than a cannonball shot. On your turn, draw a tile from the bag. You like it? Keep it! You don't like it? Flip it! Then place it on your board to form your crew.
+
+With its nine characters and four boards with different tactics, Captain Flip offers an immediate, fun, and subtle gaming experience.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="139">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="13" />
+					<result value="Not Recommended" numvotes="83" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="58" />
+					<result value="Recommended" numvotes="51" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="76" />
+					<result value="Recommended" numvotes="37" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="32" />
+					<result value="Recommended" numvotes="65" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="11" />
+					<result value="Recommended" numvotes="43" />
+					<result value="Not Recommended" numvotes="39" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="72" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–5 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="46">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="4" />
+					<result value="6" numvotes="27" />
+					<result value="8" numvotes="15" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="17">
+			
+		<results>		
+					<result level="6" value="No necessary in-game text" numvotes="11" />
+					<result level="7" value="Some necessary text - easily memorized or small crib sheet" numvotes="6" />
+					<result level="8" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="9" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="10" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1008" value="Nautical" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1090" value="Pirates" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2847" value="Advantage Token" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2978" value="Grid Coverage" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2047" value="Memory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2965" value="Multiple Maps" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2661" value="Push Your Luck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77906" value="Category: Dized Tutorial" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="114715" value="Crowdfunding: Xinwuji" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="80918" value="Digital Implementations: Game Park" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="74823" value="Theme: Pirates" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="442638" value="Captain Flip: Dolphin" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="413556" value="Captain Flip: In the Jaws of the Kraken" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="458424" value="Captain Flip: Isla Bomba" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="49759" value="Remo Conzadori" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="7640" value="Paolo Mori" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="102639" value="Jonathan Aucomte" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54347" value="PlayPunk" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="6439" />
+			<average value="7.14347" />
+			<bayesaverage value="6.6774" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="940" bayesaverage="6.6774" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="241" bayesaverage="6.78282" />
+												</ranks>
+
+			<stddev value="1.2243" />
+			<median value="0" />
+			<owned value="8355" />
+			<trading value="48" />
+			<wanting value="257" />
+			<wishing value="1861" />
+			<numcomments value="925" />
+			<numweights value="183" />
+			<averageweight value="1.1967" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

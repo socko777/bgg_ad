@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="256382">
+         <thumbnail>https://cf.geekdo-images.com/7Ej5V5Dq92QdvVFvISfl_A__small/img/8tU6KCVSI5dlcibYTT6mq3K9ljk=/fit-in/200x150/filters:strip_icc()/pic4216110.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/7Ej5V5Dq92QdvVFvISfl_A__original/img/XHykA7cqZ0F4tYiKXw095TvHRno=/0x0/filters:format(jpeg)/pic4216110.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Disney Villainous: The Worst Takes it All" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Disney Villainous: Böse Miene zum guten Spiel!" />
+			    				
+				<name type="alternate" sortindex="1" value="Disney Villainous: Quel méchant sommeille en vous?" />
+			    				
+				<name type="alternate" sortindex="1" value="ディズニー・ヴィランズ" />
+			
+						               													<description>In Villainous, each player takes control of one of six Disney characters, each one a villain in a different Disney movie. Each player has their own villain deck, fate deck, player board, and 3D character.
+
+On a turn, the active player moves their character to a different location on their player board, takes one or more of the actions visible on that space (often by playing cards from their hand), then refills their hand to four cards. Cards are allies, items, effects, conditions, and (for some characters) curses. You need to use your cards to fulfill your unique win condition.
+
+One of the actions allows you to choose another player, draw two cards from that player's fate deck, then play one of them on that player's board, covering two of the four action spaces on one of that player's locations. The fate deck contains heroes, items, and effects from that villain's movie, and these cards allow other players to mess with that particular villain.
+
+</description>
+										      	               				<yearpublished value="2018" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="403">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="13" />
+					<result value="Not Recommended" numvotes="251" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="130" />
+					<result value="Recommended" numvotes="182" />
+					<result value="Not Recommended" numvotes="34" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="201" />
+					<result value="Recommended" numvotes="130" />
+					<result value="Not Recommended" numvotes="9" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="75" />
+					<result value="Recommended" numvotes="171" />
+					<result value="Not Recommended" numvotes="73" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="68" />
+					<result value="Not Recommended" numvotes="229" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="38" />
+					<result value="Not Recommended" numvotes="259" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="240" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="120" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="74">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="13" />
+					<result value="10" numvotes="35" />
+					<result value="12" numvotes="21" />
+					<result value="14" numvotes="4" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="21">
+			
+		<results>		
+					<result level="66" value="No necessary in-game text" numvotes="0" />
+					<result level="67" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="68" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="69" value="Extensive use of text - massive conversion needed to be playable" numvotes="16" />
+					<result level="70" value="Unplayable in another language" numvotes="3" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1035" value="Medieval" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1064" value="Movies / TV / Radio theme" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1082" value="Mythology" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1093" value="Novel-based" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1090" value="Pirates" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2686" value="Take That" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="56989" value="Game: Disney Villainous" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78677" value="Series: Villainous" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="63202" value="Authors: Charles Perrault" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="6819" value="Books: Alice in Wonderland" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5597" value="Brands: Disney" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73592" value="Components: Gems/Crystals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19299" value="Creatures: Fairies / Elves / Pixies" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11418" value="Folk Tales &amp; Fairy Tales: Aladdin" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="9767" value="Folk Tales &amp; Fairy Tales: Peter Pan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5660" value="Folk Tales &amp; Fairy Tales: Robin Hood" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="76771" value="Folk Tales &amp; Fairy Tales: Sleeping Beauty" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11343" value="Folk Tales &amp; Fairy Tales: The Little Mermaid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="67861" value="Theme: Villainy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="28880" value="Theme: Witches" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="391217" value="Disney Villainous: Filled with Fright" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="271928" value="Disney Villainous: Insert Here Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352306" value="Disney Villainous: LaserLand Cauldron &amp; Power Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352415" value="Disney Villainous: LaserLand Cruella De Vil Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352298" value="Disney Villainous: LaserLand Evil Queen Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352299" value="Disney Villainous: LaserLand Fate &amp; Locks Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352300" value="Disney Villainous: LaserLand Gaston Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352307" value="Disney Villainous: LaserLand Lady Tremaine Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352301" value="Disney Villainous: LaserLand Mother Gothel Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352302" value="Disney Villainous: LaserLand Pete Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352303" value="Disney Villainous: LaserLand Prince John Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352305" value="Disney Villainous: LaserLand Scar Strength Tracker Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352416" value="Disney Villainous: LaserLand Special Movers Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352417" value="Disney Villainous: LaserLand Strength Token Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="352304" value="Disney Villainous: LaserLand Villain Randomizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="272501" value="Disney Villainous: Meeple Realty Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="378780" value="Disney Villainous: Spielmaterial.de Upgrade" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="352764" value="Disney Villainous: Bigger and Badder" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="331050" value="Disney Villainous: Despicable Plots" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="284760" value="Disney Villainous: Evil Comes Prepared" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="299047" value="Disney Villainous: Perfectly Wretched" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="411003" value="Disney Villainous: Sugar and Spite" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="447298" value="Disney Villainous: Treacherous Tides" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="271518" value="Disney Villainous: Wicked to the Core" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="391561" value="Disney Villainous: Introduction to Evil" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="302336" value="Marvel Villainous: Infinite Power" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="335528" value="Marvel Villainous: Mischief &amp; Malice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="379056" value="Marvel Villainous: Twisted Ambitions" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="369671" value="Marvel Villainous: We Are Venom" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="358800" value="Star Wars Villainous: Power of the Dark Side" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="159012" value="Aaron Donogh" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="102313" value="Prospero Hall" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="159125" value="Brian Kirk" />
+		
+									
+			
+
+			      			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34" value="Ravensburger" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="13476" value="Wonder Forge" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="22574" />
+			<average value="6.91396" />
+			<bayesaverage value="6.6833" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="932" bayesaverage="6.6833" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="305" bayesaverage="6.69182" />
+												</ranks>
+
+			<stddev value="1.46837" />
+			<median value="0" />
+			<owned value="53488" />
+			<trading value="926" />
+			<wanting value="165" />
+			<wishing value="3200" />
+			<numcomments value="3471" />
+			<numweights value="487" />
+			<averageweight value="2.4887" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

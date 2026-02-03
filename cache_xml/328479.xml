@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="328479">
+         <thumbnail>https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__small/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__original/img/ZPdxDPt1jSRQMNnVgn-qIPhNv0E=/0x0/filters:format(jpeg)/pic5899025.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Living Forest" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Ébredő erdő" />
+			    				
+				<name type="alternate" sortindex="1" value="Pradawny las" />
+			    				
+				<name type="alternate" sortindex="1" value="Strážcové lesa" />
+			    				
+				<name type="alternate" sortindex="1" value="ΤΟ ΠΝΕΥΜΑ ΤΟΥ ΔΑΣΟΥΣ" />
+			    				
+				<name type="alternate" sortindex="1" value="Живий Ліс" />
+			    				
+				<name type="alternate" sortindex="1" value="Живой лес" />
+			    				
+				<name type="alternate" sortindex="1" value="พฤกษาผู้พิทักษ์" />
+			    				
+				<name type="alternate" sortindex="1" value="リビング・フォレスト" />
+			    				
+				<name type="alternate" sortindex="1" value="森生不息" />
+			    				
+				<name type="alternate" sortindex="1" value="灵栖之森" />
+			    				
+				<name type="alternate" sortindex="1" value="리빙 포레스트" />
+			
+						               													<description>In Living Forest, you play as a nature spirit who will try to save the forest and its sacred tree from the flames of Onibi. But you are not alone in your mission as the animal guardians have come together to lend a hand around the Circle of Spirits where you progress. Each turn, they bring you valuable elements, so try to combine your team of animal guardians as best as possible to carry out your actions, but be careful: some of them are solitary and do not like to be mixed with others...
+
+You have one of three ways to achieve your goal: by planting 12 different Protective Trees, by collecting 12 Sacred Flowers to awaken Sanki the great Guardian of the Forest, by extinguishing 12 Fires to permanently repel Onibi.
+
+Each turn includes 3 phases: 
+&amp;bull; Guardian Animals (simultaneous push your luck phase) : You draw and turn face up, one after the other, the Guardian Animal cards from your personal stack. You thus form the Animal Guardian Help Line. You can stop drawing cards whenever you want. However, if you reveal a card showing a third solitary symbol, then you must stop drawing cards. This card closes your Help Line.
+&amp;bull; Action phase: You play in turn. If your Help Line shows strictly less than three solitary symbols (not canceled by gregarious symbols), you can then perform 2 different Actions. If your Help Line shows three solitary symbols (not canceled by gregarious symbols), you can then perform only 1 Action. The strength of an Action is determined by the number of corresponding Elements visible on the Guardian Animal cards in your Help Line and on your Forest individual board.
+&amp;bull; End of the turn:
+- Onibi attacks you: If some Fires remain at the center of the Circle of Spirits and you cannot resist them, then add as many Fire Varan cards to your discard stack as there are Fire tiles at the center of the Circle of Spirits.
+- Onibi attacks the Sacred Tree: Add as many Fires to the center of the Circle of Spirits as there are Guardian Animal cards taken this turn.
+- The arrival of new Guardian Animals: Complete the Guardian Animal reserve by revealing as many new cards per level as there were cards taken this turn.
+- Passing the Sacred Tree: Give the Sacred Tree to the next Spirit of Nature clockwise.
+- The Return of Guardian Animals: Move all the Animal Guardian cards from your Help Line to your personal discard stack.
+
+The game stops at the end of a complete turn when one of the Spirits of Nature has managed to collect at least 12 different Protective Trees OR 12 Fires OR 12 Sacred Flowers.
+
+</description>
+										      	               				<yearpublished value="2021" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="163">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="15" />
+					<result value="Not Recommended" numvotes="72" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="14" />
+					<result value="Recommended" numvotes="79" />
+					<result value="Not Recommended" numvotes="42" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="93" />
+					<result value="Recommended" numvotes="38" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="47" />
+					<result value="Recommended" numvotes="68" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="68" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="40" />
+						               				<minplaytime value="40" />
+						               				<maxplaytime value="40" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="36">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="13" />
+					<result value="10" numvotes="22" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="15">
+			
+		<results>		
+					<result level="26" value="No necessary in-game text" numvotes="15" />
+					<result level="27" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="28" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="29" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="30" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1084" value="Environmental" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1082" value="Mythology" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1086" value="Territory Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2661" value="Push Your Luck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2876" value="Race" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="80918" value="Digital Implementations: Game Park" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11767" value="Theme: Firefighting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="48871" value="Theme: Nature" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="57181" value="Theme: Trees and Forests" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="371429" value="Living Forest: Kodama" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="348969" value="Living Forest: Sanki &amp; Onibi Promo Cards" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="401522" value="Living Forest: Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="427260" value="Living Forest Duel" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="133041" value="Aske Christiansen" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="101154" value="Apolline Etienne" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="11688" value="Ludonaute" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44580" value="Board Game Rookie" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7162" value="Brain Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48438" value="Games7Days" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30155" value="GateOnGames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gém Klub Kft." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6214" value="Kaissa Chess &amp; Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3218" value="Lautapelit.fi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34801" value="Lavka Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32591" value="MeepleBR" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7992" value="MINDOK" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39" value="Pegasus Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41167" value="Popcorn Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39774" value="Tower Tactic Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37975" value="株式会社ケンビル (KenBill)" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="7958" />
+			<average value="7.22799" />
+			<bayesaverage value="6.79588" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="752" bayesaverage="6.79588" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="189" bayesaverage="6.88925" />
+												</ranks>
+
+			<stddev value="1.24314" />
+			<median value="0" />
+			<owned value="13285" />
+			<trading value="167" />
+			<wanting value="200" />
+			<wishing value="2703" />
+			<numcomments value="1159" />
+			<numweights value="243" />
+			<averageweight value="2.214" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

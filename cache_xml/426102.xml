@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="426102">
+         <thumbnail>https://cf.geekdo-images.com/EMRsQIkgUjZ_sMVOtfU8_g__small/img/Y1YICyJvsm3sbjWTxkFshErGvvE=/fit-in/200x150/filters:strip_icc()/pic8347707.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/EMRsQIkgUjZ_sMVOtfU8_g__original/img/g5-rZSW8AaHYFwX6Obs7DZPjfjY=/0x0/filters:format(jpeg)/pic8347707.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Only Murders in the Building: The Game" />
+			
+						                           
+						               													<description>
+     Search the Arconia!
+     Connect the Clues!
+     Reveal the Murderer!
+
+
+Your neighbor in the Arconia has been murdered, and its time to take matters into your own hands (and, perhaps, your own podcast). Help beloved amateur investigators Mabel, Charles, and Oliver in this sharp-witted game of sleuthing and suspense!
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="3">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="45" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="2">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="2">
+			
+		<results>		
+					<result level="21" value="No necessary in-game text" numvotes="0" />
+					<result level="22" value="Some necessary text - easily memorized or small crib sheet" numvotes="2" />
+					<result level="23" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="24" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="25" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1064" value="Movies / TV / Radio theme" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1040" value="Murder / Mystery" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1028" value="Puzzle" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3002" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="13111" value="Cities: New York (New York, USA)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="14661" value="Theme: Mystery / Crime" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="28608" value="Theme: TV Detectives" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="159012" value="Aaron Donogh" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="102313" value="Prospero Hall" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="146871" value="David Iezzi" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="164362" value="Migy Blanco" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42898" value="Funko Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="454" value="Goliath Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="84" />
+			<average value="6.81548" />
+			<bayesaverage value="5.53955" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="14546" bayesaverage="5.53955" />
+												</ranks>
+
+			<stddev value="1.38792" />
+			<median value="0" />
+			<owned value="366" />
+			<trading value="9" />
+			<wanting value="9" />
+			<wishing value="64" />
+			<numcomments value="28" />
+			<numweights value="5" />
+			<averageweight value="1.8" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

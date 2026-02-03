@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="405537">
+         <thumbnail>https://cf.geekdo-images.com/dK0nQKDFg5VDpKmvkAkIHg__small/img/7_IFcl8DCZ22KjFTjp_CLjrgOlM=/fit-in/200x150/filters:strip_icc()/pic8803328.png</thumbnail>
+      <image>https://cf.geekdo-images.com/dK0nQKDFg5VDpKmvkAkIHg__original/img/AkxW8w56y9Ow4G9jd25Ry6TgcZo=/0x0/filters:format(png)/pic8803328.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="DroPolter" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Dro Polter" />
+			    				
+				<name type="alternate" sortindex="1" value="Holterdiepolter" />
+			    				
+				<name type="alternate" sortindex="1" value="ヒュードロドロップ" />
+			    				
+				<name type="alternate" sortindex="1" value="드롭폴터(귀신 떨어짐)" />
+			
+						               													<description>Your hand is always full in DroPolter, which makes it a challenge to drop only the correct items that the ghosts want to see.
+
+To start the game, each player has a hand of five items: a red plastic cube, a blue wooden key, and so on. Each round, someone flips the top card of the deck, then players race to drop only the correct items from their hand. If you drop something you shouldn't, you're out for the round. If you're the first player who drops everything correctly, congratulations! You're rewarded with a tiny bell...that is placed in your hand and cannot be dropped in the future.
+
+The first player who collects five bells wins.
+
+</description>
+										      	               				<yearpublished value="2023" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="26">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="15" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="13" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="19" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="8" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="13" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–5 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="6" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="8">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="3" />
+					<result value="8" numvotes="4" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="86" value="No necessary in-game text" numvotes="3" />
+					<result level="87" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="88" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="89" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="90" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1032" value="Action / Dexterity" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2060" value="Pattern Recognition" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2831" value="Real-Time" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="110804" value="Components: Unique Items" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="123511" value="Paul Schulz" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="140525" value="Rie Komatsuzaki" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="50009" value="Jun Sasaki" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22649" value="Oink Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30034" value="Pixie Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41167" value="Popcorn Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="2796" />
+			<average value="7.09623" />
+			<bayesaverage value="6.36022" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1669" bayesaverage="6.36022" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="79" bayesaverage="6.6953" />
+												</ranks>
+
+			<stddev value="1.29341" />
+			<median value="0" />
+			<owned value="5855" />
+			<trading value="40" />
+			<wanting value="151" />
+			<wishing value="1204" />
+			<numcomments value="458" />
+			<numweights value="51" />
+			<averageweight value="1.0196" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

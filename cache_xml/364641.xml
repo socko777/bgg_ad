@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="364641">
+         <thumbnail>https://cf.geekdo-images.com/eflfeDSSSBlbPe0JFKJ0Pg__small/img/bMorCtDW6eFBeh7szmdiFXWZ570=/fit-in/200x150/filters:strip_icc()/pic6910522.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/eflfeDSSSBlbPe0JFKJ0Pg__original/img/CjCl_VOPgf_4Jhd8VizzO0FJn1M=/0x0/filters:format(jpeg)/pic6910522.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Joan of Arc: Orléans Draw &amp; Write" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Giovanna d&#039;Arco: Orléans Draw and Write" />
+			    				
+				<name type="alternate" sortindex="1" value="Jeanne d&#039;Arc: Orléans Draw &amp; Write" />
+			    				
+				<name type="alternate" sortindex="1" value="Johanna: Orléans Draw &amp; Write" />
+			    				
+				<name type="alternate" sortindex="1" value="Орлеан. Жанна д&#039;Арк" />
+			    				
+				<name type="alternate" sortindex="1" value="聖女貞德：奥爾良紙&amp;筆" />
+			
+						               													<description>In Joan of Arc: Orl&amp;eacute;ans Draw &amp; Write, 1-5 players draft followers that will help them move about France, gather goods, build buildings, establish trading stations, make money, and contribute to beneficial deeds. The player who can best utilize the followers they choose will score the most points and win.
+
+In slightly more detail, each round, a number of follower tiles are pulled from a bag. Players take turns drafting the followers and taking actions that correspond to the follower they've chosen. After all the followers have been drafted, the bag resets until you've exhausted one bag per player.
+
+In the solo mode, you compete directly against Joan of Arc at one of three difficulty levels.
+
+&amp;mdash;description from the designer
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="39">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="12" />
+					<result value="Recommended" numvotes="7" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="9" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2–3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="45" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="6">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="4" />
+					<result value="12" numvotes="2" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="41" value="No necessary in-game text" numvotes="3" />
+					<result level="42" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="43" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="44" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="45" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1035" value="Medieval" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2838" value="Action Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2055" value="Paper-and-Pencil" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="26568" value="Cities: Orléans (France)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11006" value="Country: France" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="38433" value="Game: Orléans" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="44339" value="Historical Figures: Joan of Arc" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66143" value="Mechanism: Flip-and-Write" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="63122" value="Versions &amp; Editions: Roll- or Flip-and-Write Versions of Non-Writing Games" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="164928" value="Orléans" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="146087" value="Ryan Hendrickson" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="158" value="Reiner Stockhausen" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11507" value="Klemens Franz" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10848" value="dlp games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30958" value="Capstone Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10768" value="Cranio Creations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29194" value="GaGa Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5400" value="Matagot" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36763" value="Surfin&#039; Meeple China" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="1630" />
+			<average value="7.2002" />
+			<bayesaverage value="6.19224" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2250" bayesaverage="6.19224" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="632" bayesaverage="6.35175" />
+												</ranks>
+
+			<stddev value="1.15117" />
+			<median value="0" />
+			<owned value="3830" />
+			<trading value="87" />
+			<wanting value="61" />
+			<wishing value="486" />
+			<numcomments value="281" />
+			<numweights value="42" />
+			<averageweight value="2.4048" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

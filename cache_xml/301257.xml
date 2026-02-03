@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="301257">
+         <thumbnail>https://cf.geekdo-images.com/yCj3DQLmxwdSCjXlt-styQ__small/img/VlU8eNskscg8lSXPSVSv0anZ66c=/fit-in/200x150/filters:strip_icc()/pic5275652.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/yCj3DQLmxwdSCjXlt-styQ__original/img/hP9rjkPFC2ePsxCMwM2PqW54xHI=/0x0/filters:format(jpeg)/pic5275652.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Maglev Metro" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Маглев Метро" />
+			
+						               													<description>In Maglev Metro, utilize state-of-the-art magnetic levitation technology to build a metropolitan rail system, transporting workers and robots beneath the city. Replace aging Manhattan and Berlin subway systems with newer, faster, quieter technology. Enhance your rail system's abilities so that your passengers arrive at their destinations first.
+
+Efficiency is your key to success in this pick-up-and-deliver, tile-laying, engine-building game. Transparent tiles allow your route to overlap your opponents' tracks, winding you along from station to station. Robots efficiently upgrade and adjust your abilities, leveraging unique goals to maximize points. By the end of the game, the game board has morphed into a modern subway map, with brightly-colored routes connecting stations all over the city.
+
+Maglev Metro contains two unique maps.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2021" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="70">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="13" />
+					<result value="Not Recommended" numvotes="25" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="35" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="34" />
+					<result value="Recommended" numvotes="13" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="21" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="22" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="90" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="8">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="3" />
+					<result value="12" numvotes="5" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="4">
+			
+		<results>		
+					<result level="66" value="No necessary in-game text" numvotes="0" />
+					<result level="67" value="Some necessary text - easily memorized or small crib sheet" numvotes="4" />
+					<result level="68" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="69" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="70" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1034" value="Trains" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1011" value="Transportation" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2081" value="Network and Route Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2007" value="Pick-up and Deliver" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="18214" value="Cities: Berlin (Germany)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="13111" value="Cities: New York (New York, USA)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65206" value="Components: Transparent Elements" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78432" value="Digital Implementations: Google Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="111693" value="Game: Maglev Metro" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78680" value="Misc: Made by Panda" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="380925" value="Maglev Maps: Volume 1" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="437651" value="Maglev Maps: Volume 2" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="447366" value="Maglev Metro: Barcelona &amp; Chicago" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="447374" value="Maglev Metro: Ghost Train &amp; The Outback" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="353779" value="Maglev Metro: London &amp; Paris" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="346841" value="Maglev Metro: Mechs &amp; Monorails" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="357060" value="Maglev Metro: Moonbases &amp; Mars" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="447371" value="Maglev Metro: Nanobots, Inc. &amp; Nanotech University" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="376623" value="Maglev Metro: Promo Passenger Cards" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="367991" value="Maglev Metro: Replacement Copper Robots" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6046" value="Ted Alspach" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="6046" value="Ted Alspach" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="133250" value="Alanna Kelsey" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="62217" value="Ollin Timm" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5774" value="Bézier Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="45510" value="Rawstone" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54463" value="RollinGames" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="3129" />
+			<average value="7.19017" />
+			<bayesaverage value="6.46241" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1401" bayesaverage="6.46241" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="762" bayesaverage="6.60104" />
+												</ranks>
+
+			<stddev value="1.28295" />
+			<median value="0" />
+			<owned value="5351" />
+			<trading value="137" />
+			<wanting value="230" />
+			<wishing value="1439" />
+			<numcomments value="625" />
+			<numweights value="79" />
+			<averageweight value="2.8354" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

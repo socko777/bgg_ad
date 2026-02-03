@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="271754">
+         <thumbnail>https://cf.geekdo-images.com/_q8YvpPKGUm3M6z4-l9nAA__small/img/QUDF2MU0IfbOnq8Z8GonXI4gjlI=/fit-in/200x150/filters:strip_icc()/pic6746297.png</thumbnail>
+      <image>https://cf.geekdo-images.com/_q8YvpPKGUm3M6z4-l9nAA__original/img/33q48p4uc1vjmJmQgXjza4yUbLc=/0x0/filters:format(png)/pic6746297.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Spire&#039;s End" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="终焉之塔" />
+			    				
+				<name type="alternate" sortindex="1" value="终焉之塔" />
+			
+						               													<description>Spire's End is a solo and cooperative card game with enemy encounters, interactive story-driven scenarios, and high-end art &amp; design.  It's a unique gaming experience without a lot of baggage. Simple set-up, intuitive rules, and minimal components. No DM, no bookkeeping or character sheet. Just you, an oversized deck of cards, dice and cube markers.
+
+I am trying to harness my childhood entertainment, raw, analog and unknown. My influences include a wide range of childhood nostalgia like &amp;rsquo;70s D&amp;D, Planet of the Apes, The Time Machine and Land of the Lost. There are hints of Zork, Monkey Island, and &amp;rsquo;80s-&amp;rsquo;90s fanzines.
+
+It should feel like something tucked away in the closet for decades that you just discovered. Admittedly with some modern aesthetics&amp;hellip;, we will pretend it&amp;rsquo;s ahead of its time.
+
+It's the grisly tale of a strange tower that emerges in the heart of a bustling Viking city. The townsfolk have vanished. It&amp;rsquo;s up to you to mount a rescue and unravel the mystery at any cost.
+
+You move through the game like a book. But in this case, it's a stack of ominous cards. Flip them over, make difficult choices and let the story unfold. You have 7 adventurers (7 chances) to face the countless dangers of the spire. The core gameplay mechanics revolve around combat.
+
+To perform actions &amp; attacks it will cost characters hit points. Every action is a risk. To execute stronger attacks you will need to spend more hit points. This makes for tense, close, ruthless battles. Higher risk garners greater rewards, but at a higher cost. Choose your actions carefully!
+
+This is a Six-Chapter adventure, each of which includes a major encounter, loot, choices, dice events and a lot of surprises!
+
+</description>
+										      	               				<yearpublished value="2019" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="25">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 1 players" />
+  <result name="recommmendedwith" value="Recommended with 1–2 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="120" />
+						               				<minage value="16" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="7">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="3" />
+					<result value="16" numvotes="2" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="1" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1022" value="Adventure" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1117" value="Book" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1046" value="Fighting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1024" value="Horror" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2001" value="Action Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2028" value="Role Playing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2027" value="Storytelling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65328" value="Components: Dice with Icons" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66140" value="Components: Polyhedral (not D6) dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="69209" value="Occupation: Adventurer / Explorer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="80229" value="Series: Spire&#039;s End" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="392618" value="Spire&#039;s End: Gunnar&#039;s Tale" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="354013" value="Spire&#039;s End: Marin Ally Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="436188" value="Spire&#039;s End: Marin&#039;s Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="371153" value="Spire&#039;s End: Mega Mushroom" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="356641" value="Spire&#039;s End: Rat King Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="371152" value="Spire&#039;s End: Siren Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="444051" value="Spire&#039;s End: Siren&#039;s Song" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="316866" value="Spire&#039;s End: Custom Card Sleeves" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="379380" value="Spire&#039;s End: Playmat" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="338069" value="Spire&#039;s End: Hildegard" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="458738" value="Spire&#039;s End: Volume 2 – Episode 1" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="115343" value="Greg Favro" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="106541" value="Benjamin Wiesemann" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="52553" value="Favro Ventures, LLC." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="49342" value="Rosiness" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="1010" />
+			<average value="7.57809" />
+			<bayesaverage value="6.05894" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2834" bayesaverage="6.05894" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="531" bayesaverage="6.33165" />
+												</ranks>
+
+			<stddev value="1.45915" />
+			<median value="0" />
+			<owned value="2440" />
+			<trading value="53" />
+			<wanting value="153" />
+			<wishing value="1215" />
+			<numcomments value="288" />
+			<numweights value="29" />
+			<averageweight value="2.0345" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

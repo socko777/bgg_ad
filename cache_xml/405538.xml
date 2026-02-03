@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="405538">
+         <thumbnail>https://cf.geekdo-images.com/M5AoYZd5BOV0B5R0APkQ3A__small/img/a7dze0ZiWCiphFzQ0XaGCKNrSMU=/fit-in/200x150/filters:strip_icc()/pic8933840.png</thumbnail>
+      <image>https://cf.geekdo-images.com/M5AoYZd5BOV0B5R0APkQ3A__original/img/WygeTuhltBna6veys-dGPd6QUUc=/0x0/filters:format(png)/pic8933840.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Rafter Five" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Ohne Floß nix los" />
+			    				
+				<name type="alternate" sortindex="1" value="いかだの5人" />
+			    				
+				<name type="alternate" sortindex="1" value="래프터 파이브(서까래 다섯)" />
+			
+						               													<description>In Rafter Five, you and your fellow players want to build as large a raft as possible &amp;mdash; but you want to end up being the only one who can board it.
+
+To start, stack the box top and bottom to create a base, then place the five wooden rafter pieces on the starting card on top of the base.
+
+On a turn, lift a rafter, place a raft card on the playing area, replace the rafter, then place one of your treasure chests somewhere on the raft...ideally in a precarious position because if someone else knocks off this chest, they must keep it in their hold. If a player collects five treasure chests owned by other players in their hold, they're out of the game! (You can knock off your own chests without penalty, but you're making the game easier for everyone else.)
+
+</description>
+										      	               				<yearpublished value="2023" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="12">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–6 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="7" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="3">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="2" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="2">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="2" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1032" value="Action / Dexterity" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3001" value="Layering" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2685" value="Player Elimination" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2821" value="Single Loser Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2988" value="Stacking and Balancing" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68117" value="Components: Game Box Used In Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="423377" value="Ohne Floß nix los: König" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="117733" value="ましう (Mashiu)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="50009" value="Jun Sasaki" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="50009" value="Jun Sasaki" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22649" value="Oink Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41167" value="Popcorn Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="892" />
+			<average value="6.73412" />
+			<bayesaverage value="5.83395" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4395" bayesaverage="5.83395" />
+												</ranks>
+
+			<stddev value="1.16404" />
+			<median value="0" />
+			<owned value="2151" />
+			<trading value="29" />
+			<wanting value="52" />
+			<wishing value="395" />
+			<numcomments value="168" />
+			<numweights value="15" />
+			<averageweight value="1.0667" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

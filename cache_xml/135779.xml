@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="135779">
+         <thumbnail>https://cf.geekdo-images.com/5Q5YHxJeVp6PAhfv5Ct0-g__small/img/nqo8xhGEWnqXYDEvYcVpBpABBI4=/fit-in/200x150/filters:strip_icc()/pic3678404.png</thumbnail>
+      <image>https://cf.geekdo-images.com/5Q5YHxJeVp6PAhfv5Ct0-g__original/img/yRNioltDOtjrTRXa0HHoTTCWNf8=/0x0/filters:format(png)/pic3678404.png</image>
+   	                                  				
+				<name type="primary" sortindex="3" value="A Fake Artist Goes to New York" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Egy imposztor New Yorkban" />
+			    				
+				<name type="alternate" sortindex="1" value="Ese Geijutsuka New York e Iku" />
+			    				
+				<name type="alternate" sortindex="1" value="エセ芸術家ニューヨークへ行く" />
+			    				
+				<name type="alternate" sortindex="1" value="가짜 예술가 뉴욕에 가다" />
+			
+						               													<description>Fake Artist Goes to New York &amp;ndash; is a party game for 5-10 players. Players take turns being the Question Master, whose role is to set a category, write a word within that category on dry erase cards, and hand those out to other players as artists. At the same time, one player will have only an "X" written on his card: they are the fake artist!
+
+Players will then go around the table twice, drawing one contiguous stroke each on a paper to draw the word established by the Question Master, then guess who the fake artist is. If the fake artist is not caught, both the fake artist and the Question Master earn points; if the fake artist is caught and cannot guess what the word is, the artists earn points.
+
+</description>
+										      	               				<yearpublished value="2011" />
+						               				<minplayers value="5" />
+						               				<maxplayers value="10" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="108">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="74" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="74" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="74" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="25" />
+					<result value="Not Recommended" numvotes="49" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="23" />
+					<result value="Recommended" numvotes="49" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="66" />
+					<result value="Recommended" numvotes="26" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="52" />
+					<result value="Recommended" numvotes="30" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="29" />
+					<result value="Recommended" numvotes="45" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="9">		
+					<result value="Best" numvotes="7" />
+					<result value="Recommended" numvotes="45" />
+					<result value="Not Recommended" numvotes="23" />
+				</results>					
+			
+		<results numplayers="10">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="38" />
+					<result value="Not Recommended" numvotes="29" />
+				</results>					
+			
+		<results numplayers="10+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="15" />
+					<result value="Not Recommended" numvotes="48" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 6–7 players" />
+  <result name="recommmendedwith" value="Recommended with 5–10 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="28">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="2" />
+					<result value="8" numvotes="20" />
+					<result value="10" numvotes="4" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="16">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="15" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1023" value="Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2891" value="Hidden Roles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2039" value="Line Drawing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2866" value="Targeted Clues" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="13111" value="Cities: New York (New York, USA)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="14835" value="Country: USA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77349" value="Digital Implementations: Steam" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="48868" value="Mechanism: Drawing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="56419" value="Theme: Art" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="50009" value="Jun Sasaki" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="50009" value="Jun Sasaki" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22649" value="Oink Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gém Klub Kft." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3218" value="Lautapelit.fi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38846" value="PopcornEdu" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="10357" />
+			<average value="7.11212" />
+			<bayesaverage value="6.80226" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="748" bayesaverage="6.80226" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="43" bayesaverage="6.95351" />
+												</ranks>
+
+			<stddev value="1.26754" />
+			<median value="0" />
+			<owned value="19979" />
+			<trading value="220" />
+			<wanting value="297" />
+			<wishing value="3377" />
+			<numcomments value="1848" />
+			<numweights value="179" />
+			<averageweight value="1.095" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="429293">
+         <thumbnail>https://cf.geekdo-images.com/uC4N_3kQdoHefNPesAHCzQ__small/img/hLjGKsIwJP43656LEnehjFVRzDE=/fit-in/200x150/filters:strip_icc()/pic8437787.png</thumbnail>
+      <image>https://cf.geekdo-images.com/uC4N_3kQdoHefNPesAHCzQ__original/img/ohKFXmrxtaOPqJyiIMaABIy-WjU=/0x0/filters:format(png)/pic8437787.png</image>
+   	                                  				
+				<name type="primary" sortindex="5" value="The Lord of the Rings: The Fellowship of the Ring – Trick-Taking Game" />
+			
+						                               				
+				<name type="alternate" sortindex="4" value="La Compagnia dell&#039;Anello: Trick Taking Game" />
+			    				
+				<name type="alternate" sortindex="4" value="La Comunidad del Anillo: El juego de bazas" />
+			    				
+				<name type="alternate" sortindex="1" value="Družina Prstena: Igra uzimanja štihova" />
+			    				
+				<name type="alternate" sortindex="3" value="A Gyűrűk Ura: A Gyűrű Szövetsége" />
+			    				
+				<name type="alternate" sortindex="5" value="Der Herr der Ringe: Die Gefährten – Das Stichspiel" />
+			    				
+				<name type="alternate" sortindex="1" value="Pán prstenů: Společenstvo prstenu – Štychová karetní hra" />
+			    				
+				<name type="alternate" sortindex="4" value="Le Seigneur des Anneaux: La Communauté de l&#039;Anneau, Le jeu de plis coopératif" />
+			    				
+				<name type="alternate" sortindex="3" value="A Sociedade do Anel: O Jogo de Vazas" />
+			    				
+				<name type="alternate" sortindex="1" value="Władca Pierścieni: Drużyna Pierścienia – Wciągająca gra karciana" />
+			    				
+				<name type="alternate" sortindex="1" value="Братство Персня: Карткова гра" />
+			    				
+				<name type="alternate" sortindex="1" value="반지의 제왕: 반지 원정대 트릭테이킹 게임" />
+			
+						               													<description>The Fellowship of the Ring: Trick-Taking Game is a co-operative card game that plays out over eighteen chapters that lead players through the events of the novel The Fellowship of the Ring. The chapters can be played in any order, but ideally you play them in sequence.
+
+In each chapter, each player takes a different character role &amp;mdash; Frodo, Gandalf, Sam, Pippin, Farmer Maggot, etc. &amp;mdash; and each character has a condition that must be met in order to pass the chapter and advance in the story. Frodo needs to capture ring cards, for example, while Pippin wants to take as few tricks as possible. As you advance through the chapters, new characters, items, and challenges are introduced to the game.
+
+The deck consists of 37 cards, with one card being set aside as "lost" each hand. Whoever is dealt the One Ring becomes Frodo, then other players choose from the available characters based on their hand. The One Ring is the game's only trump card, but initially rings can't be led until someone plays one off-suit.
+
+In the two-player game, one hand of cards is dealt to a dummy player, with some cards being face up and others face down. This dummy is assigned a character, and one of the human players will play cards for it based on which cards are free to be played.
+
+In the solitaire game, one player plays four hands of face-up cards, with each hand being assigned a character and only a few cards being available at a time. After you play a trick, deal each hand a new card.
+
+If you own The Fellowship of the Ring: Trick-Taking Game, you can add the following characters to this version of the Road Goes Ever On...:
+Bilbo (Peculiar), Gandalf (Grey Wizard), Gildor Inglorion, Fatty Bolger, Tom Bombadil, Goldberry, Barliman, Glorfindel, Bill the Pony, Gl&amp;oacute;in, Arwen, Boromir (Captain of Gondor), Gwaihir, Shadowfax (Lord of Horses), Radagast, Gandalf (Servant of the Secret Fire), Galadriel, and Celeborn.
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="202">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="68" />
+					<result value="Not Recommended" numvotes="46" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="86" />
+					<result value="Not Recommended" numvotes="47" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="29" />
+					<result value="Recommended" numvotes="116" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="140" />
+					<result value="Recommended" numvotes="24" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="84" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="29">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="10" />
+					<result value="10" numvotes="16" />
+					<result value="12" numvotes="3" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="10">
+			
+		<results>		
+					<result level="31" value="No necessary in-game text" numvotes="0" />
+					<result level="32" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="33" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="6" />
+					<result level="34" value="Extensive use of text - massive conversion needed to be playable" numvotes="3" />
+					<result level="35" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1022" value="Adventure" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1093" value="Novel-based" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2893" value="Communication Limits" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2009" value="Trick-taking" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="4263" value="Authors: J.R.R. Tolkien" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="110914" value="Theme: Stained Glass" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113560" value="Theme: Wizards" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="429649" value="The Lord of the Rings: The Fellowship of the Ring – Trick-Taking Game: Gifts of Galadriel" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="448271" value="The Lord of the Rings: The Two Towers – Trick-Taking Game" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="159764" value="Bryan Bornmueller" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="164282" value="Elaine Ryan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="78938" value="Samuel R. Shimota" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54758" value="Office Dog" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23043" value="ADC Blackfire Entertainment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="47851" value="Gameology (Gameology Romania)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="58739" value="Geekach LLC" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gém Klub Kft." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="7684" />
+			<average value="7.96802" />
+			<bayesaverage value="7.35751" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="205" bayesaverage="7.35751" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="23" bayesaverage="7.49361" />
+												</ranks>
+
+			<stddev value="1.15375" />
+			<median value="0" />
+			<owned value="20622" />
+			<trading value="126" />
+			<wanting value="364" />
+			<wishing value="3607" />
+			<numcomments value="1161" />
+			<numweights value="142" />
+			<averageweight value="1.9718" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>
