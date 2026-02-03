@@ -7,6 +7,101 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="game_data.js"></script>
+    <style>
+        /* --- MODAL ARCHITECTURE --- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background: rgba(253, 249, 243, 0.96); /* Silk tint */
+            backdrop-filter: blur(15px);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .modal.active { display: flex; }
+
+        .modal-container {
+            background: var(--white-pure);
+            max-width: 900px;
+            width: 95%;
+            max-height: 85vh;
+            border-radius: 60px; /* Boutique curves */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 40px 100px var(--pebble-shadow);
+            border: 1px solid rgba(107, 122, 104, 0.1);
+            position: relative;
+        }
+
+        .modal-body {
+            display: grid;
+            grid-template-columns: 1fr;
+            overflow-y: auto;
+            padding: clamp(30px, 6vw, 60px);
+            gap: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .modal-body { grid-template-columns: 320px 1fr; }
+        }
+
+        .modal-img-box { text-align: center; }
+        .modal-img-box img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px var(--pebble-shadow);
+        }
+
+        .modal-metadata {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .modal-stats {
+            color: var(--matcha-leaf);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .modal-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            color: var(--matcha-leaf);
+            margin-top: 0;
+            line-height: 1.2;
+        }
+
+        .description-text {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            font-weight: 300;
+            color: var(--clay-text);
+            opacity: 0.9;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px; right: 25px;
+            background: none; border: none;
+            font-size: 2.5rem; color: var(--matcha-leaf);
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .pebble-container { cursor: pointer; }
+    </style>
 </head>
 <body>
     <nav>
@@ -29,6 +124,28 @@
 
     <main class="editorial-grid" id="game-grid"></main>
 
+    <div class="modal" id="game-modal" onclick="closeModal()">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div class="modal-body">
+                <div class="modal-img-box">
+                    <img id="modal-img" src="" alt="">
+                    <div class="modal-metadata">
+                        <span id="modal-cats" class="category-string"></span>
+                        <div class="modal-stats">
+                            <span id="modal-players"></span>  •  
+                            <span id="modal-weight"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-text">
+                    <h2 id="modal-title"></h2>
+                    <div id="modal-description" class="description-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>&copy; 2026 ARA BOARD GAME COMMUNITY</footer>
 
     <script>
@@ -36,21 +153,16 @@
 
         function render() {
             if (typeof collectionData === 'undefined') return;
-            
             document.getElementById('stats-display').innerText = collectionData.total;
             document.getElementById('date-display').innerText = collectionData.date;
 
             grid.innerHTML = collectionData.games.map((game, index) => {
                 const cats = game.categories ? game.categories.join(' • ') : 'BOARD GAME';
-                
-                // Fixes Windows path issues by normalizing backslashes to forward slashes
-                const cleanImgPath = game.img.replace(/\\/g, '/');
-
                 return `
                 <article class="editorial-card" style="animation-delay: ${index * 0.04}s">
                     <div class="game-title">${game.name}</div>
-                    <div class="pebble-container">
-                        <img src="${cleanImgPath}" alt="${game.name}" loading="lazy">
+                    <div class="pebble-container" onclick="openModal(${index})">
+                        <img src="${game.img}" alt="${game.name}" loading="lazy">
                     </div>
                     <div><span class="category-string">${cats}</span></div>
                     <div class="stats-footer">
@@ -60,6 +172,27 @@
             }).join('');
         }
 
+        function openModal(index) {
+            const game = collectionData.games[index];
+            const modal = document.getElementById('game-modal');
+            
+            document.getElementById('modal-img').src = game.img;
+            document.getElementById('modal-title').innerText = game.name;
+            document.getElementById('modal-description').innerHTML = game.description;
+            document.getElementById('modal-cats').innerText = game.categories.join(' • ');
+            document.getElementById('modal-players').innerText = game.players;
+            document.getElementById('modal-weight').innerText = `Weight ${game.weight}`;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('game-modal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        window.addEventListener('keydown', (e) => { if (e.key === "Escape") closeModal(); });
         window.onload = render;
     </script>
 </body>
