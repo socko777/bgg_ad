@@ -4,10 +4,11 @@
     --bg-silk: #FDF9F3;         /* Silk-paper base color */
     --matcha-leaf: #6B7A68;     /* Premium botanical green */
     --clay-text: #4A443F;       /* Warm earth tones for readability */
-    --white-pure: #FFFFFF;     /* Card and Modal backgrounds */
-    --gold-leaf: #D4AF37;       /* Elegant accent color */
+    --white-pure: #FFFFFF;      
+    --gold-leaf: #D4AF37;       
     --blush-petal: #EADED7;     /* Muted taupe/blush accent */
-    --pebble-shadow: rgba(74, 68, 63, 0.08); /* Natural Clay-based shadow */
+    /* ENHANCEMENT: Using clay-based shadows for a lighter, "floating" feel */
+    --pebble-shadow: rgba(74, 68, 63, 0.06); 
 }
 
 /* --- 1. GLOBAL RESET & SANCTUARY BACKGROUND --- */
@@ -17,7 +18,7 @@ html, body {
     width: 100%;
     overflow-x: hidden; 
     background-color: var(--bg-silk);
-    /* Textured paper background for an artisanal feel */
+    /* ENHANCEMENT: Fixed paper texture creates tactile warmth */
     background-image: url("https://www.transparenttextures.com/patterns/paper.png");
     background-attachment: fixed;
     -webkit-text-size-adjust: 100%;
@@ -73,7 +74,8 @@ nav {
 /* --- 3. EDITORIAL HEADER --- */
 header, .header {
     width: 100%;
-    padding: clamp(40px, 10vw, 80px) 15px 40px;
+    /* ENHANCEMENT: Increased vertical padding for "Museumcore" breathing room */
+    padding: clamp(60px, 12vw, 100px) 15px 40px;
     text-align: center;
 }
 
@@ -81,11 +83,11 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem, 10vw, 4.5rem); 
     font-style: italic;
-    font-weight: 400; /* Minimalist weight */
+    font-weight: 400; /* Minimalist weight for sophistication */
     color: var(--matcha-leaf);
     line-height: 1;
     margin: 0;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
 }
 
 .stats-container {
@@ -98,39 +100,38 @@ h1 {
 /* --- 4. THE EDITORIAL GRID --- */
 .editorial-grid {
     display: grid;
-    /* Forces 2 columns on mobile */
     grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    width: 94%;
+    gap: 25px; 
+    width: 92%;
     max-width: 1200px;
     margin: 0 auto 100px;
-    justify-items: center; /* Centers cards within grid columns */
+    justify-items: center; 
 }
 
 @media (min-width: 768px) {
     .editorial-grid {
         grid-template-columns: repeat(3, 1fr); 
-        gap: 40px;
+        gap: 50px; /* ENHANCEMENT: Spacing communicates premium value */
     }
 }
 
 @media (min-width: 1024px) {
     .editorial-grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 60px;
+        gap: 65px;
     }
 }
 
-/* --- 5. THE GARDEN CARDS (PERFECT CENTERING) --- */
+/* --- 5. THE GARDEN CARDS (PERFECT ALIGNMENT) --- */
 .editorial-card {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers all content horizontally */
+    align-items: center; 
     text-align: center;
     background: transparent;
     width: 100%;
     opacity: 0;
-    animation: bloomIn 0.8s ease-out forwards; /* Soft living interaction */
+    animation: bloomIn 0.8s ease-out forwards; 
 }
 
 @keyframes bloomIn {
@@ -140,71 +141,79 @@ h1 {
 
 .game-title {
     font-family: 'Quicksand', sans-serif;
-    font-size: clamp(0.75rem, 3vw, 1rem); /* Fluid text for 2-column fit */
+    font-size: clamp(0.75rem, 3vw, 1rem); 
     color: var(--clay-text);
     font-weight: 700;
     width: 100%;
-    min-height: 3.5em; /* Vital for Pebble alignment */
+    /* ENHANCEMENT: Enforces a horizontal "shelf" for visual tranquility */
+    min-height: 4em; 
     display: flex;
-    align-items: center; /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
+    align-items: center; 
+    justify-content: center; 
     margin-bottom: 12px;
-    line-height: 1.2;
-    padding: 0 5px;
+    line-height: 1.3;
+    padding: 0 10px;
 }
 
 .pebble-container {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Forces perfect square */
-    background: var(--white-pure);
-    border-radius: 40px; /* Reduced for mobile clarity */
+    aspect-ratio: 1 / 1; 
+    background: var(--bg-silk); 
+    /* ENHANCEMENT: Exaggerated organic radii signal safety and wellness */
+    border-radius: 45px; 
     position: relative;
     overflow: hidden;
-    display: flex; /* Centers image inside */
+    display: flex; 
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 25px var(--pebble-shadow); /* Clay shadow */
-    margin-bottom: 20px;
+    box-shadow: 0 15px 35px var(--pebble-shadow); 
+    margin-bottom: 25px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @media (min-width: 768px) {
-    .pebble-container { border-radius: 80px; } /* Deep curves on desktop */
+    .pebble-container { border-radius: 90px; } 
 }
 
+.pebble-container:hover { transform: scale(1.03); }
+
 .pebble-container img {
-    max-width: 90%; /* Leaves internal breathing room */
-    max-height: 90%;
-    object-fit: contain; /* Shows full art without cropping */
+    max-width: 88%; 
+    max-height: 88%;
+    object-fit: contain; 
     display: block;
 }
 
 .category-string {
     display: inline-block;
-    border: 1px solid var(--blush-petal); /* Artisanal outline */
+    /* ENHANCEMENT: Outlined artisanal badge looks curated */
+    border: 1px solid var(--blush-petal); 
     color: var(--clay-text);
     font-size: 0.55rem;
-    padding: 4px 12px;
+    padding: 4px 16px;
     border-radius: 20px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
     font-weight: 500;
 }
 
 .stats-footer {
     width: 100%;
     color: var(--matcha-leaf);
+    /* ENHANCEMENT: Light weight for the "whisper-thin" branding */
     font-size: 0.7rem;
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 /* --- 6. GLOBAL FOOTER --- */
 footer { 
-    padding: 80px 10px; 
-    opacity: 0.4; 
+    padding: 100px 10px; 
+    opacity: 0.3; 
     font-size: 0.65rem; 
     text-align: center; 
     width: 100%;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
+    border-top: 1px solid rgba(107, 122, 104, 0.05);
 }
