@@ -1,24 +1,29 @@
-/* --- THEME: BOUTIQUE EDITORIAL --- */
+/* --- THEME: ARA BOUTIQUE EDITORIAL --- */
+
 :root {
-    --bg-silk: #FDF9F3;         /* Silk-paper base */
-    --matcha-leaf: #6B7A68;     /* Refined, expensive sage */
-    --clay-text: #4A443F;       /* Deeper earth tone for readability */
-    --white-pure: #FFFFFF;
-    --gold-leaf: #D4AF37;
-    --blush-petal: #EADED7;     /* Muted taupe/blush */
+    --bg-silk: #FDF9F3;         /* Silk-paper base color */
+    --matcha-leaf: #6B7A68;     /* Premium botanical green */
+    --clay-text: #4A443F;       /* Warm earth tones for readability */
+    --white-pure: #FFFFFF;     /* Card and Modal backgrounds */
+    --gold-leaf: #D4AF37;       /* Elegant accent color */
+    --blush-petal: #EADED7;     /* Muted taupe/blush accent */
     --pebble-shadow: rgba(74, 68, 63, 0.08); /* Natural Clay-based shadow */
 }
 
+/* --- 1. GLOBAL RESET & SANCTUARY BACKGROUND --- */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden; 
     background-color: var(--bg-silk);
+    /* Textured paper background for an artisanal feel */
     background-image: url("https://www.transparenttextures.com/patterns/paper.png");
     background-attachment: fixed;
     -webkit-text-size-adjust: 100%;
 }
+
+* { box-sizing: border-box; }
 
 body {
     color: var(--clay-text);
@@ -29,7 +34,7 @@ body {
     min-height: 100vh;
 }
 
-/* --- STICKY NAVIGATION --- */
+/* --- 2. STICKY NAVIGATION --- */
 nav {
     width: 100%;
     background: rgba(253, 249, 243, 0.98);
@@ -62,11 +67,13 @@ nav {
     color: var(--matcha-leaf); 
     opacity: 1;
     font-weight: 700; 
+    border-bottom: 2px solid var(--gold-leaf);
 }
 
-/* --- EDITORIAL HEADER --- */
-header {
-    padding: 60px 15px 40px;
+/* --- 3. EDITORIAL HEADER --- */
+header, .header {
+    width: 100%;
+    padding: clamp(40px, 10vw, 80px) 15px 40px;
     text-align: center;
 }
 
@@ -74,7 +81,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem, 10vw, 4.5rem); 
     font-style: italic;
-    font-weight: 400; 
+    font-weight: 400; /* Minimalist weight */
     color: var(--matcha-leaf);
     line-height: 1;
     margin: 0;
@@ -88,20 +95,20 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* --- THE EDITORIAL GRID --- */
+/* --- 4. THE EDITORIAL GRID --- */
 .editorial-grid {
     display: grid;
-    /* 2 columns on mobile */
+    /* Forces 2 columns on mobile */
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     width: 94%;
     max-width: 1200px;
     margin: 0 auto 100px;
+    justify-items: center; /* Centers cards within grid columns */
 }
 
 @media (min-width: 768px) {
     .editorial-grid {
-        /* 3 columns on tablet */
         grid-template-columns: repeat(3, 1fr); 
         gap: 40px;
     }
@@ -109,21 +116,21 @@ h1 {
 
 @media (min-width: 1024px) {
     .editorial-grid {
-        /* Flexible density for large monitors */
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
         gap: 60px;
     }
 }
 
-/* --- CARDS & PEBBLES --- */
+/* --- 5. THE GARDEN CARDS (PERFECT CENTERING) --- */
 .editorial-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centers all content horizontally */
     text-align: center;
     background: transparent;
+    width: 100%;
     opacity: 0;
-    animation: bloomIn 0.8s ease-out forwards;
+    animation: bloomIn 0.8s ease-out forwards; /* Soft living interaction */
 }
 
 @keyframes bloomIn {
@@ -132,13 +139,15 @@ h1 {
 }
 
 .game-title {
+    font-family: 'Quicksand', sans-serif;
     font-size: clamp(0.75rem, 3vw, 1rem); /* Fluid text for 2-column fit */
     color: var(--clay-text);
     font-weight: 700;
-    min-height: 3.5em; 
+    width: 100%;
+    min-height: 3.5em; /* Vital for Pebble alignment */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
     margin-bottom: 12px;
     line-height: 1.2;
     padding: 0 5px;
@@ -146,34 +155,34 @@ h1 {
 
 .pebble-container {
     width: 100%;
-    aspect-ratio: 1 / 1.1;
+    aspect-ratio: 1 / 1; /* Forces perfect square */
     background: var(--white-pure);
     border-radius: 40px; /* Reduced for mobile clarity */
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 25px var(--pebble-shadow);
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: transform 0.4s ease;
+    display: flex; /* Centers image inside */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px var(--pebble-shadow); /* Clay shadow */
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-    .pebble-container { border-radius: 80px; } /* Return to deep curve on desktop */
+    .pebble-container { border-radius: 80px; } /* Deep curves on desktop */
 }
 
-.pebble-container:hover { transform: scale(1.04); }
-
 .pebble-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
-    padding: 10px;
+    max-width: 90%; /* Leaves internal breathing room */
+    max-height: 90%;
+    object-fit: contain; /* Shows full art without cropping */
+    display: block;
 }
 
 .category-string {
-    border: 1px solid var(--blush-petal);
+    display: inline-block;
+    border: 1px solid var(--blush-petal); /* Artisanal outline */
     color: var(--clay-text);
-    font-size: 0.55rem; /* Tiny editorial subtext */
+    font-size: 0.55rem;
     padding: 4px 12px;
     border-radius: 20px;
     text-transform: uppercase;
@@ -183,31 +192,19 @@ h1 {
 }
 
 .stats-footer {
+    width: 100%;
     color: var(--matcha-leaf);
     font-size: 0.7rem;
     font-weight: 300;
     letter-spacing: 0.5px;
 }
 
-/* --- MODAL --- */
-.modal {
-    display: none;
-    position: fixed; 
-    z-index: 9999; 
-    left: 0; top: 0; 
-    width: 100%; height: 100%;
-    background: rgba(234, 222, 215, 0.97); 
-    backdrop-filter: blur(15px);
-    justify-content: center; align-items: center;
+/* --- 6. GLOBAL FOOTER --- */
+footer { 
+    padding: 80px 10px; 
+    opacity: 0.4; 
+    font-size: 0.65rem; 
+    text-align: center; 
+    width: 100%;
+    letter-spacing: 2px;
 }
-
-.modal.active { display: flex; }
-
-.modal-content {
-    max-width: 90%; max-height: 80vh;
-    border-radius: 40px;
-    box-shadow: 0 50px 100px rgba(0,0,0,0.15);
-    border: 12px solid var(--white-pure);
-}
-
-footer { padding: 80px 10px; opacity: 0.4; font-size: 0.65rem; text-align: center; }
