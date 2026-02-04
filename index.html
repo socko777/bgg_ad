@@ -14,50 +14,69 @@
         
         .main-logo-container {
             display: inline-block;
-            margin-bottom: 5px;
+            margin-bottom: 20px;
             width: 100%;
             text-align: center;
-            animation: bloomIn 1.2s ease-out; /* Living interaction */
+            animation: bloomIn 1.2s ease-out;
+        }
+
+        .main-logo-container img {
+            width: clamp(180px, 50vw, 320px);
+            /* ENHANCEMENT: Soft clay-based shadow for a "floating" effect */
+            filter: drop-shadow(0 10px 20px var(--pebble-shadow));
         }
 
         @keyframes bloomIn {
-            from { opacity: 0; transform: scale(0.9) translateY(20px); }
+            from { opacity: 0; transform: scale(0.95) translateY(20px); }
             to { opacity: 1; transform: scale(1) translateY(0); }
         }
 
-        /* --- Editorial Announcement Pebble --- */
         .announcement-box {
             background: var(--white-pure);
             border-radius: 80px; /* Signature organic curve */
             padding: clamp(40px, 8vw, 80px);
-            box-shadow: 0 30px 60px var(--pebble-shadow); /* Clay-based shadow */
+            box-shadow: 0 30px 60px var(--pebble-shadow);
             border: 1px solid rgba(107, 122, 104, 0.05);
             max-width: 900px;
-            width: 90%;
+            width: 92%;
             margin: 40px auto;
             text-align: center;
             animation: bloomIn 1s ease-out forwards;
         }
 
-        .objective-badge {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 8px 24px;
-            border: 1px solid var(--blush-petal); /* Artisanal outlined look */
-            border-radius: 30px;
-            font-size: 0.75rem;
-            letter-spacing: 2px;
-            font-weight: 700;
-            color: var(--matcha-leaf);
-            text-transform: uppercase;
+        /* --- Community Care Guide (Mindful Pillars) --- */
+        .care-guide {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+            text-align: left;
+            margin-top: 50px;
+            padding-top: 50px;
+            border-top: 1px solid rgba(107, 122, 104, 0.1);
         }
 
-        /* --- Social Grid: Boutique Buttons --- */
+        .pillar h4 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: var(--matcha-leaf);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        .pillar p {
+            font-size: 0.88rem;
+            line-height: 1.8;
+            font-weight: 300;
+            opacity: 0.8;
+            color: var(--clay-text);
+        }
+
+        /* --- Social Grid: Refined Icons --- */
         .social-grid {
             display: flex;
             gap: 15px;
             justify-content: center;
-            margin-top: 40px;
+            margin-top: 45px;
             flex-wrap: wrap; 
             width: 100%;
         }
@@ -66,60 +85,25 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             border-radius: 40px;
             padding: 16px 28px;
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             letter-spacing: 2px;
             color: white;
             text-decoration: none;
             font-weight: 700;
             text-transform: uppercase;
-            flex: 1 1 160px; 
-            max-width: 220px;
+            flex: 1 1 180px; 
+            max-width: 240px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .social-btn:hover { transform: translateY(-3px); opacity: 0.9; }
-        .social-btn:active { transform: scale(0.95); }
         
         .social-btn.wa { background: var(--matcha-leaf); }
-        .social-btn.ig { background: #B89E8D; /* Muted Boutique Brown */ }
+        .social-btn.ig { background: #B89E8D; }
         .social-btn.fb { background: var(--clay-text); }
-
-        /* --- Editorial Values --- */
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 50px; /* Spacious editorial gaps */
-            width: 90%;
-            max-width: 1100px;
-            margin: 60px auto 100px;
-        }
-
-        .value-card {
-            text-align: center;
-            padding: 20px;
-            opacity: 0;
-            animation: bloomIn 1s ease-out 0.4s forwards;
-        }
-
-        .value-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-weight: 400; /* Minimalist weight */
-            font-size: 1.8rem;
-            color: var(--matcha-leaf);
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
-        }
-
-        .value-card p {
-            font-size: 0.95rem;
-            font-weight: 300;
-            line-height: 1.8;
-            opacity: 0.85;
-        }
 
         @media (max-width: 600px) {
             .announcement-box { border-radius: 40px; padding: 40px 20px; }
@@ -137,12 +121,12 @@
         </div>
     </nav>
 
-    <header class="header" style="padding: 60px 15px 30px;">
+    <header class="header" style="padding: 70px 15px 30px;">
         <div class="main-logo-container">
-            <img src="logo.png" alt="ARA Logo" style="width: clamp(140px, 45vw, 240px);">
+            <img src="logo.png" alt="ARA Board Game Community Logo">
         </div>
-        <h1 class="hero-title">A Table Set for Connection</h1>
-        <div class="stats-container" style="color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; margin-top: 15px;">
+        <h1 class="hero-title" style="font-size: clamp(2rem, 8vw, 3.2rem); letter-spacing: -1px;">A Table Set for Connection</h1>
+        <div class="stats-container" style="color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; margin-top: 15px; font-weight: 700;">
             📍 Petaling Jaya, Selangor
         </div>
     </header>
@@ -150,16 +134,12 @@
     <main style="width: 100%; display: flex; flex-direction: column; align-items: center;">
         
         <section class="announcement-box">
-            <h2 style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; color: var(--matcha-leaf); font-size: clamp(2rem, 8vw, 3rem); margin-bottom: 25px;">Mission Briefing</h2>
-            <p style="font-size: 1.05rem; font-weight: 300; line-height: 1.8; max-width: 650px; margin: 0 auto;">
-                Ara Board Game Community is a sanctuary for enthusiasts. 
+            <h2 style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; color: var(--matcha-leaf); font-size: clamp(2.2rem, 8vw, 3rem); margin-bottom: 20px;">Our Sanctuary</h2>
+            <p style="font-size: 1.05rem; font-weight: 300; line-height: 2; max-width: 680px; margin: 0 auto; opacity: 0.9;">
+                Ara Board Game Community is a curated space for enthusiasts. 
                 Whether you're a seasoned strategist or holding your first deck, we've kept a seat warm for you. 
                 We believe the best games are the ones played in good company.
             </p>
-            
-            <div class="objective-badge">
-                🌿 OBJECTIVE: Join our next gathering
-            </div>
 
             <div class="social-grid">
                 <a href="https://chat.whatsapp.com/BsecSwgLlg44miZgbyW61b" target="_blank" class="social-btn wa">
@@ -171,6 +151,21 @@
                 <a href="https://www.facebook.com/aradamansarabgc" target="_blank" class="social-btn fb">
                     <i class="fab fa-facebook-f"></i> Facebook
                 </a>
+            </div>
+
+            <div class="care-guide">
+                <div class="pillar">
+                    <h4>🍃 Respect the Art</h4>
+                    <p>Our collection is nurtured with love. We kindly ask that drinks stay at a safe distance and all components—from delicate cards to handcrafted pieces—be handled with a gentle, mindful touch.</p>
+                </div>
+                <div class="pillar">
+                    <h4>✨ Community Spirit</h4>
+                    <p>Connection is our core. Help us pack up after play, notify the group if you're running late, and keep the atmosphere light—after all, what happens at the table stays at the table.</p>
+                </div>
+                <div class="pillar">
+                    <h4>🤝 Nurturing the Table</h4>
+                    <p>Our sessions thrive on clear communication. Please settle F&B orders upon arrival and RSVP early so we can ensure every seat is perfectly set for the afternoon.</p>
+                </div>
             </div>
         </section>
 
