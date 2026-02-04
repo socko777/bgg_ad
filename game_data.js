@@ -1,6 +1,6 @@
 const collectionData = {
-    "total": 300,
-    "date": "03 Feb 2026",
+    "total": 297,
+    "date": "04 Feb 2026",
     "games": [
         {
             "name": "7 Wonders (Second Edition)",
@@ -525,20 +525,6 @@ const collectionData = {
             "description": "At the bottom of the ocean, no one will hear you scream!\n\nIn Captain Sonar, you and your teammates control a state-of-the-art submarine and are trying to locate an enemy submarine in order to blow it out of the water before they can do the same to you. Every role is important, and the confrontation is merciless. Be organized and communicate because a captain is nothing without his crew: the Chief Mate, the Radio Operator, and the Engineer.\n\nAll the members of a team sit on one side of the table, and they each take a particular role on the submarine, with the division of labor for these roles being dependent on the number of players in the game. Roles include: the Captain, who is responsible for moving the submarine and announcing some details of this movement; the Radio Operator listening to the opposing captain's orders and try to decipher where that sub might be in the water; the Engineer working in the munitions room to prepare torpedoes, mines and other devices that will allow for combat.\n\nCaptain Sonar can be played in two modes: turn-by-turn or simultaneous. In the latter set-up, all the members of a team take their actions simultaneously while trying to track what the opponents are doing, too. When a captain is ready to launch an attack, the action pauses for a moment to see whether a hit has been recorded &mdash; then play resumes with the target having snuck away while the attacker paused or with bits of metal now scattered across the ocean floor.\n\nMultiple maps are included with varying levels of difficulty.\n\n"
         },
         {
-            "name": "Carcassonne",
-            "designers": [
-                "Klaus-Jürgen Wrede"
-            ],
-            "img": "cache_images/822.jpg",
-            "players": "2-5P",
-            "weight": 1.9,
-            "categories": [
-                "Medieval",
-                "Territory Building"
-            ],
-            "description": "Carcassonne is a tile placement game in which the players draw and place a tile with a piece of southern French landscape represented on it. The tile might feature a city, a road, a cloister, grassland or some combination thereof, and it must be placed adjacent to tiles that have already been played, in such a way that cities are connected to cities, roads to roads, et cetera. Having placed a tile, the player can then decide to place one of their meeples in one of the areas on it: in the city as a knight, on the road as a robber, in the cloister as a monk, or in the field as a farmer. When that area is complete that meeple scores points for its owner.\n\nDuring a game of Carcassonne, players are faced with decisions like: \"Is it really worth putting my last meeple there?\" or \"Should I use this tile to expand my city, or should I place it near my opponent instead, thus making it a harder for them to complete it and score points?\" Since players place only one tile and have the option to place one meeple on it, turns proceed quickly even if it is a game full of options and possibilities.\n\nFirst game in the Carcassonne series.\n\n"
-        },
-        {
             "name": "Cards Against Humanity",
             "designers": [
                 "Josh Dillon",
@@ -839,21 +825,6 @@ const collectionData = {
                 "Medieval"
             ],
             "description": "Auf Heller und Pfennig takes participants to a medieval marketplace. Each turn, players place tiles onto the grid board that modify (either positively or negatively) the amount of money to be made by the shops that share that tile's row or column. Three times the board is filled with tiles and shop money is earned, after which the player with the most money wins.\n\nIn Kingdoms, the first English-language version of Auf Heller und Pfennig, players try to collect the most gold by establishing castles in the richest regions of the realm while avoiding hazards like dragons, swamps, and trolls. The 2011 edition includes detailed plastic castles, a streamlined rulebook, and the addition of a wizard tile &mdash; one that increases the rank of adjacent castles, multiplying their scores &mdash; previously available only at game conventions.\n\nAs of 2024, Cosmolancer is the newest version of this design, with players taking the role of freelance photographers in space! As in the other versions, the game lasts three rounds, and to start a round, each player draws a random tile and keeps it secret. On a turn, you either:\n\n&bull; Draw a tile and place it in an empty space on the 6x5 grid.\n&bull; Place the tile in your hand.\n&bull; Place one of your tokens, which are numbered 1-4, in an empty space.\n\nWhen all of the spaces are filled, you score each of your tokens, multiplying the number on the token by the sum of the tiles in its row and column, with some special tiles nullifying positive values or splitting a row into two segments. You retrieve all of your 1 tokens, but the others are now out of play. After three rounds, whoever has the highest score wins.\n\n"
-        },
-        {
-            "name": "Cottage Garden",
-            "designers": [
-                "Uwe Rosenberg"
-            ],
-            "img": "cache_images/204027.jpg",
-            "players": "1-4P",
-            "weight": 1.9,
-            "categories": [
-                "Abstract Strategy",
-                "Farming",
-                "Puzzle"
-            ],
-            "description": "In Cottage Garden, you compete in the art of gardening and are working two beds with a variety of flowers. Whenever no unplanted box is visible on a bed, you have completed it, then you count your points and replace it with a fresh, unplanted bed. You gain points for all of the visible plant pots and planting bells.\n\nIn more detail, players select various polyomino tiles of flower beds from a central market grid, depending on the location of the \"gardener\", then place them on one of their two personal garden boards. Each board has several garden elements that are worth points when not planted over, and these are scored on two different tracks as soon as a garden has been finished. Crossing over a line on each track awards bonus tokens that can fill in empty spaces or give you a better selection of the flower bed tiles. Whenever a garden is finished, you receive a new one to complete. After the gardener completes her fifth lap around the market, the game enters its last round. The player with the most points from their completed gardens at the end of the game wins.\n\nCottage Garden is the first part of Uwe Rosenberg's puzzle trilogy.\n\n"
         },
         {
             "name": "Coup",
@@ -3850,19 +3821,6 @@ const collectionData = {
                 "Humor"
             ],
             "description": "If you thought Taco Tuesday was just about throwing back piles of tasty food with your friends, think again. The tacos are so enraged by your murderous weekly get-togethers that they've come to life to attack you with everything they've got. It's an all-out war as you and your friends work together to raise up your own taco army to fight, smash, and eat wave after wave of increasingly spicy tacos. If you survive, you win. If even one of you goes into a food coma, you lose.\n\n&iexcl;Taco Fight! is a fully cooperative real-time frenzy as you and your friends defend against six waves of increasingly spicy tacos by smashing them, eating them, or fighting them with an army of your own tacos. You're all on one team and there are no turns. Everyone works together at the same time to survive the waves of attacking tacos. If one of you loses, you all lose.\n\n"
-        },
-        {
-            "name": "Taco vs Burrito",
-            "designers": [
-                "Alex Butler"
-            ],
-            "img": "cache_images/249816.jpg",
-            "players": "2-4P",
-            "weight": 1.0,
-            "categories": [
-                "Card Game"
-            ],
-            "description": "Taco vs. Burito is a deliciously unpredictable card game where players compete to create the weirdest, wildest meal.\n\nOn your turn: \nDraw one card and:\n\n     Add an ingredient card to a Taco/Burrito - or -\n     Add Tummy Aches to reduce the value of a meal -or-\n     Add a Hot Sauce Boss to double the value of a meal!\n\n\n- or -\nPlay an action card\n\nBut beware! The Health Inspector and Order Envy can ruin your meal.\n\nGameplay continues clockwise with players drawing and playing cards until the draw pile is gone. Once any one player is out of cards the game is instantly over and the player with the most points wins!\n\n&mdash;description from the designer\n\n"
         },
         {
             "name": "Take 5",

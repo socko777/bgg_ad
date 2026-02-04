@@ -81,7 +81,7 @@
             color: var(--matcha-leaf);
             font-size: 0.75rem;
             font-weight: 700;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px; /* INCREASED: Premium spacing */
             text-transform: uppercase;
         }
 
@@ -89,20 +89,20 @@
             font-family: 'Playfair Display', serif;
             font-style: italic;
             font-weight: 400;
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            font-size: clamp(2rem, 5vw, 2.8rem); /* INCREASED: Impact */
             color: var(--matcha-leaf);
             margin-top: 0;
-            line-height: 1.2;
+            line-height: 1.1;
         }
 
         /* --- ENHANCEMENT 2: AIRY DESCRIPTION TYPOGRAPHY --- */
         .description-text {
             font-size: 0.95rem;
-            line-height: 1.9; /* Breathable spacing */
+            line-height: 2; /* INCREASED: Effortless reading */
             font-weight: 300;
             color: var(--clay-text);
             opacity: 0.85;
-            letter-spacing: 0.2px;
+            letter-spacing: 0.3px;
         }
 
         .close-btn {
@@ -117,20 +117,30 @@
         /* --- ENHANCEMENT 3: BLOOM HOVER STATE --- */
         .pebble-container { 
             cursor: pointer; 
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); /* SMOOTHER: Fluidity */
         }
         .pebble-container:hover {
-            transform: scale(1.04);
-            box-shadow: 0 20px 45px var(--pebble-shadow);
+            transform: scale(1.04) translateY(-5px); /* ADDED: Lift */
+            box-shadow: 0 30px 60px var(--pebble-shadow);
         }
-		.modal-designers {
+        
+        .modal-designers {
             font-family: 'Playfair Display', serif;
             font-style: italic;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: var(--matcha-leaf);
-            opacity: 0.7;
-            margin-bottom: 20px;
+            opacity: 0.6;
+            margin-bottom: 25px;
             display: block;
+            letter-spacing: 0.5px;
+        }
+
+        /* SEAMLESS BADGE: No border, soft tint */
+        .category-string {
+            background: rgba(234, 222, 215, 0.5); 
+            border: none;
+            font-size: 0.6rem;
+            padding: 6px 16px;
         }
     </style>
 </head>
@@ -147,7 +157,7 @@
         <h1>The Garden</h1>
         <div class="stats-container">
             Currently nurturing <span id="stats-display" style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: var(--matcha-leaf);">--</span> curated titles.
-            <div style="font-size: 0.65rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2px; margin-top: 5px;">
+            <div style="font-size: 0.65rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2.5px; margin-top: 8px;">
                 Last Tended: <span id="date-display">--</span>
             </div>
         </div>
@@ -169,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-              <div class="modal-text">
+                <div class="modal-text">
                     <h2 id="modal-title"></h2>
                     <div id="modal-designers" class="modal-designers"></div> 
                     <div id="modal-description" class="description-text"></div>
@@ -190,8 +200,9 @@
 
             grid.innerHTML = collectionData.games.map((game, index) => {
                 const cats = game.categories ? game.categories.join(' • ') : 'BOARD GAME';
+                /* SERENE STAGGER: Cards bloom one by one */
                 return `
-                <article class="editorial-card" style="animation-delay: ${index * 0.04}s">
+                <article class="editorial-card" style="animation-delay: ${index * 0.08}s">
                     <div class="game-title">${game.name}</div>
                     <div class="pebble-container" onclick="openModal(${index})">
                         <img src="${game.img}" alt="${game.name}" loading="lazy">
@@ -204,17 +215,16 @@
             }).join('');
         }
 
-      function openModal(index) {
+        function openModal(index) {
             const game = collectionData.games[index];
             const modal = document.getElementById('game-modal');
             
             document.getElementById('modal-img').src = game.img;
             document.getElementById('modal-title').innerText = game.name;
             
-            // Logic to handle designer display
             const designerElem = document.getElementById('modal-designers');
             if (game.designers && game.designers.length > 0) {
-                designerElem.innerText = `Designed by ${game.designers.join(', ')}`;
+                designerElem.innerText = `Handcrafted by ${game.designers.join(', ')}`; /* BOUTIQUE TONE */
             } else {
                 designerElem.innerText = "";
             }
