@@ -21,14 +21,15 @@
             border: 1px solid rgba(107, 122, 104, 0.05);
             opacity: 0;
             animation: bloomIn 1s ease-out forwards;
-            overflow: hidden; /* Clips the table to the border-radius */
+            overflow: hidden;
         }
 
         .table-wrapper {
             width: 100%;
-            overflow-x: auto; /* The Auto-Scroll magic */
+            overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             border-radius: 20px;
+            border: 1px solid rgba(107, 122, 104, 0.1); /* External frame */
         }
 
         table {
@@ -49,7 +50,8 @@
             background: var(--bg-silk);
             text-align: center;
             padding: 25px 20px;
-            border-bottom: 1px solid rgba(107, 122, 104, 0.1);
+            border-bottom: 2px solid rgba(107, 122, 104, 0.1);
+            border-right: 1px solid rgba(107, 122, 104, 0.1); /* Vertical Column Lines */
         }
 
         .game-column-header {
@@ -60,7 +62,7 @@
             text-transform: uppercase;
             font-size: 0.75rem;
             font-weight: 700;
-            border-bottom: 1px solid rgba(107, 122, 104, 0.1);
+            border-bottom: 2px solid rgba(107, 122, 104, 0.1);
         }
 
         /* Sticky Left Column for Games */
@@ -76,7 +78,7 @@
             z-index: 2;
             min-width: 240px;
             padding: 20px;
-            border-right: 1px solid rgba(107, 122, 104, 0.1);
+            border-right: 2px solid rgba(107, 122, 104, 0.15); /* Stronger divider for sticky column */
             border-bottom: 1px solid rgba(107, 122, 104, 0.08);
         }
 
@@ -84,6 +86,21 @@
             padding: 15px;
             text-align: center;
             border-bottom: 1px solid rgba(107, 122, 104, 0.05);
+            border-right: 1px solid rgba(107, 122, 104, 0.05); /* Vertical Column Lines */
+        }
+
+        /* Remove right border on the last column */
+        td:last-child, th:last-child {
+            border-right: none;
+        }
+
+        /* Zebra Striping for better row tracking */
+        tbody tr:nth-child(even) {
+            background-color: rgba(107, 122, 104, 0.02);
+        }
+
+        tbody tr:nth-child(even) .game-column {
+            background-color: #f9faf9; /* Match striping for the sticky column */
         }
 
         .matcha-pip {
@@ -94,7 +111,8 @@
         }
 
         tr:hover .matcha-pip { transform: scale(1.4) rotate(8deg); }
-        tr:hover .game-column { color: var(--matcha-leaf); background: var(--bg-silk); }
+        tr:hover .game-column { color: var(--matcha-leaf); background: var(--bg-silk) !important; }
+        tr:hover td { background: var(--bg-silk); }
 
         /* Scrollbar aesthetics */
         .table-wrapper::-webkit-scrollbar { height: 8px; }
@@ -110,7 +128,7 @@
 
     <nav>
         <div class="nav-links">
-            <a href="index.html" class="nav-item">The Lobby</a>
+            <a href="index.html" class="nav-item">The Porch</a>
             <a href="events.html" class="nav-item">Gatherings</a>
             <a href="playlog.html" class="nav-item active">The Playlog</a>
             <a href="nick_collection.html" class="nav-item">The Garden</a>
@@ -130,9 +148,9 @@
             <div class="table-wrapper">
                 <table id="playlogTable">
                     <thead id="table-head">
-                        </thead>
+                    </thead>
                     <tbody id="table-body">
-                        </tbody>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -147,7 +165,6 @@
     function parseAndRender() {
         if (typeof csvData === 'undefined') return;
 
-        // Split data into rows
         const allRows = csvData.split(/\r?\n/).filter(row => row.trim() !== "");
         if (allRows.length === 0) return;
 
@@ -156,23 +173,29 @@
         const headContainer = document.getElementById('table-head');
         let headHtml = `<tr><th class="game-column game-column-header">Game Title</th>`;
         
-        // Loop through dates (skip the first 'Game' column)
         for (let i = 1; i < headers.length; i++) {
             headHtml += `<th class="date-header">${headers[i].trim()}</th>`;
         }
         headHtml += `</tr>`;
         headContainer.innerHTML = headHtml;
 
-        // 2. Process Game Rows
+        // 2. Sort and Process Game Rows
         const bodyContainer = document.getElementById('table-body');
         let bodyHtml = "";
 
-        for (let i = 1; i < allRows.length; i++) {
-            const columns = allRows[i].split(',');
+        // Get data rows and sort alphabetically
+        const gameRows = allRows.slice(1).sort((a, b) => {
+            const nameA = a.split(',')[0].trim().toLowerCase();
+            const nameB = b.split(',')[0].trim().toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+
+        gameRows.forEach(row => {
+            const columns = row.split(',');
             const gameName = columns[0].trim();
             const playedCells = columns.slice(1);
             
-            // FILTER: Check if any cell in this row has an 'X'
+            // Only show rows that have at least one 'X'
             const hasPlays = playedCells.some(cell => cell.trim().toUpperCase() === 'X');
 
             if (hasPlays) {
@@ -185,11 +208,10 @@
                 
                 bodyHtml += `</tr>`;
             }
-        }
+        });
         bodyContainer.innerHTML = bodyHtml;
     }
 
-    // Initialize on load
     window.onload = parseAndRender;
     </script>
 </body>

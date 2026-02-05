@@ -15,13 +15,51 @@
             color: var(--matcha-leaf);
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            margin-top: 10px; /* Space from player/weight info */
+            margin-top: 10px;
             font-weight: 700;
             opacity: 0.7;
             border-top: 1px solid rgba(107, 122, 104, 0.1);
             padding-top: 8px;
             display: inline-block;
             width: 100%;
+        }
+
+        /* --- SORT CONTROLS --- */
+        .sort-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            margin-top: -10px;
+        }
+
+        .sort-btn {
+            background: var(--white-pure);
+            border: 1px solid rgba(107, 122, 104, 0.15);
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--matcha-leaf);
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 4px 10px var(--pebble-shadow);
+        }
+
+        .sort-btn:hover {
+            transform: translateY(-2px);
+            border-color: var(--matcha-leaf);
+            background: var(--bg-silk);
+        }
+
+        .sort-btn.active {
+            background: var(--matcha-leaf);
+            color: white;
+            border-color: var(--matcha-leaf);
+            box-shadow: 0 10px 20px var(--pebble-shadow);
         }
 
         /* --- MODAL ARCHITECTURE --- */
@@ -148,7 +186,7 @@
 <body>
     <nav>
         <div class="nav-links">
-            <a href="index.html" class="nav-item">The Lobby</a>
+            <a href="index.html" class="nav-item">The Porch</a>
             <a href="events.html" class="nav-item">Gatherings</a>
             <a href="playlog.html" class="nav-item">The Playlog</a>
             <a href="nick_collection.html" class="nav-item active">The Garden</a>
@@ -165,7 +203,13 @@
         </div>
     </header>
 
-    <main class="editorial-grid" id="game-grid"></main>
+    <main class="container" style="max-width: 1200px; margin: 0 auto; width: 94%;">
+        <div class="sort-controls">
+            <button class="sort-btn active" id="sort-name" onclick="setSort('name')">Sort by Name</button>
+            <button class="sort-btn" id="sort-played" onclick="setSort('played')">Sort by Last Played</button>
+        </div>
+        <div class="editorial-grid" id="game-grid"></div>
+    </main>
 
     <div class="modal" id="game-modal" onclick="closeModal()">
         <div class="modal-container" onclick="event.stopPropagation()">
@@ -195,8 +239,16 @@
 
     <script>
         const grid = document.getElementById('game-grid');
+        let currentSort = 'name';
 
-        // Parse CSV data to find most recent play
+        // Helper: Converts date header string to comparable timestamp
+        function parseDateString(dateStr) {
+            if (!dateStr) return 0;
+            // Assumes format is DD MMM YYYY or similar readable by JS Date
+            const timestamp = Date.parse(dateStr);
+            return isNaN(timestamp) ? 0 : timestamp;
+        }
+
         function getLastPlayedDate(gameName) {
             if (typeof csvData === 'undefined') return null;
             const rows = csvData.split(/\r?\n/).filter(row => row.trim() !== "");
@@ -207,13 +259,20 @@
             if (!gameRow) return null;
 
             const cols = gameRow.split(',');
-            // Check headers starting from index 1 (skip "Game")
-            for (let i = 1; i < cols.length; i++) {
-                if (cols[i].trim().toUpperCase() === 'X') {
+            // We search from right to left (newest column to oldest) to find the most recent 'X'
+            for (let i = cols.length - 1; i >= 1; i--) {
+                if (cols[i] && cols[i].trim().toUpperCase() === 'X') {
                     return headers[i].trim();
                 }
             }
             return null;
+        }
+
+        function setSort(type) {
+            currentSort = type;
+            document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`sort-${type}`).classList.add('active');
+            render();
         }
 
         function render() {
@@ -221,14 +280,36 @@
             document.getElementById('stats-display').innerText = collectionData.total;
             document.getElementById('date-display').innerText = collectionData.date;
 
-            grid.innerHTML = collectionData.games.map((game, index) => {
+            let sortedGames = [...collectionData.games];
+
+            if (currentSort === 'name') {
+                sortedGames.sort((a, b) => a.name.localeCompare(b.name));
+            } else if (currentSort === 'played') {
+                sortedGames.sort((a, b) => {
+                    const dateA = getLastPlayedDate(a.name);
+                    const dateB = getLastPlayedDate(b.name);
+                    
+                    const timeA = parseDateString(dateA);
+                    const timeB = parseDateString(dateB);
+
+                    if (timeA !== timeB) {
+                        return timeA - timeB; // Ascending: Oldest/Never played first
+                    }
+                    return a.name.localeCompare(b.name);
+                });
+            }
+
+            grid.innerHTML = sortedGames.map((game) => {
                 const cats = game.categories ? game.categories.join(' • ') : 'BOARD GAME';
                 const lastDate = getLastPlayedDate(game.name);
                 
+                // Use findIndex to ensure the modal opens the correct data from the source array
+                const originalIndex = collectionData.games.findIndex(g => g.name === game.name);
+
                 return `
-                <article class="editorial-card" style="animation-delay: ${index * 0.01}s">
+                <article class="editorial-card">
                     <div class="game-title">${game.name}</div>
-                    <div class="pebble-container" onclick="openModal(${index})">
+                    <div class="pebble-container" onclick="openModal(${originalIndex})">
                         <img src="${game.img}" alt="${game.name}" loading="lazy">
                     </div>
                     <div><span class="category-string">${cats}</span></div>

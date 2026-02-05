@@ -1,6 +1,6 @@
 const collectionData = {
-    "total": 297,
-    "date": "04 Feb 2026",
+    "total": 293,
+    "date": "05 Feb 2026",
     "games": [
         {
             "name": "7 Wonders (Second Edition)",
@@ -1378,23 +1378,6 @@ const collectionData = {
             "description": "Within the charming valley of Everdell, beneath the boughs of towering trees, among meandering streams and mossy hollows, a civilization of forest critters is thriving and expanding. From Everfrost to Bellsong, many a year have come and gone, but the time has come for new territories to be settled and new cities established. You will be the leader of a group of critters intent on just such a task. There are buildings to construct, lively characters to meet, events to host&mdash;you have a busy year ahead of yourself. Will the sun shine brightest on your city before the winter moon rises?\n\nEverdell is a game of dynamic tableau building and worker placement.\n\nOn their turn a player can take one of three actions:\n\na) Place a Worker: Each player has a collection of Worker pieces. These are placed on the board locations, events, and on Destination cards. Workers perform various actions to further the development of a player's tableau: gathering resources, drawing cards, and taking other special actions.\n\nb) Play a Card: Each player is building and populating a city; a tableau of up to 15 Construction and Critter cards. There are five types of cards: Travelers, Production, Destination, Governance, and Prosperity. Cards generate resources (twigs, resin, pebbles, and berries), grant abilities, and ultimately score points. The interactions of the cards reveal numerous strategies and a near infinite variety of working cities.\n\nc) Prepare for the next Season: Workers are returned to the players supply and new workers are added. The game is played from Winter through to the onset of the following winter, at which point the player with the city with the most points wins.\n\n"
         },
         {
-            "name": "Exploding Kittens: NSFW Edition",
-            "designers": [
-                "Matthew Inman",
-                "Elan Lee",
-                "Shane Small"
-            ],
-            "img": "cache_images/172242.jpg",
-            "players": "2-5P",
-            "weight": 1.1,
-            "categories": [
-                "Animals",
-                "Card Game",
-                "Comic Book / Strip"
-            ],
-            "description": "Originally an expansion for Exploding Kittens, the most successful Kickstarer project ever, that contained cards that were too horrific and/or incredible to be included in a kid safe version. As a stretch goal this was turned into a stand alone game that can be combined with the standard Exploding Kittens deck. If you combine the two decks, you can go up to 9 players. 10 with Imploding Kittens\n\n"
-        },
-        {
             "name": "Exploding Kittens: Party Pack",
             "designers": [
                 "Matthew Inman",
@@ -1972,6 +1955,20 @@ const collectionData = {
             "description": "In a Grove &mdash; a.k.a. 藪の中, Yabunonaka, and Hattari &mdash; is a game of bluffing and deduction, and the player who makes too many false accusations loses the game.\n\nThe game is played in rounds. Each round, each player receives one of the eight silhouettes (which are numbered 2-8 with one blank), while three silhouettes are placed in the center of the table as suspects and the final silhouette is dubbed the victim. (With three players, the #2 is removed from the game.) You have to determine which suspect is the culprit, either to accuse him or to lure the other players into accusing someone who's innocent!\n\nAll players secretly look at their silhouettes, then pass them right, then look at the new silhouette they received. The first player of the round secretly looks at two of the three suspects, optionally swapping the victim for one of these suspects. This player then places a colored accusation marker below one of the suspects. The next player looks at the two suspects not just marked with an accusation marker, then places a colored accusation marker of their own, covering any markers already beneath that suspect. This continues until all four players have placed an accusation marker, with each player not being allowed to look at the suspect just accused.\n\nThe round ends, and players reveal the suspects. Who's the culprit? The suspect bearing the highest number - except if the #5 is among the suspects, in which case the suspect with the lowest number is guilty. (The suspect with no number is always innocent.) Anyone who has accused the correct suspect receives their accusation marker back. Any markers incorrectly placed are flipped colored-side down and given to the player who owns the marker on top of the stack. The first player token rotates clockwise, then a new round begins.\n\nAt the end of a turn if a player has eight or more tokens &mdash; or has no tokens &mdash; then the game ends, and that player loses.\n\nEarlier editions of In a Grove supported 3-4 players, while the 2021 edition contains slight changes to the rules and components to allow for play with 2-5 people.\n\n"
         },
         {
+            "name": "Inside Job",
+            "designers": [
+                "Tanner Simmons"
+            ],
+            "img": "cache_images/324914.jpg",
+            "players": "2-5P",
+            "weight": 1.7,
+            "categories": [
+                "Card Game",
+                "Spies / Secret Agents"
+            ],
+            "description": "The Mostly Cooperative Trick-Taking Game\n\nYou are a group of secret agents and must work together to complete your missions. But beware! An insider is hiding amongst you, sabotaging you at every turn and collecting secret information along the way. In this (mostly) cooperative trick-taking card game, you slip into undercover roles. Who is acting suspiciously? Who can you trust? Complete a mission with each trick and find out who is the insider.\n\n\n     A (mostly) cooperative trick-taking card game for groups of three to five players.\n     Each player assumes the role of secret agent tasked with various missions, except there's one insider hiding amongst you, ready to thwart your efforts!\n     Can you complete your missions, despite the secret saboteur, or will the insider get the best of you all?\n     Fun, entertaining party game with high replayability and variants to add complexity.\n     Great for fans of social deduction, role-playing, or mystery games.\n\n\n"
+        },
+        {
             "name": "Invincible: Escape from Mars",
             "designers": [
                 "Josh Camden",
@@ -2122,21 +2119,6 @@ const collectionData = {
             "description": "New York City is being overrun with criminals. The Police Department either can't handle this new wave of crime, or has been corrupted from the inside and refuses to help. In these troubled times, certain individuals have stepped up to keep the streets safe...while making sure they aren't late to work, or they don't miss another dinner date. Saving the day isn't easy when you've got an active social life to maintain.\n\nIn Kick-Ass: The Board Game, players take on the role of one of seven masked vigilantes trying to keep New York City safe. Working together, they must keep the Evil Boss' plan from coming to fruition. Each round, they travel to the various districts on the game board, beating up minions, doing good deeds for the citizens, and trying to keep their personal life from falling apart. It's a difficult task, but luckily, they've got their friends to help them out.\n\nThe game includes five different bosses, and all of the different heroes, bosses, mini-bosses, and minions are represented by miniatures. Each of the seven heroes has unique gear and activation cards that they can use.\n\n&mdash;description from the publisher\n\n"
         },
         {
-            "name": "Kingdomino",
-            "designers": [
-                "Bruno Cathala"
-            ],
-            "img": "cache_images/204583.jpg",
-            "players": "2-4P",
-            "weight": 1.2,
-            "categories": [
-                "Abstract Strategy",
-                "Medieval",
-                "Puzzle"
-            ],
-            "description": "In Kingdomino, you are a lord seeking new lands in which to expand your kingdom. You must explore all the lands, including wheat fields, lakes, and mountains, in order to spot the best plots, while competing with other lords to acquire them first.\n\nThe game uses tiles with two sections, similar to Dominoes. Each turn, each player will select a new domino to connect to their existing kingdom, making sure at least one of its sides connects to a matching terrain type already in play. The order of who picks first depends on which tile was previously chosen, with better tiles forcing players to pick later in the next round. The game ends when each player has completed a 5x5 grid (or failed to do so), and points are counted based on number of connecting tiles and valuable crown symbols.\n\n"
-        },
-        {
             "name": "Kobayakawa",
             "designers": [
                 "Jun Sasaki"
@@ -2150,19 +2132,6 @@ const collectionData = {
                 "Number"
             ],
             "description": "Kobayakawa is a game of bluffing and deduction. In this stylish new game from Jun Sasaki, components are kept at a minimum - there are only 15 cards, 32 tokens and the start player marker.\n\nThe rules are simple:\n\nAt the start each player is given 4 tokens. In addition 8 tokens are placed in the middle of the table. Spare tokens are set aside.\n\nThe deck is shuffled and each player is dealt one card face down, an additional card is dealt face up next to the deck (this card is called the Kobayakawa).\n\nEach player takes a turn and either:\n\n- Draws a card to their hand and discards one of their 2 hand cards face up in front of them.\nOr\n- Turns over the top card of the deck to replace the current Kobayakawa.\n\nAfter all players have taken their turns, each must decide if they want to stay in and 'fight' by betting a token.\n\nAll players that decided to fight reveal their card. The player that has the lowest value card adds the value of the current Kobayakawa to their own card. The player with the highest number (their own card; or their own card + the Kobayakawa) wins the round and they take all the tokens that players bet, plus a bonus token from the middle, they take the start player token for the next round.\n\nOn the 7th round (when only 2 tokens remain in the middle) the stakes and the bonus are doubled to 2 tokens.\n\nAfter this 7th round the game ends and the player with the most tokens wins the game.\n\nExample Round:\nKobayakawa: 8\nPlayer A: 9\nPlayer B: Pass\nPlayer C: 15\nPlayer D: 12\n\nPlayer C has the highest card value (15), but Player A is declared the winner as the results of the lowest card (9) and the Kobayakawa (8) is 17.\n\n"
-        },
-        {
-            "name": "Kuih Muih",
-            "designers": [
-                "Mike Ooi"
-            ],
-            "img": "cache_images/323294.jpg",
-            "players": "2-6P",
-            "weight": 0.0,
-            "categories": [
-                "Card Game"
-            ],
-            "description": "Kuih Muih is a card game about collecting Malaysian delicacies. It is played over three stages, in which players collect cards to score points. At every stage, cards are divided into stacks. Each round, players take turns to claim a stack, then pick a card  from it. Unclaimed cards are returned to the table, with players now knowing the contents of the stack just seen. When a new round starts, player order changes, and players may go for the same stack or try a different stack.\n\nCards score points in different ways. Usually the more cards of a kind you have the better. Some cards have special powers, e.g. allowing you to swap cards with an opponent.\n\n"
         },
         {
             "name": "Let's Hit Each Other with Fake Swords",
@@ -2323,20 +2292,6 @@ const collectionData = {
             "description": "In 間違いさがし開発課 (Machigai Sagashi Kaihatsuka), roughly \"Mistake Search and Development Division\", the players are drawing differences on copies of photos, and the other players are trying to spot the differences.\n\nThe players have 2 minutes to draw the differences, and the other players have 3 minutes to spot them.  The drawer is rewarded if the other players find the guess between 1 and 3 minutes, or if large additions go unnoticed.\n\nThe player with the most points after each has had a chance to draw wins.\n\n"
         },
         {
-            "name": "The Malaysian Dream",
-            "designers": [
-                "MGAG"
-            ],
-            "img": "cache_images/286745.jpg",
-            "players": "2-6P",
-            "weight": 1.0,
-            "categories": [
-                "Card Game",
-                "Humor"
-            ],
-            "description": "The Malaysian Dream by MGAG is an interactive card game where you can sabotage, complain, and pay your way to be the perfect Malaysian!\n\nYou play as one of six Malaysian Personalities, each with a unique power that you can use once per turn.\n\nThe goal of the game is to collect as many dreams as you can, and the game ends when all of dreams are bought. You can buy the Dream Cards with Cash Cards, gain them using Action Cards, or steal it from other players.\n\nAt your turn, draw two cards first, then play up to 3 actions which can be:\n\n     playing an action card from your hand\n     depositing money in bank (cards from hand to table)\n     buy a dream using money in bank\n     use personalities' unique power\n\n\n&mdash;description from the publisher\n\n"
-        },
-        {
             "name": "MANTIS",
             "designers": [
                 "Ken Gruhl",
@@ -2469,20 +2424,6 @@ const collectionData = {
                 "Children's Game"
             ],
             "description": "Monkey Palace is a jungle-themed game of light strategy that incorporates both collaborative and competitive elements.\n\nPlayers must strategically work together to construct the Monkey Palace while competing for the highest brick income and points, all under the watchful gaze of the Monkey. The palace gradually takes form thanks to a construction using LEGO elements, and each time the board game is played, the building experience and final construction are unique.\n\n"
-        },
-        {
-            "name": "Monopoly Deal Card Game",
-            "designers": [
-                "Katharine Chapman"
-            ],
-            "img": "cache_images/40398.jpg",
-            "players": "2-5P",
-            "weight": 1.3,
-            "categories": [
-                "Card Game",
-                "Economic"
-            ],
-            "description": "(from the box):\nThe fast-paced, addictive card game where your luck can change in the play of a card!  Collect 3 complete property sets, but beware Debt Collectors, Forced Deals and the dreaded Deal Breakers, which could change your fortunes at any time!\n\nMONOPOLY DEAL - the card game where anything can happen!\n\nHow to win: Be the first player to collect 3 three full property sets of different colors.\n\nThe Cards: \nAction Cards may be played to initiate the action printed on the card or may be used as money of the value noted in the upper left and lower right corners.\nProperty Cards some denote a specific property and some are wild.  They show property name, set to which they belong (or in which sets they may be used), rental costs, number of properties in their set and their value when used to make payments. \nHouse/Hotel Cards may be used to increase the rental cost of a property set.  They also have a monetary value for use in making payments.\nMoney Cards are used to make payments.\n\nPlay:\nDraw two cards from the draw pile, or if you start your turn with no cards, draw five.\nPlay up to three cards from your hand face up either as: money into your bank, properties or improvements into your collection, or actions.  Action cards allow you to collect rent, receive money, take properties from others or cancel another action.  Cards placed in your bank may only be used as money.  When you must make a payment, you may use money from your bank or properties and improvements in your collection, but not cards in your hand.\nDiscard cards in excess of seven from your hand to the bottom of the draw pile.\n\nWin by announcing it on your turn when you have three complete property sets of different colors.  This ends the game.\n\nNot to be confused with Monopoly Deal, a 'lite' version of the same game that came out in 2014.\n\n"
         },
         {
             "name": "Moody Bear Kingdom",
@@ -2626,6 +2567,23 @@ const collectionData = {
                 "Trains"
             ],
             "description": "Next Station Paris\n\nAs the 2024 Summer Olympic games begin, purchase your metro ticket and join us in Paris... the new addition to our Next Station series welcomes you to the City of Light! Next Station Paris combines familiar play elements found in Next Station London and Next Station Tokyo while also offering additional twists. Players will continue to flip station cards and draw subway lines on their maps, but now they will need to utilize bridge crossings, visit the French capital's iconic monuments, all while taking advantage of the central platform, the busiest station on the network! Who will be the best designer of the Parisian metro? Optimize your four sketched subway lines over all Paris districts in order to win!\n\nContents:\n\n200 Sheets Scorepad\n24 Cards\n4 Color Pencils\nIllustrated Rules\n\n"
+        },
+        {
+            "name": "The Night Cage",
+            "designers": [
+                "Christopher Ryan Chan",
+                "Chris McMahon",
+                "Rosswell Saunders"
+            ],
+            "img": "cache_images/306709.jpg",
+            "players": "1-5P",
+            "weight": 2.1,
+            "categories": [
+                "Fantasy",
+                "Horror",
+                "Maze"
+            ],
+            "description": "You awaken in the dark, your skin cold, your mind blank. You have nothing but your fear, a flickering candle, and a question: How long will your light last?\n\nTrapped and crawling your way through a pitch-black labyrinth, equipped with nothing but dim candles, you must work together to explore the maze and escape. Unfortunately, your weak candlelight illuminates only your immediate surroundings. Worse still, horrifying Wax Eaters &mdash; monsters who despise the light &mdash; lurk in the suffocating darkness for their opportunity to strike.\n\nThe Night Cage is a fully co-operative, horror-themed tile-placement game that traps 1-5 lost souls within an unnatural labyrinth of eternal darkness. To win, players must each collect a key, find a gate, and escape as a group.\n\nEscape won't be easy as each player's visibility is limited by the weak light of their candle. They illuminate only tiles directly connected to their own, and when players move, tiles that fall into darkness are removed from the game. Doubling back the way you came only opens new paths, the old ones being lost forever with critical keys and gates vanishing if your light move away from them...\n\n"
         },
         {
             "name": "Night of the Ninja",
@@ -2802,21 +2760,6 @@ const collectionData = {
                 "Card Game"
             ],
             "description": "Onstage is a \"must follow\" trick-taking game in which you play as a theater company competing for the best performers to join your troupe. By winning tricks, you claim performers onstage. The trump suit is determined by the most valuable performers currently onstage and will change throughout the game as you recruit and manipulate the line of performers.\n\nThe deck consists of 36 cards, numbered 1-9 for each of the four suits. Each suit has three performers, one each valued at 1, 2, and 3 points, which represent the featured, supporting, and lead actors respectively. The values 1, 4, and 7 of each suit have effects to manipulate the performers onstage and in line, which can change the current trump and scoring opportunities each hand.\n\nIf at the end of the round, you are the only player with no performer tokens, you claim all the performers currently on stage as your score for the round. Keep one card between each round and put all used performers back in line behind the current line before starting the next hand in the new turn order.\n\nAfter playing an equal number of rounds per player, whoever has the high score wins. In the two-vs-two team variant, partners combine their scores at the end of each round, but they may not discuss their hands during play.\n\n"
-        },
-        {
-            "name": "OrganATTACK!",
-            "designers": [
-                "Nick Seluk"
-            ],
-            "img": "cache_images/201406.jpg",
-            "players": "2-6P",
-            "weight": 1.5,
-            "categories": [
-                "Card Game",
-                "Comic Book / Strip",
-                "Educational"
-            ],
-            "description": "Organ ATTACK! blends medically accurate terminology with immature potty humor.\n\nIn the game, each player is dealt a set of organs. The players use immunity, affliction, and other tactical cards to protect themselves while inflicting disease & bodily harm on their opponents. For example:\n\n     Give Gallbladder gallstones\n     Afflict Thyroid with thyroiditis\n     Subject Bowels to the wrath of a day-old burrito from a back-alley food cart\n\n\nThe last person with at least one organ remaining wins.\n\nThe object of the game is to remove your opponents' organs using corresponding afflictions before they remove yours. The last person to still have at least one organ is the winner.\n\nNote: May not be suitable for players who are sensitive about discussing medical conditions (for example, playing a \"Cancer\" card on an opponent).\n\n"
         },
         {
             "name": "Overseers",
