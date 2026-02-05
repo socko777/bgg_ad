@@ -6,7 +6,7 @@
     <title>THE GARDEN | ARA BG COMMUNITY</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="game_data.js"></script>
     <script src="playlog_data.js"></script>
     <style>
@@ -18,11 +18,17 @@
             letter-spacing: 1.5px;
             margin-top: 10px;
             font-weight: 700;
-            opacity: 0.7;
+            opacity: 0.9;
             border-top: 1px solid rgba(107, 122, 104, 0.1);
             padding-top: 8px;
             display: inline-block;
             width: 100%;
+        }
+
+        .play-count-badge {
+            opacity: 0.6;
+            margin-left: 4px;
+            font-size: 0.55rem;
         }
 
         /* --- SORT CONTROLS --- */
@@ -206,8 +212,8 @@
 
     <main class="container" style="max-width: 1200px; margin: 0 auto; width: 94%;">
         <div class="sort-controls">
-            <button class="sort-btn active" id="sort-name" onclick="setSort('name')">Sort by Name</button>
-            <button class="sort-btn" id="sort-played" onclick="setSort('played')">Sort by Last Played</button>
+            <button class="sort-btn active" id="sort-name" onclick="setSort('name')">Sort by Name (Ascending)</button>
+            <button class="sort-btn" id="sort-played" onclick="setSort('played')">Sort by Last Played (Descending)</button>
         </div>
         <div class="editorial-grid" id="game-grid"></div>
     </main>
@@ -245,28 +251,36 @@
         // Helper: Converts date header string to comparable timestamp
         function parseDateString(dateStr) {
             if (!dateStr) return 0;
-            // Assumes format is DD MMM YYYY or similar readable by JS Date
             const timestamp = Date.parse(dateStr);
             return isNaN(timestamp) ? 0 : timestamp;
         }
 
-        function getLastPlayedDate(gameName) {
-            if (typeof csvData === 'undefined') return null;
+        // Helper: Gets Date AND Play Count
+        function getPlayStats(gameName) {
+            if (typeof csvData === 'undefined') return { date: null, count: 0 };
+            
             const rows = csvData.split(/\r?\n/).filter(row => row.trim() !== "");
-            if (rows.length < 1) return null;
+            if (rows.length < 1) return { date: null, count: 0 };
 
             const headers = rows[0].split(',');
+            // Find the specific row for this game
             const gameRow = rows.find(r => r.split(',')[0].trim() === gameName);
-            if (!gameRow) return null;
+            if (!gameRow) return { date: null, count: 0 };
 
             const cols = gameRow.split(',');
-            // We search from right to left (newest column to oldest) to find the most recent 'X'
-            for (let i = cols.length - 1; i >= 1; i--) {
+            let count = 0;
+            let lastDate = null;
+
+            // Iterate through all columns (skipping index 0 which is the title)
+            // We iterate left to right, so the last "X" found will set the latest date
+            for (let i = 1; i < cols.length; i++) {
                 if (cols[i] && cols[i].trim().toUpperCase() === 'X') {
-                    return headers[i].trim();
+                    count++;
+                    lastDate = headers[i].trim();
                 }
             }
-            return null;
+            
+            return { date: lastDate, count: count };
         }
 
         function setSort(type) {
@@ -287,25 +301,33 @@
                 sortedGames.sort((a, b) => a.name.localeCompare(b.name));
             } else if (currentSort === 'played') {
                 sortedGames.sort((a, b) => {
-                    const dateA = getLastPlayedDate(a.name);
-                    const dateB = getLastPlayedDate(b.name);
+                    const statsA = getPlayStats(a.name);
+                    const statsB = getPlayStats(b.name);
                     
-                    const timeA = parseDateString(dateA);
-                    const timeB = parseDateString(dateB);
+                    const timeA = parseDateString(statsA.date);
+                    const timeB = parseDateString(statsB.date);
 
+                    // Descending: Newest (Higher Timestamp) First
                     if (timeA !== timeB) {
-                        return timeA - timeB; // Ascending: Oldest/Never played first
+                        return timeB - timeA; 
                     }
+                    // Tie-breaker: Name
                     return a.name.localeCompare(b.name);
                 });
             }
 
             grid.innerHTML = sortedGames.map((game) => {
                 const cats = game.categories ? game.categories.join(' • ') : 'BOARD GAME';
-                const lastDate = getLastPlayedDate(game.name);
+                const stats = getPlayStats(game.name);
                 
                 // Use findIndex to ensure the modal opens the correct data from the source array
                 const originalIndex = collectionData.games.findIndex(g => g.name === game.name);
+
+                // Build the text for Last Played
+                let playInfo = '';
+                if (stats.date) {
+                    playInfo = `Last Played: ${stats.date} <span class="play-count-badge">(${stats.count} Total Plays)</span>`;
+                }
 
                 return `
                 <article class="editorial-card">
@@ -316,7 +338,7 @@
                     <div><span class="category-string">${cats}</span></div>
                     <div class="stats-footer">
                         ${game.players}  •  Weight ${game.weight}
-                        ${lastDate ? `<div class="last-played">🌿 Last Played: ${lastDate}</div>` : ''}
+                        ${playInfo ? `<div class="last-played">${playInfo}</div>` : ''}
                     </div>
                 </article>`
             }).join('');
@@ -325,14 +347,19 @@
         function openModal(index) {
             const game = collectionData.games[index];
             const modal = document.getElementById('game-modal');
-            const lastDate = getLastPlayedDate(game.name);
+            const stats = getPlayStats(game.name);
             
             document.getElementById('modal-img').src = game.img;
             document.getElementById('modal-title').innerText = game.name;
             
             const modalLastPlayed = document.getElementById('modal-last-played');
-            modalLastPlayed.innerText = lastDate ? `🌿 Last Played: ${lastDate}` : "";
-            modalLastPlayed.style.display = lastDate ? "block" : "none";
+            
+            if (stats.date) {
+                modalLastPlayed.innerHTML = `Last Played: ${stats.date} <span class="play-count-badge">(${stats.count} Total Plays)</span>`;
+                modalLastPlayed.style.display = "block";
+            } else {
+                modalLastPlayed.style.display = "none";
+            }
 
             const designerElem = document.getElementById('modal-designers');
             designerElem.innerText = (game.designers && game.designers.length > 0) 
