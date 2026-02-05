@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYLOG | ARA BG COMMUNITY</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="playlog_data.js"></script>
+    <style>
+        /* --- PLAYLOG BOUTIQUE STYLING --- */
+        
+        .playlog-card {
+            background: var(--white-pure);
+            border-radius: 60px;
+            padding: clamp(20px, 5vw, 40px);
+            margin-top: 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 30px 60px var(--pebble-shadow);
+            border: 1px solid rgba(107, 122, 104, 0.05);
+            opacity: 0;
+            animation: bloomIn 1s ease-out forwards;
+            overflow: hidden; /* Clips the table to the border-radius */
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto; /* The Auto-Scroll magic */
+            -webkit-overflow-scrolling: touch;
+            border-radius: 20px;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        /* Centering and Styling Headers */
+        .date-header {
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--matcha-leaf);
+            font-weight: 700;
+            white-space: nowrap;
+            background: var(--bg-silk);
+            text-align: center;
+            padding: 25px 20px;
+            border-bottom: 1px solid rgba(107, 122, 104, 0.1);
+        }
+
+        .game-column-header {
+            text-align: center !important;
+            background: var(--bg-silk) !important;
+            color: var(--matcha-leaf);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-bottom: 1px solid rgba(107, 122, 104, 0.1);
+        }
+
+        /* Sticky Left Column for Games */
+        .game-column {
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--clay-text);
+            position: sticky;
+            left: 0;
+            background: var(--white-pure);
+            z-index: 2;
+            min-width: 240px;
+            padding: 20px;
+            border-right: 1px solid rgba(107, 122, 104, 0.1);
+            border-bottom: 1px solid rgba(107, 122, 104, 0.08);
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(107, 122, 104, 0.05);
+        }
+
+        .matcha-pip {
+            font-size: 1.3rem;
+            color: var(--matcha-leaf);
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        tr:hover .matcha-pip { transform: scale(1.4) rotate(8deg); }
+        tr:hover .game-column { color: var(--matcha-leaf); background: var(--bg-silk); }
+
+        /* Scrollbar aesthetics */
+        .table-wrapper::-webkit-scrollbar { height: 8px; }
+        .table-wrapper::-webkit-scrollbar-track { background: var(--bg-silk); border-radius: 10px; }
+        .table-wrapper::-webkit-scrollbar-thumb { background: var(--matcha-leaf); border-radius: 10px; opacity: 0.4; }
+
+        @media (max-width: 600px) {
+            .game-column { min-width: 160px; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">The Lobby</a>
+            <a href="events.html" class="nav-item">Gatherings</a>
+            <a href="playlog.html" class="nav-item active">The Playlog</a>
+            <a href="nick_collection.html" class="nav-item">The Garden</a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>The Playlog</h1>
+        <div class="stats-container">
+            A living chronicle of the games that brought us together.
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 1100px; width: 94%; padding-bottom: 100px; margin: 0 auto;">
+        
+        <div class="playlog-card">
+            <div class="table-wrapper">
+                <table id="playlogTable">
+                    <thead id="table-head">
+                        </thead>
+                    <tbody id="table-body">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2026 ARA BOARD GAME COMMUNITY
+    </footer>
+
+    <script>
+    function parseAndRender() {
+        if (typeof csvData === 'undefined') return;
+
+        // Split data into rows
+        const allRows = csvData.split(/\r?\n/).filter(row => row.trim() !== "");
+        if (allRows.length === 0) return;
+
+        // 1. Process Headers
+        const headers = allRows[0].split(',');
+        const headContainer = document.getElementById('table-head');
+        let headHtml = `<tr><th class="game-column game-column-header">Game Title</th>`;
+        
+        // Loop through dates (skip the first 'Game' column)
+        for (let i = 1; i < headers.length; i++) {
+            headHtml += `<th class="date-header">${headers[i].trim()}</th>`;
+        }
+        headHtml += `</tr>`;
+        headContainer.innerHTML = headHtml;
+
+        // 2. Process Game Rows
+        const bodyContainer = document.getElementById('table-body');
+        let bodyHtml = "";
+
+        for (let i = 1; i < allRows.length; i++) {
+            const columns = allRows[i].split(',');
+            const gameName = columns[0].trim();
+            const playedCells = columns.slice(1);
+            
+            // FILTER: Check if any cell in this row has an 'X'
+            const hasPlays = playedCells.some(cell => cell.trim().toUpperCase() === 'X');
+
+            if (hasPlays) {
+                bodyHtml += `<tr><td class="game-column">${gameName}</td>`;
+                
+                playedCells.forEach(cell => {
+                    const isPlayed = cell.trim().toUpperCase() === 'X';
+                    bodyHtml += `<td>${isPlayed ? '<span class="matcha-pip">🌿</span>' : ''}</td>`;
+                });
+                
+                bodyHtml += `</tr>`;
+            }
+        }
+        bodyContainer.innerHTML = bodyHtml;
+    }
+
+    // Initialize on load
+    window.onload = parseAndRender;
+    </script>
+</body>
+</html>
