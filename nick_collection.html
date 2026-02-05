@@ -7,17 +7,21 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="game_data.js"></script>
+    <script src="playlog_data.js"></script>
     <style>
-        /* --- ENHANCEMENT 1: BOTANICAL MODAL SCROLLBAR --- */
-        .modal-body::-webkit-scrollbar { 
-            width: 5px; 
-        }
-        .modal-body::-webkit-scrollbar-track { 
-            background: var(--bg-silk); 
-        }
-        .modal-body::-webkit-scrollbar-thumb { 
-            background: var(--matcha-leaf); 
-            border-radius: 10px; 
+        /* --- ENHANCEMENT: REPOSITIONED LAST PLAYED --- */
+        .last-played {
+            font-size: 0.6rem;
+            color: var(--matcha-leaf);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 10px; /* Space from player/weight info */
+            font-weight: 700;
+            opacity: 0.7;
+            border-top: 1px solid rgba(107, 122, 104, 0.1);
+            padding-top: 8px;
+            display: inline-block;
+            width: 100%;
         }
 
         /* --- MODAL ARCHITECTURE --- */
@@ -81,7 +85,7 @@
             color: var(--matcha-leaf);
             font-size: 0.75rem;
             font-weight: 700;
-            letter-spacing: 2px; /* INCREASED: Premium spacing */
+            letter-spacing: 2px;
             text-transform: uppercase;
         }
 
@@ -89,16 +93,15 @@
             font-family: 'Playfair Display', serif;
             font-style: italic;
             font-weight: 400;
-            font-size: clamp(2rem, 5vw, 2.8rem); /* INCREASED: Impact */
+            font-size: clamp(2rem, 5vw, 2.8rem);
             color: var(--matcha-leaf);
             margin-top: 0;
             line-height: 1.1;
         }
 
-        /* --- ENHANCEMENT 2: AIRY DESCRIPTION TYPOGRAPHY --- */
         .description-text {
             font-size: 0.95rem;
-            line-height: 2; /* INCREASED: Effortless reading */
+            line-height: 2;
             font-weight: 300;
             color: var(--clay-text);
             opacity: 0.85;
@@ -114,13 +117,12 @@
             z-index: 10;
         }
 
-        /* --- ENHANCEMENT 3: BLOOM HOVER STATE --- */
         .pebble-container { 
             cursor: pointer; 
-            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); /* SMOOTHER: Fluidity */
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
         .pebble-container:hover {
-            transform: scale(1.04) translateY(-5px); /* ADDED: Lift */
+            transform: scale(1.04) translateY(-5px);
             box-shadow: 0 30px 60px var(--pebble-shadow);
         }
         
@@ -135,7 +137,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* SEAMLESS BADGE: No border, soft tint */
         .category-string {
             background: rgba(234, 222, 215, 0.5); 
             border: none;
@@ -149,7 +150,7 @@
         <div class="nav-links">
             <a href="index.html" class="nav-item">The Lobby</a>
             <a href="events.html" class="nav-item">Gatherings</a>
-			 <a href="playlog.html" class="nav-item">The Playlog</a>
+            <a href="playlog.html" class="nav-item">The Playlog</a>
             <a href="nick_collection.html" class="nav-item active">The Garden</a>
         </div>
     </nav>
@@ -178,6 +179,7 @@
                             <span id="modal-players"></span>  •  
                             <span id="modal-weight"></span>
                         </div>
+                        <div id="modal-last-played" class="last-played" style="text-align:center;"></div>
                     </div>
                 </div>
                 <div class="modal-text">
@@ -194,6 +196,26 @@
     <script>
         const grid = document.getElementById('game-grid');
 
+        // Parse CSV data to find most recent play
+        function getLastPlayedDate(gameName) {
+            if (typeof csvData === 'undefined') return null;
+            const rows = csvData.split(/\r?\n/).filter(row => row.trim() !== "");
+            if (rows.length < 1) return null;
+
+            const headers = rows[0].split(',');
+            const gameRow = rows.find(r => r.split(',')[0].trim() === gameName);
+            if (!gameRow) return null;
+
+            const cols = gameRow.split(',');
+            // Check headers starting from index 1 (skip "Game")
+            for (let i = 1; i < cols.length; i++) {
+                if (cols[i].trim().toUpperCase() === 'X') {
+                    return headers[i].trim();
+                }
+            }
+            return null;
+        }
+
         function render() {
             if (typeof collectionData === 'undefined') return;
             document.getElementById('stats-display').innerText = collectionData.total;
@@ -201,9 +223,10 @@
 
             grid.innerHTML = collectionData.games.map((game, index) => {
                 const cats = game.categories ? game.categories.join(' • ') : 'BOARD GAME';
-                /* SERENE STAGGER: Cards bloom one by one */
+                const lastDate = getLastPlayedDate(game.name);
+                
                 return `
-                <article class="editorial-card" style="animation-delay: ${index * 0.08}s">
+                <article class="editorial-card" style="animation-delay: ${index * 0.01}s">
                     <div class="game-title">${game.name}</div>
                     <div class="pebble-container" onclick="openModal(${index})">
                         <img src="${game.img}" alt="${game.name}" loading="lazy">
@@ -211,6 +234,7 @@
                     <div><span class="category-string">${cats}</span></div>
                     <div class="stats-footer">
                         ${game.players}  •  Weight ${game.weight}
+                        ${lastDate ? `<div class="last-played">🌿 Last Played: ${lastDate}</div>` : ''}
                     </div>
                 </article>`
             }).join('');
@@ -219,16 +243,19 @@
         function openModal(index) {
             const game = collectionData.games[index];
             const modal = document.getElementById('game-modal');
+            const lastDate = getLastPlayedDate(game.name);
             
             document.getElementById('modal-img').src = game.img;
             document.getElementById('modal-title').innerText = game.name;
             
+            const modalLastPlayed = document.getElementById('modal-last-played');
+            modalLastPlayed.innerText = lastDate ? `🌿 Last Played: ${lastDate}` : "";
+            modalLastPlayed.style.display = lastDate ? "block" : "none";
+
             const designerElem = document.getElementById('modal-designers');
-            if (game.designers && game.designers.length > 0) {
-                designerElem.innerText = `Handcrafted by ${game.designers.join(', ')}`; /* BOUTIQUE TONE */
-            } else {
-                designerElem.innerText = "";
-            }
+            designerElem.innerText = (game.designers && game.designers.length > 0) 
+                ? `Handcrafted by ${game.designers.join(', ')}` 
+                : "";
 
             document.getElementById('modal-description').innerHTML = game.description;
             document.getElementById('modal-cats').innerText = game.categories.join(' • ');
