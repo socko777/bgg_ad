@@ -7,11 +7,57 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     
     <style>
-        /* --- THEME OVERRIDES FOR THE PORCH --- */
-        
+        /* --- THEME: ARA BOUTIQUE EDITORIAL --- */
+        :root {
+            --bg-silk: #FDF9F3;         /* Silk-paper base */
+            --matcha-leaf: #6B7A68;     /* Premium botanical green */
+            --clay-text: #4A443F;       /* Warm earth tones */
+            --white-pure: #FFFFFF;
+            --gold-leaf: #D4AF37;
+            --blush-petal: #EADED7;     /* Muted taupe/blush accent */
+            --pebble-shadow: rgba(74, 68, 63, 0.08); /* Natural Clay-based shadow */
+        }
+
+        /* --- 1. GLOBAL RESET --- */
+        html, body {
+            margin: 0; padding: 0; width: 100%; overflow-x: hidden; 
+            background-color: var(--bg-silk);
+            background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+            background-attachment: fixed;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            color: var(--clay-text);
+            font-family: 'Quicksand', sans-serif;
+            display: flex; flex-direction: column; align-items: center; min-height: 100vh;
+        }
+
+        /* --- 2. STICKY NAVIGATION --- */
+        nav {
+            width: 100%; background: rgba(253, 249, 243, 0.98); backdrop-filter: blur(10px);
+            position: sticky; top: 0; z-index: 1000; padding: 20px 5px;
+            border-bottom: 1px solid rgba(107, 122, 104, 0.08);
+        }
+
+        .nav-links { display: flex; justify-content: center; gap: clamp(15px, 5vw, 40px); }
+
+        .nav-item {
+            color: var(--clay-text); text-decoration: none; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 2px; font-weight: 500; opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-item:hover { opacity: 1; color: var(--matcha-leaf); }
+        .nav-item.active { color: var(--matcha-leaf); opacity: 1; font-weight: 700; border-bottom: 2px solid var(--gold-leaf); }
+
+        /* --- 3. HEADER & LOGO --- */
+        header, .header { width: 100%; padding: clamp(40px, 10vw, 80px) 15px 40px; text-align: center; }
+
         .main-logo-container {
             display: inline-block;
             margin-bottom: 20px;
@@ -21,7 +67,8 @@
         }
 
         .main-logo-container img {
-            width: clamp(180px, 50vw, 320px);
+            /* UPDATED: Increased size to show sketch details */
+            width: clamp(220px, 60vw, 400px); 
             filter: drop-shadow(0 10px 20px var(--pebble-shadow));
         }
 
@@ -30,6 +77,39 @@
             to { opacity: 1; transform: scale(1) translateY(0); }
         }
 
+/* Update these two sections in your CSS */
+
+.welcome-text {
+    /* Was fixed at 0.85rem. Now it grows with the screen. */
+    /* Range: roughly 16px to 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem) !important; 
+    
+    color: var(--matcha-leaf);
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    margin-bottom: 10px;
+    font-weight: 700;
+    opacity: 0.9; /* Increased opacity slightly for better visibility */
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    
+    /* Was clamp(2.5rem, 10vw, 4.5rem). Reduced the top end slightly. */
+    /* This keeps it huge, but not "shouting" compared to the welcome text */
+    font-size: clamp(2.2rem, 8vw, 3.8rem); 
+    
+    font-style: italic;
+    font-weight: 400;
+    color: var(--matcha-leaf);
+    line-height: 1.1; /* Gave it a tiny bit more breathing room */
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+        .stats-container { margin-top: 15px; font-weight: 700; font-size: 0.7rem; letter-spacing: 3px; color: var(--matcha-leaf); text-transform: uppercase;}
+
+        /* --- 4. ANNOUNCEMENT BOX --- */
         .announcement-box {
             background: var(--white-pure);
             border-radius: 80px; 
@@ -43,70 +123,73 @@
             animation: bloomIn 1s ease-out forwards;
         }
 
-        /* --- Community Care Guide (Mindful Pillars) --- */
-        .care-guide {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 40px;
-            text-align: left;
-            margin-top: 50px;
-            padding-top: 50px;
-            border-top: 1px solid rgba(107, 122, 104, 0.1);
-        }
-
-        .pillar h4 {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: var(--matcha-leaf);
-            font-size: 1.4rem;
-            margin-bottom: 12px;
-        }
-
-        .pillar p {
-            font-size: 0.88rem;
-            line-height: 1.8;
-            font-weight: 300;
-            opacity: 0.8;
-            color: var(--clay-text);
-        }
-
-        /* --- Social Grid --- */
+        /* --- 5. SOCIAL GRID --- */
         .social-grid {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 45px;
-            flex-wrap: wrap; 
-            width: 100%;
+            display: flex; gap: 15px; justify-content: center; margin-top: 45px;
+            flex-wrap: wrap; width: 100%;
         }
 
         .social-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            border-radius: 40px;
-            padding: 16px 28px;
-            font-size: 0.75rem;
-            letter-spacing: 2px;
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            flex: 1 1 180px; 
-            max-width: 240px;
+            display: flex; align-items: center; justify-content: center; gap: 12px;
+            border-radius: 40px; padding: 16px 28px;
+            font-size: 0.75rem; letter-spacing: 2px; color: white;
+            text-decoration: none; font-weight: 700; text-transform: uppercase;
+            flex: 1 1 180px; max-width: 240px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .social-btn:hover { transform: translateY(-3px); opacity: 0.9; }
-        
         .social-btn.wa { background: var(--matcha-leaf); }
         .social-btn.ig { background: #B89E8D; }
         .social-btn.fb { background: var(--clay-text); }
 
+        /* --- 6. CARE GUIDE --- */
+        .care-guide {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px; text-align: left; margin-top: 50px; padding-top: 50px;
+            border-top: 1px solid rgba(107, 122, 104, 0.1);
+        }
+
+        .pillar h4 {
+            font-family: 'Playfair Display', serif; font-style: italic;
+            color: var(--matcha-leaf); font-size: 1.4rem; margin-bottom: 12px;
+        }
+
+        .pillar p {
+            font-size: 0.88rem; line-height: 1.8; font-weight: 300; opacity: 0.8; color: var(--clay-text);
+        }
+
+        /* --- 7. VALUES GRID (Added Missing CSS) --- */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            width: 92%;
+            max-width: 1000px;
+            margin: 60px auto 80px;
+            text-align: center;
+        }
+
+        .value-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--matcha-leaf);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .value-card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            color: var(--clay-text);
+        }
+
+        footer { padding: 80px 10px; opacity: 0.4; font-size: 0.65rem; text-align: center; width: 100%; letter-spacing: 2px; }
+
         @media (max-width: 600px) {
             .announcement-box { border-radius: 40px; padding: 40px 20px; }
             .social-btn { flex: 1 1 100%; max-width: 100%; }
+            .header { padding-top: 40px; }
         }
     </style>
 </head>
@@ -121,18 +204,18 @@
         </div>
     </nav>
 
-    <header class="header" style="padding: 70px 15px 30px;">
+    <header class="header">
         <div class="main-logo-container">
-            <img src="logo3.png" alt="ARA Board Game Community Logo">
+            <img src="logo4.png" alt="ARA Board Game Community Logo">
         </div>
         
-        <div style="font-size: 0.65rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 12px; font-weight: 700; opacity: 0.7;">
+        <div class="welcome-text">
             Welcome to the Porch
         </div>
 
-        <h1 class="hero-title" style="font-size: clamp(2rem, 8vw, 3.2rem); letter-spacing: -1px;">A Table Set for Connection</h1>
+        <h1 class="hero-title">A Table Set for Connection</h1>
         
-        <div class="stats-container" style="color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; margin-top: 15px; font-weight: 700;">
+        <div class="stats-container">
             📍 Petaling Jaya, Selangor
         </div>
     </header>
