@@ -55,16 +55,22 @@
         .nav-item:hover { opacity: 1; color: var(--matcha-leaf); }
         .nav-item.active { color: var(--matcha-leaf); opacity: 1; font-weight: 700; border-bottom: 2px solid var(--gold-leaf); }
 
-        /* --- 3. HEADER & LOGO --- */
-        header, .header { width: 100%; padding: clamp(40px, 10vw, 80px) 15px 40px; text-align: center; }
+       /* --- 3. HEADER & LOGO --- */
+header, .header { 
+    width: 100%; 
+    /* Changed top padding from clamp(40px, 10vw, 80px) to a smaller, fixed 20px */
+    padding: 20px 15px 40px; 
+    text-align: center; 
+}
 
-        .main-logo-container {
-            display: inline-block;
-            margin-bottom: 20px;
-            width: 100%;
-            text-align: center;
-            animation: bloomIn 1.2s ease-out;
-        }
+.main-logo-container {
+    display: inline-block;
+    /* Reduced bottom margin to bring the text closer to the logo */
+    margin-bottom: 10px; 
+    width: 100%;
+    text-align: center;
+    animation: bloomIn 1.2s ease-out;
+}
 
         .main-logo-container img {
             /* UPDATED: Increased size to show sketch details */
