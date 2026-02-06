@@ -9,118 +9,109 @@
     <link rel="stylesheet" href="style.css">
     <script src="playlog_data.js"></script>
     <style>
-        /* --- PLAYLOG BOUTIQUE STYLING --- */
-        
-        .playlog-card {
-            background: var(--white-pure);
-            border-radius: 60px;
-            padding: clamp(20px, 5vw, 40px);
-            margin-top: 40px;
-            margin-bottom: 60px;
-            box-shadow: 0 30px 60px var(--pebble-shadow);
-            border: 1px solid rgba(107, 122, 104, 0.05);
-            opacity: 0;
-            animation: bloomIn 1s ease-out forwards;
-            overflow: hidden;
+        /* --- THEME OVERRIDES --- */
+        :root {
+            --bg-silk: #FDF9F3;
+            --matcha-leaf: #6B7A68;
+            --clay-text: #4A443F;
+            --white-pure: #FFFFFF;
+            --gold-leaf: #D4AF37;
+            --blush-petal: #EADED7;
+            --pebble-shadow: rgba(74, 68, 63, 0.08);
         }
 
-        .table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            border-radius: 20px;
-            border: 1px solid rgba(107, 122, 104, 0.1); /* External frame */
-        }
-
-        table {
-            border-collapse: separate;
-            border-spacing: 0;
-            width: 100%;
-            font-family: 'Quicksand', sans-serif;
-        }
-
-        /* Centering and Styling Headers */
-        .date-header {
-            font-size: 0.75rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--matcha-leaf);
-            font-weight: 700;
-            white-space: nowrap;
-            background: var(--bg-silk);
-            text-align: center;
-            padding: 25px 20px;
-            border-bottom: 2px solid rgba(107, 122, 104, 0.1);
-            border-right: 1px solid rgba(107, 122, 104, 0.1); /* Vertical Column Lines */
-        }
-
-        .game-column-header {
-            text-align: center !important;
-            background: var(--bg-silk) !important;
-            color: var(--matcha-leaf);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            font-weight: 700;
-            border-bottom: 2px solid rgba(107, 122, 104, 0.1);
-        }
-
-        /* Sticky Left Column for Games */
-        .game-column {
-            text-align: left;
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-size: 1.1rem;
+        body {
+            background-color: var(--bg-silk);
+            background-image: url("https://www.transparenttextures.com/patterns/paper.png");
             color: var(--clay-text);
-            position: sticky;
-            left: 0;
-            background: var(--white-pure);
-            z-index: 2;
-            min-width: 240px;
-            padding: 20px;
-            border-right: 2px solid rgba(107, 122, 104, 0.15); /* Stronger divider for sticky column */
+            font-family: 'Quicksand', sans-serif;
+            margin: 0; display: flex; flex-direction: column; align-items: center;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            width: 100%; background: rgba(253, 249, 243, 0.98); backdrop-filter: blur(10px);
+            position: sticky; top: 0; z-index: 1000; padding: 20px 5px;
             border-bottom: 1px solid rgba(107, 122, 104, 0.08);
         }
+        .nav-links { display: flex; justify-content: center; gap: clamp(15px, 5vw, 40px); }
+        .nav-item { color: var(--clay-text); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.7; }
+        .nav-item.active { color: var(--matcha-leaf); opacity: 1; font-weight: 700; border-bottom: 2px solid var(--gold-leaf); }
 
-        td {
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid rgba(107, 122, 104, 0.05);
-            border-right: 1px solid rgba(107, 122, 104, 0.05); /* Vertical Column Lines */
+        /* --- HEADER --- */
+        header { padding: clamp(40px, 10vw, 80px) 15px 40px; text-align: center; }
+        h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 8vw, 4rem); font-style: italic; color: var(--matcha-leaf); margin: 0; }
+        .stats-container { margin-top: 10px; font-weight: 300; opacity: 0.8; font-size: 0.9rem; }
+
+        /* --- TIMELINE STYLING --- */
+        .timeline-container {
+            width: 94%;
+            max-width: 800px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
 
-        /* Remove right border on the last column */
-        td:last-child, th:last-child {
-            border-right: none;
-        }
-
-        /* Zebra Striping for better row tracking */
-        tbody tr:nth-child(even) {
-            background-color: rgba(107, 122, 104, 0.02);
-        }
-
-        tbody tr:nth-child(even) .game-column {
-            background-color: #f9faf9; /* Match striping for the sticky column */
-        }
-
-        .matcha-pip {
-            font-size: 1.3rem;
-            color: var(--matcha-leaf);
-            display: inline-block;
+        .session-card {
+            background: var(--white-pure);
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: 0 20px 40px var(--pebble-shadow);
+            border: 1px solid rgba(107, 122, 104, 0.05);
+            animation: bloomIn 1s ease-out forwards;
+            position: relative;
             transition: transform 0.3s ease;
         }
 
-        tr:hover .matcha-pip { transform: scale(1.4) rotate(8deg); }
-        tr:hover .game-column { color: var(--matcha-leaf); background: var(--bg-silk) !important; }
-        tr:hover td { background: var(--bg-silk); }
+        .session-card:hover { transform: translateY(-5px); }
 
-        /* Scrollbar aesthetics */
-        .table-wrapper::-webkit-scrollbar { height: 8px; }
-        .table-wrapper::-webkit-scrollbar-track { background: var(--bg-silk); border-radius: 10px; }
-        .table-wrapper::-webkit-scrollbar-thumb { background: var(--matcha-leaf); border-radius: 10px; opacity: 0.4; }
+        @keyframes bloomIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        .session-date {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            color: var(--matcha-leaf);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .session-date::after {
+            content: "";
+            flex-grow: 1;
+            height: 1px;
+            background: linear-gradient(to right, rgba(107, 122, 104, 0.2), transparent);
+        }
+
+        .pill-container { display: flex; flex-wrap: wrap; gap: 12px; }
+
+        .game-pill {
+            background: var(--blush-petal);
+            color: var(--clay-text);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(74, 68, 63, 0.05);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            transition: all 0.3s ease;
+        }
+
+        .game-pill:hover {
+            background: var(--matcha-leaf);
+            color: white;
+            transform: scale(1.05) rotate(-1deg);
+        }
+
+        footer { padding: 80px 10px; opacity: 0.4; font-size: 0.65rem; text-align: center; width: 100%; letter-spacing: 2px; }
 
         @media (max-width: 600px) {
-            .game-column { min-width: 160px; font-size: 0.95rem; }
+            .session-card { padding: 30px 20px; border-radius: 30px; }
+            .session-date { font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -135,27 +126,13 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header>
         <h1>The Playlog</h1>
-        <div class="stats-container">
-            A living chronicle of the games that brought us together.
-        </div>
+        <div class="stats-container">A living chronicle of our afternoons spent across the table.</div>
     </header>
 
-    <main class="container" style="max-width: 1100px; width: 94%; padding-bottom: 100px; margin: 0 auto;">
-        
-        <div class="playlog-card">
-            <div class="table-wrapper">
-                <table id="playlogTable">
-                    <thead id="table-head">
-                    </thead>
-                    <tbody id="table-body">
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-    </main>
+    <main class="timeline-container" id="timeline">
+        </main>
 
     <footer>
         &copy; 2026 ARA BOARD GAME COMMUNITY
@@ -168,48 +145,57 @@
         const allRows = csvData.split(/\r?\n/).filter(row => row.trim() !== "");
         if (allRows.length === 0) return;
 
-        // 1. Process Headers
         const headers = allRows[0].split(',');
-        const headContainer = document.getElementById('table-head');
-        let headHtml = `<tr><th class="game-column game-column-header">Game Title</th>`;
+        const timeline = document.getElementById('timeline');
+
+        const gatheringMap = {};
         
         for (let i = 1; i < headers.length; i++) {
-            headHtml += `<th class="date-header">${headers[i].trim()}</th>`;
+            const dateStr = headers[i].trim();
+            gatheringMap[dateStr] = [];
+            
+            for (let j = 1; j < allRows.length; j++) {
+                const cols = allRows[j].split(',');
+                const gameName = cols[0].trim();
+                if (cols[i] && cols[i].trim().toUpperCase() === 'X') {
+                    gatheringMap[dateStr].push(gameName);
+                }
+            }
         }
-        headHtml += `</tr>`;
-        headContainer.innerHTML = headHtml;
 
-        // 2. Sort and Process Game Rows
-        const bodyContainer = document.getElementById('table-body');
-        let bodyHtml = "";
-
-        // Get data rows and sort alphabetically
-        const gameRows = allRows.slice(1).sort((a, b) => {
-            const nameA = a.split(',')[0].trim().toLowerCase();
-            const nameB = b.split(',')[0].trim().toLowerCase();
-            return nameA.localeCompare(nameB);
+        // Sort Dates Descending
+        const sortedDates = Object.keys(gatheringMap).sort((a, b) => {
+            return new Date(b) - new Date(a);
         });
 
-        gameRows.forEach(row => {
-            const columns = row.split(',');
-            const gameName = columns[0].trim();
-            const playedCells = columns.slice(1);
-            
-            // Only show rows that have at least one 'X'
-            const hasPlays = playedCells.some(cell => cell.trim().toUpperCase() === 'X');
+        let timelineHtml = "";
+        sortedDates.forEach(date => {
+            const games = gatheringMap[date];
 
-            if (hasPlays) {
-                bodyHtml += `<tr><td class="game-column">${gameName}</td>`;
+            if (games.length > 0) {
+                // Formatting Date to: 2-February-2026 (Monday)
+                const dateObj = new Date(date);
+                const day = dateObj.getDate();
+                const month = dateObj.toLocaleString('en-US', { month: 'long' });
+                const year = dateObj.getFullYear();
+                const weekday = dateObj.toLocaleString('en-US', { weekday: 'long' });
                 
-                playedCells.forEach(cell => {
-                    const isPlayed = cell.trim().toUpperCase() === 'X';
-                    bodyHtml += `<td>${isPlayed ? '<span class="matcha-pip">🌿</span>' : ''}</td>`;
-                });
-                
-                bodyHtml += `</tr>`;
+                const formattedDate = `${day}-${month}-${year} (${weekday})`;
+
+                const sortedGames = games.sort((a, b) => a.localeCompare(b));
+
+                timelineHtml += `
+                    <section class="session-card">
+                        <div class="session-date">🌿 ${formattedDate}</div>
+                        <div class="pill-container">
+                            ${sortedGames.map(game => `<span class="game-pill">${game}</span>`).join('')}
+                        </div>
+                    </section>
+                `;
             }
         });
-        bodyContainer.innerHTML = bodyHtml;
+
+        timeline.innerHTML = timelineHtml;
     }
 
     window.onload = parseAndRender;
