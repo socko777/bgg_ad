@@ -18,7 +18,7 @@ const eventData = [
         "date": "14 February 2026",
         "title": "Fabulous BG Saturdays",
         "details": "Join us for a slow Saturday in the Garden. A thoughtfully curated afternoon of strategy, connection, and mindful play. Whether you’re a seasoned strategist or holding your first deck, we’ve kept a seat warm for you. Come for the games, stay for the company and the serene atmosphere.",
-        "location": "Psyclist Cafe, Dataran PHB, Saujana Resort, Shah Alam",
+        "location": "Union Coffee, Citta Mall, Ara Damansara",
         "time": "1:30 PM - 7:00 PM",
         "mapUrl": "https://maps.app.goo.gl/BLNhMudEfUExwwit5"
     },
