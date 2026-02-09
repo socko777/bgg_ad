@@ -35,6 +35,7 @@
         .sort-controls {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 15px;
             margin-bottom: 40px;
             margin-top: -10px;
@@ -67,6 +68,12 @@
             color: white;
             border-color: var(--matcha-leaf);
             box-shadow: 0 10px 20px var(--pebble-shadow);
+        }
+
+        /* Special Styling for Surprise Button */
+        #random-unplayed.active {
+            background: #a67c52;
+            border-color: #a67c52;
         }
 
         /* --- MODAL ARCHITECTURE --- */
@@ -217,8 +224,9 @@
 
     <main class="container" style="max-width: 1200px; margin: 0 auto; width: 94%;">
         <div class="sort-controls">
-            <button class="sort-btn active" id="sort-name" onclick="setSort('name')">Sort by Name (Ascending)</button>
-            <button class="sort-btn" id="sort-played" onclick="setSort('played')">Sort by Last Played (Descending)</button>
+            <button class="sort-btn active" id="sort-name" onclick="setSort('name')">Sort by Name (Asc)</button>
+            <button class="sort-btn" id="sort-played" onclick="setSort('played')">Last Played (Desc)</button>
+            <button class="sort-btn" id="random-unplayed" onclick="generateRandomUnplayed()">Surprise Me: 10 Unplayed</button>
         </div>
         <div class="editorial-grid" id="game-grid"></div>
     </main>
@@ -253,22 +261,18 @@
         const grid = document.getElementById('game-grid');
         let currentSort = 'name';
 
-        // Helper: Converts date header string to comparable timestamp
         function parseDateString(dateStr) {
             if (!dateStr) return 0;
             const timestamp = Date.parse(dateStr);
             return isNaN(timestamp) ? 0 : timestamp;
         }
 
-        // Helper: Gets Date AND Play Count
         function getPlayStats(gameName) {
             if (typeof csvData === 'undefined') return { date: null, count: 0 };
-            
             const rows = csvData.split(/\r?\n/).filter(row => row.trim() !== "");
             if (rows.length < 1) return { date: null, count: 0 };
 
             const headers = rows[0].split(',');
-            // Find the specific row for this game
             const gameRow = rows.find(r => r.split(',')[0].trim() === gameName);
             if (!gameRow) return { date: null, count: 0 };
 
@@ -276,14 +280,12 @@
             let count = 0;
             let lastDate = null;
 
-            // Iterate through all columns (skipping index 0 which is the title)
             for (let i = 1; i < cols.length; i++) {
                 if (cols[i] && cols[i].trim().toUpperCase() === 'X') {
                     count++;
                     lastDate = headers[i].trim();
                 }
             }
-            
             return { date: lastDate, count: count };
         }
 
@@ -294,17 +296,43 @@
             render();
         }
 
+        // --- NEW FEATURE: GENERATE RANDOM UNPLAYED ---
+        function generateRandomUnplayed() {
+            if (typeof collectionData === 'undefined') return;
+
+            // 1. Filter for games with 0 plays
+            const unplayedGames = collectionData.games.filter(game => {
+                const stats = getPlayStats(game.name);
+                return stats.count === 0;
+            });
+
+            if (unplayedGames.length === 0) {
+                alert("The Garden is fully bloomed! No unplayed games found.");
+                return;
+            }
+
+            // 2. Shuffle and pick 10
+            const shuffled = unplayedGames.sort(() => 0.5 - Math.random());
+            const selected = shuffled.slice(0, 10);
+
+            // 3. UI Updates
+            document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('random-unplayed').classList.add('active');
+
+            // 4. Render subset
+            renderCards(selected);
+            window.scrollTo({ top: 250, behavior: 'smooth' });
+        }
+
         function render() {
             if (typeof collectionData === 'undefined') return;
 
-            // Calculate "Unplayed" Stats
             let unplayedCount = 0;
             collectionData.games.forEach(game => {
                 const stats = getPlayStats(game.name);
                 if (stats.count === 0) unplayedCount++;
             });
 
-            // Update Header Stats
             document.getElementById('stats-display').innerText = collectionData.total;
             document.getElementById('unplayed-display').innerText = unplayedCount;
             document.getElementById('date-display').innerText = collectionData.date;
@@ -317,31 +345,25 @@
                 sortedGames.sort((a, b) => {
                     const statsA = getPlayStats(a.name);
                     const statsB = getPlayStats(b.name);
-                    
                     const timeA = parseDateString(statsA.date);
                     const timeB = parseDateString(statsB.date);
-
-                    // Descending: Newest First
-                    if (timeA !== timeB) {
-                        return timeB - timeA; 
-                    }
+                    if (timeA !== timeB) return timeB - timeA; 
                     return a.name.localeCompare(b.name);
                 });
             }
+            renderCards(sortedGames);
+        }
 
-            grid.innerHTML = sortedGames.map((game) => {
+        // Extracted rendering logic to support both full list and filtered list
+        function renderCards(gamesArray) {
+            grid.innerHTML = gamesArray.map((game) => {
                 const cats = game.categories ? game.categories.join(' • ') : 'BOARD GAME';
                 const stats = getPlayStats(game.name);
-                
                 const originalIndex = collectionData.games.findIndex(g => g.name === game.name);
 
-                // Build the text for Last Played
-                let playInfo = '';
-                if (stats.date) {
-                    playInfo = `Last Played: ${stats.date} <span class="play-count-badge">(${stats.count} Total Plays)</span>`;
-                } else {
-                    playInfo = `<span style="opacity: 0.5; font-style: italic;">Awaiting first session</span>`;
-                }
+                let playInfo = stats.date 
+                    ? `Last Played: ${stats.date} <span class="play-count-badge">(${stats.count} Total Plays)</span>`
+                    : `<span style="opacity: 0.5; font-style: italic;">Awaiting first session</span>`;
 
                 return `
                 <article class="editorial-card">
@@ -367,13 +389,11 @@
             document.getElementById('modal-title').innerText = game.name;
             
             const modalLastPlayed = document.getElementById('modal-last-played');
-            
             if (stats.date) {
                 modalLastPlayed.innerHTML = `Last Played: ${stats.date} <span class="play-count-badge">(${stats.count} Total Plays)</span>`;
-                modalLastPlayed.style.display = "block";
+                modalLastPlayed.style.opacity = "1";
             } else {
                 modalLastPlayed.innerHTML = `Awaiting its first play in the Garden`;
-                modalLastPlayed.style.display = "block";
                 modalLastPlayed.style.opacity = "0.6";
             }
 
