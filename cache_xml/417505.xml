@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="417505">
+         <thumbnail>https://cf.geekdo-images.com/nyly2kH2FKHwC5on7DJqXw__small/img/XQk6cXh2KGx5jh8bvDLBUaUmOe4=/fit-in/200x150/filters:strip_icc()/pic8101158.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/nyly2kH2FKHwC5on7DJqXw__original/img/-Xooj_jrVb5VgtoYHw66xV2_2E8=/0x0/filters:format(jpeg)/pic8101158.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Dabba Walla" />
+			
+						                           
+						               													<description>Every morning in Mumbai, over five thousand workers dressed in white swarm out to deliver more than 200,000 "dabbas" (multistoried lunch boxes) to the offices of the Indian metropolis. These "Dabba Walla" have been an iconic fixture in the cityscape since 1890. The food is freshly prepared at home by families, then collected from their front doors by the Dabba Walla. Even though some of the dabbas travel very far, they are delivered punctually via a network of intermediate stations with an amazing reliability of 99.999%! Now it's time to join the Dabba Walla on their daily journey through Mumbai...
+
+The game Dabba Walla consists of two phases:
+
+&amp;bull; Pick-up phase: Take turns moving your Dabba Walla through Mumbai to collect dabba cards. Each time you pick up a card, you then play one of the three in your hand to take the depicted dabba tile &amp;mdash; a polyomino of 1-4 squares &amp;mdash; and place it in your cart, stacking tiles higher and higher as the rounds progress. Dabbas come in four colors, and you must place them on flat surfaces, filling holes with empty dabbas if needed. If you connect two half-chai symbols on tiles on the same level, you draw a random chai tile with a bonus action. Keep all played dabba cards in a personal discard pile.
+
+&amp;bull; Delivery phase: After everyone has placed fifteen tiles in their cart, it's time to deliver lunches! Pick up all the cards you played, then complete a number of delivery rounds equal to the highest level that someone has stacked their dabbas. Each round, each player plays and reveals one dabba card from their hand, optionally playing chai tiles as well. Sum the value of each color of dabba, then everyone scores their dabbas on the current level based on these values, removing the tiles from their carts. (Note: If not all players have dabbas on the current level being scored, they still play a card, but they score nothing.)
+
+Once all the dabbas have been delivered, players score for their remaining chai tiles, then whoever has collected the most tips wins.
+
+Dabba Walla contains two expansion modules to provide additional ways to score or change the value of dabbas being delivered.
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="10">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="7" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="45" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="2">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="2" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="2">
+			
+		<results>		
+					<result level="31" value="No necessary in-game text" numvotes="2" />
+					<result level="32" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="33" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="34" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="35" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1028" value="Puzzle" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1011" value="Transportation" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2978" value="Grid Coverage" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3001" value="Layering" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3099" value="Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2007" value="Pick-up and Deliver" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="63150" value="Cities: Mumbai (India)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="24571" value="Components: Polyominoes" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="9961" value="Country: India" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5663" value="Sports: Bicycling / Cycling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5841" value="Theme: Food / Cooking" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="430286" value="Dabba Walla: Queenie 1" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="82975" value="Felix Leder" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="62102" value="Patricia Limberger" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="62102" value="Patricia Limberger" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="47" value="Queen Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="377" />
+			<average value="7.00063" />
+			<bayesaverage value="5.69682" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="6271" bayesaverage="5.69682" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="1784" bayesaverage="5.76781" />
+												</ranks>
+
+			<stddev value="1.3239" />
+			<median value="0" />
+			<owned value="796" />
+			<trading value="14" />
+			<wanting value="46" />
+			<wishing value="232" />
+			<numcomments value="70" />
+			<numweights value="16" />
+			<averageweight value="2" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

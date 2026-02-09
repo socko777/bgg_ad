@@ -1,5 +1,5 @@
 const collectionData = {
-    "total": 298,
+    "total": 300,
     "date": "09 Feb 2026",
     "games": [
         {
@@ -433,6 +433,20 @@ const collectionData = {
                 "Negotiation"
             ],
             "description": "Bohnanza is the first in the Bohnanza family of games and has been published in several different editions, including a 2023 version with flowers.\n\nThis entry lists a few different major card sets for Bohnanza: the base game for 3-5 players, the expanded game with the same name for 2-7 players (that is, first expansion included), and Bohnanza Pocket.\n\nIn the game, you plant, then harvest bean cards in order to earn coins. Each player starts with a hand of random bean cards, and each card has a number on it corresponding to the number of that type of beans in the deck. Unlike in most other card games, you can't rearrange the order of cards in hand, so you must use them in the order that you've picked them up from the deck &mdash; unless you can trade them to other players, which is the heart of the game.\n\nOn a turn, you must plant the first one or two cards in your hand into the \"fields\" in front of you. Each field can hold only one type of bean, so if you must plant a type of bean that's not in one of your fields, then you must harvest a field to make room for the new arrival. This usually isn't good! Next, you reveal two cards from the deck, and you can then trade these cards as well as any card in your hand for cards from other players. You can even make future promises for cards received right now! After all the trading is complete &mdash; and all trades on a turn must involve the active player &mdash; then you end your turn by drawing cards from the deck and placing them at the back of your hand.\n\nWhen you harvest beans, you receive coins based on the number of bean cards in that field and the \"beanometer\" for that particular type of bean. Flip over 1-4 cards from that field to transform them into coins, then place the remainder of the cards in the discard pile. When the deck runs out, shuffle the discards, playing through the deck two more times. At the end of the game, everyone can harvest their fields, then whoever has earned the most coins wins.\n\nThe original German edition supports 3-5 players. The English version from Rio Grande Games comes with the first edition of the first German expansion included in a slightly oversized box. One difference in the contents, however, is that bean #22's Weinbrandbohne (Brandy Bean) was replaced by the Wachsbohne, or Wax Bean. This edition includes rules for up to seven players, like the Erweiterungs-Set, but also adapts the two-player rules of Al Cabohne in order to allow two people to play Bohnanza.\n\n"
+        },
+        {
+            "name": "Booty Dice",
+            "designers": [
+                "Eric Olsen"
+            ],
+            "img": "cache_images/408658.jpg",
+            "players": "2-6P",
+            "weight": 1.0,
+            "categories": [
+                "Dice",
+                "Pirates"
+            ],
+            "description": "All Hands on Deck! In this fast-paced pirate free-for-all, ye will attack and steal from yer sworn enemies while defending yerself and looting the buried treasure! To win, ye must amass 25 gold doubloons or be the last remaining pirate. But beware! Mutiny and shipwrecks abound on the high seas. Will ye walk the plank and feed the fishes? Will ye plunder another pirate or call down Blackbeard's Curse? Only time will tell. So hoist the Jolly Roger, weigh anchor and set sail for adventure!\n\nYour fate lies in the roll of the Booty Dice!\n\n"
         },
         {
             "name": "Bottle Imp",
@@ -928,6 +942,21 @@ const collectionData = {
                 "City Building"
             ],
             "description": "Cuzco is a new 2018 edition of Java from French publisher Super Meeple that moves the action to South America, which is in line with the other titles in the Mask Trilogy as well as the authors' original plans for the design.\n\n"
+        },
+        {
+            "name": "Dabba Walla",
+            "designers": [
+                "Felix Leder",
+                "Patricia Limberger"
+            ],
+            "img": "cache_images/417505.jpg",
+            "players": "2-4P",
+            "weight": 2.0,
+            "categories": [
+                "Puzzle",
+                "Transportation"
+            ],
+            "description": "Every morning in Mumbai, over five thousand workers dressed in white swarm out to deliver more than 200,000 \"dabbas\" (multistoried lunch boxes) to the offices of the Indian metropolis. These \"Dabba Walla\" have been an iconic fixture in the cityscape since 1890. The food is freshly prepared at home by families, then collected from their front doors by the Dabba Walla. Even though some of the dabbas travel very far, they are delivered punctually via a network of intermediate stations with an amazing reliability of 99.999%! Now it's time to join the Dabba Walla on their daily journey through Mumbai...\n\nThe game Dabba Walla consists of two phases:\n\n&bull; Pick-up phase: Take turns moving your Dabba Walla through Mumbai to collect dabba cards. Each time you pick up a card, you then play one of the three in your hand to take the depicted dabba tile &mdash; a polyomino of 1-4 squares &mdash; and place it in your cart, stacking tiles higher and higher as the rounds progress. Dabbas come in four colors, and you must place them on flat surfaces, filling holes with empty dabbas if needed. If you connect two half-chai symbols on tiles on the same level, you draw a random chai tile with a bonus action. Keep all played dabba cards in a personal discard pile.\n\n&bull; Delivery phase: After everyone has placed fifteen tiles in their cart, it's time to deliver lunches! Pick up all the cards you played, then complete a number of delivery rounds equal to the highest level that someone has stacked their dabbas. Each round, each player plays and reveals one dabba card from their hand, optionally playing chai tiles as well. Sum the value of each color of dabba, then everyone scores their dabbas on the current level based on these values, removing the tiles from their carts. (Note: If not all players have dabbas on the current level being scored, they still play a card, but they score nothing.)\n\nOnce all the dabbas have been delivered, players score for their remaining chai tiles, then whoever has collected the most tips wins.\n\nDabba Walla contains two expansion modules to provide additional ways to score or change the value of dabbas being delivered.\n\n"
         },
         {
             "name": "DCeased: Gotham City Outbreak",
