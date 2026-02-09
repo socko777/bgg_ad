@@ -1,6 +1,6 @@
 const collectionData = {
-    "total": 293,
-    "date": "05 Feb 2026",
+    "total": 298,
+    "date": "09 Feb 2026",
     "games": [
         {
             "name": "7 Wonders (Second Edition)",
@@ -667,19 +667,6 @@ const collectionData = {
             "description": "A fast-paced social deduction game for 4-8 players in a fantasy themed world.\n\nPlay either as one of the normal sleepyheads dreaming about the taste of delicious cheese in tomorrow's meal OR\nas the thief trying to steal away the cheese for his own belly.\nAs a thief clever enough, you might have to make a cut to your fellow minions so as to sneak away successfully.\n\nNo moderator. No player elimination. No set pattern.\n\nCheese Thief is different from other similar games in social deduction genre in that it uses die-face combinations in its core mechanism to provide countless replayable scenarios.\n\nOne night phase to setup. One die-face to provide genuine information. One vote down to decide who gets the cheese in the end.\n\n&mdash;description from the publisher\n\n"
         },
         {
-            "name": "The Cikgu Life",
-            "designers": [
-                "James Choong"
-            ],
-            "img": "cache_images/323379.jpg",
-            "players": "3-5P",
-            "weight": 0.0,
-            "categories": [
-                "Humor"
-            ],
-            "description": "The Cikgu Life is a boardgame designed for all players to relive our schooling days from a brand new perspective! In this game, we get the chance to put ourselves in the shoes of our teachers. The Cikgu Life game aims to capture the everyday life of a Malaysian cikgu in all its glory and struggles! It is best played with a hint of nostalgia.\n\nPlay as a teacher, and compete to get your students to score As, while trying to clear all your paperwork that keeps mounting!\n\nEach player gets to choose 1 of 7 different kinds of schools, each with their own unique traits. Events cards are drawn at the start of each turn which may have help or hurt your school.\n\nPlayers will play Action cards to clear paperwork or improve their students grades, but beware... some cards may actually increase your paperwork, and some events may even cause your students to drop their grades!\n\n&mdash;description from the designer\n\n"
-        },
-        {
             "name": "Cities",
             "designers": [
                 "Steve Finn",
@@ -1213,20 +1200,6 @@ const collectionData = {
                 "Dice"
             ],
             "description": "Pack your lucky socks and get ready for an adventure exploring Dragonrealm! Sneak into the Witch's Cabin, search the Ogres' Treehouse, or storm the Dragon's Lair. Add adventurers to different locations in the hopes of getting the most treasure. But watch out for goblins who might get there first and grab the treasure before you! In the end, the player with the most treasure wins.\n\nUsing the same thematic world as Dragonwood, players now take on capturing locations using adventurer pawns.\n\nPlayers will play card melds of straights and sets (color or number) to roll dice to attempt to place units on locations. Once a location is full, it is scored.\n\nNew locations are revealed to be captured. Players continue in this manner until a certain number of locations are captured. Each location is worth a value in points and additional points are awarded for other events.\n\n"
-        },
-        {
-            "name": "Drama Pukul 7",
-            "designers": [
-                "Haireey Hashnan",
-                "Zamri Mustapha"
-            ],
-            "img": "cache_images/284094.jpg",
-            "players": "3-6P",
-            "weight": 1.8,
-            "categories": [
-                "Movies / TV / Radio theme"
-            ],
-            "description": "Drama Pukul 7 is a for 2-6 players card game. The game is a competitive game set in a typical Malaysian/Malay soap opera or drama tv show where all the player compete among themselves by shaming (attack) other player to completely destroy each other's Dignity/Face Value (HP).\n\n"
         },
         {
             "name": "DroPolter",
@@ -1913,6 +1886,20 @@ const collectionData = {
             "description": "The year is 1947 and you are a member of the thriving movie-making industry of Hollywood. However, it is suspected that there are communists hiding among your small production studio slipping &ldquo;un-Patriotic&rdquo; messages, themes, props, and lines into your movies! Will you be able to find all the communists before your studio is shut down? Or will you be suspected yourself and banned from the industry?\n\nIn the game each player will secretly be a Patriot, Communist, or Rising Star. Each round every player will have a unique Job to perform (such as the Screenwriter, Gaffer, Director, Actor, Editor, etc). These jobs will affect what kind of movie is getting made that round, what cards are in players' hands, and who will receive special information. Players can choose to skip their jobs to instead re-roll any two of the dice in the game. At the end of each round the players with stars showing on their dice will get to add a card into the movie.\n\nThe added cards will be shuffled, one will be removed, and the rest will be revealed. The team with the majority of revealed symbols (including the symbols on that round's movie poster) wins the round! Indicate the winning team for the round by placing that team's matching film-strip over the movie poster. The first team to win 4 rounds wins the game! The Rising Star plays both sides by trying to make the game go to 7 rounds and making the 7th round a tie.\n\nHollywood 1947 is a social deduction game. You must never show your cards or loyalty to anyone, but you may say whatever you'd like about the cards you put into a movie, or about your true allegiance. Open discussion about which cards were added into a movie is encouraged. However, if you are a Communist or the Rising Star, lying will often help you accomplish your goals since the majority of players will be Patriots.\n\nThat's a wrap. Most players get the hang of the game after only a few minutes. So let's go make some movies, but be careful who you trust!\n\nHollywood 1947 is the 5th standalone game in the Dark Cities Series by Facade Games. Previous games in the series include Salem 1692, Tortuga 1667, Deadwood 1876, and Bristol 1350.\n\nYou can follow the Kickstarter at this link: https://www.kickstarter.com/projects/travishancock/hollywood-1947-a-movie-making-game-of-strategy-and-deception\n\n-description from publisher\n\n"
         },
         {
+            "name": "Honey Buzz",
+            "designers": [
+                "Paul Salomon"
+            ],
+            "img": "cache_images/284742.jpg",
+            "players": "1-4P",
+            "weight": 2.7,
+            "categories": [
+                "Animals",
+                "Economic"
+            ],
+            "description": "The bees have discovered economics. The queens believe that if they sell honey to the bears, badgers, and woodland creatures, they will find peace and prosperity. Spring has arrived and it's time to build the hive, find nectar, make honey, and, for the first time ever, set up shop.\n\nHoney Buzz is a worker bee placement game where players expand a personal beehive by drafting various honeycomb tiles that grant actions that are triggered throughout the game. Each tile represents a different action. Whenever a tile is laid so that it completes a certain pattern, a ring of actions is triggered in whatever order the player chooses. A tile drafted on turn one could be triggered up to three times at any point during the game. It all depends on how the player places their beeples (bee+meeple) and builds their hive. After all, in the honey business, efficiency is queen.\n\nAs you continually expand your hive, you'll forage for nectar and pollen, make honey, sell different varieties at the bear market, host honey tastings, and attend to the queen and her court. There's only so much nectar to go around, and finding it won't be easy. Players will have to scout out the nectar field and pay attention to other players searches to try to deduce the location of the nectar they need for themselves.\n\n"
+        },
+        {
             "name": "Horrified: Dungeons & Dragons",
             "designers": [
                 "Peter Lee"
@@ -1925,6 +1912,20 @@ const collectionData = {
                 "Miniatures"
             ],
             "description": "Terror is in the eye of the beholder! Horrified: Dungeons & Dragons will not only set players against four of the classic role-playing game's most fearsome foes, but will also introduce new gameplay elements inspired by the mechanisms of D&D, including the use of a 20-sided die.\n\nHorrified: Dungeons & Dragons features gameplay elements familiar to players of other games in the series: Players work together to face monsters and puzzle-like obstacles to gather item tokens, protect citizens, and avoid attacks. Unique and thematic challenges for each monster further immerse players into the detailed setting and story. Additionally, each player chooses to play as one of five heroes inspired by character classes from D&D: wizard, rogue, fighter, cleric, or bard &mdash; each with a unique set of abilities that can aid their party as they move around the board to defeat the monsters dwelling in the dungeon below Waterdeep.\n\n&mdash;description from the publisher\n\n"
+        },
+        {
+            "name": "Hot Lead",
+            "designers": [
+                "Reiner Knizia"
+            ],
+            "img": "cache_images/339924.jpg",
+            "players": "2-5P",
+            "weight": 1.3,
+            "categories": [
+                "Animals",
+                "Card Game"
+            ],
+            "description": "Lead the undercover investigation against five criminal groups to gather enough evidence to convict them. However, if you investigate too aggressively, the criminals will smell a rat and go dark!\n\nIn each round of Hot Lead, criminal cards are displayed in a column equal to the number of players. Players then make their bid by simultaneously revealing an investigator card from their hand. The highest investigator bid takes the criminal card closest to the deck, the second highest takes the second closest, and so on. These cards are worth points equal to their face value (0-5).\n\nGather enough evidence on one criminal organization to convict them when the game concludes after ten rounds; in game terms, by having exactly three of a suit, you earn 10 bonus points. Ten bonus points are also awarded to those who acquire criminal cards of all five suits. If you investigate too aggressively and grab the fourth card of a suit, those criminals will sense a rat and you'll scare them underground, thereby losing all of those cards. The player with the most points at the end of the game wins.\n\n&mdash;description from publisher\n\n"
         },
         {
             "name": "HR: The Toxic Workplace Game",
@@ -2070,36 +2071,6 @@ const collectionData = {
                 "Humor"
             ],
             "description": "In Kakerlakensuppe players work together to create a soup from leeks, peppers, carrot and mushrooms - but they won't always be saying which ingredient they're adding to the pot!\n\nThe 128 cards - 112 vegetable cards in the four types and 16 \"taboo\" vegetable cards, four of each type that bear cockroaches - are shuffled and divided among the players. On a turn, a player plays the top card from his deck onto the central pile of cards, naming the vegetable as he plays it, e.g., \"Pepper!\" - except in the following situations:\n\n&bull; If his vegetable matches the previously played vegetable, the player must lie.\n&bull; If his vegetable matches the claim made by the previous player (perhaps because that player lied), then the player must lie.\n&bull; If he plays a taboo card, which shows a cockroach slurping from a spoon, he must slurp and the next player starts a new pile next to the first one so that the taboo card remains visible.\n&bull; If his vegetable matches a visible taboo card, he must slurp - unless the last person who played such a card slurped, in which case he must say, \"Mmmm\".\n\nMake a mistake or stumble or hesitate too long, and a player must pick up all cards played to that point in the game. The first player to run out of cards wins!\n\nCan be combined with Cockroach Salad.\n\n"
-        },
-        {
-            "name": "Kaki Lima",
-            "designers": [
-                "Goh Choon Ean"
-            ],
-            "img": "cache_images/278886.jpg",
-            "players": "1-8P",
-            "weight": 1.7,
-            "categories": [
-                "Card Game",
-                "Exploration",
-                "Travel"
-            ],
-            "description": "Explore the historic city of George Town, Penang! 'Kaki lima' is the Malay term for five-foot way - the arched pathways that line the heritage zone of a tropical island in northern Malaysia. Play as pedestrians navigating their way through a grid of kaki lima. Score victory points from reaching places on daily task lists, exploring cultural sites, and meeting up with other pedestrians to taste local delicacies. Walking being at the heart of the game, points are also scored for clearing blocked kaki lima to make a more accessible neighbourhood.\n\n&mdash;description from the designer\n\n"
-        },
-        {
-            "name": "Ketupat Rendang",
-            "designers": [
-                "Araduan Rasis"
-            ],
-            "img": "cache_images/433121.jpg",
-            "players": "2-4P",
-            "weight": 0.0,
-            "categories": [
-                "Card Game",
-                "Children's Game",
-                "Party Game"
-            ],
-            "description": "Ketupat Rendang is a casual and fun-filled board game that celebrates cultural aspects of the Eid celebration in Southeast Asia. Players play the Dishes card and cook their favorite dishes. The game combines elements of strategy, luck, and cultural education, making it a perfect addition to any Hari Raya celebration.\n\nPlayer draw a Role card where they have their personal objective. Player then draw 2 Dish card where it contains fire and dishes that they have to cook. Each turn, player will draw a Dish card and play one Dish card on the table to cook their dish.\n\nTo cook dish, they need to place it next to a fire. Player can sabotage other player(s) by placing other dish on top of another player's Dish card.\n\nThe game end when all Dish card has run out from the deck. Player that cooked the most of their own dishes will be the winner.\n\n"
         },
         {
             "name": "Kick-Ass: The Board Game",
@@ -2392,6 +2363,19 @@ const collectionData = {
                 "Space Exploration"
             ],
             "description": "Let me take you on a journey to the year 2075. Just as soon as they took control of the world, cats set their sights on a new frontier - space! The cr&egrave;me de la cr&egrave;me of feline specialists now compete for cosmic dominance, with their determination unmatched even by the lack of opposable thumbs. It's a fierce race, filled with catnip-fueled shenanigans and rockets that go boom! Who will emerge victorious in this epic race, claim their paws on the infinite treasures of the Milky Way, and become the true cosmic conquerors?\n\nMLEM: Space Agency is a family board game where you step into the shoes of fearless captains of cosmic expeditions. But hold on, these aren't your ordinary explorers - they're cats! These intrepid felines have long conquered the Earth with their unmatched bravery, and now they've set their sights on conquering the entire cosmos. However, their clumsiness might lead to some purrfectly chaotic cat-astrophes. Take the helm of a cosmic rocket, reach for the stars, or trust your cat instincts and bail out before things go up in flames. Fame and admiration from the entire meowing world await the most exceptional leader of the feline space agency. Get ready for an adventure that's out of this world!\n\n"
+        },
+        {
+            "name": "Money!",
+            "designers": [
+                "Reiner Knizia"
+            ],
+            "img": "cache_images/125.jpg",
+            "players": "2-5P",
+            "weight": 1.6,
+            "categories": [
+                "Card Game"
+            ],
+            "description": "Your goal in Money! is to trade currencies with the bank and other players so that you end up with more value than anyone else.\n\nEach player starts with a hand of six cards from a deck that contains cards in seven currencies ranging in value from 20-60, along with coins worth 10. Four cards from the deck are placed face up to its left and to its right.\n\nIn a round, each player chooses a bid of one or more cards from their hand, then everyone reveals their bid simultaneously. Whoever bid the highest sum takes the four cards to the left or right of the deck or another player's bid, adds these cards to their hand, then places their bid next to the deck or in front of the player whose bid they took. (Alternatively, the player can return their bid to hand.) Then the next player with the highest bid resolves their bid similarly. Once all players have resolved their bids, draw cards from the deck to refill the lots to the left and right of the deck to four cards. When the deck runs out, play one final round, then score your cards in hand.\n\nIf you have 200 or more in a single currency, score that many points. If you have less than 200 in a currency, subtract 100 from that amount but don't go below 0. If you have all three 20s or 30s in a currency, score 100 points in addition to whatever the currency itself scores for you. Sum these amounts, along with whatever coins you have in hand. Whoever has the highest score wins.\n\n&bull;&bull;&bull;\n\nAdmin note: Most editions of Money! have rules only for 3-5 players; the 2025 edition from Allplay includes rules for a two-player variant.\n\n"
         },
         {
             "name": "Monikers",
@@ -2700,6 +2684,21 @@ const collectionData = {
             "description": "The Sorcerer is out to get you! Find your way among the illusions, but beware of the traitor in your ranks!\n\nThe Grimoire guides their team towards the exit using images, upon which they point at certain details. Working together, the other players have to find the exit as quickly as possible while avoiding picking the wrong cards. However, a member of the team is a traitor looking to lead the other players astray. A wide variety of traps are on your way to the exit of the library, making player communication harder!\n\nObscurio is a family game, an original mix between an image-based communication game and a secret role game in which the players have to be careful when sharing ideas with their team. Supported by rich contents, Obscurio proposes a fresh new experience in its genre by putting the emphasis on the details of the images and the constant doubt created by the presence of the traitor.\n\nCommunicate efficiently and avoid the illusions on your way to escape the Sorcerer's library!\n\n&mdash;description from the publisher\n\n"
         },
         {
+            "name": "Odin",
+            "designers": [
+                "Yohan Goh",
+                "Hope S. Hwang",
+                "Gary Kim"
+            ],
+            "img": "cache_images/406854.jpg",
+            "players": "2-6P",
+            "weight": 1.2,
+            "categories": [
+                "Card Game"
+            ],
+            "description": "In Odin, you want to empty your hand as quickly as possible, sending all your Vikings out into the world.\n\nThe game lasts several hands, with each hand consisting of one or more rounds. The deck contains cards in six suits, each numbered 1-9, and each player starts with a hand of nine cards.\n\nThe lead player for the hand lays a single card on the table. The next player either passes (but can play on a future turn) or plays the same number of cards (or one more than that number) with a higher value. When you play two or more cards, the cards must be the same number or color, and the value of these cards is created by placing their digits in order from high to low. For example, if you play a blue 3 and blue 6, their value is 63, not 36. When you play and are not the lead, you must take one of the cards from the previous play into your hand, then discard the rest.\n\nPlay continues around the table until either a player is out of cards, which ends the round immediately, or all players have passed in succession. In the latter case, discard the cards last played; whoever played these cards lays a single card to start a new round. Alternatively, if the lead player has cards in hand of a single suit or number, they play all of these cards at once to end the hand. When a hand ends, each player scores 1 point for each card they still hold.\n\nIf no player has at least 15 points, shuffle the deck and start a new hand. If someone does have 15 or more points, whoever has the fewest points wins.\n\n"
+        },
+        {
             "name": "One Night Ultimate Alien",
             "designers": [
                 "Ted Alspach",
@@ -2818,6 +2817,19 @@ const collectionData = {
                 "Math"
             ],
             "description": "The garden of Tropika is under attack and requires every animal to choose which side of the plot they will play for! Use your petal powers to either defend or attack, and tilt each battle of this war to your favour.\n\nGame Objective:\nBe the best petal plotter by achieving an animal's victory condition that is determined by the last card they hold at game end.\n\nGame Play:\nFrom a hand of cards, players either uses an Animal Ability or adds and Animal into their Garrison. A game ends when all players have no more cards in hand. All cards in everyone's Garrisons are revealed then all the Petal Powers on all cards are totaled up together. The player who achieved the Victory Condition on the last card they held wins the game.\n\nPlay a total of 3 games and assign Victory Points (VPs) to winning players based on which Victory Condition they achieved. After the 3rd game, the player with the highest VPs wins!\n\n"
+        },
+        {
+            "name": "Petiquette",
+            "designers": [
+                "Thomas Sellner"
+            ],
+            "img": "cache_images/443982.jpg",
+            "players": "2-6P",
+            "weight": 1.2,
+            "categories": [
+                "Animals"
+            ],
+            "description": "Humans are curious creatures. Even when cards are randomly lined up, we can't help but find patterns...and ideally we're thinking along the same lines.\n\nEach round in Petiquette, players look at a line-up of five random cards &mdash; with cards showing one of three animals that is wearing one of three hats, with a number from 1-5 at top &mdash; and try to find some logic or pattern within them. Each player secretly chooses the card they think would most properly fit into that pattern. For example, if the sequence is \"red, red, yellow...\", you might feel that yellow should come next. If it's \"dog, cat, bird...\", then maybe dog feels right...but what about \"dog, cat, dog, cat, bird\"? No single answer is correct, but if someone chooses the same card as you, you both earn points.\n\nPetiquette can be played either competitively or co-operatively.\n\n"
         },
         {
             "name": "Petrichor",
@@ -3263,6 +3275,21 @@ const collectionData = {
                 "City Building"
             ],
             "description": "On May 16th, 1703, Czar Peter laid the cornerstone for the first building in Saint Petersburg. Quickly, glorious buildings were added, always being expanded, so that Nobility (bringing victory points) may want to move in. But to accomplish this, one needs merchants who can provide the necessary Rubles, or the glory is over. The competition isn't sleeping either, and can sometimes steal a desired card right out from under your nose.\n\nSaint Petersburg has a board to tally victory points and to set out the four types of cards.  It is the cards themselves that players need to collect.  In each round - with the number of rounds dependent on the number of players and the randomness of card availability - players first pay for CRAFTSMEN who supply money for further purchases; then BUILDINGS to score points; then ARISTOCRATS, who are needed for money, points, and end-of-game scoring; and finally, unique cards from all three categories which give greater benefits. During the first rounds, players never have enough money to buy every card they want. During later rounds, they have plenty of money, but the cards they'd like to buy may have already come and gone...\n\nExpanded by:\n\n    Sankt Petersburg: Das Bankett\n    Saint Petersburg: New Society & Banquet Expansion (includes The Banquet)\n\n\n"
+        },
+        {
+            "name": "The Same Game",
+            "designers": [
+                "Wolfgang Warsch"
+            ],
+            "img": "cache_images/396542.jpg",
+            "players": "3-6P",
+            "weight": 1.6,
+            "categories": [
+                "Deduction",
+                "Party Game",
+                "Word Game"
+            ],
+            "description": "Is a microwave more important to humanity than diapers? How differently does a rocking horse move compared to a windshield wiper? And don't a pizza cutter and a unicycle look similar in some way?\n\nYour goal in The Same Game is to help your fellow players avoid falling into a trap. To set up, choose a difficulty level (1-4), then randomly choose the 6-9 category cards (e.g., length, material, price, movement, duration of use, etc.) and lay them on the table. Each player secretly draws a number tile from the bag &mdash; from 1 up to the number of categories &mdash; returns this tile to the bag, then writes this number on their player board. (More than one player might have this number.) Finally, place a number tile next to each category and deal each player a face-down object card.\n\nAfter looking at your object card, think of an object that's as similar to your card as possible in your trap category, that is, the category next to the number you wrote down. If your trap category is price, for example, you want to write down an object that costs the same as the object on your card, but is as different as possible in every other way.\n\nPlayers then take turns being the active player. When you're active, you reveal your object card and written word...then say and do nothing. Everyone else then discusses which categories to reveal one by one. The more categories they reveal without hitting your trap category, the more the team scores!\n\nAfter everyone has been active player once (or twice with 3-4 players), the game ends. How well did you score as a team?\n\n"
         },
         {
             "name": "Scream: The Game",
@@ -3766,6 +3793,21 @@ const collectionData = {
             "description": "If you thought Taco Tuesday was just about throwing back piles of tasty food with your friends, think again. The tacos are so enraged by your murderous weekly get-togethers that they've come to life to attack you with everything they've got. It's an all-out war as you and your friends work together to raise up your own taco army to fight, smash, and eat wave after wave of increasingly spicy tacos. If you survive, you win. If even one of you goes into a food coma, you lose.\n\n&iexcl;Taco Fight! is a fully cooperative real-time frenzy as you and your friends defend against six waves of increasingly spicy tacos by smashing them, eating them, or fighting them with an army of your own tacos. You're all on one team and there are no turns. Everyone works together at the same time to survive the waves of attacking tacos. If one of you loses, you all lose.\n\n"
         },
         {
+            "name": "Tacta",
+            "designers": [
+                "Jason Tremblay"
+            ],
+            "img": "cache_images/401636.jpg",
+            "players": "2-6P",
+            "weight": 1.4,
+            "categories": [
+                "Abstract Strategy",
+                "Card Game",
+                "Game System"
+            ],
+            "description": "It's all connected! In this sneakily strategic card game, players flip, twist, and turn their cards to align and cover their opponents' shapes with matching squares, triangles, and rectangles. With an ever-growing board, up to 8 colors light up game night with TACTA. Analyze, strategize, and optimize because in TACTA, every card counts.\n\n"
+        },
+        {
             "name": "Take 5",
             "designers": [
                 "Wolfgang Kramer"
@@ -4030,6 +4072,19 @@ const collectionData = {
             "description": "Race around George Town as trishaw riders taking passengers on thrilling journeys in Penang.\n\nTrishaw Frenzy is a fast-paced game of routes and riders with a unique blend of luck & strategy that makes which each round an exciting unpredictable experience.\n\nPlayers take on the role of trishaw riders who roll dice and race along a route of map tiles. Along the way, they encounter a series of events and chaos with their passengers-- map tiles sometimes get rotated, and the route sometimes gets changed altogether!\n\nEach round, the fastest rider to reach the end of the route gets 6 VPs, the 2nd get 4 VPs, the 3rd gets 2 VPs, and the 4th gets 1 VP. The rider with the highest total VP at the end of 3 rounds wins the game.\n\nBonus mini game: Flip the map tiles and put together the puzzle pieces to form 1 big picture.\n\n"
         },
         {
+            "name": "TRND",
+            "designers": [
+                "Jun Sasaki"
+            ],
+            "img": "cache_images/433075.jpg",
+            "players": "3-5P",
+            "weight": 1.0,
+            "categories": [
+                "Card Game"
+            ],
+            "description": "TRND is a card shedding and set collection game.\n\nTake a card and discard one or more identical card that match either the color or the type of the cards on the discard pile. Push your luck to see if you can get a higher score before the other players empty their hand and you are left with no points.\n\n"
+        },
+        {
             "name": "TROLL",
             "designers": [
                 "Kouji Kimura",
@@ -4115,6 +4170,20 @@ const collectionData = {
                 "Fantasy"
             ],
             "description": "Welcome to the Valley of Alchemists, a land in the heart of mountains, carved by a glacier thousands of years ago. Legends say that during its descent it gathered the most marvelous specimens of ancient life. When its descent had come to an end and the Sun finally thawed the formidable permafrost, a Valley full of wonders and mystic powers was revealed to the World. With time, Alchemists started to settle in this region, studying the marvelous properties of local wildlife. Years of experience and failed experiments brought them to the mastery of preparation of exquisite mixtures. Their skills grow with each newfound ingredient and acquired knowledge bear fruit in new mixtures. For the Valley hides much more undiscovered secrets. Each year, when Winter leaves the Valley and Mother Spring wakes the World to life anew, Alchemists arrange a slight contest of mixture preparation. There's no lack of mixture recipients and enthusiasts, and domesticated mystical beings ceaselessly spread the fruit of the hard alchemic work to the whole World. It is you, my dear Player, who will have the honor to take the role of one of the greatest Alchemists known to this World. Learn and strive for greatness, and maybe it will be you who wins the Spring contest and with it, the title of the best Alchemist in the Valley for the whole upcoming year.\n\nThe game is made up of a series of player turns, that are played one by one, starting with the First Player and continuing clockwise.\n\nOn their turn, a player can perform any 2 actions out of the 5 available ones; the chosen actions can be carried out in any order and combination. The same action type can be performed twice.\n\n1. Collecting the Ingredients\n2. Brewing the Decoctions\n3. Making Elixirs\n4. Rearranging the Elixirs\n5. Selling a Line of Elixirs\n\nDuring the game, the players collect ingredients, brew decoctions, and turn them into magic elixirs. Points are gained over the course of the game and also once the game has finished. The player with the most Experience Points (EP) at the end of the game becomes the winner.\n\n"
+        },
+        {
+            "name": "Vegas Strip",
+            "designers": [
+                "Peter C. Hayward"
+            ],
+            "img": "cache_images/428638.jpg",
+            "players": "2-6P",
+            "weight": 2.2,
+            "categories": [
+                "Bluffing",
+                "Deduction"
+            ],
+            "description": "In this bluffing game, players have hidden information about which casinos are corrupt. Take turns playing money tiles (two 2's, two 4's, one 5, one six, one seven) into the different casinos.\n\nWhen scoring a corrupt casino, the highest bidder wins the jackpot (and everyone else gets nothing). In a non-corrupt casino, whoever has the most points there LOSES, and everyone else gets points equal to their bid.\n\nPlayers can't place more than two tokens at a casino, and can't place their highest token at the casino they know is corrupt.\n\n20 unique casino power cards change up the formula every game. Take a gamble to win big!\n\n&mdash;description from the publisher\n\n"
         },
         {
             "name": "Viticulture Essential Edition",
