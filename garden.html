@@ -204,7 +204,12 @@
         <h1>The Garden</h1>
         <div class="stats-container">
             Currently nurturing <span id="stats-display" style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: var(--matcha-leaf);">--</span> curated titles.
-            <div style="font-size: 0.65rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2.5px; margin-top: 8px;">
+            
+            <div style="font-size: 0.75rem; margin-top: 6px; color: var(--clay-text); opacity: 0.8;">
+                <span id="unplayed-display" style="font-weight: 700; color: #a67c52;">--</span> awaiting their first play.
+            </div>
+
+            <div style="font-size: 0.65rem; color: var(--matcha-leaf); text-transform: uppercase; letter-spacing: 2.5px; margin-top: 12px;">
                 Last Tended: <span id="date-display">--</span>
             </div>
         </div>
@@ -272,7 +277,6 @@
             let lastDate = null;
 
             // Iterate through all columns (skipping index 0 which is the title)
-            // We iterate left to right, so the last "X" found will set the latest date
             for (let i = 1; i < cols.length; i++) {
                 if (cols[i] && cols[i].trim().toUpperCase() === 'X') {
                     count++;
@@ -292,7 +296,17 @@
 
         function render() {
             if (typeof collectionData === 'undefined') return;
+
+            // Calculate "Unplayed" Stats
+            let unplayedCount = 0;
+            collectionData.games.forEach(game => {
+                const stats = getPlayStats(game.name);
+                if (stats.count === 0) unplayedCount++;
+            });
+
+            // Update Header Stats
             document.getElementById('stats-display').innerText = collectionData.total;
+            document.getElementById('unplayed-display').innerText = unplayedCount;
             document.getElementById('date-display').innerText = collectionData.date;
 
             let sortedGames = [...collectionData.games];
@@ -307,11 +321,10 @@
                     const timeA = parseDateString(statsA.date);
                     const timeB = parseDateString(statsB.date);
 
-                    // Descending: Newest (Higher Timestamp) First
+                    // Descending: Newest First
                     if (timeA !== timeB) {
                         return timeB - timeA; 
                     }
-                    // Tie-breaker: Name
                     return a.name.localeCompare(b.name);
                 });
             }
@@ -320,13 +333,14 @@
                 const cats = game.categories ? game.categories.join(' • ') : 'BOARD GAME';
                 const stats = getPlayStats(game.name);
                 
-                // Use findIndex to ensure the modal opens the correct data from the source array
                 const originalIndex = collectionData.games.findIndex(g => g.name === game.name);
 
                 // Build the text for Last Played
                 let playInfo = '';
                 if (stats.date) {
                     playInfo = `Last Played: ${stats.date} <span class="play-count-badge">(${stats.count} Total Plays)</span>`;
+                } else {
+                    playInfo = `<span style="opacity: 0.5; font-style: italic;">Awaiting first session</span>`;
                 }
 
                 return `
@@ -338,7 +352,7 @@
                     <div><span class="category-string">${cats}</span></div>
                     <div class="stats-footer">
                         ${game.players}  •  Weight ${game.weight}
-                        ${playInfo ? `<div class="last-played">${playInfo}</div>` : ''}
+                        <div class="last-played">${playInfo}</div>
                     </div>
                 </article>`
             }).join('');
@@ -358,7 +372,9 @@
                 modalLastPlayed.innerHTML = `Last Played: ${stats.date} <span class="play-count-badge">(${stats.count} Total Plays)</span>`;
                 modalLastPlayed.style.display = "block";
             } else {
-                modalLastPlayed.style.display = "none";
+                modalLastPlayed.innerHTML = `Awaiting its first play in the Garden`;
+                modalLastPlayed.style.display = "block";
+                modalLastPlayed.style.opacity = "0.6";
             }
 
             const designerElem = document.getElementById('modal-designers');
