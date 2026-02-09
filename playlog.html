@@ -6,10 +6,12 @@
     <title>PLAYLOG | ARA BG COMMUNITY</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="playlog_data.js"></script>
+
     <style>
-        /* --- THEME OVERRIDES --- */
+        /* --- THEME & RESET --- */
         :root {
             --bg-silk: #FDF9F3;
             --matcha-leaf: #6B7A68;
@@ -20,37 +22,67 @@
             --pebble-shadow: rgba(74, 68, 63, 0.08);
         }
 
+        html, body {
+            overflow-x: hidden; /* Removes horizontal scrollbar */
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             background-color: var(--bg-silk);
             background-image: url("https://www.transparenttextures.com/patterns/paper.png");
             color: var(--clay-text);
             font-family: 'Quicksand', sans-serif;
-            margin: 0; display: flex; flex-direction: column; align-items: center;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
         }
 
-        /* --- NAVIGATION --- */
+        /* --- NAVIGATION (Matches Garden Style) --- */
         nav {
             width: 100%; background: rgba(253, 249, 243, 0.98); backdrop-filter: blur(10px);
             position: sticky; top: 0; z-index: 1000; padding: 20px 5px;
             border-bottom: 1px solid rgba(107, 122, 104, 0.08);
         }
         .nav-links { display: flex; justify-content: center; gap: clamp(15px, 5vw, 40px); }
-        .nav-item { color: var(--clay-text); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.7; }
+        .nav-item { 
+            color: var(--clay-text); 
+            text-decoration: none; 
+            font-size: 0.75rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            opacity: 0.7; 
+            font-weight: 500;
+        }
         .nav-item.active { color: var(--matcha-leaf); opacity: 1; font-weight: 700; border-bottom: 2px solid var(--gold-leaf); }
 
-        /* --- HEADER --- */
+        /* --- HEADER (Matches Garden Typography) --- */
         header { padding: clamp(40px, 10vw, 80px) 15px 40px; text-align: center; }
-        h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 8vw, 4rem); font-style: italic; color: var(--matcha-leaf); margin: 0; }
-        .stats-container { margin-top: 10px; font-weight: 300; opacity: 0.8; font-size: 0.9rem; }
+        h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: clamp(2.5rem, 8vw, 4rem); 
+            font-style: italic; 
+            font-weight: 400; 
+            color: var(--matcha-leaf); 
+            margin: 0; 
+        }
+        .stats-container { 
+            margin-top: 10px; 
+            font-weight: 300; 
+            opacity: 0.8; 
+            font-size: 0.95rem; /* Matched to Garden */
+            letter-spacing: 0.3px;
+        }
 
-        /* --- TIMELINE STYLING --- */
+        /* --- TIMELINE & CHART CONTAINERS --- */
         .timeline-container {
             width: 94%;
             max-width: 800px;
-            margin-bottom: 100px;
             display: flex;
             flex-direction: column;
             gap: 30px;
+            margin-bottom: 50px;
         }
 
         .session-card {
@@ -59,14 +91,9 @@
             padding: 40px;
             box-shadow: 0 20px 40px var(--pebble-shadow);
             border: 1px solid rgba(107, 122, 104, 0.05);
-            animation: bloomIn 1s ease-out forwards;
-            position: relative;
             transition: transform 0.3s ease;
+            box-sizing: border-box; /* Ensures padding doesn't cause overflow */
         }
-
-        .session-card:hover { transform: translateY(-5px); }
-
-        @keyframes bloomIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
         .session-date {
             font-family: 'Playfair Display', serif;
@@ -88,26 +115,47 @@
 
         .pill-container { display: flex; flex-wrap: wrap; gap: 12px; }
 
+        /* --- GAME PILLS (Matches Category String Style) --- */
         .game-pill {
-            background: var(--blush-petal);
+            background: rgba(234, 222, 215, 0.5); /* Matches Garden category color */
             color: var(--clay-text);
             padding: 8px 20px;
             border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            border: 1px solid rgba(74, 68, 63, 0.05);
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Quicksand', sans-serif; /* Cleaner for small text */
             transition: all 0.3s ease;
         }
 
         .game-pill:hover {
             background: var(--matcha-leaf);
             color: white;
-            transform: scale(1.05) rotate(-1deg);
+            transform: scale(1.05);
         }
 
-        footer { padding: 80px 10px; opacity: 0.4; font-size: 0.65rem; text-align: center; width: 100%; letter-spacing: 2px; }
+        /* --- CHART STYLING --- */
+        .chart-subtitle {
+            font-size: 0.65rem; 
+            color: var(--matcha-leaf); 
+            text-transform: uppercase; 
+            letter-spacing: 2.5px; 
+            margin-top: -15px;
+            margin-bottom: 30px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        footer { 
+            padding: 80px 10px; 
+            opacity: 0.4; 
+            font-size: 0.65rem; 
+            text-align: center; 
+            width: 100%; 
+            letter-spacing: 2px; 
+            text-transform: uppercase;
+        }
 
         @media (max-width: 600px) {
             .session-card { padding: 30px 20px; border-radius: 30px; }
@@ -134,9 +182,17 @@
     <main class="timeline-container" id="timeline">
         </main>
 
-    <footer>
-        &copy; 2026 ARA BOARD GAME COMMUNITY
-    </footer>
+    <div class="timeline-container" style="margin-bottom: 100px;">
+        <section class="session-card">
+            <div class="session-date">📊 Table Favorites</div>
+            <div class="chart-subtitle">Most Frequent Rotations</div>
+            <div style="max-width: 320px; margin: 0 auto;">
+                <canvas id="gameChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <footer>&copy; 2026 ARA BOARD GAME COMMUNITY</footer>
 
     <script>
     function parseAndRender() {
@@ -149,39 +205,34 @@
         const timeline = document.getElementById('timeline');
 
         const gatheringMap = {};
-        
+        const gameCounts = {};
+
         for (let i = 1; i < headers.length; i++) {
             const dateStr = headers[i].trim();
             gatheringMap[dateStr] = [];
             
             for (let j = 1; j < allRows.length; j++) {
                 const cols = allRows[j].split(',');
+                if (!cols[0]) continue;
+                
                 const gameName = cols[0].trim();
                 if (cols[i] && cols[i].trim().toUpperCase() === 'X') {
                     gatheringMap[dateStr].push(gameName);
+                    gameCounts[gameName] = (gameCounts[gameName] || 0) + 1;
                 }
             }
         }
 
-        // Sort Dates Descending
-        const sortedDates = Object.keys(gatheringMap).sort((a, b) => {
-            return new Date(b) - new Date(a);
-        });
+        const sortedDates = Object.keys(gatheringMap).sort((a, b) => new Date(b) - new Date(a));
 
         let timelineHtml = "";
         sortedDates.forEach(date => {
             const games = gatheringMap[date];
-
             if (games.length > 0) {
-                // Formatting Date to: 2-February-2026 (Monday)
                 const dateObj = new Date(date);
-                const day = dateObj.getDate();
-                const month = dateObj.toLocaleString('en-US', { month: 'long' });
-                const year = dateObj.getFullYear();
-                const weekday = dateObj.toLocaleString('en-US', { weekday: 'long' });
+                const formattedDate = `${dateObj.getDate()}-${dateObj.toLocaleString('en-US', { month: 'long' })}-${dateObj.getFullYear()} (${dateObj.toLocaleString('en-US', { weekday: 'long' })})`;
                 
-                const formattedDate = `${day}-${month}-${year} (${weekday})`;
-
+                // Keep the internal sorting of games alphabetical
                 const sortedGames = games.sort((a, b) => a.localeCompare(b));
 
                 timelineHtml += `
@@ -196,6 +247,42 @@
         });
 
         timeline.innerHTML = timelineHtml;
+        renderPieChart(gameCounts);
+    }
+
+    function renderPieChart(gameCounts) {
+        const ctx = document.getElementById('gameChart').getContext('2d');
+        
+        const sortedData = Object.entries(gameCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 5); // Top 5 games
+
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: sortedData.map(item => item[0]),
+                datasets: [{
+                    data: sortedData.map(item => item[1]),
+                    backgroundColor: ['#6B7A68', '#D4AF37', '#EADED7', '#A8B5A2', '#B8A598'],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#4A443F',
+                            font: { family: 'Quicksand', size: 11, weight: '500' },
+                            padding: 20,
+                            usePointStyle: true
+                        }
+                    }
+                }
+            }
+        });
     }
 
     window.onload = parseAndRender;
