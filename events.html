@@ -130,49 +130,55 @@
     </footer>
 
     <script>
-    function renderEvents() {
-        if (typeof eventData === 'undefined') return;
+function renderEvents() {
+    if (typeof eventData === 'undefined') return;
 
-        const activeContainer = document.getElementById('active-list');
-        const pastContainer = document.getElementById('past-list');
+    const activeContainer = document.getElementById('active-list');
+    const pastContainer = document.getElementById('past-list');
 
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
 
-        eventData.forEach((event, index) => {
-            const eventDate = new Date(event.date);
-            if (isNaN(eventDate)) return;
+    // --- SORTING LOGIC ADDED HERE ---
+    // This sorts the array from newest date to oldest date
+    const sortedEvents = [...eventData].sort((a, b) => {
+        return new Date(b.date) - new Date(a.date);
+    });
 
-            const isPast = eventDate < today;
-            const container = isPast ? pastContainer : activeContainer;
+    sortedEvents.forEach((event, index) => {
+        const eventDate = new Date(event.date);
+        if (isNaN(eventDate)) return;
 
-            container.innerHTML += `
-                <div class="event-card ${isPast ? 'past' : ''}" style="animation-delay: ${index * 0.1}s">
-                    <span class="date-badge">🌿 ${event.date}</span>
-                    <div class="event-title">${event.title}</div>
-                    <div style="font-size: 1.05rem; color: var(--clay-text); font-weight: 300; line-height: 1.7; opacity: 0.9;">
-                        ${event.details}
-                    </div>
-                    
-                    ${!isPast ? `
-                    <div class="location-box">
-                        <div style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px;">
-                            <span style="font-size: 1.2rem;">📍</span>
-                            <span><b>The Venue</b><br>${event.location}</span>
-                        </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px;">
-                            <span style="font-size: 1.2rem;">⏳</span>
-                            <span><b>The Moment</b><br>${event.time}</span>
-                        </div>
-                        <a href="${event.mapUrl}" target="_blank" class="btn-map">Directions to the Sanctuary →</a>
-                    </div>
-                    ` : ''}
+        const isPast = eventDate < today;
+        const container = isPast ? pastContainer : activeContainer;
+
+        container.innerHTML += `
+            <div class="event-card ${isPast ? 'past' : ''}" style="animation-delay: ${index * 0.1}s">
+                <span class="date-badge">🌿 ${event.date}</span>
+                <div class="event-title">${event.title}</div>
+                <div style="font-size: 1.05rem; color: var(--clay-text); font-weight: 300; line-height: 1.7; opacity: 0.9;">
+                    ${event.details}
                 </div>
-            `;
-        });
-    }
+                
+                ${!isPast ? `
+                <div class="location-box">
+                    <div style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px;">
+                        <span style="font-size: 1.2rem;">📍</span>
+                        <span><b>The Venue</b><br>${event.location}</span>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 12px;">
+                        <span style="font-size: 1.2rem;">⏳</span>
+                        <span><b>The Moment</b><br>${event.time}</span>
+                    </div>
+                    <a href="${event.mapUrl}" target="_blank" class="btn-map">Directions to the Sanctuary →</a>
+                </div>
+                ` : ''}
+            </div>
+        `;
+    });
+}
 
-    window.onload = renderEvents;
+window.onload = renderEvents;
 </script>
 </body>
 </html>
