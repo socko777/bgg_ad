@@ -1,6 +1,6 @@
 const collectionData = {
     "total": 300,
-    "date": "09 Feb 2026",
+    "date": "10 Feb 2026",
     "games": [
         {
             "name": "7 Wonders (Second Edition)",
