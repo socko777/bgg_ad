@@ -76,7 +76,7 @@
         /* --- PARTICIPANT DISPLAY BOARD --- */
         .participants-board {
             width: 94%; max-width: 1100px; margin: 0 auto 30px;
-            display: none; /* Hidden by default */
+            display: none; 
             grid-template-columns: repeat(3, 1fr); gap: 20px;
         }
         .p-column {
@@ -91,11 +91,9 @@
             padding: 8px 5px; border-bottom: 1px solid #fafafa; font-size: 0.9rem; color: var(--clay-text);
             display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;
         }
-        /* UPDATED STYLE FOR WINNERS: NO STRIKETHROUGH */
         .p-item.won { 
             color: var(--gold-leaf); 
             font-weight: 800; 
-            text-decoration: none; /* Removed line-through */
             background: rgba(253, 249, 243, 0.5);
             border-radius: 4px;
         }
@@ -126,7 +124,6 @@
             box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(0,0,0,0.05); 
         }
         .prize-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .prize-card:active { transform: scale(0.98); }
         
         .game-img { width: 100%; height: 100%; object-fit: contain; padding: 20px; background: white; transition: 0.3s; }
         
@@ -150,7 +147,6 @@
             border-radius: 8px; opacity: 0.8;
         }
 
-        /* --- MODAL --- */
         .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(30, 35, 30, 0.95); backdrop-filter: blur(8px); overflow-y: auto; padding: 10px; align-items: center; justify-content: center; }
         .modal-content-wrapper { margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 1000px; outline: none; position: relative; }
         .close-btn-container { width: 100%; max-width: 800px; display: flex; justify-content: flex-end; margin-bottom: 10px; }
@@ -172,18 +168,7 @@
         .footer-controls:hover { opacity: 1; }
         .reset-link { color: var(--alert-red); text-decoration: underline; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
 
-        @media (max-width: 900px) {
-            .modal-layout { flex-direction: column; gap: 25px; }
-            #modalPrizeImg { max-height: 180px; } 
-            .wheel-container { width: 300px; height: 300px; }
-        }
-        @media (max-height: 750px) {
-            .modal { align-items: flex-start; }
-            .modal-content-wrapper { padding-top: 20px; padding-bottom: 50px; }
-            #modalPrizeImg { max-height: 120px; }
-            .wheel-container { width: 280px; height: 280px; }
-            .winner-announce { font-size: 2rem; min-height: 60px; }
-        }
+        @media (max-width: 900px) { .modal-layout { flex-direction: column; gap: 25px; } .wheel-container { width: 300px; height: 300px; } }
     </style>
 </head>
 <body>
@@ -198,116 +183,58 @@
     <section class="setup-container" id="setupArea">
         <div class="input-group">
             <h3>🔵 Option A</h3>
-            <small>Included in Pot A (2 entries/person)</small>
-            <textarea id="listA" placeholder="Paste names here..."></textarea>
+            <small>Pot A (2 entries/person)</small>
+            <textarea id="listA" placeholder="Paste names..."></textarea>
         </div>
         <div class="input-group">
             <h3>🟢 Option B</h3>
-            <small>Included in Pot B (2 entries/person)</small>
-            <textarea id="listB" placeholder="Paste names here..."></textarea>
+            <small>Pot B (2 entries/person)</small>
+            <textarea id="listB" placeholder="Paste names..."></textarea>
         </div>
         <div class="input-group">
             <h3>🟡 Option C</h3>
-            <small>Included in ALL Pots (1 entry/person)</small>
-            <textarea id="listC" placeholder="Paste names here..."></textarea>
+            <small>ALL Pots (1 entry/person)</small>
+            <textarea id="listC" placeholder="Paste names..."></textarea>
         </div>
-        <div class="btn-row">
-            <button class="lock-btn" onclick="lockLists()">Lock & Start Game</button>
-        </div>
+        <div class="btn-row"><button class="lock-btn" onclick="lockLists()">Lock & Start Game</button></div>
     </section>
 
     <section class="participants-board" id="participantsBoard">
-        <div class="p-column">
-            <h4>🔵 Option A</h4>
-            <ul class="p-list" id="displayListA"></ul>
-        </div>
-        <div class="p-column">
-            <h4>🟢 Option B</h4>
-            <ul class="p-list" id="displayListB"></ul>
-        </div>
-        <div class="p-column">
-            <h4>🟡 Option C</h4>
-            <ul class="p-list" id="displayListC"></ul>
-        </div>
+        <div class="p-column"><h4>🔵 Option A</h4><ul class="p-list" id="displayListA"></ul></div>
+        <div class="p-column"><h4>🟢 Option B</h4><ul class="p-list" id="displayListB"></ul></div>
+        <div class="p-column"><h4>🟡 Option C</h4><ul class="p-list" id="displayListC"></ul></div>
     </section>
 
     <main id="gameArea" style="opacity: 0.3; pointer-events: none;">
-        
         <section class="game-section">
-            <div class="pot-title">
-                <span>Pot A Prizes</span> 
-                <span class="pot-rules">Pool: Opt A (x2) + Opt C (x1)</span>
-            </div>
-            <div class="prizes-grid" id="gridA">
-                <div class="prize-card" id="card_maracaibo" onclick="openDraw('Option A', 'Maracaibo', this)">
-                    <img src="luckydraw/maracaibo.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Maracaibo'">
-                    <div class="card-overlay"><h4>Maracaibo</h4><div class="winner-display"></div></div>
-                </div>
-                <div class="prize-card" id="card_teagarden" onclick="openDraw('Option A', 'Tea Garden', this)">
-                    <img src="luckydraw/teagarden.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Tea+Garden'">
-                    <div class="card-overlay"><h4>Tea Garden</h4><div class="winner-display"></div></div>
-                </div>
-                <div class="prize-card" id="card_chipsA" onclick="openDraw('Option A', 'Bag of Chips', this)">
-                    <img src="luckydraw/bag.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Chips'">
-                    <div class="card-overlay"><h4>Bag of Chips</h4><div class="winner-display"></div></div>
-                </div>
-                <div class="prize-card" id="card_beacon" onclick="openDraw('Option A', 'Beacon Patrol', this)">
-                    <img src="luckydraw/beacon.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Beacon'">
-                    <div class="card-overlay"><h4>Beacon Patrol</h4><div class="winner-display"></div></div>
-                </div>
-                <div class="prize-card" id="card_coexist" onclick="openDraw('Option A', 'Coexist', this)">
-                    <img src="luckydraw/coexist.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Coexist'">
-                    <div class="card-overlay"><h4>Coexist</h4><div class="winner-display"></div></div>
-                </div>
+            <div class="pot-title"><span>Pot A Prizes</span><span class="pot-rules">Opt A (x2) + Opt C (x1)</span></div>
+            <div class="prizes-grid">
+                <div class="prize-card" id="card_maracaibo" onclick="openDraw('Option A', 'Maracaibo', this)"><img src="luckydraw/maracaibo.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Maracaibo'"><div class="card-overlay"><h4>Maracaibo</h4><div class="winner-display"></div></div></div>
+                <div class="prize-card" id="card_teagarden" onclick="openDraw('Option A', 'Tea Garden', this)"><img src="luckydraw/teagarden.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Tea+Garden'"><div class="card-overlay"><h4>Tea Garden</h4><div class="winner-display"></div></div></div>
+                <div class="prize-card" id="card_chipsA" onclick="openDraw('Option A', 'Bag of Chips', this)"><img src="luckydraw/bag.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Chips'"><div class="card-overlay"><h4>Bag of Chips</h4><div class="winner-display"></div></div></div>
+                <div class="prize-card" id="card_beacon" onclick="openDraw('Option A', 'Beacon Patrol', this)"><img src="luckydraw/beacon.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Beacon'"><div class="card-overlay"><h4>Beacon Patrol</h4><div class="winner-display"></div></div></div>
+                <div class="prize-card" id="card_coexist" onclick="openDraw('Option A', 'Coexist', this)"><img src="luckydraw/coexist.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Coexist'"><div class="card-overlay"><h4>Coexist</h4><div class="winner-display"></div></div></div>
             </div>
         </section>
-
         <section class="game-section">
-            <div class="pot-title">
-                <span>Pot B Prizes</span>
-                <span class="pot-rules">Pool: Opt B (x2) + Opt C (x1)</span>
-            </div>
-            <div class="prizes-grid" id="gridB">
-                <div class="prize-card" id="card_dbd" onclick="openDraw('Option B', 'Dead by Daylight', this)">
-                    <img src="luckydraw/deadbydaylight.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Dead+By+Daylight'">
-                    <div class="card-overlay"><h4>Dead by Daylight</h4><div class="winner-display"></div></div>
-                </div>
-                <div class="prize-card" id="card_potion" onclick="openDraw('Option B', 'Potion Explosion', this)">
-                    <img src="luckydraw/potion.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Potion+Explosion'">
-                    <div class="card-overlay"><h4>Potion Explosion</h4><div class="winner-display"></div></div>
-                </div>
-                <div class="prize-card" id="card_alma" onclick="openDraw('Option B', 'Alma Mater', this)">
-                    <img src="luckydraw/alma.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Alma+Mater'">
-                    <div class="card-overlay"><h4>Alma Mater</h4><div class="winner-display"></div></div>
-                </div>
-                <div class="prize-card" id="card_kanagawa" onclick="openDraw('Option B', 'Kanagawa', this)">
-                    <img src="luckydraw/kanagawa.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Kanagawa'">
-                    <div class="card-overlay"><h4>Kanagawa</h4><div class="winner-display"></div></div>
-                </div>
-                <div class="prize-card" id="card_chipsB" onclick="openDraw('Option B', 'Bag of Chips', this)">
-                    <img src="luckydraw/bag.webp" class="game-img" onerror="this.src='https://placehold.co/400x400/png?text=Chips'">
-                    <div class="card-overlay"><h4>Bag of Chips</h4><div class="winner-display"></div></div>
-                </div>
+            <div class="pot-title"><span>Pot B Prizes</span><span class="pot-rules">Opt B (x2) + Opt C (x1)</span></div>
+            <div class="prizes-grid">
+                <div class="prize-card" id="card_dbd" onclick="openDraw('Option B', 'Dead by Daylight', this)"><img src="luckydraw/deadbydaylight.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Dead+By+Daylight'"><div class="card-overlay"><h4>Dead by Daylight</h4><div class="winner-display"></div></div></div>
+                <div class="prize-card" id="card_potion" onclick="openDraw('Option B', 'Potion Explosion', this)"><img src="luckydraw/potion.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Potion+Explosion'"><div class="card-overlay"><h4>Potion Explosion</h4><div class="winner-display"></div></div></div>
+                <div class="prize-card" id="card_alma" onclick="openDraw('Option B', 'Alma Mater', this)"><img src="luckydraw/alma.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Alma+Mater'"><div class="card-overlay"><h4>Alma Mater</h4><div class="winner-display"></div></div></div>
+                <div class="prize-card" id="card_kanagawa" onclick="openDraw('Option B', 'Kanagawa', this)"><img src="luckydraw/kanagawa.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Kanagawa'"><div class="card-overlay"><h4>Kanagawa</h4><div class="winner-display"></div></div></div>
+                <div class="prize-card" id="card_chipsB" onclick="openDraw('Option B', 'Bag of Chips', this)"><img src="luckydraw/bag.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Chips'"><div class="card-overlay"><h4>Bag of Chips</h4><div class="winner-display"></div></div></div>
             </div>
         </section>
-
-        <div class="footer-controls">
-            <span class="reset-link" onclick="factoryReset()">⚠ Factory Reset (Clears All Data)</span>
-        </div>
+        <div class="footer-controls"><span class="reset-link" onclick="factoryReset()">⚠ Factory Reset (Clears All Data)</span></div>
     </main>
 
     <div id="wheelModal" class="modal">
         <div class="modal-content-wrapper">
             <div class="close-btn-container"><span class="close-icon" onclick="closeModal()">✕</span></div>
             <div class="modal-layout">
-                <div class="modal-image-col">
-                    <img id="modalPrizeImg" src="" alt="Prize Image">
-                    <div id="modalPrizeName" class="modal-prize-title">Prize Name</div>
-                </div>
-                <div class="wheel-container">
-                    <div class="pointer"></div>
-                    <canvas id="wheelCanvas" width="760" height="760"></canvas>
-                </div>
+                <div class="modal-image-col"><img id="modalPrizeImg" src="" alt="Prize"><div id="modalPrizeName" class="modal-prize-title">Prize Name</div></div>
+                <div class="wheel-container"><div class="pointer"></div><canvas id="wheelCanvas" width="760" height="760"></canvas></div>
             </div>
             <div id="winnerText" class="winner-announce"></div>
             <button id="spinBtn" class="spin-btn" onclick="spinWheel()">SPIN THE WHEEL</button>
@@ -325,44 +252,54 @@
             osc.frequency.exponentialRampToValueAtTime(100, audioCtx.currentTime + 0.05);
             gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
             gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.05);
-            osc.connect(gain);
-            gain.connect(audioCtx.destination);
-            osc.start();
-            osc.stop(audioCtx.currentTime + 0.05);
+            osc.connect(gain); gain.connect(audioCtx.destination);
+            osc.start(); osc.stop(audioCtx.currentTime + 0.05);
         }
         function playWinSound() {
             if(audioCtx.state === 'suspended') audioCtx.resume();
-            const notes = [440, 554, 659, 880];
-            notes.forEach((freq, i) => {
+            [440, 554, 659, 880].forEach((freq, i) => {
                 setTimeout(() => {
                     const osc = audioCtx.createOscillator();
                     const gain = audioCtx.createGain();
-                    osc.type = 'sine';
-                    osc.frequency.value = freq;
+                    osc.type = 'sine'; osc.frequency.value = freq;
                     gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
                     gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1.5);
-                    osc.connect(gain);
-                    gain.connect(audioCtx.destination);
-                    osc.start();
-                    osc.stop(audioCtx.currentTime + 1.5);
+                    osc.connect(gain); gain.connect(audioCtx.destination);
+                    osc.start(); osc.stop(audioCtx.currentTime + 1.5);
                 }, i * 100);
             });
         }
-    </script>
 
-    <script>
-        // --- DATA & STATE ---
+        function announceWinner(name) {
+            if ('speechSynthesis' in window) {
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = `Congratulations to the winner, ${name}!`;
+                msg.volume = 1;
+                msg.rate = 0.85; // Slightly slower for a sultry/confident vibe
+                msg.pitch = 1.2; // Slightly higher pitch
+
+                // Look for the best female voice available on the device
+                const voices = window.speechSynthesis.getVoices();
+                const preferred = voices.find(v => 
+                    v.name.includes('Samantha') || 
+                    v.name.includes('Natural') || 
+                    v.name.includes('Victoria') || 
+                    (v.name.includes('Google') && v.name.includes('Female'))
+                );
+                
+                if (preferred) msg.voice = preferred;
+                window.speechSynthesis.speak(msg);
+            }
+        }
+        // Pre-load voices for Chrome
+        window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+
         let namesA = [], namesB = [], namesC = [];
         let pastWinners = JSON.parse(localStorage.getItem('ara_winners') || '{}'); 
-        let currentPool = [], currentCardId = null, currentCardEl = null;
-        let isSpinning = false;
-        
-        // --- CANVAS SETUP ---
-        const canvas = document.getElementById('wheelCanvas');
-        const ctx = canvas.getContext('2d');
+        let currentPool = [], currentCardId = null, currentCardEl = null, isSpinning = false;
+        const canvas = document.getElementById('wheelCanvas'), ctx = canvas.getContext('2d');
         const wheelColors = ['#6B7A68', '#F2E8D5', '#8F9E8B', '#D4AF37', '#4A443F', '#A3BFA1'];
-        
-        // --- INITIALIZATION ---
+
         window.onload = function() {
             if(localStorage.getItem('ara_names')) {
                 const saved = JSON.parse(localStorage.getItem('ara_names'));
@@ -385,43 +322,20 @@
             namesA = document.getElementById('listA').value.split('\n').map(n=>n.trim()).filter(n => n);
             namesB = document.getElementById('listB').value.split('\n').map(n=>n.trim()).filter(n => n);
             namesC = document.getElementById('listC').value.split('\n').map(n=>n.trim()).filter(n => n);
-            
-            let allNames = [...namesA, ...namesB, ...namesC];
-            let uniqueSet = new Set(allNames);
-            
-            if (allNames.length !== uniqueSet.size) {
-                alert("⚠️ Duplicate names detected! A person can only be in one list.");
-                return; 
-            }
-            if (uniqueSet.size === 0 && showConfirm) {
-                alert("Please enter names."); return;
-            }
+            if ([...namesA, ...namesB, ...namesC].length === 0 && showConfirm) return alert("Please enter names.");
+            if(showConfirm && !confirm("Ready to start?")) return;
 
             localStorage.setItem('ara_names', JSON.stringify({A: document.getElementById('listA').value, B: document.getElementById('listB').value, C: document.getElementById('listC').value}));
-
-            if(showConfirm) {
-                if(!confirm(`Ready with ${uniqueSet.size} unique people?`)) return;
-            }
-
-            // HIDE Setup, SHOW Game & Display Board
             document.getElementById('setupArea').style.display = 'none';
-            document.getElementById('participantsBoard').style.display = 'grid'; // Show the board
+            document.getElementById('participantsBoard').style.display = 'grid';
             document.getElementById('gameArea').style.opacity = '1';
             document.getElementById('gameArea').style.pointerEvents = 'auto';
-
-            renderParticipants(); // Populate the read-only lists
+            renderParticipants();
         }
 
         function renderParticipants() {
             const winners = Object.values(pastWinners);
-            
-            const createListHTML = (names) => {
-                return names.map(n => {
-                    const isWinner = winners.includes(n);
-                    return `<li class="p-item ${isWinner ? 'won' : ''}">${n}</li>`;
-                }).join('');
-            };
-
+            const createListHTML = (names) => names.map(n => `<li class="p-item ${winners.includes(n) ? 'won' : ''}">${n}</li>`).join('');
             document.getElementById('displayListA').innerHTML = createListHTML(namesA);
             document.getElementById('displayListB').innerHTML = createListHTML(namesB);
             document.getElementById('displayListC').innerHTML = createListHTML(namesC);
@@ -429,98 +343,56 @@
 
         function openDraw(optionType, prizeName, el) {
             if(el.classList.contains('drawn')) return;
-            
-            currentCardEl = el;
-            currentCardId = el.id;
+            currentCardEl = el; currentCardId = el.id;
             const usedNames = new Set(Object.values(pastWinners));
-            
             currentPool = [];
             let mainList = (optionType === 'Option A') ? namesA : namesB;
             mainList.forEach(n => { if(!usedNames.has(n)) { currentPool.push(n); currentPool.push(n); } });
             namesC.forEach(n => { if(!usedNames.has(n)) { currentPool.push(n); } });
-            
             currentPool.sort(() => Math.random() - 0.5);
-
-            if(currentPool.length === 0) {
-                alert("Everyone in this pool has won something! Reset the game to start over.");
-                return;
-            }
+            if(currentPool.length === 0) return alert("Everyone has won something!");
 
             document.getElementById('modalPrizeImg').src = el.querySelector('.game-img').src;
             document.getElementById('modalPrizeName').innerText = prizeName;
             document.getElementById('wheelModal').style.display = 'flex';
             document.getElementById('winnerText').classList.remove('show');
-            document.getElementById('winnerText').innerText = "";
             document.getElementById('spinBtn').style.display = 'block';
             drawWheel(0);
         }
 
         function drawWheel(rotationOffset) {
-            const num = currentPool.length;
-            const arc = (2 * Math.PI) / num;
-            const centerX = canvas.width / 2;
-            const centerY = canvas.height / 2;
-            const radius = centerX - 10;
-
+            const num = currentPool.length, arc = (2 * Math.PI) / num, centerX = canvas.width / 2, centerY = canvas.height / 2, radius = centerX - 10;
             ctx.clearRect(0,0, canvas.width, canvas.height);
-            ctx.save();
-            ctx.translate(centerX, centerY);
-            ctx.rotate(rotationOffset);
-
+            ctx.save(); ctx.translate(centerX, centerY); ctx.rotate(rotationOffset);
             for(let i=0; i<num; i++){
                 const angle = i * arc;
-                ctx.beginPath();
-                ctx.moveTo(0,0);
-                ctx.arc(0, 0, radius, angle, angle + arc);
-                ctx.fillStyle = wheelColors[i % wheelColors.length];
-                ctx.fill();
-                ctx.strokeStyle = "white";
-                ctx.lineWidth = 2;
-                ctx.stroke();
-
-                ctx.save();
-                ctx.rotate(angle + arc/2);
-                ctx.textAlign = "right";
+                ctx.beginPath(); ctx.moveTo(0,0); ctx.arc(0, 0, radius, angle, angle + arc);
+                ctx.fillStyle = wheelColors[i % wheelColors.length]; ctx.fill();
+                ctx.strokeStyle = "white"; ctx.lineWidth = 2; ctx.stroke();
+                ctx.save(); ctx.rotate(angle + arc/2); ctx.textAlign = "right";
                 ctx.fillStyle = (i % wheelColors.length === 1 || i % wheelColors.length === 5) ? "#4A443F" : "#FFFFFF";
                 ctx.font = "bold 24px Quicksand";
-                let text = currentPool[i];
-                if(text.length > 14) text = text.substring(0,12) + "..";
-                ctx.fillText(text, radius - 40, 10);
-                ctx.restore();
+                let text = currentPool[i]; if(text.length > 14) text = text.substring(0,12) + "..";
+                ctx.fillText(text, radius - 40, 10); ctx.restore();
             }
             ctx.restore();
         }
 
         function spinWheel() {
-            if(isSpinning) return;
-            isSpinning = true;
+            if(isSpinning) return; isSpinning = true;
             document.getElementById('spinBtn').style.display = 'none';
-
-            const winnerIdx = Math.floor(Math.random() * currentPool.length);
-            const winnerName = currentPool[winnerIdx];
-            
-            const arc = (2 * Math.PI) / currentPool.length;
-            const winnerAngle = (winnerIdx * arc) + (arc / 2);
+            const winnerIdx = Math.floor(Math.random() * currentPool.length), winnerName = currentPool[winnerIdx];
+            const arc = (2 * Math.PI) / currentPool.length, winnerAngle = (winnerIdx * arc) + (arc / 2);
             const fuzz = (Math.random() * arc * 0.8) - (arc * 0.4); 
             const targetRotation = (2 * Math.PI * 5) - winnerAngle - (Math.PI / 2) + fuzz;
-
-            let start = null;
-            let lastTick = 0;
+            let start = null, lastTick = 0;
 
             function animate(time) {
                 if(!start) start = time;
-                const elapsed = time - start;
-                const progress = Math.min(elapsed / 5000, 1);
-                const ease = 1 - Math.pow(1 - progress, 4);
-                
+                const elapsed = time - start, progress = Math.min(elapsed / 5000, 1), ease = 1 - Math.pow(1 - progress, 4);
                 drawWheel(ease * targetRotation);
-
                 const speed = (1 - progress); 
-                if(speed > 0.05 && (time - lastTick) > (100 + (1-speed)*400)) {
-                    playTick();
-                    lastTick = time;
-                }
-
+                if(speed > 0.05 && (time - lastTick) > (100 + (1-speed)*400)) { playTick(); lastTick = time; }
                 if(progress < 1) requestAnimationFrame(animate);
                 else finishSpin(winnerName);
             }
@@ -530,53 +402,28 @@
         function finishSpin(winner) {
             isSpinning = false;
             playWinSound();
-            
+            announceWinner(winner); // Trigger the Voice
+
             const winText = document.getElementById('winnerText');
-            winText.innerText = winner;
-            winText.classList.add('show');
+            winText.innerText = winner; winText.classList.add('show');
             
-            // --- FIREWORKS CONFETTI ---
-            var duration = 3 * 1000;
-            var animationEnd = Date.now() + duration;
-            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 3000, colors: ['#D4AF37', '#6B7A68', '#FFF', '#FFD700'] };
-
-            var randomInRange = (min, max) => Math.random() * (max - min) + min;
-
+            // Grand Fireworks
+            var duration = 3000, animationEnd = Date.now() + duration;
             var interval = setInterval(function() {
                 var timeLeft = animationEnd - Date.now();
                 if (timeLeft <= 0) return clearInterval(interval);
-
-                var particleCount = 50 * (timeLeft / duration);
-                
-                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
-                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+                confetti({ particleCount: 50, spread: 360, origin: { x: Math.random(), y: Math.random() - 0.2 }, zIndex: 3000, colors: ['#D4AF37', '#6B7A68', '#FFF'] });
             }, 250);
             
             pastWinners[currentCardId] = winner;
             localStorage.setItem('ara_winners', JSON.stringify(pastWinners));
-            
             if(currentCardEl) markAsDrawn(currentCardEl, winner);
-            
-            // UPDATE THE BOARD
             renderParticipants();
         }
 
-        function markAsDrawn(el, name) {
-            el.classList.add('drawn');
-            el.querySelector('.winner-display').innerText = "Won by " + name;
-        }
-
-        function closeModal() {
-            if(isSpinning) return;
-            document.getElementById('wheelModal').style.display = 'none';
-        }
-
-        function factoryReset() {
-            if(confirm("⚠️ FACTORY RESET\n\nAre you sure you want to delete ALL data, including player names?")) {
-                localStorage.clear();
-                location.reload();
-            }
-        }
+        function markAsDrawn(el, name) { el.classList.add('drawn'); el.querySelector('.winner-display').innerText = "Won by " + name; }
+        function closeModal() { if(!isSpinning) document.getElementById('wheelModal').style.display = 'none'; }
+        function factoryReset() { if(confirm("Wipe everything?")) { localStorage.clear(); location.reload(); } }
     </script>
 </body>
 </html>
