@@ -49,6 +49,7 @@
         header { padding: 30px 15px 15px; text-align: center; width: 100%; }
         h1 { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: var(--matcha-leaf); font-size: clamp(2rem, 5vw, 3.5rem); margin: 0; text-shadow: 2px 2px 0px rgba(0,0,0,0.05); }
 
+        /* --- SETUP --- */
         .setup-container {
             width: 92%; max-width: 1000px; margin: 20px auto;
             background: white; padding: 25px; border-radius: 20px;
@@ -56,14 +57,16 @@
             display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;
             transition: all 0.3s ease; border: 1px solid #f0f0f0;
         }
-        
         .input-group h3 { margin: 0 0 5px 0; font-family: 'Playfair Display', serif; color: var(--matcha-leaf); display: flex; align-items: center; gap: 8px; }
         .input-group small { display: block; margin-bottom: 8px; font-size: 0.8rem; opacity: 0.7; font-weight: 700; }
         textarea { width: 100%; height: 120px; border: 2px solid #eee; border-radius: 12px; padding: 12px; font-family: inherit; font-size: 0.85rem; transition: 0.3s; resize: vertical; }
-
+        textarea:focus { border-color: var(--matcha-leaf); outline: none; background: #fafdfa; }
+        
         .btn-row { grid-column: 1 / -1; display: flex; gap: 10px; }
         .lock-btn { flex: 1; padding: 16px; background: var(--matcha-leaf); color: white; border: none; border-radius: 50px; cursor: pointer; letter-spacing: 2px; font-weight: 700; text-transform: uppercase; transition: 0.2s; box-shadow: 0 5px 15px rgba(107, 122, 104, 0.3); }
+        .lock-btn:hover { background: var(--matcha-dark); transform: translateY(-2px); }
 
+        /* --- BOARD --- */
         .participants-board {
             width: 94%; max-width: 1100px; margin: 0 auto 30px;
             display: none; grid-template-columns: repeat(3, 1fr); gap: 20px;
@@ -73,106 +76,70 @@
         .p-list { list-style: none; padding: 0; margin: 0; }
         .p-item { padding: 8px 5px; border-bottom: 1px solid #fafafa; font-size: 0.9rem; color: var(--clay-text); display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease; }
         .p-item.won { color: var(--gold-leaf); font-weight: 800; background: rgba(253, 249, 243, 0.5); border-radius: 4px; }
-        .p-item.won::after { content: '🏆'; margin-left: 5px; }
+        .p-item.won::after { content: '🏆'; font-style: normal; margin-left: 5px; }
+        @media (max-width: 768px) { .participants-board { grid-template-columns: 1fr; } }
 
+        /* --- GRID SECTION --- */
         .game-section { width: 94%; max-width: 1100px; margin: 10px auto 40px; }
         .pot-title { font-family: 'Playfair Display', serif; color: var(--matcha-leaf); font-size: clamp(1.4rem, 4vw, 2rem); border-bottom: 2px solid var(--gold-leaf); margin-bottom: 25px; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
         .pot-rules { font-family: 'Quicksand'; font-size: 0.75rem; color: white; background: var(--matcha-leaf); padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; }
-        .prizes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; width: 100%; }
+        
+        .prizes-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
+            width: 100%; 
+        }
+        /* Tablet: 2 Columns */
+        @media (max-width: 1024px) { .prizes-grid { grid-template-columns: repeat(2, 1fr); } }
+        /* Mobile: 1 Column (below 550px) */
+        @media (max-width: 550px) { .prizes-grid { grid-template-columns: 1fr; } }
 
         .prize-card { position: relative; height: 280px; border-radius: 16px; overflow: hidden; background-color: white; cursor: pointer; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(0,0,0,0.05); }
-        .game-img { width: 100%; height: 100%; object-fit: contain; padding: 20px; background: white; }
-        .card-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); padding: 15px 15px; text-align: center; }
+        .prize-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        
+        .game-img { width: 100%; height: 100%; object-fit: contain; padding: 20px; background: white; transition: 0.3s; }
+        
+        .card-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); padding: 15px 15px; text-align: center; border-top: 1px solid rgba(0,0,0,0.05); }
+        .card-overlay h4 { margin: 0; color: var(--clay-text); font-size: 1.1rem; }
         .winner-display { color: var(--gold-dim); font-weight: 700; font-size: 0.9rem; margin-top: 5px; height: 0; overflow: hidden; transition: 0.3s; opacity: 0; }
+        .prize-card.drawn { pointer-events: none; border: 2px solid var(--gold-leaf); }
+        .prize-card.drawn .game-img { opacity: 0.3; filter: grayscale(1); }
         .prize-card.drawn .winner-display { height: auto; opacity: 1; margin-top: 5px; }
         .prize-card.drawn::after { content: "CLAIMED"; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) rotate(-10deg); font-family: 'Playfair Display'; font-style: italic; font-weight: 900; font-size: 2rem; color: var(--gold-leaf); border: 4px solid var(--gold-leaf); padding: 5px 20px; border-radius: 8px; opacity: 0.8; }
 
-        /* --- MODAL DIALOG UPDATES --- */
-        .modal { 
-            display: none; position: fixed; z-index: 2000; left: 0; top: 0; 
-            width: 100%; height: 100%; background: rgba(30, 35, 30, 0.95); 
-            backdrop-filter: blur(8px); padding: 10px; align-items: center; 
-            justify-content: center; overflow: hidden; 
-        }
-        .modal-content-wrapper { 
-            display: flex; flex-direction: column; align-items: center; 
-            justify-content: center; width: 100%; max-width: 900px; 
-            max-height: 95vh; position: relative; gap: 10px;
-        }
-
-        /* Fixed X to the right corner */
-        .close-btn-container { 
-            position: absolute; 
-            top: -20px; 
-            right: -20px; 
-            z-index: 2010;
-        }
-        .close-icon { 
-            color: white; font-size: 1.8rem; cursor: pointer; padding: 5px; width: 45px; height: 45px; 
-            display: flex; align-items: center; justify-content: center; transition: 0.2s; 
-            border-radius: 50%; background: rgba(255,255,255,0.15); 
-        }
+        /* --- MODAL --- */
+        .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(30, 35, 30, 0.95); backdrop-filter: blur(8px); padding: 10px; align-items: center; justify-content: center; overflow: hidden; }
+        .modal-content-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 900px; max-height: 95vh; position: relative; gap: 10px; }
+        
+        .close-btn-container { position: absolute; top: -10px; right: -10px; z-index: 2010; }
+        .close-icon { color: white; font-size: 1.8rem; cursor: pointer; padding: 5px; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; transition: 0.2s; border-radius: 50%; background: rgba(255,255,255,0.15); }
         .close-icon:hover { background: rgba(255,255,255,0.3); }
         
         .modal-layout { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 30px; width: 100%; }
-
+        .modal-image-col { flex: 0 1 30%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
         #modalPrizeImg { width: 100%; max-width: 200px; height: auto; max-height: 20vh; object-fit: contain; border-radius: 12px; border: 3px solid var(--gold-leaf); background: #fff; padding: 8px; box-shadow: 0 0 30px rgba(212, 175, 55, 0.3); }
-
-        /* Brightened Game Name */
-        .modal-prize-title { 
-            color: var(--gold-leaf); 
-            font-family: 'Playfair Display'; 
-            font-size: 1.5rem; 
-            font-weight: 700;
-            text-align: center; 
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-        }
+        .modal-prize-title { color: var(--gold-leaf); font-family: 'Playfair Display'; font-size: 1.6rem; font-weight: 700; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
 
         .wheel-container { position: relative; width: 320px; height: 320px; max-width: 60vh; max-height: 60vh; flex-shrink: 0; }
         canvas { width: 100%; height: 100%; border-radius: 50%; border: 6px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .pointer { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 40px solid var(--gold-leaf); z-index: 10; filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5)); }
         
-        .winner-announce { 
-            font-family: 'Playfair Display', serif; 
-            font-size: clamp(2.5rem, 6vw, 4.5rem); 
-            font-weight: 900; 
-            color: #FFD700; 
-            text-align: center; 
-            min-height: 80px; 
-            opacity: 0; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center;
-            transform: scale(0);
-            transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-
-        .winner-announce.show { 
-            opacity: 1; 
-            transform: scale(1.2);
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 255, 255, 0.4); 
-            animation: pulseGlow 1.5s infinite alternate, popIn 0.5s ease-out forwards;
-        }
-
-        @keyframes popIn {
-            0% { transform: scale(0) rotate(-10deg); opacity: 0; }
-            70% { transform: scale(1.3) rotate(5deg); }
-            100% { transform: scale(1.1) rotate(0deg); opacity: 1; }
-        }
-
-        @keyframes pulseGlow { 
-            0% { transform: scale(1.1); text-shadow: 0 0 20px rgba(255, 215, 0, 0.6); } 
-            100% { transform: scale(1.15); text-shadow: 0 0 40px rgba(255, 215, 0, 1), 0 0 10px white; } 
-        }
+        .winner-announce { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; color: #FFD700; text-align: center; min-height: 80px; opacity: 0; display: flex; align-items: center; justify-content: center; transform: scale(0); transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .winner-announce.show { opacity: 1; transform: scale(1.2); text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 255, 255, 0.4); animation: pulseGlow 1.5s infinite alternate, popIn 0.5s ease-out forwards; }
         
         .spin-btn { background: linear-gradient(135deg, #FFD700, #FDB931); color: #4A443F; padding: 12px 40px; font-size: 1.1rem; border-radius: 50px; border: none; cursor: pointer; font-weight: 800; letter-spacing: 2px; box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3); transition: 0.2s; }
         .spin-btn:hover { transform: scale(1.05); }
+        .footer-controls { margin: 40px 0 20px; opacity: 0.5; text-align: center; }
+        .reset-link { color: var(--alert-red); text-decoration: underline; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
 
         @media (max-width: 768px) {
             .modal-layout { flex-direction: column; gap: 15px; }
             .wheel-container { width: 250px; height: 250px; }
             .close-btn-container { top: 0px; right: 0px; }
         }
+        @keyframes popIn { 0% { transform: scale(0) rotate(-10deg); opacity: 0; } 70% { transform: scale(1.3) rotate(5deg); } 100% { transform: scale(1.1) rotate(0deg); opacity: 1; } }
+        @keyframes pulseGlow { 0% { transform: scale(1.1); text-shadow: 0 0 20px rgba(255, 215, 0, 0.6); } 100% { transform: scale(1.15); text-shadow: 0 0 40px rgba(255, 215, 0, 1), 0 0 10px white; } }
     </style>
 </head>
 <body>
@@ -193,39 +160,67 @@
     </section>
 
     <main id="gameArea" style="opacity: 0.3; pointer-events: none;">
+        
         <section class="game-section">
             <div class="pot-title"><span>Pot A Prizes</span><span class="pot-rules">Opt A (x2) + Opt C (x1)</span></div>
             <div class="prizes-grid">
-			                <div class="prize-card" id="card_dbd" onclick="openDraw('Option A', 'Dead by Daylight', this)"><img src="luckydraw/deadbydaylight.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Dead+By+Daylight'"><div class="card-overlay"><h4>Dead by Daylight</h4><div class="winner-display"></div></div></div>
-			 <div class="prize-card" id="card_beacon" onclick="openDraw('Option A', 'Beacon Patrol', this)"><img src="luckydraw/beacon.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Beacon'"><div class="card-overlay"><h4>Beacon Patrol</h4><div class="winner-display"></div></div></div>
-                <div class="prize-card" id="card_superstore" onclick="openDraw('Option A', 'Superstore 3000', this)"><img src="luckydraw/superstore.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Superstore+3000'"><div class="card-overlay"><h4>Superstore 3000</h4><div class="winner-display"></div></div></div>
-<div class="prize-card" id="card_maracaibo" onclick="openDraw('Option A', 'Maracaibo', this)"><img src="luckydraw/maracaibo.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Maracaibo'"><div class="card-overlay"><h4>Maracaibo</h4><div class="winner-display"></div></div></div>
-                          
-		   <div class="prize-card" id="card_peak" onclick="openDraw('Option A', 'The Peak Team', this)"><img src="luckydraw/peak.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=The+Peak+Team'"><div class="card-overlay"><h4>The Peak Team</h4><div class="winner-display"></div></div></div>
-              <div class="prize-card" id="card_alma" onclick="openDraw('Option A', 'Alma Mater', this)"><img src="luckydraw/alma.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Alma+Mater'"><div class="card-overlay"><h4>Alma Mater</h4><div class="winner-display"></div></div></div>
-             
-			
-             </div>
+                <div class="prize-card" id="card_dbd" onclick="openDraw('Option A', 'Dead by Daylight', this)">
+                    <img src="luckydraw/deadbydaylight.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Dead+By+Daylight'">
+                    <div class="card-overlay"><h4>Dead by Daylight</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_beacon" onclick="openDraw('Option A', 'Beacon Patrol', this)">
+                    <img src="luckydraw/beacon.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Beacon'">
+                    <div class="card-overlay"><h4>Beacon Patrol</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_superstore" onclick="openDraw('Option A', 'Superstore 3000', this)">
+                    <img src="luckydraw/superstore.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Superstore+3000'">
+                    <div class="card-overlay"><h4>Superstore 3000</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_maracaibo" onclick="openDraw('Option A', 'Maracaibo', this)">
+                    <img src="luckydraw/maracaibo.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Maracaibo'">
+                    <div class="card-overlay"><h4>Maracaibo</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_peak" onclick="openDraw('Option A', 'The Peak Team', this)">
+                    <img src="luckydraw/peak.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=The+Peak+Team'">
+                    <div class="card-overlay"><h4>The Peak Team</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_alma" onclick="openDraw('Option A', 'Alma Mater', this)">
+                    <img src="luckydraw/alma.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Alma+Mater'">
+                    <div class="card-overlay"><h4>Alma Mater</h4><div class="winner-display"></div></div>
+                </div>
+            </div>
         </section>
+
         <section class="game-section">
             <div class="pot-title"><span>Pot B Prizes</span><span class="pot-rules">Opt B (x2) + Opt C (x1)</span></div>
             <div class="prizes-grid">
-			<div class="prize-card" id="card_potion" onclick="openDraw('Option B', 'Potion Explosion', this)"><img src="luckydraw/potion.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Potion+Explosion'"><div class="card-overlay"><h4>Potion Explosion</h4><div class="winner-display"></div></div></div>
-             
-     <div class="prize-card" id="card_teagarden" onclick="openDraw('Option B', 'Tea Garden', this)"><img src="luckydraw/teagarden.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Tea+Garden'"><div class="card-overlay"><h4>Tea Garden</h4><div class="winner-display"></div></div></div>
-                <div class="prize-card" id="card_coexist" onclick="openDraw('Option B', 'Coexist', this)"><img src="luckydraw/coexist.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Coexist'"><div class="card-overlay"><h4>Coexist</h4><div class="winner-display"></div></div></div>
-                    
-               <div class="prize-card" id="card_kanagawa" onclick="openDraw('Option B', 'Kanagawa', this)"><img src="luckydraw/kanagawa.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Kanagawa'"><div class="card-overlay"><h4>Kanagawa</h4><div class="winner-display"></div></div></div>
-   
-                <div class="prize-card" id="card_maple" onclick="openDraw('Option B', 'Maple Valley', this)"><img src="luckydraw/maple.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Maple+Valley'"><div class="card-overlay"><h4>Maple Valley</h4><div class="winner-display"></div></div></div>
-   
-   
-   <div class="prize-card" id="card_bdc" onclick="openDraw('Option B', 'Breaking Demons Contract', this)"><img src="luckydraw/bdc.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Breaking+Demon+Contract'"><div class="card-overlay"><h4>Breaking Demon's Contract</h4><div class="winner-display"></div></div></div>
-                               
-
-
-				 </div>
+                <div class="prize-card" id="card_potion" onclick="openDraw('Option B', 'Potion Explosion', this)">
+                    <img src="luckydraw/potion.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Potion+Explosion'">
+                    <div class="card-overlay"><h4>Potion Explosion</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_teagarden" onclick="openDraw('Option B', 'Tea Garden', this)">
+                    <img src="luckydraw/teagarden.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Tea+Garden'">
+                    <div class="card-overlay"><h4>Tea Garden</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_coexist" onclick="openDraw('Option B', 'Coexist', this)">
+                    <img src="luckydraw/coexist.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Coexist'">
+                    <div class="card-overlay"><h4>Coexist</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_kanagawa" onclick="openDraw('Option B', 'Kanagawa', this)">
+                    <img src="luckydraw/kanagawa.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Kanagawa'">
+                    <div class="card-overlay"><h4>Kanagawa</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_maple" onclick="openDraw('Option B', 'Maple Valley', this)">
+                    <img src="luckydraw/maple.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Maple+Valley'">
+                    <div class="card-overlay"><h4>Maple Valley</h4><div class="winner-display"></div></div>
+                </div>
+                <div class="prize-card" id="card_bdc" onclick="openDraw('Option B', 'Breaking Demons Contract', this)">
+                    <img src="luckydraw/bdc.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Breaking+Demon+Contract'">
+                    <div class="card-overlay"><h4>Breaking Demon's Contract</h4><div class="winner-display"></div></div>
+                </div>
+            </div>
         </section>
+
         <div class="footer-controls"><span class="reset-link" onclick="factoryReset()">⚠ Factory Reset</span></div>
     </main>
 
@@ -233,7 +228,10 @@
         <div class="modal-content-wrapper">
             <div class="close-btn-container"><span class="close-icon" onclick="closeModal()">✕</span></div>
             <div class="modal-layout">
-                <div class="modal-image-col"><img id="modalPrizeImg" src="" alt="Prize"><div id="modalPrizeName" class="modal-prize-title">Prize Name</div></div>
+                <div class="modal-image-col">
+                    <img id="modalPrizeImg" src="" alt="Prize">
+                    <div id="modalPrizeName" class="modal-prize-title">Prize Name</div>
+                </div>
                 <div class="wheel-container"><div class="pointer"></div><canvas id="wheelCanvas" width="760" height="760"></canvas></div>
             </div>
             <div id="winnerText" class="winner-announce"></div>
@@ -261,7 +259,7 @@
         }
 
         function fadeInMusic(startAt) {
-            luckyMusic.pause(); luckyMusic.currentTime = startAt; luckyMusic.volume = 0; luckyMusic.play();
+            luckyMusic.pause(); luckyMusic.currentTime = startAt; luckyMusic.volume = 0; luckyMusic.play().catch(e => console.log(e));
             let vol = 0; const interval = setInterval(() => { vol += 0.05; luckyMusic.volume = Math.min(vol, 1); if (vol >= 1) clearInterval(interval); }, 50);
         }
 
@@ -290,7 +288,15 @@
             namesA = document.getElementById('listA').value.split('\n').map(n=>n.trim()).filter(n => n);
             namesB = document.getElementById('listB').value.split('\n').map(n=>n.trim()).filter(n => n);
             namesC = document.getElementById('listC').value.split('\n').map(n=>n.trim()).filter(n => n);
-            if (showConfirm && !confirm(`Total Participants: ${new Set([...namesA, ...namesB, ...namesC]).size}`)) return;
+            
+            const allNames = [...namesA, ...namesB, ...namesC];
+            const uniqueSet = new Set(allNames);
+            
+            if (allNames.length === 0 && showConfirm) return alert("Please enter names.");
+            if (allNames.length !== uniqueSet.size && showConfirm) return alert("⚠️ Duplicate names detected! Participants can only join one option.");
+            
+            if(showConfirm && !confirm(`Ready to start?\nTotal Participants: ${uniqueSet.size}`)) return;
+
             localStorage.setItem('ara_names', JSON.stringify({A: document.getElementById('listA').value, B: document.getElementById('listB').value, C: document.getElementById('listC').value}));
             document.getElementById('setupArea').style.display = 'none'; document.getElementById('participantsBoard').style.display = 'grid'; document.getElementById('gameArea').style.opacity = '1'; document.getElementById('gameArea').style.pointerEvents = 'auto';
             renderParticipants();
@@ -305,12 +311,16 @@
         }
 
         function openDraw(optionType, prizeName, el) {
+            if(el.classList.contains('drawn')) return;
             currentCardEl = el; currentCardId = el.id;
             const usedNames = new Set(Object.values(pastWinners)); currentPool = [];
             let mainList = (optionType === 'Option A') ? namesA : namesB;
             mainList.forEach(n => { if(!usedNames.has(n)) { currentPool.push(n); currentPool.push(n); } });
             namesC.forEach(n => { if(!usedNames.has(n)) { currentPool.push(n); } });
             currentPool.sort(() => Math.random() - 0.5);
+            
+            if(currentPool.length === 0) return alert("No eligible participants left!");
+            
             document.getElementById('modalPrizeImg').src = el.querySelector('.game-img').src;
             document.getElementById('modalPrizeName').innerText = prizeName;
             document.getElementById('wheelModal').style.display = 'flex';
@@ -339,11 +349,12 @@
             if(isSpinning) return; isSpinning = true;
             document.getElementById('spinBtn').style.display = 'none';
             const winnerIdx = Math.floor(Math.random() * currentPool.length), winnerName = currentPool[winnerIdx];
-            const arc = (2 * Math.PI) / currentPool.length, targetRotation = (2 * Math.PI * 12) - (winnerIdx * arc + arc/2) - (Math.PI / 2);
+            const arc = (2 * Math.PI) / currentPool.length, targetRotation = (2 * Math.PI * 15) - (winnerIdx * arc + arc/2) - (Math.PI / 2);
             let start = null, lastTickPoint = -1;
             function animate(time) {
                 if(!start) start = time;
-                const progress = Math.min((time - start) / 7000, 1), ease = 1 - Math.pow(1 - progress, 4);
+                // SPIN DURATION SET TO 10 SECONDS (10000ms)
+                const progress = Math.min((time - start) / 10000, 1), ease = 1 - Math.pow(1 - progress, 4);
                 const currentRot = ease * targetRotation;
                 drawWheel(currentRot);
                 const totalTicks = currentPool.length * 2;
