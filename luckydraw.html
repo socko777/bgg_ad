@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>LUCKY DRAW | ARA BG COMMUNITY</title>
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
@@ -89,10 +88,17 @@
         .p-column h4 { margin: 0 0 10px 0; color: var(--matcha-leaf); font-family: 'Playfair Display'; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         .p-list { list-style: none; padding: 0; margin: 0; }
         .p-item { 
-            padding: 6px 0; border-bottom: 1px solid #fafafa; font-size: 0.9rem; color: var(--clay-text);
-            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 5px; border-bottom: 1px solid #fafafa; font-size: 0.9rem; color: var(--clay-text);
+            display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;
         }
-        .p-item.won { color: var(--gold-leaf); font-weight: 700; text-decoration: line-through; opacity: 0.8; }
+        /* UPDATED STYLE FOR WINNERS: NO STRIKETHROUGH */
+        .p-item.won { 
+            color: var(--gold-leaf); 
+            font-weight: 800; 
+            text-decoration: none; /* Removed line-through */
+            background: rgba(253, 249, 243, 0.5);
+            border-radius: 4px;
+        }
         .p-item.won::after { content: '🏆'; font-style: normal; text-decoration: none; margin-left: 5px; }
 
         @media (max-width: 768px) { .participants-board { grid-template-columns: 1fr; } }
@@ -187,7 +193,7 @@
             <a href="#" class="nav-item active">Lucky Draw</a>
         </div>
     </nav>
-    <header><h1>Valentine & Pre-CNY Draw - 14 Feb 2026</h1></header>
+    <header><h1>Valentine & Pre-CNY Draw</h1></header>
 
     <section class="setup-container" id="setupArea">
         <div class="input-group">
@@ -529,7 +535,7 @@
             winText.innerText = winner;
             winText.classList.add('show');
             
-            // --- INCREASED CONFETTI: RANDOM FIREWORKS FOR 3 SECONDS ---
+            // --- FIREWORKS CONFETTI ---
             var duration = 3 * 1000;
             var animationEnd = Date.now() + duration;
             var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 3000, colors: ['#D4AF37', '#6B7A68', '#FFF', '#FFD700'] };
@@ -542,7 +548,6 @@
 
                 var particleCount = 50 * (timeLeft / duration);
                 
-                // Bursts from random locations
                 confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
                 confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
             }, 250);
@@ -552,7 +557,7 @@
             
             if(currentCardEl) markAsDrawn(currentCardEl, winner);
             
-            // UPDATE THE BOARD WITH THE NEW WINNER
+            // UPDATE THE BOARD
             renderParticipants();
         }
 
