@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Preloved Finale Draw | ARA BG COMMUNITY</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    
+    <style>
+        :root {
+            --bg-silk: #FDF9F3;
+            --matcha-leaf: #6B7A68;
+            --matcha-dark: #4A5747;
+            --clay-text: #4A443F;
+            --white-pure: #FFFFFF;
+            --gold-leaf: #D4AF37;
+            --gold-dim: #C5A028;
+            --alert-red: #D65A5A;
+            --pebble-shadow: rgba(74, 68, 63, 0.12);
+        }
+
+        html { overflow-x: hidden; max-width: 100vw; }
+        body {
+            margin: 0; padding: 0; width: 100%; max-width: 100vw; overflow-x: hidden;
+            background-color: var(--bg-silk);
+            background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+            background-attachment: fixed;
+            color: var(--clay-text);
+            font-family: 'Quicksand', sans-serif;
+            display: flex; flex-direction: column; align-items: center; min-height: 100vh;
+        }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        nav {
+            width: 100%; background: rgba(253, 249, 243, 0.98); backdrop-filter: blur(10px);
+            position: sticky; top: 0; z-index: 1000; padding: 15px 5px;
+            border-bottom: 1px solid rgba(107, 122, 104, 0.08);
+        }
+        .nav-links { display: flex; justify-content: center; gap: clamp(15px, 4vw, 40px); }
+        .nav-item {
+            color: var(--clay-text); text-decoration: none; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 2px; font-weight: 500; opacity: 0.7; transition: 0.3s;
+        }
+        .nav-item.active { color: var(--matcha-leaf); font-weight: 700; border-bottom: 2px solid var(--gold-leaf); opacity: 1; }
+
+        header { padding: 30px 15px 15px; text-align: center; width: 100%; }
+        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: var(--matcha-leaf); font-size: clamp(2rem, 5vw, 3.5rem); margin: 0; text-shadow: 2px 2px 0px rgba(0,0,0,0.05); }
+
+        /* --- SETUP --- */
+        .setup-container {
+            width: 92%; max-width: 800px; margin: 20px auto;
+            background: white; padding: 25px; border-radius: 20px;
+            box-shadow: 0 10px 30px var(--pebble-shadow);
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;
+            transition: all 0.3s ease; border: 1px solid #f0f0f0;
+        }
+        .input-group h3 { margin: 0 0 5px 0; font-family: 'Playfair Display', serif; color: var(--matcha-leaf); display: flex; align-items: center; gap: 8px; }
+        .input-group small { display: block; margin-bottom: 8px; font-size: 0.8rem; opacity: 0.7; font-weight: 700; }
+        textarea { width: 100%; height: 150px; border: 2px solid #eee; border-radius: 12px; padding: 12px; font-family: inherit; font-size: 0.85rem; transition: 0.3s; resize: vertical; }
+        textarea:focus { border-color: var(--matcha-leaf); outline: none; background: #fafdfa; }
+        
+        .btn-row { grid-column: 1 / -1; display: flex; gap: 10px; }
+        .lock-btn { flex: 1; padding: 16px; background: var(--matcha-leaf); color: white; border: none; border-radius: 50px; cursor: pointer; letter-spacing: 2px; font-weight: 700; text-transform: uppercase; transition: 0.2s; box-shadow: 0 5px 15px rgba(107, 122, 104, 0.3); }
+        .lock-btn:hover { background: var(--matcha-dark); transform: translateY(-2px); }
+
+        /* --- ACTION AREA --- */
+        .main-action-area {
+            width: 94%; max-width: 600px; margin: 40px auto;
+            text-align: center; display: none; flex-direction: column; gap: 20px;
+        }
+        .stats-bar {
+            display: flex; justify-content: center; gap: 30px; font-family: 'Playfair Display', serif;
+            color: var(--clay-text); font-size: 1.2rem; margin-bottom: 10px;
+        }
+        .stat-item span { font-weight: 900; color: var(--matcha-leaf); font-size: 1.5rem; }
+
+        .big-draw-btn {
+            background: linear-gradient(135deg, #FFD700, #FDB931);
+            color: #4A443F; padding: 25px 40px; font-size: 1.5rem;
+            border-radius: 16px; border: none; cursor: pointer;
+            font-weight: 900; letter-spacing: 3px;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+            transition: all 0.2s; position: relative; overflow: hidden;
+        }
+        .big-draw-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 15px 35px rgba(212, 175, 55, 0.6); }
+        .big-draw-btn:active { transform: translateY(2px); }
+
+        /* --- WINNERS LIST --- */
+        .winners-section {
+            width: 94%; max-width: 600px; margin: 0 auto 40px;
+            background: white; border-radius: 20px; padding: 25px;
+            box-shadow: 0 5px 20px var(--pebble-shadow);
+            display: none;
+        }
+        .winners-section h3 {
+            text-align: center; font-family: 'Playfair Display'; color: var(--matcha-leaf);
+            border-bottom: 2px solid #eee; padding-bottom: 15px; margin-top: 0;
+        }
+        .winners-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column-reverse; /* Newest on top */ gap: 10px; }
+        .winner-row {
+            padding: 15px; background: var(--bg-silk); border-radius: 10px;
+            display: flex; justify-content: space-between; align-items: center;
+            font-weight: 700; color: var(--clay-text); border: 1px solid rgba(0,0,0,0.05);
+            animation: slideDown 0.5s ease-out;
+        }
+        .winner-row .order { color: var(--matcha-leaf); font-size: 0.8rem; opacity: 0.7; }
+        .winner-row .name { font-size: 1.1rem; }
+        .winner-row::after { content: '🏆'; margin-left: 10px; }
+
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* --- MODAL --- */
+        .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(30, 35, 30, 0.95); backdrop-filter: blur(8px); padding: 10px; align-items: center; justify-content: center; overflow: hidden; }
+        .modal-content-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 900px; max-height: 95vh; position: relative; gap: 20px; transition: transform 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1); }
+        .modal-content-wrapper.thump { transform: scale(1.05); }
+
+        .wheel-container { position: relative; width: 340px; height: 340px; max-width: 80vh; max-height: 80vh; flex-shrink: 0; }
+        canvas { width: 100%; height: 100%; border-radius: 50%; border: 6px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .pointer { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 50px solid var(--gold-leaf); z-index: 10; filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5)); }
+        
+        .winner-announce { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 8vw, 5rem); font-weight: 900; color: #FFD700; text-align: center; min-height: 100px; opacity: 0; display: flex; align-items: center; justify-content: center; transform: scale(0); transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .winner-announce.show { opacity: 1; transform: scale(1.2); text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 255, 255, 0.4); animation: pulseGlow 1.5s infinite alternate, popIn 0.5s ease-out forwards; }
+        
+        .footer-controls { margin: 40px 0 20px; opacity: 0.5; text-align: center; }
+        .reset-link { color: var(--alert-red); text-decoration: underline; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* --- FLASH EFFECT --- */
+        #flash-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: white; z-index: 9999;
+            pointer-events: none; opacity: 0;
+        }
+        #flash-overlay.flash-bang { animation: flashAnim 1.4s cubic-bezier(0.1, 0, 1, 1) forwards; }
+
+        @keyframes popIn { 0% { transform: scale(0) rotate(-10deg); opacity: 0; } 70% { transform: scale(1.3) rotate(5deg); } 100% { transform: scale(1.1) rotate(0deg); opacity: 1; } }
+        @keyframes pulseGlow { 0% { transform: scale(1.1); text-shadow: 0 0 20px rgba(255, 215, 0, 0.6); } 100% { transform: scale(1.15); text-shadow: 0 0 40px rgba(255, 215, 0, 1), 0 0 10px white; } }
+        @keyframes flashAnim {
+            0% { opacity: 0; }
+            1% { opacity: 1; } 
+            40% { opacity: 1; } 
+            100% { opacity: 0; } 
+        }
+    </style>
+</head>
+<body>
+    <div id="flash-overlay"></div>
+
+    
+    <header><h1>Preloved Finale Draw</h1></header>
+
+    <section class="setup-container" id="setupArea">
+        <div class="input-group"><h3>⭐ Regulars</h3><small>2x Entries per person</small><textarea id="listReg" placeholder="Paste names..."></textarea></div>
+        <div class="input-group"><h3>👤 Non-Regulars</h3><small>1x Entry per person</small><textarea id="listNonReg" placeholder="Paste names..."></textarea></div>
+        <div class="btn-row"><button class="lock-btn" onclick="lockLists()">Lock & Start</button></div>
+    </section>
+
+    <main id="gameArea" class="main-action-area">
+        <div class="stats-bar">
+            <div class="stat-item">Remaining: <span id="countRemaining">0</span></div>
+            <div class="stat-item">Drawn: <span id="countDrawn">0</span></div>
+        </div>
+        
+        <button class="big-draw-btn" onclick="startDrawSequence()">
+            <i class="fas fa-ticket-alt"></i> DRAW NEXT WINNER
+        </button>
+
+        <div class="footer-controls"><span class="reset-link" onclick="factoryReset()">⚠ Factory Reset</span></div>
+    </main>
+
+    <section class="winners-section" id="winnersListContainer">
+        <h3>Winners Podium</h3>
+        <ul class="winners-list" id="winnersList"></ul>
+    </section>
+
+    <div id="wheelModal" class="modal">
+        <div class="modal-content-wrapper" id="modalWrapper">
+            <div class="wheel-container"><div class="pointer"></div><canvas id="wheelCanvas" width="760" height="760"></canvas></div>
+            <div id="winnerText" class="winner-announce"></div>
+        </div>
+    </div>
+
+    <audio id="luckyMusic" src="lucky.mp3"></audio>
+
+    <script>
+        // --- AUDIO ENGINE ---
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const luckyMusic = document.getElementById('luckyMusic');
+
+        function playTick(vol) {
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(100, audioCtx.currentTime + 0.04);
+            gain.gain.setValueAtTime(vol, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.04);
+            osc.connect(gain); gain.connect(audioCtx.destination);
+            osc.start(); osc.stop(audioCtx.currentTime + 0.04);
+        }
+
+        function fadeInMusic(startAt) {
+            luckyMusic.pause(); luckyMusic.currentTime = startAt; luckyMusic.volume = 0; luckyMusic.play().catch(e => console.log(e));
+            let vol = 0; const interval = setInterval(() => { vol += 0.05; luckyMusic.volume = Math.min(vol, 1); if (vol >= 1) clearInterval(interval); }, 50);
+        }
+
+        function fadeOutMusic() {
+            let vol = luckyMusic.volume; const interval = setInterval(() => { vol -= 0.1; luckyMusic.volume = Math.max(vol, 0); if (vol <= 0) { luckyMusic.pause(); clearInterval(interval); } }, 50);
+        }
+
+        // --- GAME LOGIC ---
+        let regulars = [], nonRegulars = [], drawnNames = [];
+        let currentPool = [], isSpinning = false, flashTriggered = false;
+        const canvas = document.getElementById('wheelCanvas'), ctx = canvas.getContext('2d');
+        const wheelColors = ['#FF3B30', '#FF9500', '#FFCC00', '#4CD964', '#5AC8FA', '#007AFF', '#5856D6', '#FF2D55', '#E0E0E0', '#34AADC'];
+
+        window.onload = function() {
+            if(localStorage.getItem('ara_simple_setup')) {
+                const setup = JSON.parse(localStorage.getItem('ara_simple_setup'));
+                document.getElementById('listReg').value = setup.reg;
+                document.getElementById('listNonReg').value = setup.non;
+                drawnNames = JSON.parse(localStorage.getItem('ara_simple_drawn') || '[]');
+                lockLists(false);
+            }
+        }
+
+        function lockLists(showConfirm = true) {
+            regulars = document.getElementById('listReg').value.split('\n').map(n=>n.trim()).filter(n => n);
+            nonRegulars = document.getElementById('listNonReg').value.split('\n').map(n=>n.trim()).filter(n => n);
+            
+            const totalRaw = regulars.length + nonRegulars.length;
+            if (totalRaw === 0 && showConfirm) return alert("Please enter names.");
+            
+            // Check for names that are in BOTH lists (optional warning)
+            const overlap = regulars.filter(x => nonRegulars.includes(x));
+            if(overlap.length > 0 && showConfirm) return alert(`Warning: ${overlap.join(', ')} is in both lists!`);
+
+            if(showConfirm && !confirm(`Ready to start?\n${regulars.length} Regulars\n${nonRegulars.length} Non-Regulars`)) return;
+
+            localStorage.setItem('ara_simple_setup', JSON.stringify({
+                reg: document.getElementById('listReg').value, 
+                non: document.getElementById('listNonReg').value
+            }));
+
+            document.getElementById('setupArea').style.display = 'none';
+            document.getElementById('gameArea').style.display = 'flex';
+            document.getElementById('winnersListContainer').style.display = 'block';
+            
+            renderStats();
+            renderWinners();
+        }
+
+        function buildPool() {
+            // Rebuild pool every time, excluding drawn names
+            currentPool = [];
+            // Regulars get 2 entries
+            regulars.forEach(n => { if(!drawnNames.includes(n)) { currentPool.push(n); currentPool.push(n); } });
+            // Non-Regulars get 1 entry
+            nonRegulars.forEach(n => { if(!drawnNames.includes(n)) { currentPool.push(n); } });
+            
+            // Shuffle
+            currentPool.sort(() => Math.random() - 0.5);
+        }
+
+        function startDrawSequence() {
+            buildPool();
+            if(currentPool.length === 0) return alert("No names left in the pool!");
+
+            document.getElementById('wheelModal').style.display = 'flex';
+            document.getElementById('winnerText').classList.remove('show');
+            document.getElementById('winnerText').innerText = "";
+            
+            drawWheel(0);
+            spinWheel();
+        }
+
+        function drawWheel(rotationOffset) {
+            const num = currentPool.length, arc = (2 * Math.PI) / num, centerX = canvas.width / 2, centerY = canvas.height / 2, radius = centerX - 20;
+            ctx.clearRect(0,0, canvas.width, canvas.height);
+            ctx.save(); ctx.translate(centerX, centerY); ctx.rotate(rotationOffset);
+            for(let i=0; i<num; i++){
+                const angle = i * arc; ctx.beginPath(); ctx.moveTo(0,0); ctx.arc(0, 0, radius, angle, angle + arc);
+                ctx.fillStyle = wheelColors[i % wheelColors.length]; ctx.fill(); ctx.strokeStyle = "#000"; ctx.lineWidth = 1; ctx.stroke();
+                if(num < 40) {
+                    ctx.save(); ctx.rotate(angle + arc/2); ctx.textAlign = "right"; ctx.fillStyle = "#000"; ctx.font = "bold 28px Quicksand";
+                    let text = currentPool[i]; if(text.length > 14) text = text.substring(0,12) + "..";
+                    ctx.fillText(text, radius - 40, 10); ctx.restore();
+                }
+            }
+            ctx.restore();
+        }
+
+        function spinWheel() {
+            if(isSpinning) return; isSpinning = true; flashTriggered = false;
+            
+            const winnerIdx = Math.floor(Math.random() * currentPool.length);
+            const winnerName = currentPool[winnerIdx];
+            
+            // High velocity: 50 rotations
+            const arc = (2 * Math.PI) / currentPool.length;
+            const targetRotation = (2 * Math.PI * 50) - (winnerIdx * arc + arc/2) - (Math.PI / 2);
+            
+            let start = null, lastTickPoint = -1;
+            
+            function animate(time) {
+                if(!start) start = time;
+                // 6 seconds duration
+                const progress = Math.min((time - start) / 6000, 1);
+                const ease = 1 - Math.pow(1 - progress, 3);
+                const currentRot = ease * targetRotation;
+                
+                drawWheel(currentRot);
+                
+                // Flashbang trigger at 85%
+                if (progress > 0.85 && !flashTriggered) {
+                    flashTriggered = true;
+                    triggerFlashBang(winnerName);
+                }
+                
+                // Ticks
+                const totalTicks = currentPool.length * 2;
+                const tickArc = (2 * Math.PI) / totalTicks;
+                const normalizedRot = (currentRot + (Math.PI / 2)) % (2 * Math.PI);
+                const currentTickIdx = Math.floor((2 * Math.PI - normalizedRot) / tickArc);
+                if (currentTickIdx !== lastTickPoint) {
+                    const buildUpVol = 0.1 + (progress * 0.3);
+                    playTick(buildUpVol);
+                    lastTickPoint = currentTickIdx;
+                }
+                
+                if(progress < 1) requestAnimationFrame(animate);
+                else {
+                    isSpinning = false;
+                    // Close logic handled by user click on modal close
+                    startConfetti();
+                }
+            }
+            requestAnimationFrame(animate);
+        }
+
+        function triggerFlashBang(winner) {
+            const flash = document.getElementById('flash-overlay');
+            const modalWrap = document.getElementById('modalWrapper');
+            const winText = document.getElementById('winnerText');
+
+            flash.classList.add('flash-bang');
+            modalWrap.classList.add('thump');
+            fadeInMusic(61);
+
+            winText.innerText = winner;
+            winText.classList.add('show');
+            
+            // LOGIC: Add to drawn list immediately
+            if(!drawnNames.includes(winner)) {
+                drawnNames.push(winner);
+                localStorage.setItem('ara_simple_drawn', JSON.stringify(drawnNames));
+            }
+            
+            renderStats();
+            renderWinners();
+
+            setTimeout(() => {
+                flash.classList.remove('flash-bang');
+                modalWrap.classList.remove('thump');
+            }, 1400);
+        }
+
+        function startConfetti() {
+            const interval = setInterval(() => { 
+                if (!document.getElementById('wheelModal').style.display || document.getElementById('wheelModal').style.display === 'none') {
+                    clearInterval(interval);
+                    return;
+                }
+                confetti({ particleCount: 40, spread: 70, origin: { x: Math.random(), y: Math.random() - 0.2 }, zIndex: 3000 }); 
+            }, 200);
+            setTimeout(() => clearInterval(interval), 4000);
+        }
+
+        function closeModal() {
+            if(!isSpinning) {
+                document.getElementById('wheelModal').style.display = 'none';
+                fadeOutMusic();
+                // When closing modal, update UI stats again just in case
+                renderStats();
+            }
+        }
+
+        // Allow clicking background to close modal
+        document.getElementById('wheelModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        function renderStats() {
+            // Calculate unique people remaining
+            const uniqueReg = regulars.filter(n => !drawnNames.includes(n));
+            const uniqueNon = nonRegulars.filter(n => !drawnNames.includes(n));
+            const totalUniqueRemaining = new Set([...uniqueReg, ...uniqueNon]).size;
+            
+            document.getElementById('countRemaining').innerText = totalUniqueRemaining;
+            document.getElementById('countDrawn').innerText = drawnNames.length;
+        }
+
+        function renderWinners() {
+            const list = document.getElementById('winnersList');
+            list.innerHTML = '';
+            drawnNames.forEach((name, index) => {
+                const li = document.createElement('li');
+                li.className = 'winner-row';
+                li.innerHTML = `<span class="order">#${index + 1}</span> <span class="name">${name}</span>`;
+                list.appendChild(li); // Appends to bottom, but CSS flex-direction: column-reverse handles visual order
+            });
+        }
+
+        function factoryReset() {
+            if(confirm("Reset everything? This will clear names and winners.")) {
+                localStorage.clear();
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
