@@ -34,18 +34,6 @@
         }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
-        nav {
-            width: 100%; background: rgba(253, 249, 243, 0.98); backdrop-filter: blur(10px);
-            position: sticky; top: 0; z-index: 1000; padding: 15px 5px;
-            border-bottom: 1px solid rgba(107, 122, 104, 0.08);
-        }
-        .nav-links { display: flex; justify-content: center; gap: clamp(15px, 4vw, 40px); }
-        .nav-item {
-            color: var(--clay-text); text-decoration: none; font-size: 0.75rem;
-            text-transform: uppercase; letter-spacing: 2px; font-weight: 500; opacity: 0.7; transition: 0.3s;
-        }
-        .nav-item.active { color: var(--matcha-leaf); font-weight: 700; border-bottom: 2px solid var(--gold-leaf); opacity: 1; }
-
         header { padding: 30px 15px 15px; text-align: center; width: 100%; }
         h1 { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: var(--matcha-leaf); font-size: clamp(2rem, 5vw, 3.5rem); margin: 0; text-shadow: 2px 2px 0px rgba(0,0,0,0.05); }
 
@@ -71,12 +59,64 @@
             width: 94%; max-width: 1100px; margin: 0 auto 30px;
             display: none; grid-template-columns: repeat(3, 1fr); gap: 20px;
         }
-        .p-column { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(0,0,0,0.03); max-height: 300px; overflow-y: auto; }
-        .p-column h4 { margin: 0 0 10px 0; color: var(--matcha-leaf); font-family: 'Playfair Display'; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .p-column { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(0,0,0,0.03); max-height: 400px; overflow-y: auto; }
+        .p-column h4 { margin: 0 0 5px 0; color: var(--matcha-leaf); font-family: 'Playfair Display'; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .p-help { font-size: 0.7rem; color: #999; margin-bottom: 10px; display: block; font-style: italic; }
+        
         .p-list { list-style: none; padding: 0; margin: 0; }
-        .p-item { padding: 8px 5px; border-bottom: 1px solid #fafafa; font-size: 0.9rem; color: var(--clay-text); display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease; }
-        .p-item.won { color: var(--gold-leaf); font-weight: 800; background: rgba(253, 249, 243, 0.5); border-radius: 4px; }
-        .p-item.won::after { content: '🏆'; font-style: normal; margin-left: 5px; }
+        
+        .p-item { 
+            padding: 10px 5px 10px 30px; 
+            border-bottom: 1px solid #fafafa; 
+            font-size: 0.9rem; 
+            color: var(--clay-text); 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            transition: all 0.2s ease;
+            cursor: pointer; 
+            position: relative;
+            user-select: none;
+        }
+        
+        /* Presence Indicators */
+        .p-item::before { 
+            content: '✅'; 
+            position: absolute; 
+            left: 5px; 
+            font-size: 0.8rem; 
+            opacity: 1; 
+            filter: grayscale(0.5);
+        }
+
+        .p-item:hover { background-color: #fcfcfc; }
+        
+        /* Absent State */
+        .p-item.absent { 
+            opacity: 0.5; 
+            background: #f0f0f0; 
+            color: #999; 
+            text-decoration: line-through;
+        }
+        .p-item.absent::before { 
+            content: '❌'; 
+            opacity: 0.6; 
+            filter: none;
+        }
+
+        /* Won State */
+        .p-item.won { 
+            color: var(--gold-leaf); 
+            font-weight: 800; 
+            background: rgba(253, 249, 243, 0.8); 
+            border-radius: 4px;
+            cursor: default;
+            pointer-events: none; /* Lock winners */
+            text-decoration: none;
+            opacity: 1;
+        }
+        .p-item.won::before { content: '🏆'; filter: none; }
+        
         @media (max-width: 768px) { .participants-board { grid-template-columns: 1fr; } }
 
         /* --- GRID SECTION --- */
@@ -90,9 +130,7 @@
             gap: 20px; 
             width: 100%; 
         }
-        /* Tablet: 2 Columns */
         @media (max-width: 1024px) { .prizes-grid { grid-template-columns: repeat(2, 1fr); } }
-        /* Mobile: 1 Column (below 550px) */
         @media (max-width: 550px) { .prizes-grid { grid-template-columns: 1fr; } }
 
         .prize-card { position: relative; height: 280px; border-radius: 16px; overflow: hidden; background-color: white; cursor: pointer; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(0,0,0,0.05); }
@@ -111,8 +149,6 @@
         /* --- MODAL --- */
         .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(30, 35, 30, 0.95); backdrop-filter: blur(8px); padding: 10px; align-items: center; justify-content: center; overflow: hidden; }
         .modal-content-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 900px; max-height: 95vh; position: relative; gap: 10px; transition: transform 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1); }
-        
-        /* New thumping effect for modal container during reveal */
         .modal-content-wrapper.thump { transform: scale(1.05); }
 
         .close-btn-container { position: absolute; top: -10px; right: -10px; z-index: 2010; }
@@ -151,13 +187,11 @@
         }
         @keyframes popIn { 0% { transform: scale(0) rotate(-10deg); opacity: 0; } 70% { transform: scale(1.3) rotate(5deg); } 100% { transform: scale(1.1) rotate(0deg); opacity: 1; } }
         @keyframes pulseGlow { 0% { transform: scale(1.1); text-shadow: 0 0 20px rgba(255, 215, 0, 0.6); } 100% { transform: scale(1.15); text-shadow: 0 0 40px rgba(255, 215, 0, 1), 0 0 10px white; } }
-        
-        /* Adjusted timing to hold white longer */
         @keyframes flashAnim {
             0% { opacity: 0; }
-            1% { opacity: 1; } /* Instant white out */
-            40% { opacity: 1; } /* Hold white longer */
-            100% { opacity: 0; } /* Fade out */
+            1% { opacity: 1; }
+            40% { opacity: 1; }
+            100% { opacity: 0; }
         }
     </style>
 </head>
@@ -173,9 +207,9 @@
     </section>
 
     <section class="participants-board" id="participantsBoard">
-        <div class="p-column"><h4>🔵 Option A</h4><ul class="p-list" id="displayListA"></ul></div>
-        <div class="p-column"><h4>🟢 Option B</h4><ul class="p-list" id="displayListB"></ul></div>
-        <div class="p-column"><h4>🟡 Option C</h4><ul class="p-list" id="displayListC"></ul></div>
+        <div class="p-column"><h4>🔵 Option A</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListA"></ul></div>
+        <div class="p-column"><h4>🟢 Option B</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListB"></ul></div>
+        <div class="p-column"><h4>🟡 Option C</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListC"></ul></div>
     </section>
 
     <main id="gameArea" style="opacity: 0.3; pointer-events: none;">
@@ -289,8 +323,9 @@
 
         let namesA = [], namesB = [], namesC = [];
         let pastWinners = JSON.parse(localStorage.getItem('ara_winners') || '{}'); 
+        let absentPlayers = new Set(JSON.parse(localStorage.getItem('ara_absent') || '[]'));
         let currentPool = [], currentCardId = null, currentCardEl = null, isSpinning = false;
-        let flashTriggered = false; // Prevents double flashing
+        let flashTriggered = false; 
         const canvas = document.getElementById('wheelCanvas'), ctx = canvas.getContext('2d');
         const wheelColors = ['#FF3B30', '#FF9500', '#FFCC00', '#4CD964', '#5AC8FA', '#007AFF', '#5856D6', '#FF2D55', '#E0E0E0', '#34AADC'];
 
@@ -325,28 +360,64 @@
 
         function renderParticipants() {
             const winners = Object.values(pastWinners);
-            const createListHTML = (names) => names.map(n => `<li class="p-item ${winners.includes(n) ? 'won' : ''}">${n}</li>`).join('');
+            
+            const createListHTML = (names) => names.map(n => {
+                const isWon = winners.includes(n);
+                const isAbsent = absentPlayers.has(n);
+                
+                let classes = 'p-item';
+                if(isWon) classes += ' won';
+                else if(isAbsent) classes += ' absent';
+                
+                // Only allow toggle if not won
+                const clickAction = isWon ? '' : `onclick="togglePresence('${n}')"`;
+                
+                return `<li class="${classes}" ${clickAction}>${n}</li>`;
+            }).join('');
+
             document.getElementById('displayListA').innerHTML = createListHTML(namesA);
             document.getElementById('displayListB').innerHTML = createListHTML(namesB);
             document.getElementById('displayListC').innerHTML = createListHTML(namesC);
+        }
+
+        function togglePresence(name) {
+            if (absentPlayers.has(name)) {
+                absentPlayers.delete(name);
+            } else {
+                absentPlayers.add(name);
+            }
+            localStorage.setItem('ara_absent', JSON.stringify([...absentPlayers]));
+            renderParticipants();
         }
 
         function openDraw(optionType, prizeName, el) {
             if(el.classList.contains('drawn')) return;
             currentCardEl = el; currentCardId = el.id;
             const usedNames = new Set(Object.values(pastWinners)); currentPool = [];
+            
             let mainList = (optionType === 'Option A') ? namesA : namesB;
-            mainList.forEach(n => { if(!usedNames.has(n)) { currentPool.push(n); currentPool.push(n); } });
-            namesC.forEach(n => { if(!usedNames.has(n)) { currentPool.push(n); } });
+            
+            // Build pool - EXCLUDING absent players and winners
+            mainList.forEach(n => { 
+                if(!usedNames.has(n) && !absentPlayers.has(n)) { 
+                    currentPool.push(n); currentPool.push(n); 
+                } 
+            });
+            namesC.forEach(n => { 
+                if(!usedNames.has(n) && !absentPlayers.has(n)) { 
+                    currentPool.push(n); 
+                } 
+            });
+            
             currentPool.sort(() => Math.random() - 0.5);
             
-            if(currentPool.length === 0) return alert("No eligible participants left!");
+            if(currentPool.length === 0) return alert("No eligible (and present) participants left!");
             
             document.getElementById('modalPrizeImg').src = el.querySelector('.game-img').src;
             document.getElementById('modalPrizeName').innerText = prizeName;
             document.getElementById('wheelModal').style.display = 'flex';
             document.getElementById('winnerText').classList.remove('show');
-            document.getElementById('winnerText').innerText = ""; // clear old text
+            document.getElementById('winnerText').innerText = ""; 
             document.getElementById('spinBtn').style.display = 'block';
             drawWheel(0);
         }
@@ -371,19 +442,18 @@
             if(isSpinning) return; isSpinning = true; flashTriggered = false;
             document.getElementById('spinBtn').style.display = 'none';
             const winnerIdx = Math.floor(Math.random() * currentPool.length), winnerName = currentPool[winnerIdx];
-            // INCREASED VELOCITY: 50 Rotations instead of 15
+            // INCREASED VELOCITY: 50 Rotations
             const arc = (2 * Math.PI) / currentPool.length, targetRotation = (2 * Math.PI * 50) - (winnerIdx * arc + arc/2) - (Math.PI / 2);
             let start = null, lastTickPoint = -1;
             
             function animate(time) {
                 if(!start) start = time;
-                // DECREASED DURATION: 6000ms (6 seconds) instead of 10000ms
+                // DURATION: 6000ms
                 const progress = Math.min((time - start) / 6000, 1), ease = 1 - Math.pow(1 - progress, 3);
                 const currentRot = ease * targetRotation;
                 drawWheel(currentRot);
                 
-                // --- THE FLASHBANG TRIGGER ---
-                // Trigger at 85% progress to hide the slow down
+                // --- FLASHBANG TRIGGER ---
                 if (progress > 0.85 && !flashTriggered) {
                     flashTriggered = true;
                     triggerFlashBang(winnerName);
@@ -410,34 +480,26 @@
             const modalWrap = document.getElementById('modalWrapper');
             const winText = document.getElementById('winnerText');
 
-            // 1. Blast white
             flash.classList.add('flash-bang');
             modalWrap.classList.add('thump');
-
-            // 2. Start Music NOW (synced with the flash, not the spin end)
             fadeInMusic(61);
 
-            // 3. Set text while screen is white
             winText.innerText = winner;
             winText.classList.add('show');
             
-            // 4. Save data immediately
             pastWinners[currentCardId] = winner; 
             localStorage.setItem('ara_winners', JSON.stringify(pastWinners));
             if(currentCardEl) markAsDrawn(currentCardEl, winner);
             renderParticipants();
 
-            // 5. Cleanup Flash Classes
             setTimeout(() => {
                 flash.classList.remove('flash-bang');
                 modalWrap.classList.remove('thump');
-            }, 1400); // Matches animation duration
+            }, 1400); 
         }
 
         function finishSpinCleanup(winner) {
             isSpinning = false;
-            // Music and text already handled in flash trigger.
-            // Just trigger confetti now.
             const interval = setInterval(() => { 
                 if (!document.getElementById('wheelModal').style.display || document.getElementById('wheelModal').style.display === 'none') {
                     clearInterval(interval);
