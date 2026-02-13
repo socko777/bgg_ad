@@ -68,7 +68,7 @@
 
         /* --- ACTION AREA --- */
         .main-action-area {
-            width: 94%; max-width: 600px; margin: 40px auto;
+            width: 94%; max-width: 600px; margin: 20px auto;
             text-align: center; display: none; flex-direction: column; gap: 20px;
         }
         .stats-bar {
@@ -76,6 +76,27 @@
             color: var(--wine-text); font-size: 1.2rem; margin-bottom: 10px;
         }
         .stat-item span { font-weight: 900; color: var(--primary-rose); font-size: 1.5rem; }
+
+        /* --- PARTICIPANT TOGGLE AREA --- */
+        .participant-section {
+            background: white; border-radius: 16px; padding: 15px; margin-bottom: 10px;
+            box-shadow: 0 4px 15px var(--pebble-shadow); border: 1px solid #ffe4e1;
+        }
+        .participant-section h3 { margin: 0 0 5px; color: var(--primary-rose); font-family: 'Playfair Display', serif; font-size: 1.2rem; }
+        .participant-list {
+            display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; 
+            max-height: 180px; overflow-y: auto; padding: 10px 5px;
+        }
+        .participant-tag {
+            background: var(--primary-rose); color: white; padding: 6px 14px; border-radius: 20px;
+            font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: 0.2s; user-select: none;
+            box-shadow: 0 2px 5px rgba(216, 27, 96, 0.2);
+        }
+        .participant-tag:hover { transform: scale(1.05); }
+        .participant-tag.disabled {
+            background: #e9ecef; color: #adb5bd; text-decoration: line-through; 
+            box-shadow: none; transform: none; border: 1px solid #dee2e6;
+        }
 
         .big-draw-btn {
             background: linear-gradient(135deg, #FF1493, #FF69B4);
@@ -148,7 +169,6 @@
 <body>
     <div id="flash-overlay"></div>
 
-    
     <header><h1>Preloved Draw</h1></header>
 
     <section class="setup-container" id="setupArea">
@@ -159,8 +179,14 @@
 
     <main id="gameArea" class="main-action-area">
         <div class="stats-bar">
-            <div class="stat-item">Remaining: <span id="countRemaining">0</span></div>
+            <div class="stat-item">Active: <span id="countRemaining">0</span></div>
             <div class="stat-item">Drawn: <span id="countDrawn">0</span></div>
+        </div>
+        
+        <div class="participant-section" id="participantSection">
+            <h3>Active Pool</h3>
+            <p style="font-size: 0.8rem; opacity: 0.7; margin: 0 0 10px 0;">Tap a name to disable/enable them for the next spin.</p>
+            <div id="participantList" class="participant-list"></div>
         </div>
         
         <button class="big-draw-btn" onclick="startDrawSequence()">
@@ -182,7 +208,7 @@
         </div>
     </div>
 
-    <audio id="luckyMusic" src="celebration.mp3"></audio>
+    <audio id="luckyMusic" src="cupid.mp3"></audio>
 
     <script>
         // --- AUDIO ENGINE ---
@@ -212,7 +238,7 @@
         }
 
         // --- GAME LOGIC ---
-        let regulars = [], nonRegulars = [], drawnNames = [];
+        let regulars = [], nonRegulars = [], drawnNames = [], disabledNames = [];
         let currentPool = [], isSpinning = false, flashTriggered = false;
         const canvas = document.getElementById('wheelCanvas'), ctx = canvas.getContext('2d');
         
@@ -225,6 +251,7 @@
                 document.getElementById('listReg').value = setup.reg;
                 document.getElementById('listNonReg').value = setup.non;
                 drawnNames = JSON.parse(localStorage.getItem('ara_simple_drawn') || '[]');
+                disabledNames = JSON.parse(localStorage.getItem('ara_simple_disabled') || '[]');
                 lockLists(false);
             }
         }
@@ -236,7 +263,6 @@
             const totalRaw = regulars.length + nonRegulars.length;
             if (totalRaw === 0 && showConfirm) return alert("Please enter names.");
             
-            // Check for names that are in BOTH lists (optional warning)
             const overlap = regulars.filter(x => nonRegulars.includes(x));
             if(overlap.length > 0 && showConfirm) return alert(`Warning: ${overlap.join(', ')} is in both lists!`);
 
@@ -251,25 +277,61 @@
             document.getElementById('gameArea').style.display = 'flex';
             document.getElementById('winnersListContainer').style.display = 'block';
             
+            renderParticipantList();
             renderStats();
             renderWinners();
         }
 
-        function buildPool() {
-            // Rebuild pool every time, excluding drawn names
-            currentPool = [];
-            // Regulars get 2 entries
-            regulars.forEach(n => { if(!drawnNames.includes(n)) { currentPool.push(n); currentPool.push(n); } });
-            // Non-Regulars get 1 entry
-            nonRegulars.forEach(n => { if(!drawnNames.includes(n)) { currentPool.push(n); } });
+        function renderParticipantList() {
+            const listContainer = document.getElementById('participantList');
+            listContainer.innerHTML = '';
             
-            // Shuffle
+            // Get all unique names that haven't been drawn yet
+            const allUnique = [...new Set([...regulars, ...nonRegulars])].filter(n => !drawnNames.includes(n));
+            
+            allUnique.forEach(name => {
+                const tag = document.createElement('span');
+                tag.className = 'participant-tag';
+                if (disabledNames.includes(name)) {
+                    tag.classList.add('disabled');
+                }
+                tag.innerText = name;
+                tag.onclick = () => toggleParticipant(name);
+                listContainer.appendChild(tag);
+            });
+        }
+
+        function toggleParticipant(name) {
+            if (disabledNames.includes(name)) {
+                disabledNames = disabledNames.filter(n => n !== name);
+            } else {
+                disabledNames.push(name);
+            }
+            localStorage.setItem('ara_simple_disabled', JSON.stringify(disabledNames));
+            renderParticipantList();
+            renderStats();
+        }
+
+        function buildPool() {
+            currentPool = [];
+            // Skip anyone drawn or disabled
+            regulars.forEach(n => { 
+                if(!drawnNames.includes(n) && !disabledNames.includes(n)) { 
+                    currentPool.push(n); currentPool.push(n); 
+                } 
+            });
+            nonRegulars.forEach(n => { 
+                if(!drawnNames.includes(n) && !disabledNames.includes(n)) { 
+                    currentPool.push(n); 
+                } 
+            });
+            
             currentPool.sort(() => Math.random() - 0.5);
         }
 
         function startDrawSequence() {
             buildPool();
-            if(currentPool.length === 0) return alert("No names left in the pool!");
+            if(currentPool.length === 0) return alert("No active names left in the pool!");
 
             document.getElementById('wheelModal').style.display = 'flex';
             document.getElementById('winnerText').classList.remove('show');
@@ -302,7 +364,6 @@
             const winnerIdx = Math.floor(Math.random() * currentPool.length);
             const winnerName = currentPool[winnerIdx];
             
-            // High velocity: 50 rotations
             const arc = (2 * Math.PI) / currentPool.length;
             const targetRotation = (2 * Math.PI * 50) - (winnerIdx * arc + arc/2) - (Math.PI / 2);
             
@@ -310,20 +371,17 @@
             
             function animate(time) {
                 if(!start) start = time;
-                // 6 seconds duration
                 const progress = Math.min((time - start) / 6000, 1);
                 const ease = 1 - Math.pow(1 - progress, 3);
                 const currentRot = ease * targetRotation;
                 
                 drawWheel(currentRot);
                 
-                // Flashbang trigger at 85%
                 if (progress > 0.85 && !flashTriggered) {
                     flashTriggered = true;
                     triggerFlashBang(winnerName);
                 }
                 
-                // Ticks
                 const totalTicks = currentPool.length * 2;
                 const tickArc = (2 * Math.PI) / totalTicks;
                 const normalizedRot = (currentRot + (Math.PI / 2)) % (2 * Math.PI);
@@ -337,7 +395,6 @@
                 if(progress < 1) requestAnimationFrame(animate);
                 else {
                     isSpinning = false;
-                    // Close logic handled by user click on modal close
                     startConfetti();
                 }
             }
@@ -351,12 +408,11 @@
 
             flash.classList.add('flash-bang');
             modalWrap.classList.add('thump');
-            fadeInMusic(109);
+            fadeInMusic(39);
 
             winText.innerText = winner;
             winText.classList.add('show');
             
-            // LOGIC: Add to drawn list immediately
             if(!drawnNames.includes(winner)) {
                 drawnNames.push(winner);
                 localStorage.setItem('ara_simple_drawn', JSON.stringify(drawnNames));
@@ -364,6 +420,8 @@
             
             renderStats();
             renderWinners();
+            // Remove winner from visual active list instantly
+            renderParticipantList();
 
             setTimeout(() => {
                 flash.classList.remove('flash-bang');
@@ -377,7 +435,6 @@
                     clearInterval(interval);
                     return;
                 }
-                // Pink and red confetti
                 confetti({ 
                     particleCount: 40, 
                     spread: 70, 
@@ -393,23 +450,21 @@
             if(!isSpinning) {
                 document.getElementById('wheelModal').style.display = 'none';
                 fadeOutMusic();
-                // When closing modal, update UI stats again just in case
                 renderStats();
             }
         }
 
-        // Allow clicking background to close modal
         document.getElementById('wheelModal').addEventListener('click', function(e) {
             if (e.target === this) closeModal();
         });
 
         function renderStats() {
-            // Calculate unique people remaining
-            const uniqueReg = regulars.filter(n => !drawnNames.includes(n));
-            const uniqueNon = nonRegulars.filter(n => !drawnNames.includes(n));
-            const totalUniqueRemaining = new Set([...uniqueReg, ...uniqueNon]).size;
+            // Stats now reflect only ACTIVE people (not drawn, not disabled)
+            const uniqueReg = regulars.filter(n => !drawnNames.includes(n) && !disabledNames.includes(n));
+            const uniqueNon = nonRegulars.filter(n => !drawnNames.includes(n) && !disabledNames.includes(n));
+            const totalActiveRemaining = new Set([...uniqueReg, ...uniqueNon]).size;
             
-            document.getElementById('countRemaining').innerText = totalUniqueRemaining;
+            document.getElementById('countRemaining').innerText = totalActiveRemaining;
             document.getElementById('countDrawn').innerText = drawnNames.length;
         }
 
@@ -420,7 +475,7 @@
                 const li = document.createElement('li');
                 li.className = 'winner-row';
                 li.innerHTML = `<span class="order">#${index + 1}</span> <span class="name">${name}</span>`;
-                list.appendChild(li); // Appends to bottom, but CSS flex-direction: column-reverse handles visual order
+                list.appendChild(li); 
             });
         }
 
