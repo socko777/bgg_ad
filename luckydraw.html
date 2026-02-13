@@ -200,8 +200,8 @@
     <header><h1>Main Draw</h1></header>
 
     <section class="setup-container" id="setupArea">
-        <div class="input-group"><h3>❤️ Option A</h3><small>Pot 1 (2 entries/person)</small><textarea id="listA" placeholder="Paste names..."></textarea></div>
-        <div class="input-group"><h3>💖 Option B</h3><small>Pot 2 (2 entries/person)</small><textarea id="listB" placeholder="Paste names..."></textarea></div>
+        <div class="input-group"><h3>❤️ Option A</h3><small>Pot A (2 entries/person)</small><textarea id="listA" placeholder="Paste names..."></textarea></div>
+        <div class="input-group"><h3>💖 Option B</h3><small>Pot B (2 entries/person)</small><textarea id="listB" placeholder="Paste names..."></textarea></div>
         <div class="input-group"><h3>💘 Option C</h3><small>ALL Pots (1 entry/person)</small><textarea id="listC" placeholder="Paste names..."></textarea></div>
         <div class="btn-row"><button class="lock-btn" onclick="lockLists()">Lock & Start Game</button></div>
     </section>
@@ -215,7 +215,7 @@
     <main id="gameArea" style="opacity: 0.3; pointer-events: none;">
         
         <section class="game-section">
-            <div class="pot-title"><span>Pot 1 Prizes</span><span class="pot-rules">Opt A (x2) + Opt C (x1)</span></div>
+            <div class="pot-title"><span>Pot A Prizes</span><span class="pot-rules">Opt A (x2) + Opt C (x1)</span></div>
             <div class="prizes-grid">
                 <div class="prize-card" id="card_dbd" onclick="openDraw('Option A', 'Dead by Daylight', this)">
                     <img src="luckydraw/deadbydaylight.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Dead+By+Daylight'">
@@ -249,7 +249,7 @@
         </section>
 
         <section class="game-section">
-            <div class="pot-title"><span>Pot 2 Prizes</span><span class="pot-rules">Opt B (x2) + Opt C (x1)</span></div>
+            <div class="pot-title"><span>Pot B Prizes</span><span class="pot-rules">Opt B (x2) + Opt C (x1)</span></div>
             <div class="prizes-grid">
                 <div class="prize-card" id="card_potion" onclick="openDraw('Option B', 'Potion Explosion', this)">
                     <img src="luckydraw/potion.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Potion+Explosion'">
