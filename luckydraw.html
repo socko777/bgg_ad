@@ -11,15 +11,15 @@
     
     <style>
         :root {
-            --bg-silk: #FDF9F3;
-            --matcha-leaf: #6B7A68;
-            --matcha-dark: #4A5747;
-            --clay-text: #4A443F;
+            --bg-silk: #FFF0F5; /* Soft blush pink */
+            --primary-rose: #D81B60; /* Deep romantic rose */
+            --rose-dark: #AD1457;
+            --wine-text: #4A0E17; /* Deep wine/maroon */
             --white-pure: #FFFFFF;
-            --gold-leaf: #D4AF37;
+            --gold-leaf: #D4AF37; /* Keeping gold for that premium prize feel */
             --gold-dim: #C5A028;
-            --alert-red: #D65A5A;
-            --pebble-shadow: rgba(74, 68, 63, 0.12);
+            --alert-red: #D32F2F;
+            --pebble-shadow: rgba(216, 27, 96, 0.12); /* Tinted shadow */
         }
 
         html { overflow-x: hidden; max-width: 100vw; }
@@ -28,14 +28,14 @@
             background-color: var(--bg-silk);
             background-image: url("https://www.transparenttextures.com/patterns/paper.png");
             background-attachment: fixed;
-            color: var(--clay-text);
+            color: var(--wine-text);
             font-family: 'Quicksand', sans-serif;
             display: flex; flex-direction: column; align-items: center; min-height: 100vh;
         }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
         header { padding: 30px 15px 15px; text-align: center; width: 100%; }
-        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: var(--matcha-leaf); font-size: clamp(2rem, 5vw, 3.5rem); margin: 0; text-shadow: 2px 2px 0px rgba(0,0,0,0.05); }
+        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: var(--primary-rose); font-size: clamp(2rem, 5vw, 3.5rem); margin: 0; text-shadow: 2px 2px 0px rgba(0,0,0,0.05); }
 
         /* --- SETUP --- */
         .setup-container {
@@ -43,33 +43,33 @@
             background: white; padding: 25px; border-radius: 20px;
             box-shadow: 0 10px 30px var(--pebble-shadow);
             display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;
-            transition: all 0.3s ease; border: 1px solid #f0f0f0;
+            transition: all 0.3s ease; border: 1px solid #ffe4e1;
         }
-        .input-group h3 { margin: 0 0 5px 0; font-family: 'Playfair Display', serif; color: var(--matcha-leaf); display: flex; align-items: center; gap: 8px; }
+        .input-group h3 { margin: 0 0 5px 0; font-family: 'Playfair Display', serif; color: var(--primary-rose); display: flex; align-items: center; gap: 8px; }
         .input-group small { display: block; margin-bottom: 8px; font-size: 0.8rem; opacity: 0.7; font-weight: 700; }
-        textarea { width: 100%; height: 120px; border: 2px solid #eee; border-radius: 12px; padding: 12px; font-family: inherit; font-size: 0.85rem; transition: 0.3s; resize: vertical; }
-        textarea:focus { border-color: var(--matcha-leaf); outline: none; background: #fafdfa; }
+        textarea { width: 100%; height: 120px; border: 2px solid #ffe4e1; border-radius: 12px; padding: 12px; font-family: inherit; font-size: 0.85rem; transition: 0.3s; resize: vertical; }
+        textarea:focus { border-color: var(--primary-rose); outline: none; background: #fffcfd; }
         
         .btn-row { grid-column: 1 / -1; display: flex; gap: 10px; }
-        .lock-btn { flex: 1; padding: 16px; background: var(--matcha-leaf); color: white; border: none; border-radius: 50px; cursor: pointer; letter-spacing: 2px; font-weight: 700; text-transform: uppercase; transition: 0.2s; box-shadow: 0 5px 15px rgba(107, 122, 104, 0.3); }
-        .lock-btn:hover { background: var(--matcha-dark); transform: translateY(-2px); }
+        .lock-btn { flex: 1; padding: 16px; background: var(--primary-rose); color: white; border: none; border-radius: 50px; cursor: pointer; letter-spacing: 2px; font-weight: 700; text-transform: uppercase; transition: 0.2s; box-shadow: 0 5px 15px rgba(216, 27, 96, 0.3); }
+        .lock-btn:hover { background: var(--rose-dark); transform: translateY(-2px); }
 
         /* --- BOARD --- */
         .participants-board {
             width: 94%; max-width: 1100px; margin: 0 auto 30px;
             display: none; grid-template-columns: repeat(3, 1fr); gap: 20px;
         }
-        .p-column { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(0,0,0,0.03); max-height: 400px; overflow-y: auto; }
-        .p-column h4 { margin: 0 0 5px 0; color: var(--matcha-leaf); font-family: 'Playfair Display'; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        .p-help { font-size: 0.7rem; color: #999; margin-bottom: 10px; display: block; font-style: italic; }
+        .p-column { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(216, 27, 96, 0.05); max-height: 400px; overflow-y: auto; }
+        .p-column h4 { margin: 0 0 5px 0; color: var(--primary-rose); font-family: 'Playfair Display'; border-bottom: 1px solid #ffe4e1; padding-bottom: 5px; }
+        .p-help { font-size: 0.7rem; color: #b38b93; margin-bottom: 10px; display: block; font-style: italic; }
         
         .p-list { list-style: none; padding: 0; margin: 0; }
         
         .p-item { 
             padding: 10px 5px 10px 30px; 
-            border-bottom: 1px solid #fafafa; 
+            border-bottom: 1px solid #fff5f7; 
             font-size: 0.9rem; 
-            color: var(--clay-text); 
+            color: var(--wine-text); 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
@@ -79,50 +79,50 @@
             user-select: none;
         }
         
-        /* Presence Indicators */
+        /* Presence Indicators - Valentine Theme */
         .p-item::before { 
-            content: '✅'; 
+            content: '❤️'; 
             position: absolute; 
             left: 5px; 
             font-size: 0.8rem; 
             opacity: 1; 
-            filter: grayscale(0.5);
+            filter: grayscale(0.3) opacity(0.8);
         }
 
-        .p-item:hover { background-color: #fcfcfc; }
+        .p-item:hover { background-color: #fffafb; }
         
         /* Absent State */
         .p-item.absent { 
             opacity: 0.5; 
-            background: #f0f0f0; 
-            color: #999; 
+            background: #f7ebed; 
+            color: #99787e; 
             text-decoration: line-through;
         }
         .p-item.absent::before { 
-            content: '❌'; 
-            opacity: 0.6; 
+            content: '💔'; 
+            opacity: 0.8; 
             filter: none;
         }
 
         /* Won State */
         .p-item.won { 
-            color: var(--gold-leaf); 
+            color: var(--primary-rose); 
             font-weight: 800; 
-            background: rgba(253, 249, 243, 0.8); 
+            background: rgba(255, 240, 245, 0.8); 
             border-radius: 4px;
             cursor: default;
             pointer-events: none; /* Lock winners */
             text-decoration: none;
             opacity: 1;
         }
-        .p-item.won::before { content: '🏆'; filter: none; }
+        .p-item.won::before { content: '💝'; filter: none; }
         
         @media (max-width: 768px) { .participants-board { grid-template-columns: 1fr; } }
 
         /* --- GRID SECTION --- */
         .game-section { width: 94%; max-width: 1100px; margin: 10px auto 40px; }
-        .pot-title { font-family: 'Playfair Display', serif; color: var(--matcha-leaf); font-size: clamp(1.4rem, 4vw, 2rem); border-bottom: 2px solid var(--gold-leaf); margin-bottom: 25px; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .pot-rules { font-family: 'Quicksand'; font-size: 0.75rem; color: white; background: var(--matcha-leaf); padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; }
+        .pot-title { font-family: 'Playfair Display', serif; color: var(--primary-rose); font-size: clamp(1.4rem, 4vw, 2rem); border-bottom: 2px solid var(--gold-leaf); margin-bottom: 25px; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .pot-rules { font-family: 'Quicksand'; font-size: 0.75rem; color: white; background: var(--primary-rose); padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; }
         
         .prizes-grid { 
             display: grid; 
@@ -133,21 +133,21 @@
         @media (max-width: 1024px) { .prizes-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 550px) { .prizes-grid { grid-template-columns: 1fr; } }
 
-        .prize-card { position: relative; height: 280px; border-radius: 16px; overflow: hidden; background-color: white; cursor: pointer; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(0,0,0,0.05); }
-        .prize-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .prize-card { position: relative; height: 280px; border-radius: 16px; overflow: hidden; background-color: white; cursor: pointer; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); box-shadow: 0 5px 15px var(--pebble-shadow); border: 1px solid rgba(216, 27, 96, 0.05); }
+        .prize-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(216, 27, 96, 0.15); }
         
         .game-img { width: 100%; height: 100%; object-fit: contain; padding: 20px; background: white; transition: 0.3s; }
         
-        .card-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); padding: 15px 15px; text-align: center; border-top: 1px solid rgba(0,0,0,0.05); }
-        .card-overlay h4 { margin: 0; color: var(--clay-text); font-size: 1.1rem; }
-        .winner-display { color: var(--gold-dim); font-weight: 700; font-size: 0.9rem; margin-top: 5px; height: 0; overflow: hidden; transition: 0.3s; opacity: 0; }
-        .prize-card.drawn { pointer-events: none; border: 2px solid var(--gold-leaf); }
-        .prize-card.drawn .game-img { opacity: 0.3; filter: grayscale(1); }
+        .card-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); padding: 15px 15px; text-align: center; border-top: 1px solid rgba(216, 27, 96, 0.1); }
+        .card-overlay h4 { margin: 0; color: var(--wine-text); font-size: 1.1rem; }
+        .winner-display { color: var(--primary-rose); font-weight: 700; font-size: 0.9rem; margin-top: 5px; height: 0; overflow: hidden; transition: 0.3s; opacity: 0; }
+        .prize-card.drawn { pointer-events: none; border: 2px solid var(--primary-rose); }
+        .prize-card.drawn .game-img { opacity: 0.3; filter: grayscale(0.5) sepia(0.5) hue-rotate(-50deg) saturate(2); }
         .prize-card.drawn .winner-display { height: auto; opacity: 1; margin-top: 5px; }
-        .prize-card.drawn::after { content: "CLAIMED"; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) rotate(-10deg); font-family: 'Playfair Display'; font-style: italic; font-weight: 900; font-size: 2rem; color: var(--gold-leaf); border: 4px solid var(--gold-leaf); padding: 5px 20px; border-radius: 8px; opacity: 0.8; }
+        .prize-card.drawn::after { content: "CLAIMED ❤️"; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) rotate(-10deg); font-family: 'Playfair Display'; font-style: italic; font-weight: 900; font-size: 1.8rem; color: var(--primary-rose); border: 4px solid var(--primary-rose); padding: 5px 20px; border-radius: 8px; opacity: 0.85; background: rgba(255,255,255,0.7); backdrop-filter: blur(2px); }
 
         /* --- MODAL --- */
-        .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(30, 35, 30, 0.95); backdrop-filter: blur(8px); padding: 10px; align-items: center; justify-content: center; overflow: hidden; }
+        .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(74, 14, 23, 0.95); backdrop-filter: blur(8px); padding: 10px; align-items: center; justify-content: center; overflow: hidden; }
         .modal-content-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 900px; max-height: 95vh; position: relative; gap: 10px; transition: transform 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1); }
         .modal-content-wrapper.thump { transform: scale(1.05); }
 
@@ -157,25 +157,25 @@
         
         .modal-layout { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 30px; width: 100%; }
         .modal-image-col { flex: 0 1 30%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
-        #modalPrizeImg { width: 100%; max-width: 200px; height: auto; max-height: 20vh; object-fit: contain; border-radius: 12px; border: 3px solid var(--gold-leaf); background: #fff; padding: 8px; box-shadow: 0 0 30px rgba(212, 175, 55, 0.3); }
-        .modal-prize-title { color: var(--gold-leaf); font-family: 'Playfair Display'; font-size: 1.6rem; font-weight: 700; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        #modalPrizeImg { width: 100%; max-width: 200px; height: auto; max-height: 20vh; object-fit: contain; border-radius: 12px; border: 3px solid var(--primary-rose); background: #fff; padding: 8px; box-shadow: 0 0 30px rgba(216, 27, 96, 0.4); }
+        .modal-prize-title { color: #FFF; font-family: 'Playfair Display'; font-size: 1.6rem; font-weight: 700; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
 
         .wheel-container { position: relative; width: 320px; height: 320px; max-width: 60vh; max-height: 60vh; flex-shrink: 0; }
         canvas { width: 100%; height: 100%; border-radius: 50%; border: 6px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .pointer { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 40px solid var(--gold-leaf); z-index: 10; filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5)); }
+        .pointer { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 40px solid var(--primary-rose); z-index: 10; filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5)); }
         
-        .winner-announce { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; color: #FFD700; text-align: center; min-height: 80px; opacity: 0; display: flex; align-items: center; justify-content: center; transform: scale(0); transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
-        .winner-announce.show { opacity: 1; transform: scale(1.2); text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 255, 255, 0.4); animation: pulseGlow 1.5s infinite alternate, popIn 0.5s ease-out forwards; }
+        .winner-announce { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; color: #FFB6C1; text-align: center; min-height: 80px; opacity: 0; display: flex; align-items: center; justify-content: center; transform: scale(0); transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .winner-announce.show { opacity: 1; transform: scale(1.2); text-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 255, 255, 0.4); animation: pulseGlow 1.5s infinite alternate, popIn 0.5s ease-out forwards; }
         
-        .spin-btn { background: linear-gradient(135deg, #FFD700, #FDB931); color: #4A443F; padding: 12px 40px; font-size: 1.1rem; border-radius: 50px; border: none; cursor: pointer; font-weight: 800; letter-spacing: 2px; box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3); transition: 0.2s; }
-        .spin-btn:hover { transform: scale(1.05); }
+        .spin-btn { background: linear-gradient(135deg, #FF1493, #FF69B4); color: white; padding: 12px 40px; font-size: 1.1rem; border-radius: 50px; border: 2px solid white; cursor: pointer; font-weight: 800; letter-spacing: 2px; box-shadow: 0 5px 15px rgba(255, 20, 147, 0.4); transition: 0.2s; }
+        .spin-btn:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(255, 20, 147, 0.6); }
         .footer-controls { margin: 40px 0 20px; opacity: 0.5; text-align: center; }
-        .reset-link { color: var(--alert-red); text-decoration: underline; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+        .reset-link { color: var(--wine-text); text-decoration: underline; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
 
         /* --- FLASH EFFECT --- */
         #flash-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: white; z-index: 9999;
+            background-color: #FFF0F5; z-index: 9999;
             pointer-events: none; opacity: 0;
         }
         #flash-overlay.flash-bang { animation: flashAnim 1.4s cubic-bezier(0.1, 0, 1, 1) forwards; }
@@ -186,7 +186,7 @@
             .close-btn-container { top: 0px; right: 0px; }
         }
         @keyframes popIn { 0% { transform: scale(0) rotate(-10deg); opacity: 0; } 70% { transform: scale(1.3) rotate(5deg); } 100% { transform: scale(1.1) rotate(0deg); opacity: 1; } }
-        @keyframes pulseGlow { 0% { transform: scale(1.1); text-shadow: 0 0 20px rgba(255, 215, 0, 0.6); } 100% { transform: scale(1.15); text-shadow: 0 0 40px rgba(255, 215, 0, 1), 0 0 10px white; } }
+        @keyframes pulseGlow { 0% { transform: scale(1.1); text-shadow: 0 0 20px rgba(255, 105, 180, 0.6); } 100% { transform: scale(1.15); text-shadow: 0 0 40px rgba(255, 105, 180, 1), 0 0 10px white; } }
         @keyframes flashAnim {
             0% { opacity: 0; }
             1% { opacity: 1; }
@@ -200,29 +200,28 @@
     <header><h1>Main Draw</h1></header>
 
     <section class="setup-container" id="setupArea">
-        <div class="input-group"><h3>🔵 Option A</h3><small>Pot A (2 entries/person)</small><textarea id="listA" placeholder="Paste names..."></textarea></div>
-        <div class="input-group"><h3>🟢 Option B</h3><small>Pot B (2 entries/person)</small><textarea id="listB" placeholder="Paste names..."></textarea></div>
-        <div class="input-group"><h3>🟡 Option C</h3><small>ALL Pots (1 entry/person)</small><textarea id="listC" placeholder="Paste names..."></textarea></div>
+        <div class="input-group"><h3>❤️ Option A</h3><small>Pot 1 (2 entries/person)</small><textarea id="listA" placeholder="Paste names..."></textarea></div>
+        <div class="input-group"><h3>💖 Option B</h3><small>Pot 2 (2 entries/person)</small><textarea id="listB" placeholder="Paste names..."></textarea></div>
+        <div class="input-group"><h3>💘 Option C</h3><small>ALL Pots (1 entry/person)</small><textarea id="listC" placeholder="Paste names..."></textarea></div>
         <div class="btn-row"><button class="lock-btn" onclick="lockLists()">Lock & Start Game</button></div>
     </section>
 
     <section class="participants-board" id="participantsBoard">
-        <div class="p-column"><h4>🔵 Option A</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListA"></ul></div>
-        <div class="p-column"><h4>🟢 Option B</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListB"></ul></div>
-        <div class="p-column"><h4>🟡 Option C</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListC"></ul></div>
+        <div class="p-column"><h4>❤️ Option A</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListA"></ul></div>
+        <div class="p-column"><h4>💖 Option B</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListB"></ul></div>
+        <div class="p-column"><h4>💘 Option C</h4><small class="p-help">Tap to toggle absent</small><ul class="p-list" id="displayListC"></ul></div>
     </section>
 
     <main id="gameArea" style="opacity: 0.3; pointer-events: none;">
         
         <section class="game-section">
-            <div class="pot-title"><span>Pot A Prizes</span><span class="pot-rules">Opt A (x2) + Opt C (x1)</span></div>
+            <div class="pot-title"><span>Pot 1 Prizes</span><span class="pot-rules">Opt A (x2) + Opt C (x1)</span></div>
             <div class="prizes-grid">
                 <div class="prize-card" id="card_dbd" onclick="openDraw('Option A', 'Dead by Daylight', this)">
                     <img src="luckydraw/deadbydaylight.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Dead+By+Daylight'">
                     <div class="card-overlay"><h4>Dead by Daylight</h4><div class="winner-display"></div></div>
                 </div>
                 
-              
                 <div class="prize-card" id="card_superstore" onclick="openDraw('Option A', 'Superstore 3000', this)">
                     <img src="luckydraw/superstore.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Superstore+3000'">
                     <div class="card-overlay"><h4>Superstore 3000</h4><div class="winner-display"></div></div>
@@ -239,20 +238,18 @@
                     <img src="luckydraw/alma.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Alma+Mater'">
                     <div class="card-overlay"><h4>Alma Mater</h4><div class="winner-display"></div></div>
                 </div>
-						<div class="prize-card" id="card_ethnos" onclick="openDraw('Option A', 'Ethnos', this)">
-																	<img src="luckydraw/ethnos.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Ethnos'">
-																		<div class="card-overlay">
-																			<h4>Ethnos</h4>
-																			<div class="winner-display"/>
-																		</div>
-																	</div>
-																</div>
-				
+                <div class="prize-card" id="card_ethnos" onclick="openDraw('Option A', 'Ethnos', this)">
+                    <img src="luckydraw/ethnos.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Ethnos'">
+                    <div class="card-overlay">
+                        <h4>Ethnos</h4>
+                        <div class="winner-display"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="game-section">
-            <div class="pot-title"><span>Pot B Prizes</span><span class="pot-rules">Opt B (x2) + Opt C (x1)</span></div>
+            <div class="pot-title"><span>Pot 2 Prizes</span><span class="pot-rules">Opt B (x2) + Opt C (x1)</span></div>
             <div class="prizes-grid">
                 <div class="prize-card" id="card_potion" onclick="openDraw('Option B', 'Potion Explosion', this)">
                     <img src="luckydraw/potion.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Potion+Explosion'">
@@ -274,19 +271,17 @@
                     <img src="luckydraw/maple.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Maple+Valley'">
                     <div class="card-overlay"><h4>Maple Valley</h4><div class="winner-display"></div></div>
                 </div>
-            <div class="prize-card" id="card_beacon" onclick="openDraw('Option B', 'Beacon Patrol', this)">
+                <div class="prize-card" id="card_beacon" onclick="openDraw('Option B', 'Beacon Patrol', this)">
                     <img src="luckydraw/beacon.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Beacon'">
                     <div class="card-overlay"><h4>Beacon Patrol</h4><div class="winner-display"></div></div>
                 </div>
-				
-					<div class="prize-card" id="card_ex" onclick="openDraw('Option B', 'Ex Libris', this)">
-																								<img src="luckydraw/ex.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Ex+Libris'">
-																									<div class="card-overlay">
-																										<h4>Ex Libris</h4>
-																										<div class="winner-display"/>
-																									</div>
-																								</div>
-																							</div>
+                <div class="prize-card" id="card_ex" onclick="openDraw('Option B', 'Ex Libris', this)">
+                    <img src="luckydraw/ex.webp" class="game-img" onerror="this.src='https://placehold.co/400?text=Ex+Libris'">
+                    <div class="card-overlay">
+                        <h4>Ex Libris</h4>
+                        <div class="winner-display"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -304,7 +299,7 @@
                 <div class="wheel-container"><div class="pointer"></div><canvas id="wheelCanvas" width="760" height="760"></canvas></div>
             </div>
             <div id="winnerText" class="winner-announce"></div>
-            <button id="spinBtn" class="spin-btn" onclick="spinWheel()">SPIN THE WHEEL</button>
+            <button id="spinBtn" class="spin-btn" onclick="spinWheel()">SPIN FOR LOVE</button>
         </div>
     </div>
 
@@ -342,7 +337,9 @@
         let currentPool = [], currentCardId = null, currentCardEl = null, isSpinning = false;
         let flashTriggered = false; 
         const canvas = document.getElementById('wheelCanvas'), ctx = canvas.getContext('2d');
-        const wheelColors = ['#FF3B30', '#FF9500', '#FFCC00', '#4CD964', '#5AC8FA', '#007AFF', '#5856D6', '#FF2D55', '#E0E0E0', '#34AADC'];
+        
+        // Valentine Wheel Palette
+        const wheelColors = ['#FF1493', '#FF69B4', '#FFC0CB', '#DB7093', '#C71585', '#FFF0F5', '#FFB6C1', '#F08080', '#DC143C', '#E6E6FA'];
 
         window.onload = function() {
             if(localStorage.getItem('ara_names')) {
@@ -384,7 +381,6 @@
                 if(isWon) classes += ' won';
                 else if(isAbsent) classes += ' absent';
                 
-                // Only allow toggle if not won
                 const clickAction = isWon ? '' : `onclick="togglePresence('${n}')"`;
                 
                 return `<li class="${classes}" ${clickAction}>${n}</li>`;
@@ -412,7 +408,6 @@
             
             let mainList = (optionType === 'Option A') ? namesA : namesB;
             
-            // Build pool - EXCLUDING absent players and winners
             mainList.forEach(n => { 
                 if(!usedNames.has(n) && !absentPlayers.has(n)) { 
                     currentPool.push(n); currentPool.push(n); 
@@ -443,9 +438,10 @@
             ctx.save(); ctx.translate(centerX, centerY); ctx.rotate(rotationOffset);
             for(let i=0; i<num; i++){
                 const angle = i * arc; ctx.beginPath(); ctx.moveTo(0,0); ctx.arc(0, 0, radius, angle, angle + arc);
-                ctx.fillStyle = wheelColors[i % wheelColors.length]; ctx.fill(); ctx.strokeStyle = "#000"; ctx.lineWidth = 1; ctx.stroke();
+                ctx.fillStyle = wheelColors[i % wheelColors.length]; ctx.fill(); ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.stroke();
                 if(num < 40) {
-                    ctx.save(); ctx.rotate(angle + arc/2); ctx.textAlign = "right"; ctx.fillStyle = "#000"; ctx.font = "bold 28px Quicksand";
+                    ctx.save(); ctx.rotate(angle + arc/2); ctx.textAlign = "right"; ctx.fillStyle = "#fff"; ctx.font = "bold 28px Quicksand";
+                    ctx.shadowColor = "rgba(0,0,0,0.5)"; ctx.shadowBlur = 4;
                     let text = currentPool[i]; if(text.length > 14) text = text.substring(0,12) + "..";
                     ctx.fillText(text, radius - 40, 10); ctx.restore();
                 }
@@ -457,18 +453,15 @@
             if(isSpinning) return; isSpinning = true; flashTriggered = false;
             document.getElementById('spinBtn').style.display = 'none';
             const winnerIdx = Math.floor(Math.random() * currentPool.length), winnerName = currentPool[winnerIdx];
-            // INCREASED VELOCITY: 50 Rotations
             const arc = (2 * Math.PI) / currentPool.length, targetRotation = (2 * Math.PI * 50) - (winnerIdx * arc + arc/2) - (Math.PI / 2);
             let start = null, lastTickPoint = -1;
             
             function animate(time) {
                 if(!start) start = time;
-                // DURATION: 6000ms
                 const progress = Math.min((time - start) / 6000, 1), ease = 1 - Math.pow(1 - progress, 3);
                 const currentRot = ease * targetRotation;
                 drawWheel(currentRot);
                 
-                // --- FLASHBANG TRIGGER ---
                 if (progress > 0.85 && !flashTriggered) {
                     flashTriggered = true;
                     triggerFlashBang(winnerName);
@@ -520,7 +513,14 @@
                     clearInterval(interval);
                     return;
                 }
-                confetti({ particleCount: 40, spread: 70, origin: { x: Math.random(), y: Math.random() - 0.2 }, zIndex: 3000 }); 
+                // Pink and red confetti!
+                confetti({ 
+                    particleCount: 40, 
+                    spread: 70, 
+                    origin: { x: Math.random(), y: Math.random() - 0.2 }, 
+                    colors: ['#D81B60', '#FF1493', '#FFC0CB', '#ffffff'],
+                    zIndex: 3000 
+                }); 
             }, 200);
             
             setTimeout(() => clearInterval(interval), 4000);
